@@ -19,6 +19,9 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
     public static final Item ROD_OF_FINDING = registerItem("rod_of_finding",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
+
+    public static final Item CORRUPTED_DUST = registerItem("corrupted_dust",
             new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxDamage(16)));
 
 

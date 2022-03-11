@@ -5,17 +5,14 @@ import net.vakror.thommas.Thommas;
 import net.vakror.thommas.item.ModItems;
 
 public class ModRegistries {
-    public static void registerModThings() {
+    public static void registerModStuffs() {
         registerFuels();
     }
-
 
     private static void registerFuels() {
         Thommas.LOGGER.info("Registering Fuels for " + Thommas.MOD_ID + "!");
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
-        registry.add(ModItems.CORRUPTED_DUST, 300);
-
+        registry.add(ModItems.CORRUPTED_DUST, 350);
     }
-
 }

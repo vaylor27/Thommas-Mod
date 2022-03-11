@@ -54,6 +54,16 @@ public class DowsingRodItem extends Item {
         return super.useOnBlock(context);
     }
 
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        if (Screen.hasShiftDown()) {
+            tooltip.add(new TranslatableText("item.thommas.rod_of_finding.tooltip.shift"));
+        }
+        else {
+            tooltip.add(new TranslatableText("item.thommas.rod_of_finding.tooltip"));
+        }
+    }
+
     private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block blockBelow) {
         player.sendMessage(new LiteralText("Found " + blockBelow.asItem().getName().getString() + " at " +
                 "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"), false);

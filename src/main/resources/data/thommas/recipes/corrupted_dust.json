@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###",
-    "###"
+    "III",
+    "I#I",
+    "III"
   ],
   "key": {
-    "#": {
+    "I": {
       "item": "minecraft:gunpowder"
+    },
+    "#": {
+      "item": "thommas:mythril_ingot"
     }
   },
   "result": {

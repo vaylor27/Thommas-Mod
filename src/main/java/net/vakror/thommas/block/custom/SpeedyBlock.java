@@ -28,9 +28,7 @@ public class SpeedyBlock extends Block {
         // 2 Times on the Client (for each Hand)
         if(world.isClient()) {
             if(hand == Hand.MAIN_HAND) {
-                player.sendMessage(new LiteralText("CLIENT: This is THE CLIENT! MAIN HAND!"), false);
             } else {
-                player.sendMessage(new LiteralText("CLIENT: This is THE CLIENT! OFF HAND!"), false);
             }
         }
 

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "thommas:block/mythril_pressure_plate" },
+    "powered=true": { "model": "thommas:block/mythril_pressure_plate_down" }
+  }
+}

@@ -15,8 +15,6 @@ public class Thommas implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-
-		ModRegistries.registerModThings();
-
+		ModRegistries.registerModStuffs();
 	}
 }

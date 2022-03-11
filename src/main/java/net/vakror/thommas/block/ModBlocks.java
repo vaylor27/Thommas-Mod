@@ -2,14 +2,15 @@ package net.vakror.thommas.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
+import net.vakror.thommas.block.custom.ModPressurePlate;
+import net.vakror.thommas.block.custom.ModStoneButton;
 import net.vakror.thommas.block.custom.SpeedyBlock;
 import net.vakror.thommas.item.ModItemGroup;
 
@@ -32,6 +33,22 @@ public class ModBlocks {
 
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
             new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.SPECIAL_ITEMS);
+
+    public static final Block MYTHRIL_BUTTON = registerBlock("mythril_button",
+            new ModStoneButton(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().noCollision()), ModItemGroup.MYTHRIL_BLOCKS);
+
+    public static final Block MYTHRIL_PRESSURE_PLATE = registerBlock("mythril_pressure_plate",
+            new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+
+    public static final Block MYTHRIL_FENCE = registerBlock("mythril_fence",
+            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+
+    public static final Block MYTHRIL_FENCE_GATE = registerBlock("mythril_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+
+    public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
+            new WallBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+
 
 
 

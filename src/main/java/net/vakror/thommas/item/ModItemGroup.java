@@ -16,4 +16,7 @@ public class ModItemGroup {
 
     public static final ItemGroup SPECIAL_ITEMS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "special_items"),
             () -> new ItemStack(ModItems.ROD_OF_FINDING));
+
+    public static final ItemGroup FOOD_ITEMS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "food_items"),
+            () -> new ItemStack(ModItems.STRAWBERRY));
 }

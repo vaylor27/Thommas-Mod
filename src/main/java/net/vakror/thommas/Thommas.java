@@ -1,6 +1,7 @@
 package net.vakror.thommas;
 
 import net.fabricmc.api.ModInitializer;
+import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,5 +13,6 @@ public class Thommas implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

@@ -23,7 +23,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-
         Thommas.LOGGER.info("Registering Mod Items for " + Thommas.MOD_ID + "!");
     }
 }

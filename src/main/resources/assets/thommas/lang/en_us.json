@@ -1,5 +1,10 @@
 {
   "item.thommas.mythril_ingot": "Mythril Ingot",
   "item.thommas.mythril_nugget": "Mythril Nugget",
-  "item.thommas.raw_mythril": "Raw Mythril"
+  "item.thommas.raw_mythril": "Raw Mythril",
+  "block.thommas.mythril_block": "Mythril Block",
+  "block.thommas.mythril_ore": "Mythril Ore",
+  "block.thommas.deepslate_mythril_ore": "Deepslate Mythril Ore",
+  "block.thommas.netherrack_mythril_ore": "Netherrack Mythril Ore",
+  "block.thommas.raw_mythril_block": "Raw Mythril Block"
 }

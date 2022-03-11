@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "mythril_ingot",
+  "ingredient": {
+    "item": "thommas:raw_mythril"
+  },
+  "result": "thommas:mythril_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

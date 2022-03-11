@@ -10,6 +10,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
+import net.vakror.thommas.block.custom.SpeedyBlock;
 import net.vakror.thommas.item.ModItemGroup;
 
 public class ModBlocks {
@@ -28,6 +29,9 @@ public class ModBlocks {
 
     public static final Block RAW_MYTHRIL_BLOCK = registerBlock("raw_mythril_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+
+    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
+            new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.SPECIAL_ITEMS);
 
 
 

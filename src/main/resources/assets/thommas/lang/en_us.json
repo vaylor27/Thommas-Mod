@@ -2,6 +2,7 @@
   "item.thommas.mythril_ingot": "Mythril Ingot",
   "item.thommas.mythril_nugget": "Mythril Nugget",
   "item.thommas.raw_mythril": "Raw Mythril",
+  "item.thommas.rod_of_finding": "Rod of Finding",
 
 
   "block.thommas.mythril_block": "Mythril Block",
@@ -9,8 +10,12 @@
   "block.thommas.deepslate_mythril_ore": "Deepslate Mythril Ore",
   "block.thommas.netherrack_mythril_ore": "Netherrack Mythril Ore",
   "block.thommas.raw_mythril_block": "Raw Mythril Block",
+  "block.thommas.speedy_block": "Speed",
 
 
   "itemGroup.thommas.mythril_items": "Mythril Items",
-  "itemGroup.thommas.mythril_blocks": "Mythril Blocks"
+  "itemGroup.thommas.mythril_blocks": "Mythril Blocks",
+  "itemGroup.thommas.special_items": "Special Items and Blocks",
+
+  "item.thommas.dowsing_rod.no_valuables": "No valuables found."
 }

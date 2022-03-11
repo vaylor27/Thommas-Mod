@@ -10,6 +10,10 @@ import net.vakror.thommas.block.ModBlocks;
 public class ModItemGroup {
     public static final ItemGroup MYTHRIL_ITEMS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "mythril_items"),
             () -> new ItemStack(ModItems.MYTHRIL_INGOT));
+
     public static final ItemGroup MYTHRIL_BLOCKS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "mythril_blocks"),
             () -> new ItemStack(ModBlocks.MYTHRIL_BLOCK));
+
+    public static final ItemGroup SPECIAL_ITEMS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "special_items"),
+            () -> new ItemStack(ModItems.ROD_OF_FINDING));
 }

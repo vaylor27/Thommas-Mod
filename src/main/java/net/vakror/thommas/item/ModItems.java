@@ -6,6 +6,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
+import net.vakror.thommas.item.custom.DowsingRodItem;
 
 public class ModItems {
     public static final Item MYTHRIL_INGOT = registerItem("mythril_ingot",
@@ -16,6 +17,9 @@ public class ModItems {
 
     public static final Item RAW_MYTHRIL = registerItem("raw_mythril",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
+
+    public static final Item ROD_OF_FINDING = registerItem("rod_of_finding",
+            new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxDamage(16)));
 
 
     private static Item registerItem(String name, Item item) {

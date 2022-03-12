@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:mythril_block"
+    }
+  },
+  "result": {
+    "item": "thommas:mythril_wall"
+  }
+}

@@ -13,7 +13,7 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
 
-public enum ModMaterials implements ToolMaterial {
+public enum ModToolMaterials implements ToolMaterial {
     MYTHRIL(MiningLevels.DIAMOND, 738, 14.0F, 2.0F, 28, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.MYTHRIL_INGOT});
     });
@@ -25,7 +25,7 @@ public enum ModMaterials implements ToolMaterial {
     private final int enchantability;
     private final Lazy<Ingredient> repairIngredient;
 
-    private ModMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
+    private ModToolMaterials(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
         this.miningLevel = miningLevel;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;

@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " I",
-    "EIE",
+    "#I#",
     "III"
   ],
   "key": {
     "I": {
       "item": "minecraft:stick"
     },
-    "E": {
+    "#": {
       "item": "minecraft:emerald"
     }
   },

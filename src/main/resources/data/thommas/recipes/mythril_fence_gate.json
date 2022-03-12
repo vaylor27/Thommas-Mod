@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P#P",
+    "P#P",
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:stick"
+    },
+    "P": {
+      "item": "thommas:mythril_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:mythril_fence_gate"
+  }
+}

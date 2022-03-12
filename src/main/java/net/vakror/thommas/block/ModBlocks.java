@@ -3,6 +3,7 @@ package net.vakror.thommas.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -63,9 +64,21 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.WOOD).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
 
     public static final Block CORRUPTED_FLOWER = registerBlock("corrupted_flower",
-            new Block(FabricBlockSettings.of(Material.WOOD).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 12, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.SPECIAL_ITEMS);
+
+    public static final Block KAUPEN_DOOR = registerBlock("kaupen_door",
+            new ModDoor(FabricBlockSettings.of(Material.WOOD).strength(6f).requiresTool()), ModItemGroup.DETRANIUM);
+
+    public static final Block SAFE_KAUPEN_DOOR = registerBlock("safe_kaupen_door",
+            new ModDoor(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.DETRANIUM);
+
+    public static final Block POTTED_CORRUPTED_FLOWER = registerBlockWithoutBlockItem("potted_corrupted_flower",
+            new FlowerPotBlock(ModBlocks.CORRUPTED_FLOWER, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()), ModItemGroup.SPECIAL_ITEMS);
 
 
+    private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
+        return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

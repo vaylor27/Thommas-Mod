@@ -21,5 +21,5 @@ public class ModItemGroup {
             () -> new ItemStack(ModItems.STRAWBERRY));
 
     public static final ItemGroup DETRANIUM = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "detranium"),
-            () -> new ItemStack(ModBlocks.DETRANIUM_TRAPDOOR));
+            () -> new ItemStack(ModBlocks.KAUPEN_DOOR));
 }

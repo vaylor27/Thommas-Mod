@@ -19,4 +19,7 @@ public class ModItemGroup {
 
     public static final ItemGroup FOOD_ITEMS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "food_items"),
             () -> new ItemStack(ModItems.STRAWBERRY));
+
+    public static final ItemGroup DETRANIUM = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "detranium"),
+            () -> new ItemStack(ModBlocks.DETRANIUM_TRAPDOOR));
 }

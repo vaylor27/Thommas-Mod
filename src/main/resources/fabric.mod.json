@@ -9,8 +9,8 @@
     "Vakror"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "github.com/vaylor27/Thommas-Mod",
+    "sources": "github.com/vaylor27/Thommas-Mod"
   },
 
   "license": "MIT",
@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.vakror.thommas.Thommas"
+    ],
+    "client": [
+      "net.vakror.thommas.ThommasClientMod"
     ]
   },
   "mixins": [

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-
+    "thommas:detranium_trapdoor",
+    "thommas:safe_detranium_trapdoor",
+    "thommas:pure_detranium"
   ]
 }

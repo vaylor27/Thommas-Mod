@@ -9,9 +9,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.block.custom.ModPressurePlate;
-import net.vakror.thommas.block.custom.ModStoneButton;
-import net.vakror.thommas.block.custom.SpeedyBlock;
+import net.vakror.thommas.block.custom.*;
 import net.vakror.thommas.item.ModItemGroup;
 
 public class ModBlocks {
@@ -48,6 +46,18 @@ public class ModBlocks {
 
     public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+
+    public static final Block MYTHRIL_SLAB = registerBlock("mythril_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+
+    public static final Block MYTHRIL_STAIRS = registerBlock("mythril_stairs",
+            new ModStairs(ModBlocks.MYTHRIL_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+
+    public static final Block DETRANIUM_TRAPDOOR = registerBlock("detranium_trapdoor",
+            new ModTrapdoor(FabricBlockSettings.of(Material.WOOD).strength(6f).requiresTool().nonOpaque()), ModItemGroup.DETRANIUM);
+
+    public static final Block SAFE_DETRANIUM_TRAPDOOR = registerBlock("safe_detranium_trapdoor",
+            new ModTrapdoor(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().nonOpaque()), ModItemGroup.DETRANIUM);
 
 
 

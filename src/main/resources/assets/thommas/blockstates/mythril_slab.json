@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thommas:block/mythril_slab"
+    },
+    "type=double": {
+      "model": "thommas:block/mythril_block"
+    },
+    "type=top": {
+      "model": "thommas:block/mythril_slab_top"
+    }
+  }
+}

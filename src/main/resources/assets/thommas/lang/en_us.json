@@ -7,6 +7,11 @@
   "item.thommas.strawberry": "Strawberry",
   "item.thommas.rotten_strawberry": "Rotten Strawberry",
   "item.thommas.tomato": "Tomato",
+  "item.thommas.mythril_pick": "Mythril Pickaxe",
+  "item.thommas.mythril_shovel": "Mythril Shovel",
+  "item.thommas.mythril_axe": "Mythril Axe",
+  "item.thommas.mythril_sword": "Mythril Sword",
+  "item.thommas.mythril_hoe": "Mythril Hoe",
 
 
   "block.thommas.mythril_block": "Mythril Block",
@@ -20,12 +25,22 @@
   "block.thommas.mythril_fence": "Mythril Fence",
   "block.thommas.mythril_fence_gate": "Mythril Fence Gate",
   "block.thommas.mythril_wall": "Mythril Wall",
+  "block.thommas.detranium_door": "Detranium Door",
+  "block.thommas.safe_detranium_door": "Safe Detranium Door",
+  "block.thommas.detranium_trapdoor": "Detranium Trapdoor",
+  "block.thommas.safe_detranium_trapdoor": "Safe Detranium Trapdoor",
+  "block.thommas.mythril_slab": "Mythril Slab",
+  "block.thommas.mythril_stairs": "Mythril Stairs",
+
 
   "itemGroup.thommas.mythril_items": "Mythril Items",
   "itemGroup.thommas.mythril_blocks": "Mythril Blocks",
   "itemGroup.thommas.special_items": "Special Items and Blocks",
-  "itemGroup.thommas.food_items": "Food Stuff [MODDED]",
+  "itemGroup.thommas.food_items": "Thommas Foods",
+  "itemGroup.thommas.detranium": "Detranium Items & Blocks",
 
+
+  "item.thommas.pure_detranium": "Glitched Detranium",
   "item.thommas.dowsing_rod.no_valuables": "No valuables found.",
   "item.thommas.rod_of_finding.tooltip.shift": "Right click to find valuables!",
   "item.thommas.rod_of_finding.tooltip": "Press §eSHIFT§r for more information"

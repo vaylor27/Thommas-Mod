@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:detranium"
+    },
+    "I": {
+      "item": "thommas:corrupted_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:safe_detranium_trapdoor"
+  }
+}

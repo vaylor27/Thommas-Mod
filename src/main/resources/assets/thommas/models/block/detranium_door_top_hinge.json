@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "thommas:block/detranium_door_top",
+    "bottom": "thommas:block/detranium_door_bottom"
+  }
+}

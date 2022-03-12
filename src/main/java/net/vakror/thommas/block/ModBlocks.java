@@ -59,6 +59,11 @@ public class ModBlocks {
     public static final Block SAFE_DETRANIUM_TRAPDOOR = registerBlock("safe_detranium_trapdoor",
             new ModTrapdoor(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().nonOpaque()), ModItemGroup.DETRANIUM);
 
+    public static final Block PURE_DETRANIUM = registerBlock("pure_detranium",
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+
+    public static final Block CORRUPTED_FLOWER = registerBlock("corrupted_flower",
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
 
 
 

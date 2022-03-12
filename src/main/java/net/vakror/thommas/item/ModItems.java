@@ -38,9 +38,6 @@ public class ModItems {
     public static final Item MYTHRIL_SWORD = registerItem("mythril_sword",
             new ModSlownessSword(ModToolMaterials.MYTHRIL, 1, 4,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
-    public static final Item PURE_DETRANIUM = registerItem("pure_detranium",
-            new Item(new FabricItemSettings().group(ModItemGroup.DETRANIUM)));
-
     public static final Item MYTHRIL_PICK = registerItem("mythril_pick",
             new ModPickaxe(ModToolMaterials.MYTHRIL, 1, 2,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
@@ -53,9 +50,6 @@ public class ModItems {
     public static final Item MYTHRIL_SHOVEL = registerItem("mythril_shovel",
             new ShovelItem(ModToolMaterials.MYTHRIL, 1, 1,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
-    public static final Item STICK = registerItem("stick",
-            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
-
     public static final Item MYTHRIL_HELMET = registerItem("mythril_helmet",
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
@@ -63,7 +57,7 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.FEET,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
     public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
-            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
+            new ModArmor(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
     public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));

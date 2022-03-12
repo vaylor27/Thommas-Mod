@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I# "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:azure_bluet"
+    },
+    "#": {
+      "item": "thommas:corrupted_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:corrupted_flower"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I# "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:lily_of_the_valley"
+    },
+    "#": {
+      "item": "thommas:corrupted_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:corrupted_flower"
+  }
+}

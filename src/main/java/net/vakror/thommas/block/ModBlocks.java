@@ -31,19 +31,19 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
 
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
-            new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.SPECIAL_ITEMS);
+            new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SPECIAL_ITEMS);
 
     public static final Block MYTHRIL_BUTTON = registerBlock("mythril_button",
-            new ModStoneButton(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().noCollision()), ModItemGroup.MYTHRIL_BLOCKS);
+            new ModStoneButton(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool().noCollision()), ModItemGroup.MYTHRIL_BLOCKS);
 
     public static final Block MYTHRIL_PRESSURE_PLATE = registerBlock("mythril_pressure_plate",
-            new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+            new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
 
     public static final Block MYTHRIL_FENCE = registerBlock("mythril_fence",
-            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
 
     public static final Block MYTHRIL_FENCE_GATE = registerBlock("mythril_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
 
     public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
@@ -55,22 +55,22 @@ public class ModBlocks {
             new ModStairs(ModBlocks.MYTHRIL_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
 
     public static final Block DETRANIUM_TRAPDOOR = registerBlock("detranium_trapdoor",
-            new ModTrapdoor(FabricBlockSettings.of(Material.WOOD).strength(6f).requiresTool().nonOpaque()), ModItemGroup.DETRANIUM);
+            new ModTrapdoor(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool().nonOpaque()), ModItemGroup.DETRANIUM);
 
     public static final Block SAFE_DETRANIUM_TRAPDOOR = registerBlock("safe_detranium_trapdoor",
-            new ModTrapdoor(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool().nonOpaque()), ModItemGroup.DETRANIUM);
+            new ModTrapdoor(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().nonOpaque()), ModItemGroup.DETRANIUM);
 
     public static final Block PURE_DETRANIUM = registerBlock("pure_detranium",
-            new Block(FabricBlockSettings.of(Material.WOOD).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_BLOCKS);
+            new Block(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool()), ModItemGroup.DETRANIUM);
 
     public static final Block CORRUPTED_FLOWER = registerBlock("corrupted_flower",
             new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 12, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.SPECIAL_ITEMS);
 
     public static final Block KAUPEN_DOOR = registerBlock("kaupen_door",
-            new ModDoor(FabricBlockSettings.of(Material.WOOD).strength(6f).requiresTool()), ModItemGroup.DETRANIUM);
+            new ModDoor(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool()), ModItemGroup.DETRANIUM);
 
     public static final Block SAFE_KAUPEN_DOOR = registerBlock("safe_kaupen_door",
-            new ModDoor(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.DETRANIUM);
+            new ModDoor(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.DETRANIUM);
 
     public static final Block POTTED_CORRUPTED_FLOWER = registerBlockWithoutBlockItem("potted_corrupted_flower",
             new FlowerPotBlock(ModBlocks.CORRUPTED_FLOWER, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()), ModItemGroup.SPECIAL_ITEMS);

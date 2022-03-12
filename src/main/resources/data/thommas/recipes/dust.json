@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I# "
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:corrupted_dust"
+    },
+    "#": {
+      "item": "minecraft:honey_bottle"
+    }
+  },
+  "result": {
+    "item": "thommas:dust"
+  }
+}

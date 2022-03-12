@@ -16,7 +16,7 @@
   "item.thommas.mythril_chestplate": "Mythril Chestplate",
   "item.thommas.mythril_helmet": "Mythril Helmet",
   "item.thommas.mythril_boots": "Mythril Boots",
-  "item.thommas.pure_detranium": "Detranium",
+  "item.thommas.dust": "Magic Dust",
 
 
   "block.thommas.corrupted_flower": "Corrupted Flower",
@@ -40,6 +40,7 @@
   "block.thommas.kaupen_door": "Detranium Door",
   "block.thommas.safe_kaupen_door": "Safe Detranium Door",
   "block.thommas.potted_corrupted_flower": "Potted Corrupted Flower",
+  "block.thommas.pure_detranium": "Pure Detranium",
 
 
   "itemGroup.thommas.mythril_items": "Mythril Items",

@@ -62,6 +62,8 @@ public class ModItems {
     public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
+    public static final Item DUST = registerItem("dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
 
 
     private static Item registerItem(String name, Item item) {

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P#",
+    "P I",
+    " P#"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:pure_detranium"
+    },
+    "P": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "thommas:dust"
+    }
+  },
+  "result": {
+    "item": "thommas:kaupen_bow"
+  }
+}

@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.painting.ModPaintings;
+import net.vakror.thommas.util.ModLootTableModifiers;
 import net.vakror.thommas.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,5 +19,7 @@ public class Thommas implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModRegistries.registerModStuffs();
 		ModPaintings.registerPaintings();
+		ModLootTableModifiers.modifyLootTables();
+		ModRegistries.registerStrippables();
 	}
 }

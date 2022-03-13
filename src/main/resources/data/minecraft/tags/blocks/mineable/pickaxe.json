@@ -13,6 +13,7 @@
     "thommas:mythril_fence_gate",
     "thommas:mythril_button",
     "thommas:mythril_pressure_plate",
-    "thommas:mythril_wall"
+    "thommas:mythril_wall",
+    "thommas:mythril_lamp"
   ]
 }

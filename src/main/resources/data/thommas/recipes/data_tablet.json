@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P  ",
+    "#  ",
+    "X  "
+  ],
+  "key": {
+    "P": {
+      "item": "thommas:data_tablet_casing"
+    },
+    "#": {
+      "item": "thommas:data_tablet_machinery"
+    },
+    "X": {
+      "item": "thommas:data_tablet_screen"
+    }
+  },
+  "result": {
+    "item": "thommas:data_tablet"
+  }
+}

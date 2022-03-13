@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#P#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:green_stained_glass"
+    },
+    "P": {
+      "item": "thommas:dust"
+    }
+  },
+  "result": {
+    "item": "thommas:winter_window"
+  }
+}

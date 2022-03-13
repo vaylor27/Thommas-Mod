@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "P#P",
+    "III"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:dust"
+    },
+    "P": {
+      "item": "minecraft:iron_ingot"
+    },
+    "I": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:data_tablet_machinery"
+  }
+}

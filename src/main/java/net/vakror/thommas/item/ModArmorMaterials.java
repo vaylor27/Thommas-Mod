@@ -6,6 +6,8 @@
 package net.vakror.thommas.item;
 
 import java.util.function.Supplier;
+
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemConvertible;
@@ -18,6 +20,9 @@ import net.minecraft.util.Lazy;
 public enum ModArmorMaterials implements ArmorMaterial {
     MYTHRIL("mythril", 46, new int[]{3, 6, 8, 3}, 36, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, 3.0F, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.MYTHRIL_INGOT});
+    }),
+    RUBY("ruby", 1500, new int[]{3, 6, 8, 3}, 38, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F, 7.0F, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.RUBY});
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

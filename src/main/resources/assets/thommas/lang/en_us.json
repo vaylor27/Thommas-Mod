@@ -52,6 +52,12 @@
   "block.thommas.winter_window": "Winter Window",
   "block.thommas.grape_vine": "Grape Vine",
   "block.thommas.strawberry_plant": "Strawberry Plant",
+  "block.thommas.redwood_planks": "Redwood Planks",
+  "block.thommas.redwood_wood": "Redwood Wood",
+  "block.thommas.stripped_redwood_log": "Stripped Redwood Log",
+  "block.thommas.stripped_redwood_wood": "Stripped Redwood Wood",
+  "block.thommas.redwood_log": "Redwood Log",
+
 
   "itemGroup.thommas.mythril_items": "All Thommas Items and Blocks",
 
@@ -59,6 +65,7 @@
   "item.thommas.dowsing_rod.no_valuables": "No valuables found.",
   "item.thommas.rod_of_finding.tooltip.shift": "Right click to find valuables!",
   "item.thommas.rod_of_finding.tooltip": "Press §eSHIFT§r for more information",
+
 
   "item.thommas.ruby": "Ruby",
   "item.thommas.pepper": "Pepper",
@@ -74,7 +81,6 @@
   "item.thommas.ruby_leggings": "Ruby Leggings",
   "item.thommas.ruby_boots": "Ruby Boots",
   "item.thommas.ruby_horse_armor": "Ruby Horse Armor",
-  "item.thommas.data_tablet": "Data Tablet",
   "item.thommas.pepper_seeds": "Pepper Seeds",
 
   "block.thommas.ruby_ore": "Ruby Ore",

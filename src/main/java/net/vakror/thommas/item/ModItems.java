@@ -38,7 +38,7 @@ public class ModItems {
             new ModPickaxe(ModToolMaterials.MYTHRIL, 1, 2,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
     public static final Item MYTHRIL_AXE = registerItem("mythril_axe",
-            new ModSlownessSword(ModToolMaterials.MYTHRIL, 4, 3,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
+            new ModSlownessAxe(ModToolMaterials.MYTHRIL, 4, 3,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
     public static final Item MYTHRIL_HOE = registerItem("mythril_hoe",
             new ModHoe(ModToolMaterials.MYTHRIL, 1, 1,new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));

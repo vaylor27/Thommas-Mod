@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP ",
+    "PP ",
+    "   "
+  ],
+  "key": {
+    "P": {
+      "item": "thommas:redwood_log"
+    }
+  },
+  "result": {
+    "item": "thommas:redwood_wood",
+    "count": 3
+  }
+}

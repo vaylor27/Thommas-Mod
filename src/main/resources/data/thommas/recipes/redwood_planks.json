@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "thommas:redwood_wood"
+    }
+  },
+  "result": {
+    "item": "thommas:redwood_planks",
+    "count": 4
+  }
+}

@@ -15,6 +15,7 @@ import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.vakror.thommas.block.ModBlocks;
+import net.vakror.thommas.enchantments.ModEnchantments;
 import net.vakror.thommas.gen.ModConfiguredFeatures;
 import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.painting.ModPaintings;
@@ -38,5 +39,6 @@ public class Thommas implements ModInitializer {
 		ModPaintings.registerPaintings();
 		ModLootTableModifiers.modifyLootTables();
 		ModConfiguredFeatures.doWorldGen();
+		ModEnchantments.registerModEnchantments();
 	}
 }

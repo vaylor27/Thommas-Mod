@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "thommas:mythril_fence"
+    "thommas:mythril_fence",
+    "thommas:ruby_fence"
   ]
 }

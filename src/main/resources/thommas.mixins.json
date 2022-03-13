@@ -4,6 +4,7 @@
   "package": "net.vakror.thommas.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ModEntityDataSaver"
   ],
   "client": [
     "ThommasMixin"

@@ -3,6 +3,7 @@ package net.vakror.thommas.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.sapling.OakSaplingGenerator;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -19,13 +20,13 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block MYTHRIL_ORE = registerBlock("mythril_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block DEEPSLATE_MYTHRIL_ORE = registerBlock("deepslate_mythril_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block NETHERRACK_MYTHRIL_ORE = registerBlock("netherrack_mythril_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(2.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(2.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block RAW_MYTHRIL_BLOCK = registerBlock("raw_mythril_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
@@ -141,6 +142,9 @@ public class ModBlocks {
 
     public static final Block REDWOOD_PLANKS = registerBlock("redwood_planks",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)), ModItemGroup.MYTHRIL_ITEMS);
+
+    public static final Block REDWOOD_LEAVES = registerBlock("redwood_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.MYTHRIL_ITEMS);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

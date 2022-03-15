@@ -2,7 +2,6 @@
   "item.thommas.mythril_ingot": "Mythril Ingot",
   "item.thommas.mythril_nugget": "Mythril Nugget",
   "item.thommas.raw_mythril": "Raw Mythril",
-  "item.thommas.rod_of_finding": "Rod of Finding",
   "item.thommas.corrupted_dust": "Corrupted Dust",
   "item.thommas.strawberry": "Strawberry",
   "item.thommas.rotten_strawberry": "Rotten Strawberry",
@@ -64,14 +63,8 @@
   "itemGroup.thommas.mythril_items": "All Thommas Items and Blocks",
 
 
-  "item.thommas.dowsing_rod.no_valuables": "No valuables found.",
-  "item.thommas.rod_of_finding.tooltip.shift": "Right click to find valuables!",
-  "item.thommas.rod_of_finding.tooltip": "Press §eSHIFT§r for more information",
-
-
   "item.thommas.ruby": "Ruby",
   "item.thommas.pepper": "Pepper",
-  "item.thommas.dowsing_rod": "Dowsing Rod",
   "item.thommas.iron_wool": "Iron Wool",
   "item.thommas.ruby_pickaxe": "Ruby Pickaxe",
   "item.thommas.ruby_axe": "Ruby Axe",
@@ -99,6 +92,7 @@
   "block.thommas.test_block": "Test Block",
   "block.thommas.dice_block": "Dice Block",
   "block.thommas.pepper_plant": "Pepper Plant",
+  "block.thommas.lighting_channeler": "Lighting Channeler",
 
 
   "enchantment.thommas.the_massacre": "The Massacre"

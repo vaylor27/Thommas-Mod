@@ -39,8 +39,7 @@ public class TheMassacre extends Enchantment {
             BlockPos position = target.getBlockPos();
 
             if (level == 1) {
-                EntityType.DRAGON_FIREBALL.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
+                target.damage(DamageSource.player(player), 2);
             }
             else if (level == 2) {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
@@ -49,10 +48,12 @@ public class TheMassacre extends Enchantment {
             else if (level == 3) {
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
                         SpawnReason.TRIGGERED, true, true);
-                EntityType.DRAGON_FIREBALL.spawn(world, null, null, player, position,
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
                         SpawnReason.TRIGGERED, true, true);
             }
             else if (level == 4) {
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
+                        SpawnReason.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
                         SpawnReason.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,

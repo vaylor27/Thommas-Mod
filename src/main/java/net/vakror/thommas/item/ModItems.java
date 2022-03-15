@@ -19,9 +19,6 @@ public class ModItems {
     public static final Item RAW_MYTHRIL = registerItem("raw_mythril",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
-    public static final Item ROD_OF_FINDING = registerItem("rod_of_finding",
-            new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxDamage(16)));
-
     public static final Item CORRUPTED_DUST = registerItem("corrupted_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
@@ -62,16 +59,16 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
     public static final Item DATA_TABLET = registerItem("data_tablet",
-            new DataTablet(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
 
     public static final Item DATA_TABLET_MACHINERY = registerItem("data_tablet_machinery",
-            new DataTablet(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
 
     public static final Item DATA_TABLET_SCREEN = registerItem("data_tablet_screen",
-            new DataTablet(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
 
     public static final Item DATA_TABLET_CASING = registerItem("data_tablet_casing",
-            new DataTablet(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
+            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
 
     public static final Item GRAPE = registerItem("grape",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).food(ModFoodComponents.STRAWBERRY)));
@@ -94,9 +91,6 @@ public class ModItems {
             .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build())
             .group(ModItemGroup.MYTHRIL_ITEMS)));
 
-    public static final Item DOWSING_ROD = registerItem("dowsing_rod",
-            new DowsingRodItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxDamage(10)));
-
     public static final Item IRON_WOOL = registerItem("iron_wool",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
@@ -118,7 +112,7 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
-            new ModArmor(ModArmorMaterials.RUBY, EquipmentSlot.HEAD,
+            new ModRubyArmor(ModArmorMaterials.RUBY, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
             new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.CHEST,

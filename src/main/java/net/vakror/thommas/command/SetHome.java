@@ -3,16 +3,16 @@ package net.vakror.thommas.command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import net.vakror.thommas.util.IEntityDataSaver;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.LiteralText;
 import net.minecraft.util.math.BlockPos;
+import net.vakror.thommas.util.IEntityDataSaver;
 
-public class SetHomeCommand {
+public class SetHome {
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher, boolean dedicated) {
         dispatcher.register(CommandManager.literal("home")
-                .then(CommandManager.literal("set").executes(SetHomeCommand::run)));
+                .then(CommandManager.literal("set").executes(SetHome::run)));
     }
 
     public static int run(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {

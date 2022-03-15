@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:ruby"
+    }
+  },
+  "result": {
+    "item": "thommas:ruby_leggings"
+  }
+}

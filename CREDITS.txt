@@ -1,4 +1,13 @@
-All Mythril Textures by Starlotte:
+All Mythril by Starlotte:
+https://www.curseforge.com/minecraft/mc-mods/sweet-not-savoury
 
 distributed under CC BY-SA 4.0 International License:
 https://creativecommons.org/licenses/by-sa/4.0/
+
+SimpleConfig.java by magistermaks:
+https://github.com/magistermaks/fabric-simplelibs/blob/master/simple-config/SimpleConfig.java
+Distributed under MIT-License
+
+Several Pieces of code by KaupenJoe:
+His tutorials on coding a fabric mod on youtube
+Distributed under MIT-License

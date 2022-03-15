@@ -15,6 +15,7 @@ import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
+import net.vakror.thommas.config.ModConfigs;
 
 import java.util.Arrays;
 
@@ -24,34 +25,34 @@ public class ModConfiguredFeatures {
         registerMythrilOres();
     }
 
-    private static ConfiguredFeature<?, ?> MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE = new ConfiguredFeature
+    private static final ConfiguredFeature<?, ?> MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.MYTHRIL_ORE.getDefaultState(),
-                    16)); // Vein size
+                    ModConfigs.NUMBER_OF_MYTHRIL_ORE_IN_VEIN)); // Vein size
 
-    private static ConfiguredFeature<?, ?> DEEPSLATE_MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE = new ConfiguredFeature
+    private static final ConfiguredFeature<?, ?> DEEPSLATE_MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
                     ModBlocks.DEEPSLATE_MYTHRIL_ORE.getDefaultState(),
-                    16)); // Vein size
+                    ModConfigs.NUMBER_OF_DEEPSLATE_MYTHRIL_ORE_IN_VEIN)); // Vein size
 
-    private static ConfiguredFeature<?, ?> NETHER_MYTHRIL_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
+    private static final ConfiguredFeature<?, ?> NETHER_MYTHRIL_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.NETHERRACK,
                     ModBlocks.NETHERRACK_MYTHRIL_ORE.getDefaultState(),
-                    46)); // Vein size
+                    ModConfigs.NUMBER_OF_NETHER_MYTHRIL_ORE_IN_VEIN)); // Vein size
 
-    private static ConfiguredFeature<?, ?> RUBYL_ORE_CONFIGURED_FEATURE = new ConfiguredFeature
+    private static final ConfiguredFeature<?, ?> RUBY_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
-                    OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.RUBY_ORE.getDefaultState(),
-                    4)); // Vein size
+                    ModConfigs.NUMBER_OF_RUBY_ORE_IN_VEIN)); // Vein size
 
     public static PlacedFeature MYTHRIL_ORE_OVERWORLD_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(20), // Number of veins per chunk
+                    CountPlacementModifier.of(ModConfigs.NUMBER_OF_MYTHRIL_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             )); // Height
@@ -59,7 +60,7 @@ public class ModConfiguredFeatures {
     public static PlacedFeature DEEPSLATE_MYTHRIL_ORE_OVERWORLD_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(DEEPSLATE_MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(20), // Number of veins per chunk
+                    CountPlacementModifier.of(ModConfigs.NUMBER_OF_DEEPSLATE_MYTHRIL_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             )); // Height
@@ -67,15 +68,15 @@ public class ModConfiguredFeatures {
     public static PlacedFeature NETHER_MYTHRIL_ORE_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(NETHER_MYTHRIL_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(10), // Number of veins per chunk
+                    CountPlacementModifier.of(ModConfigs.NUMBER_OF_NETHER_MYTHRIL_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             )); // Height
 
     public static PlacedFeature RUBY_ORE_PLACED_FEATURE = new PlacedFeature(
-            RegistryEntry.of(RUBYL_ORE_CONFIGURED_FEATURE),
+            RegistryEntry.of(RUBY_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(4), // Number of veins per chunk
+                    CountPlacementModifier.of(ModConfigs.NUMBER_OF_RUBY_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             )); // Height
@@ -92,6 +93,7 @@ public class ModConfiguredFeatures {
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier(Thommas.MOD_ID, "overworld_mythril_ore")));
 
+
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "deepslate_overworld_mythril_ore"), DEEPSLATE_MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE);
         Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "deepslate_overworld_mythril_ore"),
@@ -99,6 +101,7 @@ public class ModConfiguredFeatures {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier(Thommas.MOD_ID, "deepslate_overworld_mythril_ore")));
+
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "nether_mythril_ore"), NETHER_MYTHRIL_ORE_CONFIGURED_FEATURE);
@@ -108,11 +111,12 @@ public class ModConfiguredFeatures {
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier(Thommas.MOD_ID, "nether_mythril_ore")));
 
+
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
-                new Identifier(Thommas.MOD_ID, "ruby_ore"), RUBYL_ORE_CONFIGURED_FEATURE);
+                new Identifier(Thommas.MOD_ID, "ruby_ore"), RUBY_ORE_CONFIGURED_FEATURE);
         Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "ruby_ore"),
                 RUBY_ORE_PLACED_FEATURE);
-        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier(Thommas.MOD_ID, "ruby_ore")));
     }

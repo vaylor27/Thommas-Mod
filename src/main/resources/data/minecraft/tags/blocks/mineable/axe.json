@@ -5,6 +5,11 @@
     "thommas:safe_detranium_trapdoor",
     "thommas:pure_detranium",
     "thommas:kaupen_door",
-    "thommas:safe_kaupen_door"
+    "thommas:safe_kaupen_door",
+    "thommas:redwood_wood",
+    "thommas:redwood_planks",
+    "thommas:redwood_log",
+    "thommas:stripped_redwood_wood",
+    "thommas:stripped_redwood_log"
   ]
 }

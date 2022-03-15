@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PI ",
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:string"
+    },
+    "P": {
+      "item": "thommas:iron"
+    }
+  },
+  "result": {
+    "item": "thommas:iron_wool"
+  }
+}

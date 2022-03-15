@@ -29,13 +29,33 @@ public class ModLootTableModifiers {
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 supplier.withPool(poolBuilder.build());
             }
+                //check for leaves loot table.
+            if(GRASS_BLOCK_ID.equals(id)) {
+                // Adds pepper Seeds to the grass loot table.
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.35f)) // Drops 35% of the time
+                        .with(ItemEntry.builder(ModItems.STRAWBERRY_SEEDS))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+                supplier.withPool(poolBuilder.build());
+            }
+
+            if(GRASS_BLOCK_ID.equals(id)) {
+                // Adds pepper Seeds to the grass loot table.
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.35f)) // Drops 35% of the time
+                        .with(ItemEntry.builder(ModItems.GRAPE_SEEDS))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+                supplier.withPool(poolBuilder.build());
+            }
 
             if(IGLOO_STRUCTURE_CHEST_ID.equals(id)) {
-                // Adds a Dowsing Rod into the Igloo Chest with 75% chance.
+                // Adds a Strawberry Seed into the Igloo Chest with 75% chance.
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(1f)) // Drops 100% of the time
-                        .with(ItemEntry.builder(ModItems.DOWSING_ROD))
+                        .with(ItemEntry.builder(ModItems.STRAWBERRY_SEEDS))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 supplier.withPool(poolBuilder.build());
             }

@@ -23,16 +23,16 @@ public class ModBlocks {
             new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block DEEPSLATE_MYTHRIL_ORE = registerBlock("deepslate_mythril_ore",
-            new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(9f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block NETHERRACK_MYTHRIL_ORE = registerBlock("netherrack_mythril_ore",
-            new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(2.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(1.5f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block RAW_MYTHRIL_BLOCK = registerBlock("raw_mythril_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new Block(FabricBlockSettings.of(Material.METAL).strength(5.1f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
-            new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(3.7f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block MYTHRIL_BUTTON = registerBlock("mythril_button",
             new ModStoneButton(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool().noCollision()), ModItemGroup.MYTHRIL_ITEMS);
@@ -77,10 +77,10 @@ public class ModBlocks {
             new FlowerPotBlock(ModBlocks.CORRUPTED_FLOWER, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block MYTHRIL_LAMP = registerBlock("mythril_lamp",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)), ModItemGroup.MYTHRIL_ITEMS);
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).strength(1f).requiresTool().luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block WINTER_WINDOW = registerBlock("winter_window",
-            new GlassBlock(FabricBlockSettings.of(Material.GLASS).strength(0.3f).nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);
+            new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS)), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block GRAPE_VINE = registerBlockWithoutBlockItem("grape_vine",
             new GrapeVine(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);
@@ -89,7 +89,7 @@ public class ModBlocks {
             new StrawberryPlant(FabricBlockSettings.copy(Blocks.POTATOES).nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(3.6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
@@ -102,25 +102,25 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block RUBY_FENCE = registerBlock("ruby_fence",
-            new FenceBlock(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new FenceBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
 
     public static final Block RUBY_BUTTON = registerBlock("ruby_button",
-            new ModStoneButton(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+            new ModStoneButton(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
             new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING,
-                    FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
+                    FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
 
     public static final Block RUBY_DOOR = registerBlock("ruby_door",
             new ModDoor(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
-            new ModTrapdoor(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);
+            new ModTrapdoor(FabricBlockSettings.copy(Blocks.IRON_TRAPDOOR)), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block DICE_BLOCK = registerBlock("dice_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
@@ -145,6 +145,7 @@ public class ModBlocks {
 
     public static final Block REDWOOD_LEAVES = registerBlock("redwood_leaves",
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.MYTHRIL_ITEMS);
+
 
     private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

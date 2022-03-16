@@ -2,6 +2,11 @@
   "replace": false,
   "values": [
     "thommas:detranium_trapdoor",
-    "thommas:safe_detranium_trapdoor"
+    "thommas:safe_detranium_trapdoor",
+    "thommas:mythril_block",
+    "thommas:mythril_ore",
+    "thommas:deepslate_mythril_ore",
+    "thommas:netherrack_mythril_ore",
+    "thommas:raw_mythril_block"
   ]
 }

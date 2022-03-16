@@ -25,6 +25,14 @@
     "thommas:ruby_pressure_plate",
     "thommas:ruby_door",
     "thommas:ruby_trapdoor",
-    "thommas:dice_block"
+    "thommas:dice_block",
+    "thommas:mythril_stairs",
+    "thommas:mythril_slab",
+    "thommas:mythril_fence",
+    "thommas:mythril_fence_gate",
+    "thommas:mythril_button",
+    "thommas:mythril_pressure_plate",
+    "thommas:mythril_wall",
+    "thommas:mythril_lamp"
   ]
 }

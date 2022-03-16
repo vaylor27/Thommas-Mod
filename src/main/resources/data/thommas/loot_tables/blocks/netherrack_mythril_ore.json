@@ -48,7 +48,12 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "thommas:raw_mythril"
+              "name": "thommas:raw_mythril",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 16.0,
+                "max": 29.0
+              }
             }
           ]
         }

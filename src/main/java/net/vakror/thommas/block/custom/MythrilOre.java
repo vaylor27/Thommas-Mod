@@ -17,7 +17,7 @@ public class MythrilOre extends Block {
     }
 
     protected int getExperienceWhenMined(Random random) {
-        return MathHelper.nextInt(random, 4, 9);
+        return MathHelper.nextInt(random, 9, 37);
     }
 
     @Override

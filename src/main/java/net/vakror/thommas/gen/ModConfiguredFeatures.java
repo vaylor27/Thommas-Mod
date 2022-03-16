@@ -1,8 +1,12 @@
 package net.vakror.thommas.gen;
 
+import com.mojang.serialization.Codec;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
@@ -10,19 +14,32 @@ import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.config.ModConfigs;
 
+import java.sql.Ref;
 import java.util.Arrays;
 
 public class ModConfiguredFeatures {
 
     public static void doWorldGen() {
         registerMythrilOres();
+    }
+
+    private static TreeFeatureConfig.Builder builder(Block log, Block leaves, int baseHeight, int firstRandomHeight, int secondRandomHeight, int radius) {
+        return new TreeFeatureConfig.Builder(BlockStateProvider.of(log), new StraightTrunkPlacer(baseHeight, firstRandomHeight, secondRandomHeight), BlockStateProvider.of(leaves), new BlobFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(0), 3), new TwoLayersFeatureSize(1, 0, 1));
+    }
+
+    private static TreeFeatureConfig.Builder redwood() {
+        return builder(ModBlocks.REDWOOD_LOG, ModBlocks.REDWOOD_LEAVES, 4, 2, 0, 2).ignoreVines();
     }
 
     private static final ConfiguredFeature<?, ?> MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE = new ConfiguredFeature<>
@@ -48,6 +65,7 @@ public class ModConfiguredFeatures {
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.RUBY_ORE.getDefaultState(),
                     ModConfigs.NUMBER_OF_RUBY_ORE_IN_VEIN)); // Vein size
+
 
     public static PlacedFeature MYTHRIL_ORE_OVERWORLD_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE),
@@ -92,7 +110,6 @@ public class ModConfiguredFeatures {
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES,
                 RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                         new Identifier(Thommas.MOD_ID, "overworld_mythril_ore")));
-
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "deepslate_overworld_mythril_ore"), DEEPSLATE_MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE);

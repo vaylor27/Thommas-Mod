@@ -59,7 +59,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
     public static final Item DATA_TABLET = registerItem("data_tablet",
-            new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
+            new DataTabletItem(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));
 
     public static final Item DATA_TABLET_MACHINERY = registerItem("data_tablet_machinery",
             new Item(new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS).maxCount(1)));

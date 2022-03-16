@@ -8,6 +8,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
@@ -114,7 +115,6 @@ public class ModBlocks {
     public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
             new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING,
                     FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
-
 
     public static final Block RUBY_DOOR = registerBlock("ruby_door",
             new ModDoor(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool().nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);

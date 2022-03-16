@@ -45,6 +45,16 @@ public class ModLootTableModifiers {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.35f)) // Drops 35% of the time
+                        .with(ItemEntry.builder(ModItems.TOMATO_SEEDS))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+                supplier.withPool(poolBuilder.build());
+            }
+
+            if(GRASS_BLOCK_ID.equals(id)) {
+                // Adds pepper Seeds to the grass loot table.
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.35f)) // Drops 35% of the time
                         .with(ItemEntry.builder(ModItems.GRAPE_SEEDS))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 supplier.withPool(poolBuilder.build());

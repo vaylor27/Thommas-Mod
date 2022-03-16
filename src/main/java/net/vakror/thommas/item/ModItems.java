@@ -114,12 +114,15 @@ public class ModItems {
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
             new ModRubyArmor(ModArmorMaterials.RUBY, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
+
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
             new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
+
     public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings",
             new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
+
     public static final Item RUBY_BOOTS = registerItem("ruby_boots",
             new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
@@ -130,6 +133,10 @@ public class ModItems {
 
     public static final Item PEPPER_SEEDS = registerItem("pepper_seeds",
             new AliasedBlockItem(ModBlocks.PEPPER_PLANT, new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
+
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
+            new AliasedBlockItem(ModBlocks.TOMATO_PLANT,
+                    new FabricItemSettings().group(ModItemGroup.MYTHRIL_ITEMS)));
 
 
     private static Item registerItem(String name, Item item) {

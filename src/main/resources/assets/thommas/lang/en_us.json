@@ -23,6 +23,21 @@
   "item.thommas.grape_seeds": "Grape Seeds",
   "item.thommas.kaupen_bow": "Detranium Bow",
   "item.thommas.strawberry_seeds": "Strawberry Seeds",
+  "item.thommas.ruby": "Ruby",
+  "item.thommas.pepper": "Pepper",
+  "item.thommas.iron_wool": "Iron Wool",
+  "item.thommas.ruby_pickaxe": "Ruby Pickaxe",
+  "item.thommas.ruby_axe": "Ruby Axe",
+  "item.thommas.ruby_shovel": "Ruby Shovel",
+  "item.thommas.ruby_hoe": "Ruby Hoe",
+  "item.thommas.ruby_sword": "Ruby Sword",
+  "item.thommas.ruby_helmet": "Ruby Helmet",
+  "item.thommas.ruby_chestplate": "Ruby Chestplate",
+  "item.thommas.ruby_leggings": "Ruby Leggings",
+  "item.thommas.ruby_boots": "Ruby Boots",
+  "item.thommas.ruby_horse_armor": "Ruby Horse Armor",
+  "item.thommas.pepper_seeds": "Pepper Seeds",
+  "item.thommas.tomato_seeds": "Tomato Seeds",
 
 
   "block.thommas.corrupted_flower": "Corrupted Flower",
@@ -58,27 +73,6 @@
   "block.thommas.redwood_log": "Redwood Log",
   "block.thommas.redwood_leaves": "Redwood Leaves",
   "block.thommas.redwood_sapling": "Redwood Sapling",
-
-
-  "itemGroup.thommas.mythril_items": "All Thommas Items and Blocks",
-
-
-  "item.thommas.ruby": "Ruby",
-  "item.thommas.pepper": "Pepper",
-  "item.thommas.iron_wool": "Iron Wool",
-  "item.thommas.ruby_pickaxe": "Ruby Pickaxe",
-  "item.thommas.ruby_axe": "Ruby Axe",
-  "item.thommas.ruby_shovel": "Ruby Shovel",
-  "item.thommas.ruby_hoe": "Ruby Hoe",
-  "item.thommas.ruby_sword": "Ruby Sword",
-  "item.thommas.ruby_helmet": "Ruby Helmet",
-  "item.thommas.ruby_chestplate": "Ruby Chestplate",
-  "item.thommas.ruby_leggings": "Ruby Leggings",
-  "item.thommas.ruby_boots": "Ruby Boots",
-  "item.thommas.ruby_horse_armor": "Ruby Horse Armor",
-  "item.thommas.pepper_seeds": "Pepper Seeds",
-  "item.thommas.zeus_smelter": "Zeus Smelter",
-
   "block.thommas.ruby_ore": "Ruby Ore",
   "block.thommas.ruby_block": "Ruby Block",
   "block.thommas.status_block": "Status Block",
@@ -90,10 +84,12 @@
   "block.thommas.ruby_pressure_plate": "Ruby Pressure Plate",
   "block.thommas.ruby_door": "Ruby Door",
   "block.thommas.ruby_trapdoor": "Ruby Trapdoor",
-  "block.thommas.test_block": "Test Block",
   "block.thommas.dice_block": "Dice Block",
   "block.thommas.pepper_plant": "Pepper Plant",
-  "block.thommas.lighting_channeler": "Lighting Channeler",
+  "item.thommas.tomato_plant": "Tomato Plant",
+
+
+  "itemGroup.thommas.mythril_items": "All Thommas Items and Blocks",
 
   "enchantment.thommas.the_massacre": "The Massacre"
 }

@@ -9,17 +9,16 @@ import java.util.function.Supplier;
 
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
 
 public enum ModToolMaterials implements ToolMaterial {
     MYTHRIL(MiningLevels.DIAMOND, 738, 14.0F, 2.0F, 28, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.MYTHRIL_INGOT});
+        return Ingredient.ofItems(ModItems.MYTHRIL_INGOT);
     }),
     RUBY(MiningLevels.NETHERITE, 1500, 23.0F, 5.0F, 34, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.RUBY});
+        return Ingredient.ofItems(ModItems.RUBY);
     });
 
     private final int miningLevel;

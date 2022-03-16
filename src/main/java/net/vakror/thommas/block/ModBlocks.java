@@ -75,7 +75,7 @@ public class ModBlocks {
             new ModDoor(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block POTTED_CORRUPTED_FLOWER = registerBlockWithoutBlockItem("potted_corrupted_flower",
-            new FlowerPotBlock(ModBlocks.CORRUPTED_FLOWER, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);
+            new FlowerPotBlock(ModBlocks.CORRUPTED_FLOWER, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block MYTHRIL_LAMP = registerBlock("mythril_lamp",
             new MythrilLamp(FabricBlockSettings.of(Material.METAL).strength(1f).requiresTool().luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)), ModItemGroup.MYTHRIL_ITEMS);
@@ -84,10 +84,10 @@ public class ModBlocks {
             new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS)), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block GRAPE_VINE = registerBlockWithoutBlockItem("grape_vine",
-            new GrapeVine(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);
+            new GrapeVine(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
 
     public static final Block STRAWBERRY_PLANT = registerBlockWithoutBlockItem("strawberry_plant",
-            new StrawberryPlant(FabricBlockSettings.copy(Blocks.POTATOES).nonOpaque()), ModItemGroup.MYTHRIL_ITEMS);
+            new StrawberryPlant(FabricBlockSettings.copy(Blocks.POTATOES).nonOpaque()));
 
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
             new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(3.6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
@@ -126,7 +126,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block PEPPER_PLANT = registerBlockWithoutBlockItem("pepper_plant",
-            new PepperPlantBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()), ModItemGroup.MYTHRIL_ITEMS);
+            new PepperPlantBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()));
 
     public static final Block REDWOOD_LOG = registerBlock("redwood_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.MYTHRIL_ITEMS);
@@ -146,8 +146,11 @@ public class ModBlocks {
     public static final Block REDWOOD_LEAVES = registerBlock("redwood_leaves",
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.MYTHRIL_ITEMS);
 
+    public static final Block TOMATO_PLANT = registerBlockWithoutBlockItem("tomato_plant",
+            new TomatoPlant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()));
 
-    private static Block registerBlockWithoutBlockItem(String name, Block block, ItemGroup group) {
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
     }
 

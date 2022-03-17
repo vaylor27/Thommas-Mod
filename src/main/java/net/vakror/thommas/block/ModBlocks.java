@@ -3,7 +3,6 @@ package net.vakror.thommas.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.block.sapling.OakSaplingGenerator;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -14,6 +13,7 @@ import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.custom.*;
 import net.vakror.thommas.item.ModItemGroup;
+import net.vakror.thommas.sound.ModSounds;
 
 public class ModBlocks {
 
@@ -78,7 +78,10 @@ public class ModBlocks {
             new FlowerPotBlock(ModBlocks.CORRUPTED_FLOWER, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block MYTHRIL_LAMP = registerBlock("mythril_lamp",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL).strength(1f).requiresTool().luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)), ModItemGroup.MYTHRIL_ITEMS);
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+                    .strength(1f).requiresTool()
+                    .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
+                    .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.MYTHRIL_ITEMS);
 
     public static final Block WINTER_WINDOW = registerBlock("winter_window",
             new GlassBlock(FabricBlockSettings.copy(Blocks.GLASS)), ModItemGroup.MYTHRIL_ITEMS);
@@ -148,7 +151,6 @@ public class ModBlocks {
 
     public static final Block TOMATO_PLANT = registerBlockWithoutBlockItem("tomato_plant",
             new TomatoPlant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()));
-
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

@@ -1,0 +1,38 @@
+{
+  "data_tablet_recorded_homepos": {
+    "subtitle": "thommas:data_tablet_recorded_homepos",
+    "sounds": [
+      "thommas:data_tablet_recorded_homepos"
+    ]
+  },
+  "mythril_lamp_break": {
+    "subtitle": "thommas.mythril_lamp_break",
+    "sounds": [
+      "thommas:mythril_lamp_break"
+    ]
+  },
+  "mythril_lamp_step": {
+    "subtitle": "thommas.mythril_lamp_step",
+    "sounds": [
+      "thommas:mythril_lamp_step"
+    ]
+  },
+  "mythril_lamp_place": {
+    "subtitle": "thommas.mythril_lamp_place",
+    "sounds": [
+      "thommas:mythril_lamp_place"
+    ]
+  },
+  "mythril_lamp_hit": {
+    "subtitle": "thommas.mythril_lamp_hit",
+    "sounds": [
+      "thommas:mythril_lamp_hit"
+    ]
+  },
+  "mythril_lamp_fall": {
+    "subtitle": "thommas.mythril_lamp_fall",
+    "sounds": [
+      "thommas:mythril_lamp_fall"
+    ]
+  }
+}

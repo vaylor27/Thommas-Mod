@@ -1,12 +1,10 @@
 package net.vakror.thommas.gen;
 
-import com.mojang.serialization.Codec;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.block.Block;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
@@ -25,10 +23,9 @@ import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.config.ModConfigs;
 
-import java.sql.Ref;
 import java.util.Arrays;
 
-public class ModConfiguredFeatures {
+public class ModOreConfiguredFeatures {
 
     public static void doWorldGen() {
         registerMythrilOres();

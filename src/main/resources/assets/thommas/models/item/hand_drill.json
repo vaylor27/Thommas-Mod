@@ -1,5 +1,5 @@
 {
-  "parent": "item/hand_drill",
+  "parent": "item/handheld",
   "textures": {
     "layer0": "thommas:item/hand_drill"
   }

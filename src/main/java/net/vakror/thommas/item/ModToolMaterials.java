@@ -9,6 +9,7 @@ import java.util.function.Supplier;
 
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
@@ -19,6 +20,18 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
     RUBY(MiningLevels.NETHERITE, 1500, 23.0F, 5.0F, 34, () -> {
         return Ingredient.ofItems(ModItems.RUBY);
+    }),
+    ADAMANTIUM(MiningLevels.NETHERITE, 2452, 43.0F, 2.0F, 36, () -> {
+        return Ingredient.ofItems(ModItems.ADAMANTIUM_INGOT);
+    }),
+    PURE_DIAMOND(MiningLevels.NETHERITE, 4000, 60.0F, 8.0F, 0, () -> {
+        return Ingredient.ofItems(ModItems.PURE_DIAMOND_GEM);
+    }),
+    GEM_STEEL(MiningLevels.NETHERITE, 100000, 100, 20.0F, 49, () -> {
+        return Ingredient.ofItems(ModItems.GEM_STEEL_INGOT);
+    }),
+    HAND_DRILL(MiningLevels.IRON, 1000, 10.0F, 2.0F, 10, () -> {
+        return Ingredient.ofItems(Items.OAK_LOG);
     });
 
     private final int miningLevel;

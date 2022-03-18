@@ -1,0 +1,6 @@
+{
+  "parent": "item/hand_drill",
+  "textures": {
+    "layer0": "thommas:item/hand_drill"
+  }
+}

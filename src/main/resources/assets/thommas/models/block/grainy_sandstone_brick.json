@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "thommas:block/grainy_sandstone_brick"
+    "all": "thommas:block/sandstone_brick"
   }
 }

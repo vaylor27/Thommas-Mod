@@ -584,12 +584,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block TUNGSTEN_ORE = registerBlock("tungsten_ore",
-            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
-
-
-
-
-
+            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ORES);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

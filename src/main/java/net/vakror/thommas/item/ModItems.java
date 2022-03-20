@@ -373,7 +373,7 @@ public class ModItems {
     public static final Item TUNGSTEN_NUGGET = registerItem("tungsten_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
-    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc.json",
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
             new ModMusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().group(ModItemGroup.ITEMS).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {

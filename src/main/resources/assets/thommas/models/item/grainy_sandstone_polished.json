@@ -1,5 +1,5 @@
 {
-   "parent": "thommas:block/grainy_sandstone_polished",
+   "parent": "thommas:block/stone_sandstone_polished",
    "display": {
       "thirdperson": {
          "rotation": [10,-45,170],

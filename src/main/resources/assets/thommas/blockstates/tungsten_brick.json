@@ -1,5 +1,5 @@
 {
-  "variants": {
-    "": { "model": "thommas:block/tungsten_brick"}
-  }
+   "variants": {
+      "normal": {"model":"thommas:tungsten_brick"}
+   }
 }

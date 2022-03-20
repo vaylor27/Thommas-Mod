@@ -29,4 +29,10 @@ public class ModItemGroup {
     public static final ItemGroup NATURE = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "crops"),
             () -> new ItemStack(ModItems.PEPPER));
 
+    public static final ItemGroup BRICKS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "bricks"),
+            () -> new ItemStack(ModBlocks.BRICK_MIXED));
+
+    public static final ItemGroup LAMPS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "lamps"),
+            () -> new ItemStack(ModBlocks.MYTHRIL_LAMP));
+
 }

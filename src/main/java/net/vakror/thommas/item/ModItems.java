@@ -8,6 +8,7 @@ import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.item.custom.*;
+import net.vakror.thommas.sound.ModSounds;
 
 public class ModItems {
     public static final Item MYTHRIL_INGOT = registerItem("mythril_ingot",
@@ -238,7 +239,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item GEM_STEEL_STAFF = registerItem("gem_steel_staff",
-            new ModPickaxe(ModToolMaterials.GEM_STEEL,40 , 40, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new ModStaff(ModToolMaterials.GEM_STEEL,40 , 40, new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item HAND_DRILL = registerItem("hand_drill",
             new ModPickaxe(ModToolMaterials.HAND_DRILL,40 , 40, new FabricItemSettings().group(ModItemGroup.TOOLS)));
@@ -371,6 +372,9 @@ public class ModItems {
 
     public static final Item TUNGSTEN_NUGGET = registerItem("tungsten_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc.json",
+            new ModMusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().group(ModItemGroup.ITEMS).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

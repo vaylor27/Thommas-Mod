@@ -3,6 +3,7 @@ package net.vakror.thommas.item.custom;
 import net.minecraft.block.Block;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
+import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -38,17 +39,18 @@ public class DataTabletItem extends Item {
         player = context.getPlayer();
         assert user != null;
         homepos = user.getPersistentData().getIntArray("homepos");
-        addNbtToDataTablet(context.getStack(), context.getWorld());
+        addNbtToDataTablet(context.getStack(), context.getWorld(), context.getBlockPos(), context.getPlayer());
         return super.useOnBlock(context);
     }
 
-    private void addNbtToDataTablet(ItemStack stack, World world) {
+    private void addNbtToDataTablet(ItemStack stack, World world,BlockPos pos, PlayerEntity player) {
         ItemStack dataTablet = stack;
 
         NbtCompound nbtData = new NbtCompound();
         if (homepos.length != 0) {
             nbtData.putString("thommas.homeposplayer", "Your Homepos is (" + homepos[0] + ", " + homepos[1] + ", " + homepos[2]);
             dataTablet.setNbt(nbtData);
+            world.playSound(player, pos, ModSounds.DATA_TABLET_RECORDED_HOMEPOS, SoundCategory.BLOCKS, 1, 1);
             player.sendSystemMessage(new LiteralText("Your home position has been recorded"), Util.NIL_UUID);
         }
     }

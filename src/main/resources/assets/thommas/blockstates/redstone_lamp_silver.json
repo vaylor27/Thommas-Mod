@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "clicked=false": { "model": "thommas:block/redstone_lamp_silver_off" },
+    "clicked=true": { "model": "thommas:block/redstone_lamp_silver_on" }
+  }
+}

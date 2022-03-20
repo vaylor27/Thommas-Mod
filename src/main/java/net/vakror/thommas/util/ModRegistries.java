@@ -1,5 +1,6 @@
 package net.vakror.thommas.util;
 
+import com.google.gson.stream.JsonReader;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;

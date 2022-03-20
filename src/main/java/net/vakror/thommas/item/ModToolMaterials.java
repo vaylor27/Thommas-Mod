@@ -24,10 +24,10 @@ public enum ModToolMaterials implements ToolMaterial {
     ADAMANTIUM(MiningLevels.NETHERITE, 2452, 43.0F, 2.0F, 36, () -> {
         return Ingredient.ofItems(ModItems.ADAMANTIUM_INGOT);
     }),
-    PURE_DIAMOND(MiningLevels.NETHERITE, 4000, 60.0F, 8.0F, 0, () -> {
+    PURE_DIAMOND(MiningLevels.NETHERITE, 4000, 10.0F, 8.0F, 0, () -> {
         return Ingredient.ofItems(ModItems.PURE_DIAMOND_GEM);
     }),
-    GEM_STEEL(MiningLevels.NETHERITE, 100000, 100, 20.0F, 49, () -> {
+    GEM_STEEL(MiningLevels.NETHERITE, 10000000, 1000.0F, 50.0F, 49, () -> {
         return Ingredient.ofItems(ModItems.GEM_STEEL_INGOT);
     }),
     HAND_DRILL(MiningLevels.IRON, 1000, 10.0F, 2.0F, 10, () -> {

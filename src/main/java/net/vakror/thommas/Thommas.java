@@ -1,5 +1,6 @@
 package net.vakror.thommas;
 
+import com.google.gson.stream.JsonReader;
 import net.fabricmc.api.ModInitializer;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.config.ModConfigs;

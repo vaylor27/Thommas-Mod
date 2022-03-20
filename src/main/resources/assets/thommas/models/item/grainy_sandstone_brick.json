@@ -1,5 +1,5 @@
 {
-   "parent": "thommas:block/stone_sandstone_brick",
+   "parent": "thommas:block/sandstone_brick",
    "display": {
       "thirdperson": {
          "rotation": [10,-45,170],

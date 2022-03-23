@@ -31,14 +31,6 @@ public class ModOreConfiguredFeatures {
         registerMythrilOres();
     }
 
-    private static TreeFeatureConfig.Builder builder(Block log, Block leaves, int baseHeight, int firstRandomHeight, int secondRandomHeight, int radius) {
-        return new TreeFeatureConfig.Builder(BlockStateProvider.of(log), new StraightTrunkPlacer(baseHeight, firstRandomHeight, secondRandomHeight), BlockStateProvider.of(leaves), new BlobFoliagePlacer(ConstantIntProvider.create(radius), ConstantIntProvider.create(0), 3), new TwoLayersFeatureSize(1, 0, 1));
-    }
-
-    private static TreeFeatureConfig.Builder redwood() {
-        return builder(ModBlocks.REDWOOD_LOG, ModBlocks.REDWOOD_LEAVES, 4, 2, 0, 2).ignoreVines();
-    }
-
     private static final ConfiguredFeature<?, ?> MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
@@ -63,6 +55,24 @@ public class ModOreConfiguredFeatures {
                     ModBlocks.RUBY_ORE.getDefaultState(),
                     ModConfigs.NUMBER_OF_RUBY_ORE_IN_VEIN)); // Vein size
 
+    private static final ConfiguredFeature<?, ?> ALUMINUM_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.ALUMINUM_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_ALUMINUM_ORE_IN_VEIN)); // Vein size
+
+    private static final ConfiguredFeature<?, ?> AMBER_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.AMBER_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_AMBER_ORE_IN_VEIN)); // Vein size
+
+    private static final ConfiguredFeature<?, ?> AMETHYST_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.AMETHYST_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_AMETHYST_ORE_IN_VEIN)); // Vein size
+
 
     public static PlacedFeature MYTHRIL_ORE_OVERWORLD_PLACED_FEATURE = new PlacedFeature(
             RegistryEntry.of(MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE),
@@ -76,6 +86,30 @@ public class ModOreConfiguredFeatures {
             RegistryEntry.of(DEEPSLATE_MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE),
             Arrays.asList(
                     CountPlacementModifier.of(ModConfigs.NUMBER_OF_DEEPSLATE_MYTHRIL_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+            )); // Height
+
+    public static PlacedFeature ALUMINUM_ORE_PLACED_FEATURE = new PlacedFeature(
+            RegistryEntry.of(ALUMINUM_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(ModConfigs.NUMBER_OF_ALUMINUM_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+            )); // Height
+
+    public static PlacedFeature AMBER_ORE_PLACED_FEATURE = new PlacedFeature(
+            RegistryEntry.of(AMBER_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(ModConfigs.NUMBER_OF_AMBER_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+            )); // Height
+
+    public static PlacedFeature AMETHYST_ORE_PLACED_FEATURE = new PlacedFeature(
+            RegistryEntry.of(AMETHYST_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(ModConfigs.NUMBER_OF_AMETHYST_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             )); // Height

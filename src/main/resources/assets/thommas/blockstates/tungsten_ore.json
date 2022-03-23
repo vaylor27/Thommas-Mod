@@ -1,5 +1,5 @@
 {
    "variants": {
-      "normal": {"model":"thommas:tungsten_ore"}
+      "": {"model":"thommas:block/tungsten_ore"}
    }
 }

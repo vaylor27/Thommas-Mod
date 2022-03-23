@@ -176,7 +176,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block ALUMINUM_ORE = registerBlock("aluminum_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new MythrilOre(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block AMBER_BLOCK = registerBlock("amber_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
@@ -185,7 +185,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block AMBER_ORE = registerBlock("amber_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new MythrilOre(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block AMETHYST_BLOCK = registerBlock("amethyst_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
@@ -476,7 +476,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
 
     public static final Block STONE_ANDESITE_FLAT = registerBlock("stone_andesite_flat",
-            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
 
     public static final Block STONE_ANDESITE_POLISHED = registerBlock("stone_andesite_polished",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -548,7 +548,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block SULPHUR_ORE = registerBlock("sulphur_ore",
-            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ORES);
 
     public static final Block TIN_BLOCK = registerBlock("tin_block",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -557,7 +557,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block TIN_ORE = registerBlock("tin_ore",
-            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ORES);
 
     public static final Block TITANIUM_BLOCK = registerBlock("titanium_block",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -566,7 +566,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
-            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ORES);
 
     public static final Block TOPAZ_BLOCK = registerBlock("topaz_block",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -575,7 +575,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block TOPAZ_ORE = registerBlock("topaz_ore",
-            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
 
     public static final Block TUNGSTEN_BLOCK = registerBlock("tungsten_block",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);

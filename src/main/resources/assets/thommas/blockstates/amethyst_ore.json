@@ -1,5 +1,5 @@
 {
-  "variants": {
-    "": { "model": "thommas:block/amethyst_ore"}
-  }
+   "variants": {
+      "normal": {"model":"thommas:block/amethyst_ore"}
+   }
 }

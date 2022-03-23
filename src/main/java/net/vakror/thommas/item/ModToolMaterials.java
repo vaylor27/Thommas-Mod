@@ -32,6 +32,10 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
     HAND_DRILL(MiningLevels.IRON, 1000, 10.0F, 2.0F, 10, () -> {
         return Ingredient.ofItems(Items.OAK_LOG);
+    }),
+
+    MAGIC(MiningLevels.DIAMOND, 2600, 14.0F, 2.0F, 30, () -> {
+        return Ingredient.ofItems(ModItems.MAGIC_INGOT);
     });
 
     private final int miningLevel;

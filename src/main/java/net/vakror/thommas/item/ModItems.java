@@ -376,6 +376,21 @@ public class ModItems {
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
             new ModMusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().group(ModItemGroup.ITEMS).maxCount(1)));
 
+    public static final Item MAGIC_INGOT = registerItem("magic_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static final Item MAGIC_AXE = registerItem("magic_axe",
+            new ModSlownessAxe(ModToolMaterials.MAGIC, 4, 0, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item MAGIC_SWORD = registerItem("magic_sword",
+            new ModSlownessSword(ModToolMaterials.MAGIC, 3, 2, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item MAGIC_HOE = registerItem("magic_hoe",
+            new ModHoe(ModToolMaterials.MAGIC, 0, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item MAGIC_SHOVEL = registerItem("magic_shovel",
+            new ModShovel(ModToolMaterials.MAGIC, 0, 0, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);
     }

@@ -12,5 +12,5 @@ public class ModTreePlacedFeatures {
 
     public static final RegistryEntry<PlacedFeature> REDWOOD_PLACED = PlacedFeatures.register("redwood_placed",
             ModTreeConfiguredFeatures.REDWOOD_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0, 0.01F, 5)));
+                    PlacedFeatures.createCountExtraModifier(0, 0.001F, 5)));
 }

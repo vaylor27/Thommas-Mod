@@ -1,17 +1,21 @@
 package net.vakror.thommas.util;
 
-import com.google.gson.stream.JsonReader;
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.BuiltinRegistries;
+import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.command.ReturnHome;
 import net.vakror.thommas.command.SetHome;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
 import net.vakror.thommas.item.ModItems;
+import static net.vakror.thommas.gen.ModOreConfiguredFeatures.*;
+import static net.vakror.thommas.gen.ModOrePlacedFeatures.*;
 
 public class ModRegistries {
     public static void registerModStuffs() {
@@ -20,6 +24,11 @@ public class ModRegistries {
         registerEvents();
         registerStrippables();
         registerFlammableBlock();
+    }
+
+    public static void registerOres() {
+        registerOreConfiguredFeatures();
+        registerOrePlacedFeatures();
     }
 
 
@@ -57,6 +66,34 @@ public class ModRegistries {
         instance.add(ModBlocks.STRIPPED_JACARANDA_WOOD, 5, 5);
         instance.add(ModBlocks.JACARANDA_PLANKS, 5, 20);
         instance.add(ModBlocks.JACARANDA_LEAVES, 30, 60);
+    }
+
+    private static void registerOreConfiguredFeatures() {
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "ruby_ore"), RUBY_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "nether_mythril_ore"), NETHER_MYTHRIL_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "deepslate_overworld_mythril_ore"), DEEPSLATE_MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "overworld_mythril_ore"), MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE);
+    }
+
+    private static void registerOrePlacedFeatures() {
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "overworld_mythril_ore"),
+                MYTHRIL_ORE_OVERWORLD_PLACED_FEATURE);
+
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "deepslate_overworld_mythril_ore"),
+                DEEPSLATE_MYTHRIL_ORE_OVERWORLD_PLACED_FEATURE);
+
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "nether_mythril_ore"),
+                NETHER_MYTHRIL_ORE_PLACED_FEATURE);
+
+        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "ruby_ore"),
+                RUBY_ORE_PLACED_FEATURE);
     }
 
     private static void registerEvents() {

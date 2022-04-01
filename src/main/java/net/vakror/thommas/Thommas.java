@@ -26,8 +26,8 @@ public class Thommas implements ModInitializer {
 		ModRegistries.registerModStuffs();
 		ModPaintings.registerPaintings();
 		ModLootTableModifiers.modifyLootTables();
-		ModOreConfiguredFeatures.doWorldGen();
 		ModEnchantments.registerModEnchantments();
+		ModRegistries.registerOres();
 		ModGen.generateModWorldGen();
 	}
 }

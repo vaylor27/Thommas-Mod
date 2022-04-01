@@ -38,6 +38,8 @@ public class ModRegistries {
     private static void registerStrippables() {
         StrippableBlockRegistry.register(ModBlocks.REDWOOD_LOG, ModBlocks.STRIPPED_REDWOOD_LOG);
         StrippableBlockRegistry.register(ModBlocks.REDWOOD_WOOD, ModBlocks.STRIPPED_REDWOOD_WOOD);
+        StrippableBlockRegistry.register(ModBlocks.JACARANDA_LOG, ModBlocks.STRIPPED_JACARANDA_LOG);
+        StrippableBlockRegistry.register(ModBlocks.JACARANDA_WOOD, ModBlocks.STRIPPED_JACARANDA_WOOD);
     }
 
     private static void registerFlammableBlock() {
@@ -49,6 +51,12 @@ public class ModRegistries {
         instance.add(ModBlocks.STRIPPED_REDWOOD_WOOD, 5, 5);
         instance.add(ModBlocks.REDWOOD_PLANKS, 5, 20);
         instance.add(ModBlocks.REDWOOD_LEAVES, 30, 60);
+        instance.add(ModBlocks.JACARANDA_LOG, 5, 5);
+        instance.add(ModBlocks.STRIPPED_JACARANDA_LOG, 5, 5);
+        instance.add(ModBlocks.JACARANDA_WOOD, 5, 5);
+        instance.add(ModBlocks.STRIPPED_JACARANDA_WOOD, 5, 5);
+        instance.add(ModBlocks.JACARANDA_PLANKS, 5, 20);
+        instance.add(ModBlocks.JACARANDA_LEAVES, 30, 60);
     }
 
     private static void registerEvents() {

@@ -23,6 +23,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.block.custom.*;
+import net.vakror.thommas.gen.JacarandaSaplingGenerator;
+import net.vakror.thommas.gen.RedwoodSaplingGenerator;
 import net.vakror.thommas.item.ModItemGroup;
 import net.vakror.thommas.sound.ModSounds;
 
@@ -585,6 +587,32 @@ public class ModBlocks {
 
     public static final Block TUNGSTEN_ORE = registerBlock("tungsten_ore",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ORES);
+
+    public static final Block JACARANDA_LOG = registerBlock("jacaranda_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
+
+    public static final Block JACARANDA_WOOD = registerBlock("jacaranda_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD)), ModItemGroup.NATURE);
+
+    public static final Block STRIPPED_JACARANDA_LOG = registerBlock("stripped_jacaranda_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG)), ModItemGroup.NATURE);
+
+    public static final Block STRIPPED_JACARANDA_WOOD = registerBlock("stripped_jacaranda_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD)), ModItemGroup.NATURE);
+
+    public static final Block JACARANDA_PLANKS = registerBlock("jacaranda_planks",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)), ModItemGroup.NATURE);
+
+    public static final Block JACARANDA_LEAVES = registerBlock("jacaranda_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block JACARANDA_SAPLING = registerBlock("jacaranda_sapling",
+            new ModSaplingBlock(new JacarandaSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block REDWOOD_SAPLING = registerBlock("redwood_sapling",
+            new ModSaplingBlock(new RedwoodSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

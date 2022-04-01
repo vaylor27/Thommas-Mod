@@ -117,7 +117,7 @@
   "item.thommas.tungsten_dust": "Tungsten Dust",
   "item.thommas.tungsten_ingot": "Tungsten Ingot",
   "item.thommas.tungsten_nugget": "Tungsten Nugget",
-
+  "item.thommas.impostor": "Impostor",
 
 
   "block.thommas.corrupted_flower": "Corrupted Flower",
@@ -153,6 +153,13 @@
   "block.thommas.redwood_log": "Redwood Log",
   "block.thommas.redwood_leaves": "Redwood Leaves",
   "block.thommas.redwood_sapling": "Redwood Sapling",
+  "block.thommas.jacaranda_sapling": "Jacaranda Sapling",
+  "block.thommas.jacaranda_log": "Jacaranda Log",
+  "block.thommas.jacaranda_wood": "Jacaranda Wood",
+  "block.thommas.stripped_jacaranda_log": "Stripped Jacaranda Log",
+  "block.thommas.stripped_jacaranda_wood": "Stripped Jacaranda Wood",
+  "block.thommas.jacaranda_planks": "Jacaranda Planks",
+  "block.thommas.jacaranda_leaves": "Jacaranda Leaves",
   "block.thommas.ruby_ore": "Ruby Ore",
   "block.thommas.ruby_block": "Ruby Block",
   "block.thommas.status_block": "Status Block",

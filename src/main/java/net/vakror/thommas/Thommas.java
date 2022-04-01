@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.config.ModConfigs;
 import net.vakror.thommas.enchantments.ModEnchantments;
+import net.vakror.thommas.gen.ModGen;
 import net.vakror.thommas.gen.ModOreConfiguredFeatures;
 import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.painting.ModPaintings;
@@ -27,5 +28,6 @@ public class Thommas implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 		ModOreConfiguredFeatures.doWorldGen();
 		ModEnchantments.registerModEnchantments();
+		ModGen.generateModWorldGen();
 	}
 }

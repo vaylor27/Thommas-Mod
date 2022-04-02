@@ -7,7 +7,7 @@
          "entries": [
             {
                "type": "minecraft:item",
-               "name": "thommas:redwood_sapling"
+               "name": "thommas:copper_ore"
             }
          ],
          "conditions": [

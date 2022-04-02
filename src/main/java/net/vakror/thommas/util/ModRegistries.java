@@ -14,8 +14,7 @@ import net.vakror.thommas.command.ReturnHome;
 import net.vakror.thommas.command.SetHome;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
 import net.vakror.thommas.item.ModItems;
-import static net.vakror.thommas.gen.ModOreConfiguredFeatures.*;
-import static net.vakror.thommas.gen.ModOrePlacedFeatures.*;
+import static net.vakror.thommas.gen.ModConfiguredFeatures.*;
 
 public class ModRegistries {
     public static void registerModStuffs() {
@@ -28,7 +27,6 @@ public class ModRegistries {
 
     public static void registerOres() {
         registerOreConfiguredFeatures();
-        registerOrePlacedFeatures();
     }
 
 
@@ -80,20 +78,6 @@ public class ModRegistries {
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "overworld_mythril_ore"), MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE);
-    }
-
-    private static void registerOrePlacedFeatures() {
-        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "overworld_mythril_ore"),
-                MYTHRIL_ORE_OVERWORLD_PLACED_FEATURE);
-
-        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "deepslate_overworld_mythril_ore"),
-                DEEPSLATE_MYTHRIL_ORE_OVERWORLD_PLACED_FEATURE);
-
-        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "nether_mythril_ore"),
-                NETHER_MYTHRIL_ORE_PLACED_FEATURE);
-
-        Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, "ruby_ore"),
-                RUBY_ORE_PLACED_FEATURE);
     }
 
     private static void registerEvents() {

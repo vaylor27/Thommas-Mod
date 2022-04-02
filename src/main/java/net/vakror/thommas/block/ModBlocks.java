@@ -23,8 +23,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.block.custom.*;
-import net.vakror.thommas.gen.JacarandaSaplingGenerator;
-import net.vakror.thommas.gen.RedwoodSaplingGenerator;
+import net.vakror.thommas.gen.tree.JacarandaSaplingGenerator;
+import net.vakror.thommas.gen.tree.RedwoodSaplingGenerator;
 import net.vakror.thommas.item.ModItemGroup;
 import net.vakror.thommas.sound.ModSounds;
 

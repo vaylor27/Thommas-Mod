@@ -98,7 +98,7 @@ public class ModRegistries {
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 2),
-                            new ItemStack(ModItems.GRAPE, 32),
+                            new ItemStack(ModItems.GRAPE, 64),
                             6, 2, 0.02f));
                 });
 

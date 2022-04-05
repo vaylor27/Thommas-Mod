@@ -9,6 +9,7 @@ import net.vakror.thommas.gen.ModWorldGen;
 import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.painting.ModPaintings;
 import net.vakror.thommas.recipe.ModRecipes;
+import net.vakror.thommas.util.ModLootTableModifiers;
 import net.vakror.thommas.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +26,7 @@ public class Thommas implements ModInitializer {
 		ModRegistries.registerModStuffs();
 		ModPaintings.registerPaintings();
 		ModEnchantments.registerModEnchantments();
+		ModLootTableModifiers.modifyLootTables();
 		ModBlockEntities.registerAllBlockEntities();
 		ModRecipes.registerRecipes();
 	}

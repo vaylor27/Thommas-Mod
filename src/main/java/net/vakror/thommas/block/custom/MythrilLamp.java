@@ -20,6 +20,12 @@ public class MythrilLamp extends Block {
     }
 
     @Override
+    public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player) {
+
+        super.onBreak(world, pos, state, player);
+    }
+
+    @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if(!world.isClient && hand == Hand.MAIN_HAND) {
             boolean currentState = state.get(CLICKED);

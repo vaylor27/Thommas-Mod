@@ -5,8 +5,9 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.vakror.thommas.block.ModBlocks;
+import net.vakror.thommas.screen.ModScreenHandlers;
+import net.vakror.thommas.screen.MythrilBlasterScreen;
 import net.vakror.thommas.util.ModModelPredicateProvider;
-import org.lwjgl.system.CallbackI;
 
 public class ThommasClientMod implements ClientModInitializer {
     @Override
@@ -28,7 +29,11 @@ public class ThommasClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.JACARANDA_LEAVES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.JACARANDA_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.REDWOOD_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MYTHRIL_BLASTER, RenderLayer.getCutout());
 
         ModModelPredicateProvider.registerModModels();
+
+
+        ScreenRegistry.register(ModScreenHandlers.MYTHRIL_BLASTER_SCREEN_HANDLER, MythrilBlasterScreen::new);
     }
 }

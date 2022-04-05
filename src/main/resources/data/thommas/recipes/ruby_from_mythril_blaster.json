@@ -1,0 +1,15 @@
+{
+  "type": "thommas:mythril_blaster",
+  "ingredients": [
+    {
+      "item": "minecraft:pepper"
+    },
+    {
+      "item": "minecraft:glass_pane"
+    }
+  ],
+  "output": {
+    "item": "thommas:ruby",
+    "count": 9
+  }
+}

@@ -614,6 +614,9 @@ public class ModBlocks {
             new ModSaplingBlock(new RedwoodSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
 
+    public static final Block MYTHRIL_BLASTER = registerBlock("mythril_blaster",
+            new MythrilBlasterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
     }

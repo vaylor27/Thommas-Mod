@@ -2,17 +2,23 @@ package net.vakror.thommas.util;
 
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.village.TradeOffer;
+import net.minecraft.village.VillagerProfession;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.command.ReturnHome;
 import net.vakror.thommas.command.SetHome;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
+import net.vakror.thommas.gen.ModWorldGen;
 import net.vakror.thommas.item.ModItems;
 import static net.vakror.thommas.gen.ModConfiguredFeatures.*;
 
@@ -23,9 +29,12 @@ public class ModRegistries {
         registerEvents();
         registerStrippables();
         registerFlammableBlock();
+        registerCustomTrades();
+        registerOres();
+        ModWorldGen.generateModWorldGen();
     }
 
-    public static void registerOres() {
+    private static void registerOres() {
         registerOreConfiguredFeatures();
     }
 
@@ -82,5 +91,23 @@ public class ModRegistries {
 
     private static void registerEvents() {
         ServerPlayerEvents.COPY_FROM.register(new ModPlayerPlayerEventCopyFrom());
+    }
+
+    private static void registerCustomTrades() {
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 2),
+                            new ItemStack(ModItems.GRAPE, 32),
+                            6, 2, 0.02f));
+                });
+
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 3,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 6),
+                            new ItemStack(ModItems.RUBY, 7),
+                            12, 7, 0.08f));
+                });
     }
 }

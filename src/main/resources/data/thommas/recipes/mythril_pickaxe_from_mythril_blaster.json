@@ -1,0 +1,14 @@
+{
+  "type": "thommas:mythril_blaster",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_pickaxe"
+    },
+    {
+      "item": "thommas:mythril_ingot"
+    }
+  ],
+  "output": {
+    "item": "thommas:mythril_pickaxe"
+  }
+}

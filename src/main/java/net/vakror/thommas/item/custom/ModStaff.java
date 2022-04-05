@@ -31,11 +31,7 @@ public class ModStaff extends PickaxeItem {
             context.getStack().addEnchantment(Enchantments.MENDING, 1);
             context.getStack().addEnchantment(Enchantments.EFFICIENCY, 5);
             context.getStack().addEnchantment(Enchantments.UNBREAKING, 3);
-            int i = 0;
-            while (i < 100) {
-                EntityType.EXPERIENCE_BOTTLE.spawn((ServerWorld) context.getWorld(), null, null, context.getPlayer(), context.getBlockPos(), SpawnReason.TRIGGERED, true, true);
-                i++;
-            }
+                EntityType.PIG.spawn((ServerWorld) context.getWorld(), null, null, context.getPlayer(), context.getBlockPos(), SpawnReason.TRIGGERED, true, true);
         }
         return super.useOnBlock(context);
     }
@@ -55,7 +51,7 @@ public class ModStaff extends PickaxeItem {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(new LiteralText("You can use " + stack.getName() + " " + (stack.getMaxDamage() - stack.getDamage()) + " times"));
+        tooltip.add(new LiteralText("Don't abuse this godly power"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }

@@ -20,5 +20,5 @@ If anyone makes a fork of this mod **DO NOT DELETE THE CREDITS.TXT**.
 **CREEPERS:**
 Drop corrupted dust
 
-**FLOWERS**
+**FLOWERS:**
 Drop modded seeds

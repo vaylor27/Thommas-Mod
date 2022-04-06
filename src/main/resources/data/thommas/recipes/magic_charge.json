@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# ",
+    "P  "
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:dust"
+    },
+    "P": {
+      "item": "thommas:corrupted_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:magic_charge"
+  }
+}

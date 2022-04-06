@@ -9,8 +9,16 @@ If there are two files ending with .jar in the releases secion, the one you shou
 
 # CREDITS
 
-If anyone makes a fork of this mod **DO NOT DELETE THE CREDITS**.**TXT FILE. ADD VAKROR TO IT TOO**.
+If anyone makes a fork of this mod **DO NOT DELETE THE CREDITS.TXT**.
 
 # CRAFTING RECIPES
 
 **IN PROGRESS**
+
+# LOOT TABLES
+
+**CREEPERS:**
+Drop corrupted dust
+
+**FLOWERS:**
+Drop modded seeds

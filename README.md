@@ -1,6 +1,7 @@
 # Thommas-Mod
-A mod named thommas (my sister picked that name) by Vakror Alor
-This is my personal mod but you can donload it too if you want to :)
+A mod named thommas by Vakror Alor
+This is my mod. You can download it too, if you want to :)
+Also, please star this github repo!
 
 # NOTICE
 

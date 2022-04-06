@@ -7,7 +7,7 @@
        "entries": [
          {
            "type": "minecraft:item",
-           "name": "thommas:tomato_seeds"
+           "name": "thommas:tomato"
          }
        ]
      },
@@ -53,7 +53,7 @@
                "chance": 0.02
              }
            ],
-           "name": "thommas:tomato_seeds"
+           "name": "thommas:tomato"
          }
        ],
        "conditions": [

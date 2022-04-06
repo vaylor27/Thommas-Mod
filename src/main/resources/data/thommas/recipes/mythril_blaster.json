@@ -10,10 +10,10 @@
       "item": "thommas:mythril_ingot"
     },
     "I": {
-    "item": "thommas:dust"
-  }
+      "item": "thommas:dust"
+    }
   },
   "result": {
-    "item": "thommas:mythril_lamp"
+    "item": "thommas:mythril_block"
   }
 }

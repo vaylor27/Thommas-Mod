@@ -1,8 +1,8 @@
 package net.vakror.thommas.recipe;
 
-import net.vakror.thommas.Thommas;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.vakror.thommas.Thommas;
 
 public class ModRecipes {
     public static void registerRecipes() {

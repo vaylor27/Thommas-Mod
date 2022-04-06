@@ -38,7 +38,7 @@
                   ]
                 }
               ],
-              "name": "minecraft:redwood_leaves"
+              "name": "thommas:redwood_leaves"
             },
             {
               "type": "minecraft:item",
@@ -57,7 +57,7 @@
                   ]
                 }
               ],
-              "name": "minecraft:redwood_sapling"
+              "name": "thommas:redwood_sapling"
             }
           ]
         }

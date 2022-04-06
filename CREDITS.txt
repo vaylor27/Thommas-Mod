@@ -7,7 +7,6 @@ https://creativecommons.org/licenses/by-sa/4.0/
 Thommas Mod by Vakror:
 Distributed under MIT-License
 
-
 SimpleConfig.java by magistermaks:
 https://github.com/magistermaks/fabric-simplelibs/blob/master/simple-config/SimpleConfig.java
 Distributed under MIT-License

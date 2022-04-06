@@ -72,7 +72,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
 
     public static final Item GRAPE = registerItem("grape",
-            new Item(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.STRAWBERRY)));
+            new Item(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.GRAPE)));
 
     public static final Item GRAPE_SEEDS = registerItem("grape_seeds",
             new AliasedBlockItem(ModBlocks.GRAPE_VINE,
@@ -135,9 +135,8 @@ public class ModItems {
     public static final Item PEPPER_SEEDS = registerItem("pepper_seeds",
             new AliasedBlockItem(ModBlocks.PEPPER_PLANT, new FabricItemSettings().group(ModItemGroup.NATURE)));
 
-    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
-            new AliasedBlockItem(ModBlocks.TOMATO_PLANT,
-                    new FabricItemSettings().group(ModItemGroup.NATURE)));
+    public static final Item TOMATO = registerItem("tomato",
+            new AliasedBlockItem(ModBlocks.TOMATO_PLANT, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.TOMATO)));
 
     public static final Item ADAMANTIUM_DUST = registerItem("adamantium_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));

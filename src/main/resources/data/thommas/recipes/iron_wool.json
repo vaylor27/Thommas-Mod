@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "PI ",
+    "PI "
   ],
   "key": {
     "I": {
       "item": "minecraft:string"
     },
     "P": {
-      "item": "thommas:iron"
+      "item": "minecraft:iron"
     }
   },
   "result": {

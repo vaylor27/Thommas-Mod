@@ -43,7 +43,7 @@ public class ModRegistries {
         Thommas.LOGGER.info("Registering Fuels for " + Thommas.MOD_ID);
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
-        registry.add(ModItems.CORRUPTED_DUST, 200);
+        registry.add(ModItems.CORRUPTED_DUST, 2000);
     }
 
     private static void registerCommands() {

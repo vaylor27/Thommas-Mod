@@ -9,8 +9,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> DOWSING_ROD_DETECTABLE_BLOCKS =
-                createTag("dowsing_rod_detectable_blocks");
+        public static final TagKey<Block> ORES =
+                createCommonTag("thommas_ores");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(Thommas.MOD_ID, name));
@@ -22,8 +22,7 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> MYTHRIL_INGOTS = createCommonTag("mythril_ingots");
-        public static final TagKey<Item> MYTHRIL_NUGGETS = createCommonTag("mythril_nuggets");
+        public static final TagKey<Item> MYTHRIL_ITEMS = createCommonTag("mythril_items");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier(Thommas.MOD_ID, name));

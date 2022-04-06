@@ -47,7 +47,7 @@ public class ModLootTableModifiers {
                 FabricLootPoolBuilder PoolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.24f)) // Drops 24% of the time
-                        .with(ItemEntry.builder(ModItems.TOMATO_SEEDS))
+                        .with(ItemEntry.builder(ModItems.TOMATO))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 supplier.withPool(PoolBuilder.build());
             }

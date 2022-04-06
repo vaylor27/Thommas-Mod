@@ -124,7 +124,6 @@ public class ModBlocks {
     public static final Block RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
             new FenceGateBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
-
     public static final Block RUBY_BUTTON = registerBlock("ruby_button",
             new ModStoneButton(FabricBlockSettings.of(Material.STONE).strength(2f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 

@@ -1,19 +1,13 @@
 package net.vakror.thommas.block.entity;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.vakror.thommas.item.ModItems;
-import net.vakror.thommas.item.inventory.ImplementedInventory;
-import net.vakror.thommas.recipe.MythrilBlasterRecipe;
-import net.vakror.thommas.screen.MythrilBlasterScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
@@ -23,6 +17,9 @@ import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.vakror.thommas.item.inventory.ImplementedInventory;
+import net.vakror.thommas.recipe.MythrilBlasterRecipe;
+import net.vakror.thommas.screen.MythrilBlasterScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;

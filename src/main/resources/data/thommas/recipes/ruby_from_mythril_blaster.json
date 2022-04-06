@@ -2,7 +2,7 @@
   "type": "thommas:mythril_blaster",
   "ingredients": [
     {
-      "item": "minecraft:pepper"
+      "item": "thommas:pepper"
     },
     {
       "item": "minecraft:glass_pane"

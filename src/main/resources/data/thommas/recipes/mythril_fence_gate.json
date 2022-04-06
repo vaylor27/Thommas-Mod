@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "P#P",
-    "P#P",
+    "P#P"
   ],
   "key": {
     "#": {
-      "item": "thommas:stick"
+      "item": "minecraft:stick"
     },
     "P": {
       "item": "thommas:mythril_ingot"

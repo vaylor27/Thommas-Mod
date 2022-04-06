@@ -2,6 +2,7 @@ package net.vakror.thommas.util;
 
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
+import net.minecraft.item.Items;
 import net.vakror.thommas.item.ModItems;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -17,6 +18,8 @@ public class ModLootTableModifiers {
             = new Identifier("minecraft", "chests/igloo_chest");
     private static final Identifier CREEPER_ID
             = new Identifier("minecraft", "entities/creeper");
+    private static final Identifier COW_ID
+            = new Identifier("minecraft", "entities/cow");
 
     public static void modifyLootTables() {
         LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
@@ -62,8 +65,18 @@ public class ModLootTableModifiers {
                 supplier.withPool(poolBuilder.build());
             }
 
+            if(COW_ID.equals(id)) {
+                // Adds an End Rod into the Igloo Chest with 100% chance.
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.001f)) // Drops 1 in 1000 times
+                        .with(ItemEntry.builder(Items.END_ROD))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f)).build());
+                supplier.withPool(poolBuilder.build());
+            }
+
             if(CREEPER_ID.equals(id)) {
-                // Adds a Lilac Flower Bulb to Creepers.
+                // Adds a Corrupted Dust to Creepers.
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.24f)) // Drops 24% of the time

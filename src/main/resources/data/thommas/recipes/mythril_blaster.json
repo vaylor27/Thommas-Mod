@@ -3,7 +3,7 @@
   "pattern": [
     "###",
     "#I#",
-    "###"
+    "#X#"
   ],
   "key": {
     "#": {
@@ -11,6 +11,9 @@
     },
     "I": {
       "item": "thommas:dust"
+    },
+    "X": {
+      "item": "minecraft:end_rod"
     }
   },
   "result": {

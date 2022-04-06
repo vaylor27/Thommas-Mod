@@ -23,6 +23,9 @@ public class ModItems {
     public static final Item CORRUPTED_DUST = registerItem("corrupted_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
 
+    public static final Item MAGIC_CHARGE = registerItem("magic_charge",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
+
     public static final Item STRAWBERRY = registerItem("strawberry",
             new Item(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.STRAWBERRY)));
 

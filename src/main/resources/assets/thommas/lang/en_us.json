@@ -117,7 +117,7 @@
   "item.thommas.tungsten_dust": "Tungsten Dust",
   "item.thommas.tungsten_ingot": "Tungsten Ingot",
   "item.thommas.tungsten_nugget": "Tungsten Nugget",
-  "item.thommas.impostor": "Impostor",
+  "item.thommas.magic_charge": "Magic Charge",
 
 
   "block.thommas.corrupted_flower": "Corrupted Flower",
@@ -299,6 +299,7 @@
   "block.thommas.pure_diamond_block": "Pure Diamond Block",
   "block.thommas.pure_diamond_brick": "Pure Diamond Brick",
   "block.thommas.mythril_blaster": "Mythril Blaster",
+  "block.thommas.magic_block": "Magic Block",
 
   "item.thommas.bar_brawl_music_disc": "Bar Brawl",
   "item.thommas.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",

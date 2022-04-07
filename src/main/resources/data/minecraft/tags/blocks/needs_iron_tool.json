@@ -22,6 +22,17 @@
     "thommas:redwood_wood",
     "thommas:stripped_redwood_log",
     "thommas:stripped_redwood_wood",
-    "thommas:redwood_planks"
+    "thommas:redwood_planks",
+    "thommas:mythril_ore",
+    "thommas:deepslate_mythril_ore",
+    "thommas:netherrack_mythril_ore",
+    "thommas:pure_detranium",
+    "thommas:ruby_ore",
+    "thommas:aluminum_ore",
+    "thommas:amber_ore",
+    "thommas:amethyst_ore",
+    "thommas:bitumen_ore",
+    "thommas:chlorophyte_ore",
+    "thommas:copper_ore"
   ]
 }

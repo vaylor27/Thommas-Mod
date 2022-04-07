@@ -1,0 +1,15 @@
+{
+  "type": "thommas:mythril_blaster",
+  "ingredients": [
+    {
+      "item": "thommas:ruby_ore"
+    },
+    {
+      "item": "thommas:magic_charge"
+    }
+  ],
+  "output": {
+    "item": "thommas:ruby",
+    "count": 9
+  }
+}

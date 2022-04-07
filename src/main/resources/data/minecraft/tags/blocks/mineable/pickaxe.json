@@ -33,6 +33,17 @@
     "thommas:mythril_button",
     "thommas:mythril_pressure_plate",
     "thommas:mythril_wall",
-    "thommas:mythril_lamp"
+    "thommas:mythril_lamp",
+    "thommas:mythril_ore",
+    "thommas:deepslate_mythril_ore",
+    "thommas:netherrack_mythril_ore",
+    "thommas:pure_detranium",
+    "thommas:ruby_ore",
+    "thommas:aluminum_ore",
+    "thommas:amber_ore",
+    "thommas:amethyst_ore",
+    "thommas:bitumen_ore",
+    "thommas:chlorophyte_ore",
+    "thommas:copper_ore"
   ]
 }

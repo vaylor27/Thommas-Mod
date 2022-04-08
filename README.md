@@ -9,7 +9,9 @@ If making a fork of this mod **DO NOT DELETE THE CREDITS.TXT**.
 
 # CRAFTING RECIPES
 
-**IN PROGRESS**
+There are **over 600 recipes** added by this mod!
+
+**IMAGES IN PROGRESS**
 
 # LOOT TABLES
 

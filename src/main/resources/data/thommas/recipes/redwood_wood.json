@@ -1,12 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "PP ",
-    "PP ",
-    "   "
+    "II ",
+    "II "
   ],
   "key": {
-    "P": {
+    "I": {
       "item": "thommas:redwood_log"
     }
   },

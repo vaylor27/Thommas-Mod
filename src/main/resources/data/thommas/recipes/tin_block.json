@@ -1,15 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "I"
+    "III",
+    "III",
+    "III"
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommastin_ingot"
     }
   },
   "result": {
-    "item": "thommasmythril_nugget",
-    "count": 9
+    "item": "thommastin_block",
+    "count": 1
   }
 }

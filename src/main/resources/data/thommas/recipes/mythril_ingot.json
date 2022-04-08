@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#"
+    "I"
   ],
   "key": {
-    "#": {
-      "item": "thommas:mythril_block"
+    "I": {
+      "item": "thommasmythril_block"
     }
   },
   "result": {
-    "item": "thommas:mythril_ingot",
+    "item": "thommasmythril_ingot",
     "count": 9
   }
 }

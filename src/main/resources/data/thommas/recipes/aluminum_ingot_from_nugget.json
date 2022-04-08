@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommasaluminum_nugget"
     }
   },
   "result": {
-    "item": "thommasmythril_block",
+    "item": "thommasaluminum_ingot",
     "count": 1
   }
 }

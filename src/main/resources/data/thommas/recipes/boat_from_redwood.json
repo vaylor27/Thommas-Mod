@@ -1,15 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "I"
+    "I I",
+    "III"
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommas:redwood_planks"
     }
   },
   "result": {
-    "item": "thommasmythril_nugget",
-    "count": 9
+    "item": "minecraft:boat",
+    "count": 1
   }
 }

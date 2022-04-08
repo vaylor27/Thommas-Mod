@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommashellstone_ingot"
     }
   },
   "result": {
-    "item": "thommasmythril_nugget",
+    "item": "thommashellstone_nugget",
     "count": 9
   }
 }

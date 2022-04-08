@@ -1,0 +1,14 @@
+{
+   "type": "thommas:mythril_blaster",
+   "ingredients": [
+      {
+         "item": "thommas:sapphire_ore"
+      },
+      {
+         "item": "thommas:magic_charge"
+      }
+   ],
+   "output": {
+      "item": "thommas:sapphire_gem"
+   }
+}

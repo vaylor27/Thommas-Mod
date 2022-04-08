@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommasorichalcum_block"
     }
   },
   "result": {
-    "item": "thommasmythril_nugget",
+    "item": "thommasorichalcum_ingot",
     "count": 9
   }
 }

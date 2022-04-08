@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommastungsten_block"
     }
   },
   "result": {
-    "item": "thommasmythril_nugget",
+    "item": "thommastungsten_ingot",
     "count": 9
   }
 }

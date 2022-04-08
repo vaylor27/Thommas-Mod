@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "III",
-    "III",
+    "I I",
     "III"
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommas:jacaranda_planks"
     }
   },
   "result": {
-    "item": "thommasmythril_block",
+    "item": "minecraft:chest",
     "count": 1
   }
 }

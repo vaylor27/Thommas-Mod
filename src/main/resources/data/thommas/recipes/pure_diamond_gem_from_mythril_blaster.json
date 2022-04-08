@@ -1,0 +1,14 @@
+{
+   "type": "thommas:mythril_blaster",
+   "ingredients": [
+      {
+         "item": "thommas:pure_diamond_ore"
+      },
+      {
+         "item": "thommas:magic_charge"
+      }
+   ],
+   "output": {
+      "item": "thommas:pure_diamond_gem"
+   }
+}

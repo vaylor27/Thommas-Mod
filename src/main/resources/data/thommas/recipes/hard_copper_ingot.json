@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommashard_copper_block"
     }
   },
   "result": {
-    "item": "thommasmythril_nugget",
+    "item": "thommashard_copper_ingot",
     "count": 9
   }
 }

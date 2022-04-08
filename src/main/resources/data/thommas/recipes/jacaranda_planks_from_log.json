@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommas:jacaranda_log"
     }
   },
   "result": {
-    "item": "thommasmythril_nugget",
-    "count": 9
+    "item": "thommas:jacaranda_planks",
+    "count": 4
   }
 }

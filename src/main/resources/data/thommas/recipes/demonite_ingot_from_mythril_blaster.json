@@ -1,0 +1,14 @@
+{
+   "type": "thommas:mythril_blaster",
+   "ingredients": [
+      {
+         "item": "thommas:demonite_ore"
+      },
+      {
+         "item": "thommas:magic_charge"
+      }
+   ],
+   "output": {
+      "item": "thommas:demonite_ingot"
+   }
+}

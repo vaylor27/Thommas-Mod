@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommaschlorophyte_ingot"
     }
   },
   "result": {
-    "item": "thommasmythril_block",
+    "item": "thommaschlorophyte_block",
     "count": 1
   }
 }

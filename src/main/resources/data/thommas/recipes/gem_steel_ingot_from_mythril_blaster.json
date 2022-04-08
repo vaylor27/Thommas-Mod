@@ -1,0 +1,14 @@
+{
+   "type": "thommas:mythril_blaster",
+   "ingredients": [
+      {
+         "item": "thommas:gem_steel_ore"
+      },
+      {
+         "item": "thommas:magic_charge"
+      }
+   ],
+   "output": {
+      "item": "thommas:gem_steel_ingot"
+   }
+}

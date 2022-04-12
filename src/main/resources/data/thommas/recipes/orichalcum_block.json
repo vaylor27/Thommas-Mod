@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasorichalcum_ingot"
+      "item": "thommas:orichalcum_ingot"
     }
   },
   "result": {
-    "item": "thommasorichalcum_block",
+    "item": "thommas:orichalcum_block",
     "count": 1
   }
 }

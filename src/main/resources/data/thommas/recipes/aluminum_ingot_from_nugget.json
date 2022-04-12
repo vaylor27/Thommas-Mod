@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasaluminum_nugget"
+      "item": "thommas:aluminum_nugget"
     }
   },
   "result": {
-    "item": "thommasaluminum_ingot",
+    "item": "thommas:aluminum_ingot",
     "count": 1
   }
 }

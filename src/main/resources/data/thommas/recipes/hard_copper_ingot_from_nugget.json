@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommashard_copper_nugget"
+      "item": "thommas:copper_nugget"
     }
   },
   "result": {
-    "item": "thommashard_copper_ingot",
+    "item": "thommas:hard_copper_ingot",
     "count": 1
   }
 }

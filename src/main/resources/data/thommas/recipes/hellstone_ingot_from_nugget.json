@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommashellstone_nugget"
+      "item": "thommas:hellstone_nugget"
     }
   },
   "result": {
-    "item": "thommashellstone_ingot",
+    "item": "thommas:hellstone_ingot",
     "count": 1
   }
 }

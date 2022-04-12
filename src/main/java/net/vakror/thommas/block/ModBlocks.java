@@ -576,7 +576,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block TOPAZ_ORE = registerBlock("topaz_ore",
-            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.ORES);
 
     public static final Block TUNGSTEN_BLOCK = registerBlock("tungsten_block",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -617,7 +617,7 @@ public class ModBlocks {
             new MythrilBlasterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.BLOCKS);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

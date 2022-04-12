@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommaschlorophyte_block"
+      "item": "thommas:chlorophyte_block"
     }
   },
   "result": {
-    "item": "thommaschlorophyte_ingot",
+    "item": "thommas:chlorophyte_ingot",
     "count": 9
   }
 }

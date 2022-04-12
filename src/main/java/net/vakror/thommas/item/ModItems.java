@@ -66,13 +66,13 @@ public class ModItems {
             new DataTabletItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
 
     public static final Item DATA_TABLET_MACHINERY = registerItem("data_tablet_machinery",
-            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).maxCount(1)));
 
     public static final Item DATA_TABLET_SCREEN = registerItem("data_tablet_screen",
-            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).maxCount(1)));
 
     public static final Item DATA_TABLET_CASING = registerItem("data_tablet_casing",
-            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).maxCount(1)));
 
     public static final Item GRAPE = registerItem("grape",
             new Item(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.GRAPE)));
@@ -376,7 +376,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
-            new ModMusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().group(ModItemGroup.ITEMS).maxCount(1)));
+            new ModMusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
 
     public static final Item MAGIC_INGOT = registerItem("magic_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));

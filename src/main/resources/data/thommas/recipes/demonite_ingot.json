@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasdemonite_block"
+      "item": "thommas:demonite_block"
     }
   },
   "result": {
-    "item": "thommasdemonite_ingot",
+    "item": "thommas:demonite_ingot",
     "count": 9
   }
 }

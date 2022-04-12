@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommaslead_ingot"
+      "item": "thommas:lead_ingot"
     }
   },
   "result": {
-    "item": "thommaslead_block",
+    "item": "thommas:lead_block",
     "count": 1
   }
 }

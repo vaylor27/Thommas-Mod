@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommaslead_nugget"
+      "item": "thommas:lead_nugget"
     }
   },
   "result": {
-    "item": "thommaslead_ingot",
+    "item": "thommas:lead_ingot",
     "count": 1
   }
 }

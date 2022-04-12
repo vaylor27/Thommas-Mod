@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasbronze_ingot"
+      "item": "thommas:bronze_ingot"
     }
   },
   "result": {
-    "item": "thommasbronze_block",
+    "item": "thommas:bronze_block",
     "count": 1
   }
 }

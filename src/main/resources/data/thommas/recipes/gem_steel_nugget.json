@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasgem_steel_ingot"
+      "item": "thommas:gem_steel_ingot"
     }
   },
   "result": {
-    "item": "thommasgem_steel_nugget",
+    "item": "thommas:gem_steel_nugget",
     "count": 9
   }
 }

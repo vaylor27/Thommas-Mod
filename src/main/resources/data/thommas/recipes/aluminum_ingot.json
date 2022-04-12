@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasaluminum_block"
+      "item": "thommas:aluminum_block"
     }
   },
   "result": {
-    "item": "thommasaluminum_ingot",
+    "item": "thommas:aluminum_ingot",
     "count": 9
   }
 }

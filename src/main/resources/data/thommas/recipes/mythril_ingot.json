@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_block"
+      "item": "thommas:mythril_block"
     }
   },
   "result": {
-    "item": "thommasmythril_ingot",
+    "item": "thommas:mythril_ingot",
     "count": 9
   }
 }

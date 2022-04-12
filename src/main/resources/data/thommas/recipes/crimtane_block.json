@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommascrimtane_ingot"
+      "item": "thommas:crimtane_ingot"
     }
   },
   "result": {
-    "item": "thommascrimtane_block",
+    "item": "thommas:crimtane_block",
     "count": 1
   }
 }

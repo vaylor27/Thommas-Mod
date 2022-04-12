@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmeteorite_ingot"
+      "item": "thommas:meteorite_ingot"
     }
   },
   "result": {
-    "item": "thommasmeteorite_nugget",
+    "item": "thommas:meteorite_nugget",
     "count": 9
   }
 }

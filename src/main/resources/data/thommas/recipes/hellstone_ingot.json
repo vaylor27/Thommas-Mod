@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommashellstone_block"
+      "item": "thommas:hellstone_block"
     }
   },
   "result": {
-    "item": "thommashellstone_ingot",
+    "item": "thommas:hellstone_ingot",
     "count": 9
   }
 }

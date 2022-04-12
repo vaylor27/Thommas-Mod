@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommascrimtane_nugget"
+      "item": "thommas:crimtane_nugget"
     }
   },
   "result": {
-    "item": "thommascrimtane_ingot",
+    "item": "thommas:crimtane_ingot",
     "count": 1
   }
 }

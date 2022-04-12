@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasbronze_block"
+      "item": "thommas:bronze_block"
     }
   },
   "result": {
-    "item": "thommasbronze_ingot",
+    "item": "thommas:bronze_ingot",
     "count": 9
   }
 }

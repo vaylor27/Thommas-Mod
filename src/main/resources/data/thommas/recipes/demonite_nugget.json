@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasdemonite_ingot"
+      "item": "thommas:demonite_ingot"
     }
   },
   "result": {
-    "item": "thommasdemonite_nugget",
+    "item": "thommas:demonite_nugget",
     "count": 9
   }
 }

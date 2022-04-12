@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasplatinum_block"
+      "item": "thommas:platinum_block"
     }
   },
   "result": {
-    "item": "thommasplatinum_ingot",
+    "item": "thommas:platinum_ingot",
     "count": 9
   }
 }

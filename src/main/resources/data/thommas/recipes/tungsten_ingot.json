@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommastungsten_block"
+      "item": "thommas:tungsten_block"
     }
   },
   "result": {
-    "item": "thommastungsten_ingot",
+    "item": "thommas:tungsten_ingot",
     "count": 9
   }
 }

@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommasmythril_ingot"
+      "item": "thommas:mythril_ingot"
     }
   },
   "result": {
-    "item": "thommasmythril_block",
+    "item": "thommas:mythril_block",
     "count": 1
   }
 }

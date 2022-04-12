@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommaslumenite_nugget"
+      "item": "thommas:lumenite_nugget"
     }
   },
   "result": {
-    "item": "thommaslumenite_ingot",
+    "item": "thommas:lumenite_ingot",
     "count": 1
   }
 }

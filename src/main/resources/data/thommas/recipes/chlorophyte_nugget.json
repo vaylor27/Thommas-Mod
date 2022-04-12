@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommaschlorophyte_ingot"
+      "item": "thommas:chlorophyte_ingot"
     }
   },
   "result": {
-    "item": "thommaschlorophyte_nugget",
+    "item": "thommas:chlorophyte_nugget",
     "count": 9
   }
 }

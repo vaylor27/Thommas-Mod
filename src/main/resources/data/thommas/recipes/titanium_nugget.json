@@ -5,11 +5,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommastitanium_ingot"
+      "item": "thommas:titanium_ingot"
     }
   },
   "result": {
-    "item": "thommastitanium_nugget",
+    "item": "thommas:titanium_nugget",
     "count": 9
   }
 }

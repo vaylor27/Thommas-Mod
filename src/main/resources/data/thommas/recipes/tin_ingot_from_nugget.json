@@ -7,11 +7,11 @@
   ],
   "key": {
     "I": {
-      "item": "thommastin_nugget"
+      "item": "thommas:tin_nugget"
     }
   },
   "result": {
-    "item": "thommastin_ingot",
+    "item": "thommas:tin_ingot",
     "count": 1
   }
 }

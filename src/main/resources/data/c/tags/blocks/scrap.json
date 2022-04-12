@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:gravel",
+    "minecraft:dirt",
+    "minecraft:grass_block",
+    "minecraft:podzol",
+    "minecraft:coarse_dirt",
+    "minecraft:mycelium",
+    "minecraft:rooted_dirt",
+    "minecraft:moss_block",
+    "minecraft:water",
+    "minecraft:stone",
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:andesite",
+    "minecraft:tuff",
+    "minecraft:deepslate",
+    "minecraft:air",
+    "minecraft:cave_air"
+  ]
+}

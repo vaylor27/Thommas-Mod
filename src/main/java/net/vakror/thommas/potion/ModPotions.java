@@ -1,6 +1,7 @@
 package net.vakror.thommas.potion;
 
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
 import net.minecraft.util.Identifier;
@@ -27,5 +28,8 @@ public class ModPotions {
     private static void registerPotionRecipes() {
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, ModItems.MYTHRIL_INGOT,
                 ModPotions.FREEZE_POTION);
+
+        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.AWKWARD, Items.DIRT,
+                Potions.EMPTY);
     }
 }

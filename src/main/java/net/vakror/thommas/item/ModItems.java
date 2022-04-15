@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
+import net.vakror.thommas.fluid.ModFluids;
 import net.vakror.thommas.item.custom.*;
 import net.vakror.thommas.sound.ModSounds;
 
@@ -392,6 +393,9 @@ public class ModItems {
 
     public static final Item MAGIC_SHOVEL = registerItem("magic_shovel",
             new ModShovel(ModToolMaterials.MAGIC, 0, 0, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item HONEY_BUCKET = registerItem("honey_bucket",
+            new BucketItem(ModFluids.HONEY_STILL, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

@@ -24,8 +24,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.block.custom.*;
 import net.vakror.thommas.fluid.ModFluids;
-import net.vakror.thommas.gen.tree.JacarandaSaplingGenerator;
-import net.vakror.thommas.gen.tree.RedwoodSaplingGenerator;
+import net.vakror.thommas.gen.tree.sapling.JacarandaSaplingGenerator;
+import net.vakror.thommas.gen.tree.sapling.RedwoodSaplingGenerator;
 import net.vakror.thommas.item.ModItemGroup;
 import net.vakror.thommas.sound.ModSounds;
 
@@ -623,6 +623,11 @@ public class ModBlocks {
     public static final Block HONEY_FLUID_BLOCK = registerBlockWithoutBlockItem("honey_fluid_block",
             new ModFluidBlock(ModFluids.HONEY_STILL, FabricBlockSettings.of(Material.WATER)
                     .noCollision().nonOpaque().dropsNothing()));
+
+    public static final Block CITRINE_BLOCK = registerBlock("citrine_block",
+            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.BLOCKS);
+
+    
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

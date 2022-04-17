@@ -17,6 +17,10 @@
     "minecraft:tuff",
     "minecraft:deepslate",
     "minecraft:air",
-    "minecraft:cave_air"
+    "minecraft:cave_air",
+    "minecraft:lava",
+    "minecraft:cobblestone",
+    "minecraft:sand",
+    "minecraft:sandstone"
   ]
 }

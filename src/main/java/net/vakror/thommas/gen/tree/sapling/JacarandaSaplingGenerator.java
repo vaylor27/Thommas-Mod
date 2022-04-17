@@ -1,4 +1,4 @@
-package net.vakror.thommas.gen.tree;
+package net.vakror.thommas.gen.tree.sapling;
 
 import net.minecraft.block.sapling.SaplingGenerator;
 import net.minecraft.util.registry.RegistryEntry;

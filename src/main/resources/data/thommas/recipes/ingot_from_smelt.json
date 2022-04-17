@@ -1,0 +1,10 @@
+{
+   "type": "minecraft:smelting",
+   "group": "coal",
+   "ingredient": {
+      "item": "thommas:mythril_ore"
+   },
+   "result": "thommas:mythril_ingot",
+   "experience": 1.0,
+   "cookingtime": 200
+}

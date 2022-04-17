@@ -13,6 +13,7 @@ import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
+import net.minecraft.world.gen.feature.PlacedFeature;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.command.ReturnHome;
@@ -23,6 +24,7 @@ import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.villager.ModVillagers;
 
 import static net.vakror.thommas.gen.ModConfiguredFeatures.*;
+import static net.vakror.thommas.gen.ModPlacedFeatures.*;
 
 public class ModRegistries {
     public static void registerModStuffs() {
@@ -79,6 +81,10 @@ public class ModRegistries {
 
     private static void registerOreConfiguredFeatures() {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "aluminum_ore"), ALUMINUM_ORE_CONFIGURED_FEATURE);
+
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "ruby_ore"), RUBY_ORE_CONFIGURED_FEATURE);
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
@@ -89,6 +95,69 @@ public class ModRegistries {
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "overworld_mythril_ore"), MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "amethyst_ore"), AMETHYST_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "amber_ore"), AMBER_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "bitumen_ore"), BITUMEN_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "chlorophyte_ore"), CHLOROPHYTE_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "copper_ore"), COPPER_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "crimtane_ore"), CRIMTANE_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "demonite_ore"), DEMONITE_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "pure_diamond_ore"), PURE_DIAMOND_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "pure_emerald_ore"), PURE_EMERALD_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "lead_ore"), LEAD_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "lumenite_ore"), LUMENITE_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "meteorite_ore"), METEORITE_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "platinum_ore"), PLATINUM_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "saltpeter_ore"), SALTPETER_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "sapphire_ore"), SAPPHIRE_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "silver_ore"), SILVER_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "sulphur_ore"), SULPHUR_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "tin_ore"), TIN_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "titanium_ore"), TITANIUM_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "topaz_ore"), TOPAZ_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "tungsten_ore"), TUNGSTEN_ORE_CONFIGURED_FEATURE);
     }
 
     private static void registerEvents() {

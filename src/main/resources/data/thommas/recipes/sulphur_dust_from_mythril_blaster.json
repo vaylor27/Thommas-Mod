@@ -2,13 +2,13 @@
    "type": "thommas:mythril_blaster",
    "ingredients": [
       {
-         "item": "thommas:copper_ore"
+         "item": "thommas:sulphur_ore"
       },
       {
          "item": "thommas:magic_charge"
       }
    ],
    "output": {
-      "item": "thommas:hard_copper_ingot"
+      "item": "thommas:sulphur_dust"
    }
 }

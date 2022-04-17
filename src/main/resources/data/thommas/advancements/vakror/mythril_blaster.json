@@ -1,0 +1,34 @@
+{
+  "parent": "thommas:vakror/mythril",
+  "display": {
+    "icon": {
+      "item": "thommas:mythril_blaster"
+    },
+    "title": {
+      "translate": "advancements.vakror.blaster.title"
+    },
+    "description": {
+      "translate": "advancements.vakror.blaster.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "rewards": {
+      "experience": 40
+    }
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thommas:mythril_blaster"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -252,7 +252,7 @@
   "block.thommas.sapphire_ore": "Sapphire Ore",
   "block.thommas.silver_block": "Silver Block",
   "block.thommas.silver_brick": "Silver Brick",
-  "block.thommas.silver_ore": "Silver Gem",
+  "block.thommas.silver_ore": "Silver Ore",
   "block.thommas.smooth_amethyst_block": "Smooth Amethyst Block",
   "block.thommas.steel_block": "Smooth Amethyst Brick",
   "block.thommas.steel_brick": "Smooth Amethyst Ore",
@@ -300,6 +300,19 @@
   "block.thommas.pure_diamond_brick": "Pure Diamond Brick",
   "block.thommas.mythril_blaster": "Mythril Blaster",
   "block.thommas.magic_block": "Magic Block",
+  "block.thommas.citrine_block": "Citrine Block",
+  "block.thommas.demonite_brick": "Demonite Brick",
+  "item.thommas.tomato": "Tomato",
+  "item.thommas.magic_ingot": "Magic Ingot",
+  "item.thommas.magic_shovel": "Magic Shovel",
+  "item.thommas.magic_sword": "Magic Sword",
+  "item.thommas.magic_hoe": "Magic Hoe",
+  "item.thommas.magic_axe": "Magic Axe",
+
+  "item.minecraft.potion.effect.freeze_potion": "Freeze Potion",
+  "item.minecraft.splash_potion.effect.freeze_potion": "Splash Potion of Freeze",
+  "item.minecraft.lingering_potion.effect.freeze_potion": "Lingering Potion of Freeze",
+  "item.minecraft.tipped_arrow.effect.freeze_potion": "Arrow of Freeze",
 
   "item.thommas.bar_brawl_music_disc": "Bar Brawl",
   "item.thommas.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
@@ -321,5 +334,18 @@
   "entity.minecraft.villager.blastmaster": "Blastmaster",
 
   "enchantment.thommas.the_massacre": "The Massacre",
-  "enchantment.thommas.i_love_u": "I Love You"
+  "enchantment.thommas.i_love_u": "I Love You",
+
+  "advancements.vakror.mythril.description": "The power lies in Mythril!",
+  "advancements.vakror.mythril.title": "Mythril!",
+  "advancements.vakror.bad_aim.description": "Hit the outer ring of a target from 60 blocks away!",
+  "advancements.vakror.bad_aim.title": "Bad Aim!",
+  "advancements.vakror.blaster.description": "Have a Mythril Blaster!",
+  "advancements.vakror.blaster.title": "Blastin' Away!",
+  "advancements.vakror.dust.description": "Own Magic Dust!",
+  "advancements.vakror.dust.title": "Magical Dust!",
+  "advancements.vakror.magic.description": "Own a Magic Charge!",
+  "advancements.vakror.magic.title": "Magic Charge!",
+  "advancements.vakror.corruption.description": "Have pure corruption!",
+  "advancements.vakror.corruption.title": "Corrupted!"
 }

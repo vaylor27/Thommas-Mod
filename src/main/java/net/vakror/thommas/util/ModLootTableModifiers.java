@@ -25,28 +25,28 @@ public class ModLootTableModifiers {
                 // Adds Grape Seeds to the grass loot table.
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.24f)) // Drops 24% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.08F)) // Drops 24% of the time
                         .with(ItemEntry.builder(ModItems.GRAPE_SEEDS))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 supplier.withPool(poolBuilder.build());
 
                 FabricLootPoolBuilder builder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.24f)) // Drops 24% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.08F)) // Drops 24% of the time
                         .with(ItemEntry.builder(ModItems.STRAWBERRY_SEEDS))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 supplier.withPool(builder.build());
 
                 FabricLootPoolBuilder Builder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.24f)) // Drops 24% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.08F)) // Drops 24% of the time
                         .with(ItemEntry.builder(ModItems.PEPPER_SEEDS))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 supplier.withPool(Builder.build());
 
                 FabricLootPoolBuilder PoolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.24f)) // Drops 24% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.08F)) // Drops 24% of the time
                         .with(ItemEntry.builder(ModItems.TOMATO))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 supplier.withPool(PoolBuilder.build());
@@ -66,9 +66,9 @@ public class ModLootTableModifiers {
                 // Adds a Corrupted Dust to Creepers.
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.24f)) // Drops 24% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.1f)) // Drops 1% of the time
                         .with(ItemEntry.builder(ModItems.CORRUPTED_DUST))
-                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 4.0f)).build());
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(4.0f, 9.0f)).build());
                 supplier.withPool(poolBuilder.build());
             }
         }));

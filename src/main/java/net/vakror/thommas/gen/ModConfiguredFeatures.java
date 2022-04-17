@@ -93,6 +93,119 @@ public class ModConfiguredFeatures {
                     ModBlocks.AMETHYST_ORE.getDefaultState(),
                     ModConfigs.NUMBER_OF_AMETHYST_ORE_IN_VEIN)); // Vein size
 
+    public static final ConfiguredFeature<?, ?> BITUMEN_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.BITUMEN_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_BITUMEN_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> CHLOROPHYTE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.CHLOROPHYTE_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_CHLOROPHYTE_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> COPPER_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.COPPER_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_COPPER_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> CRIMTANE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.CRIMTANE_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_CRIMTANE_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> DEMONITE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.DEMONITE_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_DEMONITE_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> PURE_DIAMOND_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.PURE_DIAMOND_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_PURE_DIAMOND_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> PURE_EMERALD_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.PURE_EMERALD_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_PURE_EMERALD_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> LEAD_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.LEAD_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_LEAD_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> LUMENITE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.LUMENITE_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_LUMENITE_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> METEORITE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.NETHERRACK,
+                    ModBlocks.METEORITE_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_METEORITE_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> PLATINUM_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.PLATINUM_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_PLATINUM_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> SALTPETER_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.SALTPETER_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_SALTPETER_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> SAPPHIRE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.SAPPHIRE_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_SAPPHIRE_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> SILVER_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.SILVER_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_SILVER_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> SULPHUR_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.SULPHUR_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_SULPHUR_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> TIN_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.TIN_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_TIN_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> TITANIUM_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.TITANIUM_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_TITANIUM_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> TOPAZ_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.TOPAZ_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_TOPAZ_ORE_IN_VEIN)); // Vein size
+
+    public static final ConfiguredFeature<?, ?> TUNGSTEN_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    ModBlocks.TUNGSTEN_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_TUNGSTEN_ORE_IN_VEIN)); // Vein size
 
 
 

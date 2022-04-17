@@ -2,7 +2,7 @@
   "parent": "thommas:vakror/mythril",
   "display": {
     "icon": {
-      "item": "thommas:sticky_piston"
+      "item": "minecraft:sticky_piston"
     },
     "title": {
       "translate": "advancements.vakror.compressed.title"

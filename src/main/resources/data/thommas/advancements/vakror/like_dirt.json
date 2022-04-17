@@ -2,7 +2,7 @@
   "parent": "thommas:vakror/mythril_blaster",
   "display": {
     "icon": {
-      "item": "thommas:dirt"
+      "item": "minecraft:dirt"
     },
     "title": {
       "translate": "advancements.vakror.dirt.title"

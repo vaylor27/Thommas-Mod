@@ -1,20 +1,20 @@
 {
-  "parent": "thommas:vakror/thommas",
+  "parent": "thommas:vakror/mythril",
   "display": {
     "icon": {
-      "item": "thommas:mythril_ingot"
+      "item": "thommas:sticky_piston"
     },
     "title": {
-      "translate": "advancements.vakror.mythril.title"
+      "translate": "advancements.vakror.compressed.title"
     },
     "description": {
-      "translate": "advancements.vakror.mythril.description"
+      "translate": "advancements.vakror.compressed.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "rewards": {
-      "experience": 100
+      "experience": 47
     }
   },
   "criteria": {
@@ -24,7 +24,7 @@
         "items": [
           {
             "items": [
-              "thommas:mythril_ingot"
+              "thommas:copper_block"
             ]
           }
         ]

@@ -1,18 +1,18 @@
 {
-  "parent": "thommas:vakror/thommas",
   "display": {
     "icon": {
       "item": "thommas:mythril_ingot"
     },
     "title": {
-      "translate": "advancements.vakror.mythril.title"
+      "translate": "advancements.vakror.thommas.title"
     },
     "description": {
-      "translate": "advancements.vakror.mythril.description"
+      "translate": "advancements.vakror.thommas.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
+    "background": "thommas:textures/block/mythril_block.png",
     "rewards": {
       "experience": 100
     }
@@ -24,7 +24,7 @@
         "items": [
           {
             "items": [
-              "thommas:mythril_ingot"
+              "thommas:data_tablet"
             ]
           }
         ]

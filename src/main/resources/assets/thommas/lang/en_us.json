@@ -20,6 +20,7 @@
   "item.thommas.data_tablet_casing": "Data Tablet Casing",
   "item.thommas.data_tablet_machinery": "Data Tablet Machinery",
   "item.thommas.grape": "Grape",
+  "item.thommas.honey_bucket": "Honey Bucket",
   "item.thommas.grape_seeds": "Grape Seeds",
   "item.thommas.kaupen_bow": "Detranium Bow",
   "item.thommas.strawberry_seeds": "Strawberry Seeds",
@@ -73,7 +74,7 @@
   "item.thommas.gem_steel_nugget": "Gem Steel Nugget",
   "item.thommas.gem_steel_staff": "Gem Steel Staff",
   "item.thommas.hand_drill": "Hand Drill",
-  "item.thommas.hard_copper_ingot": "Hard Copper Ingot",
+  "item.thommas.hard_copper_ingot": "Copper Ingot",
   "item.thommas.hellstone_dust": "Hellstone Dust",
   "item.thommas.hellstone_ingot": "Hellstone Ingot",
   "item.thommas.hellstone_nugget": "Hellstone Nugget",
@@ -118,6 +119,19 @@
   "item.thommas.tungsten_ingot": "Tungsten Ingot",
   "item.thommas.tungsten_nugget": "Tungsten Nugget",
   "item.thommas.magic_charge": "Magic Charge",
+  "item.thommas.tomato": "Tomato",
+  "item.thommas.magic_ingot": "Magic Ingot",
+  "item.thommas.magic_shovel": "Magic Shovel",
+  "item.thommas.magic_sword": "Magic Sword",
+  "item.thommas.magic_hoe": "Magic Hoe",
+  "item.thommas.magic_axe": "Magic Axe",
+  "item.minecraft.potion.effect.freeze_potion": "Freeze Potion",
+  "item.minecraft.splash_potion.effect.freeze_potion": "Splash Potion of Freeze",
+  "item.minecraft.lingering_potion.effect.freeze_potion": "Lingering Potion of Freeze",
+  "item.minecraft.tipped_arrow.effect.freeze_potion": "Arrow of Freeze",
+  "item.thommas.bar_brawl_music_disc": "Bar Brawl",
+  "item.thommas.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
 
 
   "block.thommas.corrupted_flower": "Corrupted Flower",
@@ -302,20 +316,7 @@
   "block.thommas.magic_block": "Magic Block",
   "block.thommas.citrine_block": "Citrine Block",
   "block.thommas.demonite_brick": "Demonite Brick",
-  "item.thommas.tomato": "Tomato",
-  "item.thommas.magic_ingot": "Magic Ingot",
-  "item.thommas.magic_shovel": "Magic Shovel",
-  "item.thommas.magic_sword": "Magic Sword",
-  "item.thommas.magic_hoe": "Magic Hoe",
-  "item.thommas.magic_axe": "Magic Axe",
 
-  "item.minecraft.potion.effect.freeze_potion": "Freeze Potion",
-  "item.minecraft.splash_potion.effect.freeze_potion": "Splash Potion of Freeze",
-  "item.minecraft.lingering_potion.effect.freeze_potion": "Lingering Potion of Freeze",
-  "item.minecraft.tipped_arrow.effect.freeze_potion": "Arrow of Freeze",
-
-  "item.thommas.bar_brawl_music_disc": "Bar Brawl",
-  "item.thommas.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
 
   "thommas.data_tablet_recorded_homepos": "data tablet has recorded homepos",
 
@@ -328,8 +329,6 @@
   "itemGroup.thommas.crops": "Thommas Nature",
   "itemGroup.thommas.bricks": "Thommas Bricks",
   "itemGroup.thommas.lamps": "Thommas Lamps",
-
-  "item.thommas.honey_bucket": "Honey Bucket",
 
   "entity.minecraft.villager.blastmaster": "Blastmaster",
 
@@ -346,6 +345,18 @@
   "advancements.vakror.dust.title": "Magical Dust!",
   "advancements.vakror.magic.description": "Own a Magic Charge!",
   "advancements.vakror.magic.title": "Magic Charge!",
-  "advancements.vakror.corruption.description": "Have pure corruption!",
-  "advancements.vakror.corruption.title": "Corrupted!"
+  "advancements.vakror.corruption.description": "Own pure corruption!",
+  "advancements.vakror.corruption.title": "Corrupted!",
+  "advancements.vakror.heavy.description": "Tungsten is one of the densest metals on earth!",
+  "advancements.vakror.heavy.title": "Heavyweight!",
+  "advancements.vakror.dirt.description": "Seriously is this dirt?!?",
+  "advancements.vakror.dirt.title": "Looks Like Dirt!",
+  "advancements.vakror.compressed.title": "So Compressed",
+  "advancements.vakror.compressed.description": "Own a compressed copper",
+  "advancements.vakror.thommas.title": "Thommas",
+  "advancements.vakror.thommas.description": "Own a data tablet",
+  "advancements.vakror.cold.title": "Looks Cold!",
+  "advancements.vakror.cold.description": "Have a freeze potion",
+  "advancements.vakror.freeze.title": "Freezing!",
+  "advancements.vakror.freeze.description": "Be frozen"
 }

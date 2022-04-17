@@ -1,0 +1,36 @@
+{
+  "parent": "thommas:vakror/cold",
+  "display": {
+    "icon": {
+      "item": "minecraft:freeze_potion"
+    },
+    "title": {
+      "translate": "advancements.vakror.freeze.title"
+    },
+    "description": {
+      "translate": "advancements.vakror.freeze.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "rewards": {
+    "experience": 1000
+  },
+  "criteria": {
+    "all_effects": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:freeze": {}
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "all_effects"
+    ]
+  ]
+}

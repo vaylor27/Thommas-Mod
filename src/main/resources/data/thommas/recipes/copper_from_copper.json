@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:piston"
+    },
+    "X": {
+      "item": "minecraft:copper_block"
+    }
+  },
+  "result": {
+    "item": "thommas:copper_block",
+    "count": 1
+  }
+}

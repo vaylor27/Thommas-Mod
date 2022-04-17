@@ -1,14 +1,14 @@
 {
-  "parent": "thommas:vakror/thommas",
+  "parent": "thommas:vakror/mythril",
   "display": {
     "icon": {
-      "item": "thommas:mythril_ingot"
+      "item": "minecraft:freeze_potion"
     },
     "title": {
-      "translate": "advancements.vakror.mythril.title"
+      "translate": "advancements.vakror.cold.title"
     },
     "description": {
-      "translate": "advancements.vakror.mythril.description"
+      "translate": "advancements.vakror.cold.description"
     },
     "frame": "task",
     "show_toast": true,
@@ -24,7 +24,7 @@
         "items": [
           {
             "items": [
-              "thommas:mythril_ingot"
+              "minecraft:freeze_potion"
             ]
           }
         ]

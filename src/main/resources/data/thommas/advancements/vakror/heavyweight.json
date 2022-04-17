@@ -1,20 +1,20 @@
 {
-  "parent": "thommas:vakror/thommas",
+  "parent": "thommas:vakror/mythril_blaster",
   "display": {
     "icon": {
-      "item": "thommas:mythril_ingot"
+      "item": "thommas:tungsten_block"
     },
     "title": {
-      "translate": "advancements.vakror.mythril.title"
+      "translate": "advancements.vakror.heavy.title"
     },
     "description": {
-      "translate": "advancements.vakror.mythril.description"
+      "translate": "advancements.vakror.heavy.description"
     },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "rewards": {
-      "experience": 100
+      "experience": 47
     }
   },
   "criteria": {
@@ -24,7 +24,7 @@
         "items": [
           {
             "items": [
-              "thommas:mythril_ingot"
+              "thommas:tungsten_block"
             ]
           }
         ]

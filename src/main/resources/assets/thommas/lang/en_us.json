@@ -356,5 +356,7 @@
   "advancements.vakror.thommas.title": "Thommas",
   "advancements.vakror.thommas.description": "Own a data tablet",
   "advancements.vakror.freeze.title": "Freezing!",
-  "advancements.vakror.freeze.description": "Be frozen"
+  "advancements.vakror.freeze.description": "Be frozen",
+
+  "effect.thommas.freeze": "Freeze"
 }

@@ -19,6 +19,7 @@ import org.slf4j.LoggerFactory;
 public class Thommas implements ModInitializer {
 	public static final String MOD_ID = "thommas";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static Thommas INSTANCE = null;
 
 	@Override
 	public void onInitialize() {
@@ -34,5 +35,7 @@ public class Thommas implements ModInitializer {
 		ModVillagers.setupPOIs();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+		INSTANCE = this;
+		LOGGER.info("[FreeCam] Mod is initializing.");
 	}
 }

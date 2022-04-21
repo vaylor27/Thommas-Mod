@@ -28,30 +28,15 @@ public class ModStaff extends PickaxeItem {
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         if (!context.getWorld().isClient) {
-            context.getStack().addEnchantment(Enchantments.MENDING, 1);
-            context.getStack().addEnchantment(Enchantments.EFFICIENCY, 5);
-            context.getStack().addEnchantment(Enchantments.UNBREAKING, 3);
-                EntityType.PIG.spawn((ServerWorld) context.getWorld(), null, null, context.getPlayer(), context.getBlockPos(), SpawnReason.TRIGGERED, true, true);
-        }
+            if (!context.getStack().hasEnchantments()) {
+                context.getStack().addEnchantment(Enchantments.MENDING, 1);
+                context.getStack().addEnchantment(Enchantments.EFFICIENCY, 5);
+                context.getStack().addEnchantment(Enchantments.UNBREAKING, 3);
+            }}
         return super.useOnBlock(context);
     }
-
-    @Override
-    public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
-        if (!user.world.isClient) {
-            entity.kill();
-        }
-        return super.useOnEntity(stack, user, entity, hand);
-    }
-
     @Override
     public boolean hasGlint(ItemStack stack) {
         return true;
-    }
-
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(new LiteralText("Don't abuse this godly power"));
-        super.appendTooltip(stack, world, tooltip, context);
     }
 }

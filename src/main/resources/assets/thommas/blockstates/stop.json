@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "thommas:block/stop" },
+    "facing=east": { "model": "thommas:block/stop", "y": 90 },
+    "facing=south": { "model": "thommas:block/stop", "y": 180 },
+    "facing=west": { "model": "thommas:block/stop", "y": 270 }
+  }
+}

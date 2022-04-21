@@ -131,9 +131,12 @@
   "item.minecraft.tipped_arrow.effect.freeze_potion": "Arrow of Freeze",
   "item.thommas.bar_brawl_music_disc": "Bar Brawl",
   "item.thommas.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.thommas.staff": "Staff",
+  "item.thommas.lightning_summoner": "Lightning Summoner",
+  "item.thommas.cane": "Granny's Cane (Dangerous)",
 
 
-
+  "block.thommas.crown": "Crown",
   "block.thommas.corrupted_flower": "Corrupted Flower",
   "block.thommas.mythril_block": "Mythril Block",
   "block.thommas.mythril_ore": "Mythril Ore",
@@ -316,7 +319,13 @@
   "block.thommas.magic_block": "Magic Block",
   "block.thommas.citrine_block": "Citrine Block",
   "block.thommas.demonite_brick": "Demonite Brick",
+  "block.thommas.stop": "Stop-sign",
+  "block.thommas.pole": "Metal Sign Pole",
 
+  "thommas.cane.posthit.message": "You have been crippled by Granny's Cane",
+  "thommas.cane.tooltip1": "What did I hear there sonny?",
+  "thommas.cane.tooltip2": "Watch your language, boy!",
+  "thommas.cane.tooltip3": "You're gonna get beaten!",
 
   "thommas.data_tablet_recorded_homepos": "data tablet has recorded homepos",
 
@@ -357,6 +366,8 @@
   "advancements.vakror.thommas.description": "Own a data tablet",
   "advancements.vakror.freeze.title": "Freezing!",
   "advancements.vakror.freeze.description": "Be frozen",
+  "advancements.vakror.replant.title": "Replantable!",
+  "advancements.vakror.replant.description": "Have a sapling!",
 
   "effect.thommas.freeze": "Freeze"
 }

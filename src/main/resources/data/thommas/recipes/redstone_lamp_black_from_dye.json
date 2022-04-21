@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XI "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:black_dye"
+    },
+    "X": {
+      "item": "thommas:mythril_lamp"
+    }
+  },
+  "result": {
+    "item": "thommas:redstone_lamp_black",
+    "count": 1
+  }
+}

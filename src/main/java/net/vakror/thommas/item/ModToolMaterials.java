@@ -30,6 +30,9 @@ public enum ModToolMaterials implements ToolMaterial {
     GEM_STEEL(MiningLevels.NETHERITE, 10000000, 1000.0F, 50.0F, 49, () -> {
         return Ingredient.ofItems(ModItems.GEM_STEEL_INGOT);
     }),
+    CANE(MiningLevels.WOOD, 1000000000, 0.0F, 14.0F, 0, () -> {
+        return Ingredient.ofItems(Items.STICK);
+    }),
     HAND_DRILL(MiningLevels.IRON, 1000, 10.0F, 2.0F, 10, () -> {
         return Ingredient.ofItems(Items.OAK_LOG);
     }),

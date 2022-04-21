@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#",
+    " P ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:stone"
+    },
+    "P": {
+      "item": "minecraft:stick"
+    },
+    "X":{
+      "item": "minecraft:lightning_rod"
+    },
+    "#": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "thommas:lightning_summoner",
+    "count": 1
+  }
+}

@@ -9,8 +9,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModTags {
     public static class Blocks {
-        public static final TagKey<Block> ORES =
-                createCommonTag("thommas_ores");
+        public static final TagKey<Block> SAPLINGS =
+                createCommonTag("saplings");
 
         public static final TagKey<Block> SCRAP =
                 createCommonTag("scrap");
@@ -26,6 +26,9 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> MYTHRIL_ITEMS = createCommonTag("mythril_items");
+
+        public static final TagKey<Item> SAPLINGS =
+                createCommonTag("saplings");
 
         public static final TagKey<Item> SCRAP =
                 createCommonTag("scrap");

@@ -627,7 +627,14 @@ public class ModBlocks {
     public static final Block CITRINE_BLOCK = registerBlock("citrine_block",
             new Block(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.BLOCKS);
 
-    
+    public static final Block CROWN = registerBlock("crown",
+            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block STOP = registerBlock("stop",
+            new StopBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block POLE = registerBlock("pole",
+            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

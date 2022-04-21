@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    " X "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:red_concrete"
+    },
+    "X": {
+      "item": "thommas:pole"
+    }
+  },
+  "result": {
+    "item": "thommas:stop",
+    "count": 1
+  }
+}

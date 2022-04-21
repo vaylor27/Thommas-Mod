@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#  ",
-    "P  "
+    "P#P",
+    "P#P"
   ],
   "key": {
     "#": {
-      "item": "thommas:dust"
+      "item": "minecraft:stick"
     },
     "P": {
-      "item": "thommas:corrupted_dust"
+      "item": "thommas:ruby_ingot"
     }
   },
   "result": {
-    "item": "thommas:magic_charge"
+    "item": "thommas:ruby_fence_gate"
   }
 }

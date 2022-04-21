@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "player.getZ()
-    "III",
+  "pattern": [
+    "I I",
     "III",
     "III"
   ],
   "key": {
     "I": {
-      "item": "thommas:adamantium_ingot"
+      "item": "minecraft:gold_block"
     }
   },
   "result": {
-    "item": "thommas:adamantium_block",
+    "item": "thommas:crown",
     "count": 1
   }
 }

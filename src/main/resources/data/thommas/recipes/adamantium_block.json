@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "player.getZ()
+  "pattern": [
     "III",
     "III",
     "III"

@@ -32,7 +32,7 @@ import net.vakror.thommas.sound.ModSounds;
 public class ModBlocks {
 
     public static final Block MYTHRIL_BLOCK = registerBlock("mythril_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6f).requiresTool()), ModItemGroup.BLOCKS);
 
     public static final Block MYTHRIL_ORE = registerBlock("mythril_ore",
             new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroup.ORES);
@@ -44,37 +44,37 @@ public class ModBlocks {
             new MythrilOre(FabricBlockSettings.of(Material.STONE).strength(1.5f).requiresTool()), ModItemGroup.ORES);
 
     public static final Block RAW_MYTHRIL_BLOCK = registerBlock("raw_mythril_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(5.1f).requiresTool()), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(5.1f).requiresTool()), ModItemGroup.BLOCKS);
 
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
-            new SpeedyBlock(FabricBlockSettings.of(Material.METAL).strength(3.7f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new SpeedyBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.7f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block MYTHRIL_BUTTON = registerBlock("mythril_button",
-            new ModStoneButton(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool().noCollision()), ModItemGroup.SPECIAL_BLOCKS);
+            new ModStoneButton(FabricBlockSettings.of(Material.METAL).requiresTool().strength(2f).requiresTool().noCollision()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block MYTHRIL_PRESSURE_PLATE = registerBlock("mythril_pressure_plate",
-            new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new ModPressurePlate(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.of(Material.METAL).requiresTool().strength(2f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block MYTHRIL_FENCE = registerBlock("mythril_fence",
-            new FenceBlock(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new FenceBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(2f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block MYTHRIL_FENCE_GATE = registerBlock("mythril_fence_gate",
-            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).strength(2f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new FenceGateBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(2f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block MYTHRIL_WALL = registerBlock("mythril_wall",
-            new WallBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new WallBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block MYTHRIL_SLAB = registerBlock("mythril_slab",
-            new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new SlabBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block MYTHRIL_STAIRS = registerBlock("mythril_stairs",
-            new ModStairs(ModBlocks.MYTHRIL_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new ModStairs(ModBlocks.MYTHRIL_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL).requiresTool().strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block DETRANIUM_TRAPDOOR = registerBlock("detranium_trapdoor",
             new ModTrapdoor(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool().nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block SAFE_DETRANIUM_TRAPDOOR = registerBlock("safe_detranium_trapdoor",
-            new ModTrapdoor(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+            new ModTrapdoor(FabricBlockSettings.of(Material.METAL).requiresTool().strength(4f).requiresTool().nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block PURE_DETRANIUM = registerBlock("pure_detranium",
             new Block(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool()), ModItemGroup.BLOCKS);
@@ -86,13 +86,13 @@ public class ModBlocks {
             new ModDoor(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block SAFE_KAUPEN_DOOR = registerBlock("safe_kaupen_door",
-            new ModDoor(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new ModDoor(FabricBlockSettings.of(Material.METAL).requiresTool().strength(4f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block POTTED_CORRUPTED_FLOWER = registerBlockWithoutBlockItem("potted_corrupted_flower",
             new FlowerPotBlock(ModBlocks.CORRUPTED_FLOWER, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block MYTHRIL_LAMP = registerBlock("mythril_lamp",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
@@ -166,310 +166,310 @@ public class ModBlocks {
             new TomatoPlant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()));
     
     public static final Block ADAMANTIUM_BLOCK = registerBlock("adamantium_block",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block ADAMANTIUM_BRICK = registerBlock("adamantium_brick",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BRICKS);
 
     public static final Block ALUMINUM_BLOCK = registerBlock("aluminum_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block ALUMINUM_BRICK = registerBlock("aluminum_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block ALUMINUM_ORE = registerBlock("aluminum_ore",
-            new MythrilOre(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new MythrilOre(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block AMBER_BLOCK = registerBlock("amber_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block AMBER_BRICK = registerBlock("amber_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block AMBER_ORE = registerBlock("amber_ore",
-            new MythrilOre(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new MythrilOre(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block AMETHYST_BLOCK = registerBlock("amethyst_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block AMETHYST_BRICK = registerBlock("amethyst_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block AMETHYST_ORE = registerBlock("amethyst_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block BITUMEN_BLOCK = registerBlock("bitumen_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block BITUMEN_BRICK = registerBlock("bitumen_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block BITUMEN_ORE = registerBlock("bitumen_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block BRICK_AGED = registerBlock("brick_aged",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block BRICK_COTSWOLD = registerBlock("brick_cotswold",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block BRICK_MIXED = registerBlock("brick_mixed",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block BRONZE_BLOCK = registerBlock("bronze_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block BRONZE_BRICK = registerBlock("bronze_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block CHLOROPHYTE_BLOCK = registerBlock("chlorophyte_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block CHLOROPHYTE_BRICK = registerBlock("chlorophyte_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block CHLOROPHYTE_ORE = registerBlock("chlorophyte_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block COPPER_BLOCK = registerBlock("copper_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block COPPER_BRICK = registerBlock("copper_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block COPPER_ORE = registerBlock("copper_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block CRIMTANE_BLOCK = registerBlock("crimtane_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block CRIMTANE_BRICK = registerBlock("crimtane_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block CRIMTANE_ORE = registerBlock("crimtane_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block DEMONITE_BLOCK = registerBlock("demonite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block DEMONITE_BRICK = registerBlock("demonite_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block DEMONITE_ORE = registerBlock("demonite_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block PURE_DIAMOND_BLOCK = registerBlock("pure_diamond_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block PURE_DIAMOND_BRICK = registerBlock("pure_diamond_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block PURE_DIAMOND_ORE = registerBlock("pure_diamond_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block PURE_EMERALD_BLOCK = registerBlock("pure_emerald_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block PURE_EMERALD_BRICK = registerBlock("pure_emerald_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block PURE_EMERALD_ORE = registerBlock("pure_emerald_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block ENERGIZED_REDSTONE_BLOCK = registerBlock("energized_redstone_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block GEM_STEEL_BLOCK = registerBlock("gem_steel_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block HELLSTONE_BLOCK = registerBlock("hellstone_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block HELLSTONE_BRICK = registerBlock("hellstone_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block LEAD_BLOCK = registerBlock("lead_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block LEAD_BRICK = registerBlock("lead_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block LEAD_ORE = registerBlock("lead_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block LUMENITE_BLOCK = registerBlock("lumenite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block LUMENITE_BRICK = registerBlock("lumenite_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block LUMENITE_ORE = registerBlock("lumenite_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block METEORITE_BLOCK = registerBlock("meteorite_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block METEORITE_BRICK = registerBlock("meteorite_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block METEORITE_ORE = registerBlock("meteorite_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block ORICHALCUM_BLOCK = registerBlock("orichalcum_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block ORICHALCUM_BRICK = registerBlock("orichalcum_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block PLATINUM_BLOCK = registerBlock("platinum_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block PLATINUM_BRICK = registerBlock("platinum_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block PLATINUM_ORE = registerBlock("platinum_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6.0F)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.ORES);
 
     public static final Block REDSTONE_LAMP_BLACK = registerBlock("redstone_lamp_black",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_BLUE = registerBlock("redstone_lamp_blue",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_BROWN = registerBlock("redstone_lamp_brown",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_CYAN = registerBlock("redstone_lamp_cyan",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_GRAY = registerBlock("redstone_lamp_gray",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_GREEN = registerBlock("redstone_lamp_green",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_LIGHT_BLUE = registerBlock("redstone_lamp_light_blue",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_LIME = registerBlock("redstone_lamp_lime",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_MAGENTA = registerBlock("redstone_lamp_magenta",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_ORANGE = registerBlock("redstone_lamp_orange",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_PINK = registerBlock("redstone_lamp_pink",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_PURPLE = registerBlock("redstone_lamp_purple",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_RED = registerBlock("redstone_lamp_red",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_SILVER = registerBlock("redstone_lamp_silver",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_WHITE = registerBlock("redstone_lamp_white",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_YELLOW = registerBlock("redstone_lamp_yellow",
-            new MythrilLamp(FabricBlockSettings.of(Material.METAL)
+            new MythrilLamp(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
                     .luminance((state) -> state.get(MythrilLamp.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block SALTPETER_BLOCK = registerBlock("saltpeter_block",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block SALTPETER_BRICK = registerBlock("saltpeter_brick",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BRICKS);
 
     public static final Block SALTPETER_ORE = registerBlock("saltpeter_ore",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.ORES);
 
     public static final Block GRAINY_SANDSTONE_BRICK = registerBlock("grainy_sandstone_brick",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BRICKS);
 
     public static final Block GRAINY_SANDSTONE_COBBLE = registerBlock("grainy_sandstone_cobble",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block GRAINY_SANDSTONE_POLISHED = registerBlock("grainy_sandstone_polished",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block SAPPHIRE_BRICK = registerBlock("sapphire_brick",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BRICKS);
 
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.ORES);
 
     public static final Block SILVER_BLOCK = registerBlock("silver_block",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block SILVER_BRICK = registerBlock("silver_brick",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BRICKS);
 
     public static final Block SILVER_ORE = registerBlock("silver_ore",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.ORES);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.ORES);
 
     public static final Block SMOOTH_AMETHYST_BLOCK = registerBlock("smooth_amethyst_block",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block STEEL_BRICK = registerBlock("steel_brick",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BRICKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BRICKS);
 
     public static final Block STONE_ANDESITE_BRICK = registerBlock("stone_andesite_brick",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
@@ -490,7 +490,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block STONE_BASALT_COBBLE = registerBlock("stone_basalt_cobble",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block STONE_BASALT_POLISHED = registerBlock("stone_basalt_polished",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -502,7 +502,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block STONE_DIORITE_COBBLE = registerBlock("stone_diorite_cobble",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block STONE_DIORITE_POLISHED = registerBlock("stone_diorite_polished",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -514,7 +514,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block STONE_GRANITE_COBBLE = registerBlock("stone_granite_cobble",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block STONE_GRANITE_POLISHED = registerBlock("stone_granite_polished",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -526,7 +526,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block STONE_LIMESTONE_COBBLE = registerBlock("stone_limestone_cobble",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block STONE_LIMESTONE_POLISHED = registerBlock("stone_limestone_polished",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -538,7 +538,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BRICKS);
 
     public static final Block STONE_MARBLE_COBBLE = registerBlock("stone_marble_cobble",
-            new Block(FabricBlockSettings.of(Material.METAL)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
     public static final Block STONE_MARBLE_POLISHED = registerBlock("stone_marble_polished",
             new Block(FabricBlockSettings.of(Material.STONE)), ModItemGroup.BLOCKS);
@@ -615,26 +615,26 @@ public class ModBlocks {
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block MYTHRIL_BLASTER = registerBlock("mythril_blaster",
-            new MythrilBlasterBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+            new MythrilBlasterBlock(FabricBlockSettings.of(Material.METAL).requiresTool().nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().nonOpaque()), ModItemGroup.BLOCKS);
 
     public static final Block HONEY_FLUID_BLOCK = registerBlockWithoutBlockItem("honey_fluid_block",
             new ModFluidBlock(ModFluids.HONEY_STILL, FabricBlockSettings.of(Material.WATER)
                     .noCollision().nonOpaque().dropsNothing()));
 
     public static final Block CITRINE_BLOCK = registerBlock("citrine_block",
-            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().nonOpaque()), ModItemGroup.BLOCKS);
 
     public static final Block CROWN = registerBlock("crown",
-            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block STOP = registerBlock("stop",
-            new StopBlock(FabricBlockSettings.of(Material.METAL).nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
+            new StopBlock(FabricBlockSettings.of(Material.METAL).requiresTool().nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block POLE = registerBlock("pole",
-            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

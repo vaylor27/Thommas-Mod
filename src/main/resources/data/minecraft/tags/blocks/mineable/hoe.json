@@ -1,6 +1,23 @@
 {
   "replace": false,
   "values": [
-    "thommas:redwood_leaves"
+    "thommas:redwood_leaves",
+    "thommas:mythril_lamp",
+    "thommas:redstone_lamp_black",
+    "thommas:redstone_lamp_blue",
+    "thommas:redstone_lamp_brown",
+    "thommas:redstone_lamp_cyan",
+    "thommas:redstone_lamp_gray",
+    "thommas:redstone_lamp_green",
+    "thommas:redstone_lamp_light_blue",
+    "thommas:redstone_lamp_lime",
+    "thommas:redstone_lamp_magenta",
+    "thommas:redstone_lamp_orange",
+    "thommas:redstone_lamp_pink",
+    "thommas:redstone_lamp_purple",
+    "thommas:redstone_lamp_red",
+    "thommas:redstone_lamp_silver",
+    "thommas:redstone_lamp_white",
+    "thommas:redstone_lamp_yellow"
   ]
 }

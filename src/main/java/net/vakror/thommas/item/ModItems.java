@@ -1,11 +1,13 @@
 package net.vakror.thommas.item;
 
+import net.fabricmc.fabric.api.item.v1.CustomDamageHandler;
 import net.fabricmc.fabric.api.item.v1.EquipmentSlotProvider;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
@@ -407,6 +409,9 @@ public class ModItems {
 
     public static Item CANE = registerItem("cane",
             new ModCane(ModToolMaterials.CANE, 4, 0.01F,new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
+
+    public static Item HEAVENLY_SHIELD = registerItem("heavenly_shield",
+            new GodShield(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxDamage(1000).fireproof().rarity(Rarity.EPIC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

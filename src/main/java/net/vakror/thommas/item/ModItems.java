@@ -411,7 +411,10 @@ public class ModItems {
             new ModCane(ModToolMaterials.CANE, 4, 0.01F,new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
 
     public static Item HEAVENLY_SHIELD = registerItem("heavenly_shield",
-            new GodShield(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxDamage(1000).fireproof().rarity(Rarity.EPIC)));
+            new GodShield(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(1000).fireproof().rarity(Rarity.EPIC)));
+
+    public static Item REINFORCED_SHIELD = registerItem("reinforced_shield",
+            new GodShield(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(100).fireproof().rarity(Rarity.COMMON)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

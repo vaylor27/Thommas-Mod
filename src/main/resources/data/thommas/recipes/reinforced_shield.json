@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#I#",
+    "IXI",
+    "#I#"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:tungsten_block"
+    },
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "X": {
+      "item": "minecraft:shield"
+    }
+  },
+  "result": {
+    "item": "thommas:reinforced_shield",
+    "count": 1
+  }
+}

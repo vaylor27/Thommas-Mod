@@ -1,0 +1,215 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/oak_planks",
+		"1": "block/iron_block",
+		"2": "thommas:block/tungsten_block",
+		"particle": "block/oak_planks"
+	},
+	"elements": [
+		{
+			"name": "wood",
+			"from": [0, 0, 5],
+			"to": [17, 27, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 3, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 3, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 3], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "wood",
+			"from": [5, 5, 8],
+			"to": [12, 22, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 7, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 5, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 7, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 5, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 7, 5], "texture": "#0"},
+				"down": {"uv": [0, 0, 7, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "tungsten1",
+			"from": [0, 5, 8],
+			"to": [5, 22, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "tungsten2",
+			"from": [12, 5, 8],
+			"to": [17, 22, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		},
+		{
+			"name": "tungsten3",
+			"from": [0, 22, 8],
+			"to": [17, 27, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#2"},
+				"east": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"name": "tungsten4",
+			"from": [0, 0, 8],
+			"to": [17, 5, 13],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#2"},
+				"east": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
+				"south": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
+				"west": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#2"}
+			}
+		},
+		{
+			"name": "iron3",
+			"from": [7, 11, -3],
+			"to": [10, 18, 0],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 7], "rotation": 180, "texture": "#1"},
+				"east": {"uv": [0, 0, 7, 3], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [0, 0, 3, 7], "texture": "#1"},
+				"west": {"uv": [0, 0, 7, 3], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0, 0, 3, 3], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [0, 0, 3, 3], "texture": "#1"}
+			}
+		},
+		{
+			"name": "iron2",
+			"from": [7, 18, -3],
+			"to": [10, 21, 5],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 3], "texture": "#1"},
+				"east": {"uv": [0, 0, 8, 3], "texture": "#1"},
+				"south": {"uv": [0, 0, 3, 3], "texture": "#1"},
+				"west": {"uv": [0, 0, 8, 3], "texture": "#1"},
+				"up": {"uv": [0, 0, 3, 8], "texture": "#1"},
+				"down": {"uv": [0, 0, 3, 8], "texture": "#1"}
+			}
+		},
+		{
+			"name": "iron1",
+			"from": [7, 8, -3],
+			"to": [10, 11, 5],
+			"faces": {
+				"north": {"uv": [0, 0, 3, 3], "texture": "#1"},
+				"east": {"uv": [0, 0, 8, 3], "texture": "#1"},
+				"south": {"uv": [0, 0, 3, 3], "texture": "#1"},
+				"west": {"uv": [0, 0, 8, 3], "texture": "#1"},
+				"up": {"uv": [0, 0, 3, 8], "texture": "#1"},
+				"down": {"uv": [0, 0, 3, 8], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [166.61, 5.49, 178.04],
+			"translation": [1.75, -8.25, -0.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-178.78, -3.23, 178.66],
+			"translation": [-1.5, -8.25, -4]
+		},
+		"firstperson_righthand": {
+			"rotation": [180, 2.75, 180],
+			"translation": [-0.75, -7, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-180, -1.25, 180],
+			"translation": [0, -6.5, 0]
+		},
+		"ground": {
+			"rotation": [-85.87, 7.27, 17.55],
+			"translation": [0, 5, 6]
+		},
+		"gui": {
+			"translation": [-0.75, -3.5, 0],
+			"scale": [0.65625, 0.59961, 1]
+		},
+		"head": {
+			"rotation": [180, 0, 180],
+			"translation": [0, -7.75, -8.25]
+		},
+		"fixed": {
+			"rotation": [180, 0.25, 180],
+			"translation": [0, -5.5, -2]
+		}
+	},
+	"groups": [
+		{
+			"name": "shield",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"nbt": "{}",
+			"armAnimationEnabled": "true",
+			"children": [
+				{
+					"name": "protective part",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": "true",
+					"children": [
+						{
+							"name": "wood",
+							"origin": [0, 0, 0],
+							"color": 0,
+							"nbt": "{}",
+							"armAnimationEnabled": "true",
+							"children": [0, 1]
+						},
+						{
+							"name": "tungsten",
+							"origin": [0, 0, 0],
+							"color": 0,
+							"nbt": "{}",
+							"armAnimationEnabled": "true",
+							"children": [2, 3, 4, 5]
+						}
+					]
+				},
+				{
+					"name": "grip",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"nbt": "{}",
+					"armAnimationEnabled": "true",
+					"children": [
+						{
+							"name": "iron",
+							"origin": [0, 0, 0],
+							"color": 0,
+							"nbt": "{}",
+							"armAnimationEnabled": "true",
+							"children": [6, 7, 8]
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#I#",
-    "IXI",
-    "#I#"
+    "XIX",
+    "I#I",
+    "XIX"
   ],
   "key": {
     "I": {
-      "item": "thommas:tungsten_block"
+      "item": "minecraft:beacon"
     },
     "#": {
-      "item": "minecraft:soul_soil"
+      "item": "thommas:reinforced_shield"
     },
     "X": {
-      "item": "minecraft:shield"
+      "item": "thommas:magic_charge"
     }
   },
   "result": {

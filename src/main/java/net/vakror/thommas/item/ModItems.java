@@ -414,7 +414,7 @@ public class ModItems {
             new GodShield(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(1000).fireproof().rarity(Rarity.EPIC)));
 
     public static Item REINFORCED_SHIELD = registerItem("reinforced_shield",
-            new GodShield(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(100).fireproof().rarity(Rarity.COMMON)));
+            new ShieldItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(100).fireproof().rarity(Rarity.COMMON)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

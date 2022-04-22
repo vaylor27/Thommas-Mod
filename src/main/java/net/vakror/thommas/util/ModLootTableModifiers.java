@@ -66,7 +66,7 @@ public class ModLootTableModifiers {
                 // Adds a Corrupted Dust to Creepers.
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.1f)) // Drops 1% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.36f)) // Drops 1% of the time
                         .with(ItemEntry.builder(ModItems.CORRUPTED_DUST))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(4.0f, 9.0f)).build());
                 supplier.withPool(poolBuilder.build());

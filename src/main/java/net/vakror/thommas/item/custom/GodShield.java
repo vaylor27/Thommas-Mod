@@ -17,8 +17,10 @@ public class GodShield extends ShieldItem {
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (entity.isLiving()) {
             LivingEntity livingEntity = (LivingEntity) entity;
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 1, 3), null);
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 1, 1), null);
             livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 1, 2), null);
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 1, 2), null);
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.UNLUCK, 1, 4), null);
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }

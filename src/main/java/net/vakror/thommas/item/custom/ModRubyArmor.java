@@ -9,6 +9,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.world.World;
 import net.vakror.thommas.item.ModArmorMaterials;
 
@@ -76,10 +77,21 @@ public class ModRubyArmor extends ArmorItem {
     private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
         ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
         ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
-        ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
+        ArmorItem breastplate;
+        if (player.getInventory().getArmorStack(2).getItem() != Items.ELYTRA) {
+            breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
+        }
+        else {
+            breastplate = null;
+        }
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
 
-        return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
-                leggings.getMaterial() == material && boots.getMaterial() == material;
+        if (breastplate != null) {
+            return helmet.getMaterial() == material && breastplate.getMaterial() == material &&
+                    leggings.getMaterial() == material && boots.getMaterial() == material;
+        }
+        else {
+            return false;
+        }
     }
 }

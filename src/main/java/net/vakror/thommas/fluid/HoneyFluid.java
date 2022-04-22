@@ -1,5 +1,6 @@
 package net.vakror.thommas.fluid;
 
+import net.minecraft.item.Items;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.item.ModItems;
 import net.minecraft.block.Block;
@@ -41,6 +42,10 @@ public abstract class HoneyFluid extends FlowableFluid {
 
     public Item getBucketItem() {
         return ModItems.HONEY_BUCKET;
+    }
+
+    public Item getBottleItem() {
+        return Items.HONEY_BOTTLE;
     }
 
     public void randomDisplayTick(World world, BlockPos pos, FluidState state, Random random) {

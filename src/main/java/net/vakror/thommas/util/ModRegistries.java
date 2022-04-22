@@ -19,6 +19,7 @@ import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.command.ReturnHome;
 import net.vakror.thommas.command.SetHome;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
+import net.vakror.thommas.gen.ModConfiguredFeatures;
 import net.vakror.thommas.gen.ModWorldGen;
 import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.villager.ModVillagers;

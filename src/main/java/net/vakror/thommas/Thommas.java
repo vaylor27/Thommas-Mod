@@ -1,14 +1,14 @@
 package net.vakror.thommas;
 
 import net.fabricmc.api.ModInitializer;
-import net.vakror.thommas.block.ModBlocks;
-import net.vakror.thommas.block.entity.ModBlockEntities;
+import net.vakror.thommas.blockitem.block.ModBlocks;
+import net.vakror.thommas.blockitem.block.entity.ModBlockEntities;
 import net.vakror.thommas.config.ModConfigs;
 import net.vakror.thommas.effect.ModEffects;
 import net.vakror.thommas.enchantments.ModEnchantments;
-import net.vakror.thommas.item.ModItems;
-import net.vakror.thommas.painting.ModPaintings;
-import net.vakror.thommas.potion.ModPotions;
+import net.vakror.thommas.blockitem.item.ModItems;
+import net.vakror.thommas.blockitem.block.painting.ModPaintings;
+import net.vakror.thommas.blockitem.item.potion.ModPotions;
 import net.vakror.thommas.recipe.ModRecipes;
 import net.vakror.thommas.util.ModLootTableModifiers;
 import net.vakror.thommas.util.ModRegistries;

@@ -1,0 +1,13 @@
+package net.vakror.thommas.world.gen;
+
+import net.vakror.thommas.world.gen.featureGen.ModFlowerGen;
+import net.vakror.thommas.world.gen.featureGen.ModOreGen;
+import net.vakror.thommas.world.gen.featureGen.ModTreeGen;
+
+public class ModWorldGen {
+    public static void generateModWorldGen() {
+        ModTreeGen.generateTrees();
+        ModOreGen.generateOres();
+        ModFlowerGen.generateFlowers();
+    }
+}

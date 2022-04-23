@@ -2,45 +2,47 @@ package net.vakror.thommas.util;
 
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
-import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.village.TradeOffer;
-import net.minecraft.village.VillagerProfession;
-import net.minecraft.world.gen.feature.PlacedFeature;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.block.ModBlocks;
-import net.vakror.thommas.command.ReturnHome;
-import net.vakror.thommas.command.SetHome;
+import net.vakror.thommas.blockitem.block.ModBlocks;
+import net.vakror.thommas.command.home.ReturnHome;
+import net.vakror.thommas.command.home.SetHome;
+import net.vakror.thommas.command.secondaryhome.ReturnSecondaryHome;
+import net.vakror.thommas.command.secondaryhome.SetSecondaryHome;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
-import net.vakror.thommas.gen.ModConfiguredFeatures;
-import net.vakror.thommas.gen.ModWorldGen;
-import net.vakror.thommas.item.ModItems;
-import net.vakror.thommas.villager.ModVillagers;
+import net.vakror.thommas.world.dimensions.dimension.ModDimensions;
+import net.vakror.thommas.world.gen.ModWorldGen;
+import net.vakror.thommas.blockitem.item.ModItems;
+import net.vakror.thommas.villager.trade.BlastMasterTrades;
+import net.vakror.thommas.villager.trade.VanillaVillagerTrades;
 
-import static net.vakror.thommas.gen.ModConfiguredFeatures.*;
-import static net.vakror.thommas.gen.ModPlacedFeatures.*;
+import static net.vakror.thommas.world.gen.ModConfiguredFeatures.*;
 
 public class ModRegistries {
     public static void registerModStuffs() {
         registerFuels();
         registerCommands();
         registerEvents();
+        registerTrades();
         registerStrippables();
         registerFlammableBlock();
-        registerCustomTrades();
         registerOres();
         ModWorldGen.generateModWorldGen();
+        ModDimensions.register();
     }
 
     private static void registerOres() {
         registerOreConfiguredFeatures();
+    }
+
+    private static void registerTrades() {
+        BlastMasterTrades.register();
+        VanillaVillagerTrades.register();
     }
 
 
@@ -54,6 +56,9 @@ public class ModRegistries {
     private static void registerCommands() {
         CommandRegistrationCallback.EVENT.register(SetHome::register);
         CommandRegistrationCallback.EVENT.register(ReturnHome::register);
+        CommandRegistrationCallback.EVENT.register(SetSecondaryHome::register);
+        CommandRegistrationCallback.EVENT.register(ReturnSecondaryHome::register);
+
     }
 
     private static void registerStrippables() {
@@ -163,67 +168,5 @@ public class ModRegistries {
 
     private static void registerEvents() {
         ServerPlayerEvents.COPY_FROM.register(new ModPlayerPlayerEventCopyFrom());
-    }
-
-    private static void registerCustomTrades() {
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 2),
-                            new ItemStack(ModItems.GRAPE, 64),
-                            6, 2, 0.02f));
-                });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 3,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 6),
-                            new ItemStack(ModItems.RUBY, 7),
-                            12, 7, 0.08f));
-                });
-
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.BLAST_MASTER,1,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 6),
-                            new ItemStack(ModItems.MYTHRIL_PICK, 1),
-                            12,7,0.08f));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 12),
-                            new ItemStack(ModItems.MYTHRIL_BOOTS, 1),
-                            12,7,0.08f));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 26),
-                            new ItemStack(ModItems.MYTHRIL_CHESTPLATE, 1),
-                            12,7,0.08f));
-                });
-
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.BLAST_MASTER,2,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.MYTHRIL_HOE, 1),
-                            12,7,0.08f));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(ModItems.MYTHRIL_INGOT, 1),
-                            12,7,0.08f));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 50),
-                            new ItemStack(ModItems.KAUPEN_BOW, 1),
-                            12,7,0.08f));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 64),
-                            new ItemStack(ModItems.RUBY_PICKAXE, 1),
-                            12,7,0.08f));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 5),
-                            new ItemStack(ModItems.RUBY_AXE, 1),
-                            12,7,0.08f));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 50),
-                            new ItemStack(ModItems.RUBY_HOE, 1),
-                            12,7,0.08f));
-                });
     }
 }

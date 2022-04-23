@@ -17,4 +17,6 @@ https://minecraftforum.net/forums/mapping-and-modding-java-edition/resource-pack
 by the author: "Legal Disclaimer: I hereby release all of the textures contained within this .zip file into the Public Domain. This act frees these
 works of all copyright and allows them to be used in any way and without any restriction whatever purpose anyone should choose. The details of this release are in the proper legal text below"
 
-
+Some code by rdvdev2:
+https://github.com/rdvdev2/DisableCustomWorldsAdvice/
+under GNU Lesser General Public License v3.0

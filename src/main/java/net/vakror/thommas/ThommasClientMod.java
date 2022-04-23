@@ -6,8 +6,8 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.client.render.RenderLayer;
-import net.vakror.thommas.block.ModBlocks;
-import net.vakror.thommas.fluid.ModFluids;
+import net.vakror.thommas.blockitem.block.ModBlocks;
+import net.vakror.thommas.blockitem.block.fluid.ModFluids;
 import net.vakror.thommas.screen.ModScreenHandlers;
 import net.vakror.thommas.screen.MythrilBlasterScreen;
 import net.vakror.thommas.util.ModModelPredicateProvider;

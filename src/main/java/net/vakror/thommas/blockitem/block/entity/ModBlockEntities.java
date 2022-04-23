@@ -9,11 +9,17 @@ import net.vakror.thommas.blockitem.block.ModBlocks;
 
 public class ModBlockEntities {
     public static BlockEntityType<MythrilBlasterBlockEntity> MYTHRIL_BLASTER;
+    public static BlockEntityType<LightningChannelerBlockEntity> LIGHTNING_CHANNELER_BLOCK_ENTITY;
 
     public static void registerAllBlockEntities() {
         MYTHRIL_BLASTER = Registry.register(Registry.BLOCK_ENTITY_TYPE,
                 new Identifier(Thommas.MOD_ID, "mythril_blaster"),
                 FabricBlockEntityTypeBuilder.create(MythrilBlasterBlockEntity::new,
                         ModBlocks.MYTHRIL_BLASTER).build(null));
+
+        LIGHTNING_CHANNELER_BLOCK_ENTITY =
+                Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "lightning_channeler"),
+                        FabricBlockEntityTypeBuilder.create(LightningChannelerBlockEntity::new,
+                                ModBlocks.LIGHTNING_CHANNELER_BLOCK).build(null));
     }
 }

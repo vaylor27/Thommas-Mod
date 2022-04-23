@@ -10,5 +10,10 @@ public class ModRecipes {
                 MythrilBlasterRecipe.Serializer.INSTANCE);
         Registry.register(Registry.RECIPE_TYPE, new Identifier(Thommas.MOD_ID, MythrilBlasterRecipe.Type.ID),
                 MythrilBlasterRecipe.Type.INSTANCE);
+
+        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(Thommas.MOD_ID, LightningChannelerRecipe.Serializer.ID),
+                LightningChannelerRecipe.Serializer.INSTANCE);
+        Registry.register(Registry.RECIPE_TYPE, new Identifier(Thommas.MOD_ID, LightningChannelerRecipe.Type.ID),
+                LightningChannelerRecipe.Type.INSTANCE);
     }
 }

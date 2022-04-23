@@ -22,7 +22,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.vakror.thommas.blockitem.block.custom.*;
+import net.vakror.thommas.blockitem.custom.block.*;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
 import net.vakror.thommas.world.gen.tree.sapling.JacarandaSaplingGenerator;
 import net.vakror.thommas.world.gen.tree.sapling.RedwoodSaplingGenerator;
@@ -635,6 +635,9 @@ public class ModBlocks {
 
     public static final Block POLE = registerBlock("pole",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().nonOpaque().dynamicBounds()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block LIGHTNING_CHANNELER_BLOCK = registerBlock("lightning_channeler",
+            new LightningChannelerBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.SPECIAL_BLOCKS);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

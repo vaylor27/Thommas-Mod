@@ -9,7 +9,7 @@ import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.blockitem.block.ModBlocks;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
-import net.vakror.thommas.blockitem.item.custom.*;
+import net.vakror.thommas.blockitem.custom.item.*;
 import net.vakror.thommas.sound.ModSounds;
 
 public class ModItems {

@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.vakror.thommas.blockitem.block.ModBlocks;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
+import net.vakror.thommas.screen.LightningChannelerScreen;
 import net.vakror.thommas.screen.ModScreenHandlers;
 import net.vakror.thommas.screen.MythrilBlasterScreen;
 import net.vakror.thommas.util.ModModelPredicateProvider;
@@ -47,5 +48,6 @@ public class ThommasClientMod implements ClientModInitializer {
                         SimpleFluidRenderHandler.WATER_OVERLAY, 0xe9860c));
 
         ScreenRegistry.register(ModScreenHandlers.MYTHRIL_BLASTER_SCREEN_HANDLER, MythrilBlasterScreen::new);
+        ScreenRegistry.register(ModScreenHandlers.LIGHTNING_CHANNELER_SCREEN_HANDLER, LightningChannelerScreen::new);
     }
 }

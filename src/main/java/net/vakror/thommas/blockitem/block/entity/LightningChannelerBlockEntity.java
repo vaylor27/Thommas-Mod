@@ -2,7 +2,6 @@ package net.vakror.thommas.blockitem.block.entity;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.player.PlayerEntity;
@@ -20,7 +19,6 @@ import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.vakror.thommas.blockitem.item.ModItems;
 import net.vakror.thommas.blockitem.item.inventory.ImplementedInventory;
 import net.vakror.thommas.recipe.LightningChannelerRecipe;
 import net.vakror.thommas.screen.LightningChannelerScreenHandler;

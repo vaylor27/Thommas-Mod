@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.block.ModBlocks;
+import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.command.home.ReturnHome;
 import net.vakror.thommas.command.home.SetHome;
 import net.vakror.thommas.command.secondaryhome.ReturnSecondaryHome;
@@ -17,7 +17,7 @@ import net.vakror.thommas.command.secondaryhome.SetSecondaryHome;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
 import net.vakror.thommas.world.dimensions.dimension.ModDimensions;
 import net.vakror.thommas.world.gen.ModWorldGen;
-import net.vakror.thommas.blockitem.item.ModItems;
+import net.vakror.thommas.blockitem.ModItems;
 import net.vakror.thommas.villager.trade.BlastMasterTrades;
 import net.vakror.thommas.villager.trade.VanillaVillagerTrades;
 

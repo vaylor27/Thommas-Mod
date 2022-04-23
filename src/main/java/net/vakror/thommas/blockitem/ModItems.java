@@ -1,4 +1,4 @@
-package net.vakror.thommas.blockitem.item;
+package net.vakror.thommas.blockitem;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
@@ -7,9 +7,12 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.block.ModBlocks;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
 import net.vakror.thommas.blockitem.custom.item.*;
+import net.vakror.thommas.blockitem.item.ModArmorMaterials;
+import net.vakror.thommas.blockitem.item.ModFoodComponents;
+import net.vakror.thommas.blockitem.item.ModItemGroup;
+import net.vakror.thommas.blockitem.item.ModToolMaterials;
 import net.vakror.thommas.sound.ModSounds;
 
 public class ModItems {

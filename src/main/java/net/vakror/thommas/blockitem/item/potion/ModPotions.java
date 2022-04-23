@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.effect.ModEffects;
-import net.vakror.thommas.blockitem.item.ModItems;
+import net.vakror.thommas.blockitem.ModItems;
 import net.vakror.thommas.mixin.BrewingRecipeRegistryMixin;
 
 public class ModPotions {

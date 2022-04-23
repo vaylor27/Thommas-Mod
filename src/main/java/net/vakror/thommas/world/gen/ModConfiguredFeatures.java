@@ -8,7 +8,7 @@ import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
-import net.vakror.thommas.blockitem.block.ModBlocks;
+import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.config.ModConfigs;
 
 import java.util.List;

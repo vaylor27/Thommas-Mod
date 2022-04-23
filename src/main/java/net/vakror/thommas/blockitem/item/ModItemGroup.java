@@ -5,7 +5,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.block.ModBlocks;
+import net.vakror.thommas.blockitem.ModBlocks;
+import net.vakror.thommas.blockitem.ModItems;
 
 public class ModItemGroup {
     public static final ItemGroup BLOCKS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "blocks"),

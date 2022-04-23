@@ -1,8 +1,8 @@
 package net.vakror.thommas.blockitem.block.fluid;
 
 import net.minecraft.item.Items;
-import net.vakror.thommas.blockitem.block.ModBlocks;
-import net.vakror.thommas.blockitem.item.ModItems;
+import net.vakror.thommas.blockitem.ModBlocks;
+import net.vakror.thommas.blockitem.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FluidBlock;

@@ -3,7 +3,7 @@ package net.vakror.thommas.util;
 import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
-import net.vakror.thommas.blockitem.item.ModItems;
+import net.vakror.thommas.blockitem.ModItems;
 
 public class ModModelPredicateProvider {
     public static void registerModModels() {

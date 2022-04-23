@@ -14,6 +14,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
+import net.vakror.thommas.blockitem.ModItems;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     MYTHRIL("mythril", 46, new int[]{3, 6, 8, 3}, 36, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, 3.0F, () -> {

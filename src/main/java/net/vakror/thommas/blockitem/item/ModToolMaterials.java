@@ -12,6 +12,7 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
+import net.vakror.thommas.blockitem.ModItems;
 
 public enum ModToolMaterials implements ToolMaterial {
     MYTHRIL(MiningLevels.DIAMOND, 738, 14.0F, 2.0F, 28, () -> {

@@ -4,7 +4,7 @@ import com.google.common.collect.ImmutableSet;
 import net.fabricmc.fabric.mixin.object.builder.PointOfInterestTypeAccessor;
 import net.fabricmc.fabric.mixin.object.builder.VillagerProfessionAccessor;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.block.ModBlocks;
+import net.vakror.thommas.blockitem.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;

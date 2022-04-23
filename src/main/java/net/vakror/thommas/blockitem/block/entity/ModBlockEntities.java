@@ -5,7 +5,7 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.block.ModBlocks;
+import net.vakror.thommas.blockitem.ModBlocks;
 
 public class ModBlockEntities {
     public static BlockEntityType<MythrilBlasterBlockEntity> MYTHRIL_BLASTER;

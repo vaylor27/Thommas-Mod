@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "thommas:titanium_ingot"
+      "item": "thommas:citrine_ingot"
     }
   },
   "result": {
-    "item": "thommas:titanium_door",
+    "item": "thommas:citrine_door",
     "count": 3
   }
 }

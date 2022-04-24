@@ -6,13 +6,13 @@
   ],
   "key": {
     "#": {
-      "item": "thommas:titanium_ingot"
+      "item": "thommas:citrine_ingot"
     },
     "P": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "thommas:titanium_fence"
+    "item": "thommas:citrine_fence"
   }
 }

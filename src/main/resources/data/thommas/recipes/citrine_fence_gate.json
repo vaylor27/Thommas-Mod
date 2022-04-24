@@ -9,10 +9,10 @@
       "item": "minecraft:stick"
     },
     "P": {
-      "item": "thommas:titanium_ingot"
+      "item": "thommas:citrine_ingot"
     }
   },
   "result": {
-    "item": "thommas:titanium_fence_gate"
+    "item": "thommas:citrine_fence_gate"
   }
 }

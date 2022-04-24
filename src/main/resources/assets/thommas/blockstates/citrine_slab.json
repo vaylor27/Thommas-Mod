@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "thommas:block/citrine_slab_top"
+    },
+    "type=bottom": {
+      "model": "thommas:block/citrine_slab"
+    },
+    "type=double": {
+      "model": "thommas:block/citrine_block"
+    }
+  }
+}

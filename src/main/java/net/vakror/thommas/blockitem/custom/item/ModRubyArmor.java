@@ -19,7 +19,7 @@ public class ModRubyArmor extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
                     .put(ModArmorMaterials.RUBY,
-                            new StatusEffectInstance(StatusEffects.SPEED, 400, 2)).build();
+                            new StatusEffectInstance(StatusEffects.SPEED, 200, 2)).build();
 
     public ModRubyArmor(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);

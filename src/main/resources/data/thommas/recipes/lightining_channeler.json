@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "PXP",
+    "I#I"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:dust"
+    },
+    "X": {
+      "item": "thommas:lightning_summoner"
+    },
+    "#": {
+      "item": "thommas:mythril_blaster"
+    },
+    "P": {
+      "item": "thommas:titanium_block"
+    }
+  },
+  "result": {
+    "item": "thommas:lightning_channeler",
+    "count": 1
+  }
+}

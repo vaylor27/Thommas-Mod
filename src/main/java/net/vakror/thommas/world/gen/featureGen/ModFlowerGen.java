@@ -8,7 +8,16 @@ import net.vakror.thommas.world.gen.ModPlacedFeatures;
 
 public class ModFlowerGen {
     public static void generateFlowers() {
-        BiomeModifications.addFeature(BiomeSelectors.categories(Biome.Category.FOREST),
+        BiomeModifications.addFeature(BiomeSelectors.categories(Biome.Category.PLAINS),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.CORRUPTED_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.categories(Biome.Category.PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ORCHID_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.categories(Biome.Category.PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.HYACINTH_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.categories(Biome.Category.PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.PINK_PLACED.getKey().get());
     }
 }

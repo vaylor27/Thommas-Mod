@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:amethyst"
+    }
+  },
+  "result": {
+    "item": "thommas:amethyst_pressure_plate"
+  }
+}

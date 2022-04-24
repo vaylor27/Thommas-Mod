@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " ##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:titanium_stairs",
+    "count": 4
+  }
+}

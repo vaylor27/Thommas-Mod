@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "thommas:mythril_fence",
-    "thommas:ruby_fence"
+    "thommas:ruby_fence",
+    "thommas:titanium_fence",
+    "thommas:amethyst_fence",
+    "thommas:citrine_fence"
   ]
 }

@@ -13,5 +13,8 @@ public class ModTreeGen {
 
         BiomeModifications.addFeature(BiomeSelectors.categories(Biome.Category.FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.REDWOOD_PLACED.getKey().get());
+
+        BiomeModifications.addFeature(BiomeSelectors.categories(Biome.Category.PLAINS),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.EBONY_PLACED.getKey().get());
     }
 }

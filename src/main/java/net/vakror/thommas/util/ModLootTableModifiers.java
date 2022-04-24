@@ -50,6 +50,20 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.TOMATO))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 supplier.withPool(PoolBuilder.build());
+
+                FabricLootPoolBuilder iBuild = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.14f)) // Drops 100% of the time
+                        .with(ItemEntry.builder(ModItems.OATS))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 3.0f)).build());
+                supplier.withPool(poolBuilder.build());
+
+                FabricLootPoolBuilder IBuild = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.14f)) // Drops 100% of the time
+                        .with(ItemEntry.builder(ModItems.CUCUMBER))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+                supplier.withPool(poolBuilder.build());
             }
 
             if(IGLOO_STRUCTURE_CHEST_ID.equals(id)) {
@@ -58,6 +72,27 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(1.0f)) // Drops 100% of the time
                         .with(ItemEntry.builder(ModItems.DATA_TABLET))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                supplier.withPool(poolBuilder.build());
+
+                FabricLootPoolBuilder poolBuilders = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.21f)) // Drops 100% of the time
+                        .with(ItemEntry.builder(ModItems.RUBY_HORSE_ARMOR))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                supplier.withPool(poolBuilder.build());
+
+                FabricLootPoolBuilder builders = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.36f)) // Drops 100% of the time
+                        .with(ItemEntry.builder(ModItems.TITANIUM_HORSE_ARMOR))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                supplier.withPool(poolBuilder.build());
+
+                FabricLootPoolBuilder Builders = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.14f)) // Drops 100% of the time
+                        .with(ItemEntry.builder(ModItems.AMETHYST_HORSE_ARMOR))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 supplier.withPool(poolBuilder.build());
             }

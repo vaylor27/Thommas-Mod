@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P#P",
+    "P#P"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:titanium_ingot"
+    },
+    "P": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "thommas:titanium_fence"
+  }
+}

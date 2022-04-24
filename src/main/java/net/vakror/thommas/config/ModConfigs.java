@@ -59,6 +59,14 @@ public class ModConfigs {
     public static int NUMBER_OF_TOPAZ_ORE_VEINS_IN_CHUNK;
     public static int NUMBER_OF_TUNGSTEN_ORE_IN_VEIN;
     public static int NUMBER_OF_TUNGSTEN_ORE_VEINS_IN_CHUNK;
+    public static int NUMBER_OF_CITRINE_ORE_IN_VEIN;
+    public static int NUMBER_OF_CITRINE_ORE_VEINS_IN_CHUNK;
+    public static int NUMBER_OF_DEEPSLATE_CITRINE_ORE_IN_VEIN;
+    public static int NUMBER_OF_DEEPSLATE_CITRINE_ORE_VEINS_IN_CHUNK;
+    public static int NUMBER_OF_NETHERRACK_CITRINE_ORE_IN_VEIN;
+    public static int NUMBER_OF_NETHERRACK_CITRINE_ORE_VEINS_IN_CHUNK;
+    public static int NUMBER_OF_ENDSTONE_CITRINE_ORE_IN_VEIN;
+    public static int NUMBER_OF_ENDSTONE_CITRINE_ORE_VEINS_IN_CHUNK;
 
     public static void registerConfigs() {
         configs = new ModConfigProvider();
@@ -83,7 +91,7 @@ public class ModConfigs {
         createOreConfig("ruby", 9, 4);
         createOreConfig("aluminum", 3, 4);
         createOreConfig("amber", 7, 3);
-        createOreConfig("amethyst", 2, 3);
+        createOreConfig("amethyst", 1, 2);
         createOreConfig("bitumen", 6, 3);
         createOreConfig("chlorophyte", 4, 3);
         createOreConfig("copper", 7,8);
@@ -103,6 +111,10 @@ public class ModConfigs {
         createOreConfig("titanium",2,5);
         createOreConfig("topaz",2,5);
         createOreConfig("tungsten",4,7);
+        createOreConfig("citrine", 2, 1);
+        createOreConfig("deepslate_citrine", 4, 1);
+        createOreConfig("netherrack_citrine", 2, 1);
+        createOreConfig("endstone_citrine", 26, 3);
     }
 
     private static void assignConfigs() {
@@ -118,8 +130,8 @@ public class ModConfigs {
         NUMBER_OF_ALUMINUM_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_aluminum_ore_in_vein", 4);
         NUMBER_OF_AMBER_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_amber_ore_veins_in_chunk", 7);
         NUMBER_OF_AMBER_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_amber_ore_in_vein", 3);
-        NUMBER_OF_AMETHYST_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_amethyst_ore_veins_in_chunk", 2);
-        NUMBER_OF_AMETHYST_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_amethyst_ore_in_vein", 3);
+        NUMBER_OF_AMETHYST_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_amethyst_ore_veins_in_chunk", 1);
+        NUMBER_OF_AMETHYST_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_amethyst_ore_in_vein", 2);
         NUMBER_OF_BITUMEN_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_bitumen_ore_veins_in_chunk",6);
         NUMBER_OF_BITUMEN_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_bitumen_ore_in_vein_chunk",3);
         NUMBER_OF_PLATINUM_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_platinum_ore_veins_in_chunk", 1);
@@ -158,6 +170,14 @@ public class ModConfigs {
         NUMBER_OF_LEAD_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_lead_ore_in_vein", 7);
         NUMBER_OF_LUMENITE_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_lumenite_ore_veins_in_chunk", 3);
         NUMBER_OF_LUMENITE_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_lumenite_ore_in_vein", 6);
+        NUMBER_OF_CITRINE_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_citrine_ore_in_vein", 1);
+        NUMBER_OF_CITRINE_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_citrine_ore_veins_in_chunk", 2);
+        NUMBER_OF_DEEPSLATE_CITRINE_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_deepslate_citrine_ore_in_vein", 1);
+        NUMBER_OF_DEEPSLATE_CITRINE_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_deepslate_citrine_ore_veins_in_chunk",4);
+        NUMBER_OF_NETHERRACK_CITRINE_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_netherrack_citrine_ore_in_vein", 1);
+        NUMBER_OF_NETHERRACK_CITRINE_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_netherrack_citrine_ore_veins_in_chunk", 2);
+        NUMBER_OF_ENDSTONE_CITRINE_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_endstone_citrine_ore_in_vein", 3);
+        NUMBER_OF_ENDSTONE_CITRINE_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_endstone_citrine_ore_veins_in_chunk", 26);
 
 
         Thommas.LOGGER.info("All " + configs.getConfigsList().size() + " configs have been set properly!");

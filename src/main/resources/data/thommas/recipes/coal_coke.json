@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:charcoal"
+    },
+    "X": {
+      "item": "thommas:dust"
+    }
+  },
+  "result": {
+    "item": "thommas:titanium_slab",
+    "count": 2
+  }
+}

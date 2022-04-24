@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "thommas:block/amethyst_block"
+  }
+}

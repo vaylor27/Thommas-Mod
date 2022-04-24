@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:citrine"
+    }
+  },
+  "result": {
+    "item": "thommas:citrine_pressure_plate"
+  }
+}

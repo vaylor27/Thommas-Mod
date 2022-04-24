@@ -15,6 +15,13 @@
     "thommas:redwood_planks",
     "thommas:redwood_log",
     "thommas:stripped_redwood_wood",
-    "thommas:stripped_redwood_log"
+    "thommas:stripped_redwood_log",
+    "thommas:ebony_wood",
+    "thommas:ebony_planks",
+    "thommas:ebony_log",
+    "thommas:stripped_ebony_wood",
+    "thommas:stripped_ebony_log",
+    "thommas:ebony_trapdoor",
+    "thommas:ebony_door"
   ]
 }

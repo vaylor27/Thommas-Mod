@@ -20,12 +20,16 @@ import static net.vakror.thommas.world.gen.ModConfiguredFeatures.*;
 
 public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> JACARANDA_PLACED = PlacedFeatures.register("jacaranda_placed",
-            ModConfiguredFeatures.JACARANDA_SPAWN, VegetationPlacedFeatures.modifiers(
+            JACARANDA_SPAWN, VegetationPlacedFeatures.modifiers(
                     PlacedFeatures.createCountExtraModifier(0, 0.01F, 2)));
 
     public static final RegistryEntry<PlacedFeature> REDWOOD_PLACED = PlacedFeatures.register("redwood_placed",
-            ModConfiguredFeatures.REDWOOD_SPAWN, VegetationPlacedFeatures.modifiers(
+            REDWOOD_SPAWN, VegetationPlacedFeatures.modifiers(
                     PlacedFeatures.createCountExtraModifier(0, 0.01F, 5)));
+
+    public static final RegistryEntry<PlacedFeature> EBONY_PLACED = PlacedFeatures.register("ebony_placed",
+            EBONY_SPAWN, VegetationPlacedFeatures.modifiers(
+                    PlacedFeatures.createCountExtraModifier(0, 0.1F, 15)));
 
 
 
@@ -235,11 +239,55 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             ));
 
+    public static final PlacedFeature CITRINE_ORE_PLACED_FEATURE= new PlacedFeature(
+            RegistryEntry.of(CITRINE_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(NUMBER_OF_CITRINE_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+            ));
+
+    public static final PlacedFeature DEEPSLATE_CITRINE_ORE_PLACED_FEATURE= new PlacedFeature(
+            RegistryEntry.of(DEEPSLATE_CITRINE_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(NUMBER_OF_DEEPSLATE_CITRINE_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+            ));
+
+    public static final PlacedFeature NETHERRACK_CITRINE_ORE_PLACED_FEATURE= new PlacedFeature(
+            RegistryEntry.of(NETHERRACK_CITRINE_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(NUMBER_OF_NETHERRACK_CITRINE_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+            ));
+
+    public static final PlacedFeature ENDSTONE_ORE_PLACED_FEATURE= new PlacedFeature(
+            RegistryEntry.of(ENDSTONE_CITRINE_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(NUMBER_OF_ENDSTONE_CITRINE_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+            ));
+
 
 
 
     public static final RegistryEntry<PlacedFeature> CORRUPTED_PLACED = PlacedFeatures.register("corrupted_placed",
             ModConfiguredFeatures.CORRUPTED_FLOWER, RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> ORCHID_PLACED = PlacedFeatures.register("orchid_placed",
+            ORCHID, RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> HYACINTH_PLACED = PlacedFeatures.register("hyacinth_placed",
+            HYACINTH, RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(),
+            PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+    public static final RegistryEntry<PlacedFeature> PINK_PLACED = PlacedFeatures.register("pink_placed",
+            PINK_ROSE, RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(),
             PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
     public static void registerOrePlacedFeatures() {
@@ -269,6 +317,10 @@ public class ModPlacedFeatures {
         registerPlacedFeature(TITANIUM_ORE_PLACED_FEATURE, "titanium_ore");
         registerPlacedFeature(TOPAZ_ORE_PLACED_FEATURE, "topaz_ore");
         registerPlacedFeature(TUNGSTEN_ORE_PLACED_FEATURE, "tungsten_ore");
+        registerPlacedFeature(CITRINE_ORE_PLACED_FEATURE, "citrine_ore");
+        registerPlacedFeature(DEEPSLATE_CITRINE_ORE_PLACED_FEATURE, "deepslate_citrine_ore");
+        registerPlacedFeature(NETHERRACK_CITRINE_ORE_PLACED_FEATURE, "netherrack_citrine_ore");
+        registerPlacedFeature(ENDSTONE_ORE_PLACED_FEATURE, "endstone_citrine_ore");
     }
 
     public static final RegistryEntry<PlacedFeature> HONEY_OASIS = PlacedFeatures.register("honey_oasis", ModConfiguredFeatures.HONEY_OASIS, RarityFilterPlacementModifier.of(20), SquarePlacementModifier.of(), PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of());
@@ -278,6 +330,11 @@ public class ModPlacedFeatures {
     private static void registerPlacedFeature(PlacedFeature feature, String name) {
         if (name.contains("nether")) {
             BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES,
+                    RegistryKey.of(Registry.PLACED_FEATURE_KEY,
+                            new Identifier(Thommas.MOD_ID, name)));
+        }
+        if (name.contains("end")) {
+            BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
                     RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                             new Identifier(Thommas.MOD_ID, name)));
         }

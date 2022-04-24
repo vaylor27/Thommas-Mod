@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "thommas:mythril_wall"
+    "thommas:mythril_wall",
+    "thommas:titanium_wall"
   ]
 }

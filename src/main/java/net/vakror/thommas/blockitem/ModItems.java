@@ -38,13 +38,13 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.ROTTEN)));
 
     public static final Item MYTHRIL_SWORD = registerItem("mythril_sword",
-            new ModSlownessSword(ModToolMaterials.MYTHRIL, 1, 4,new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new ModBleedSword(ModToolMaterials.MYTHRIL, 1, 4,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MYTHRIL_PICK = registerItem("mythril_pick",
             new ModPickaxe(ModToolMaterials.MYTHRIL, 1, 2,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MYTHRIL_AXE = registerItem("mythril_axe",
-            new ModSlownessAxe(ModToolMaterials.MYTHRIL, 4, 3,new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new ModBleedAxe(ModToolMaterials.MYTHRIL, 4, 3,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MYTHRIL_HOE = registerItem("mythril_hoe",
             new ModHoe(ModToolMaterials.MYTHRIL, 1, 1,new FabricItemSettings().group(ModItemGroup.TOOLS)));
@@ -104,7 +104,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item RUBY_SWORD = registerItem("ruby_sword",
-            new SwordItem(ModToolMaterials.RUBY, 3, 1f,
+            new ModBleedSword(ModToolMaterials.RUBY, 3, 1f,
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
     public static final Item RUBY_SHOVEL = registerItem("ruby_shovel",
             new ShovelItem(ModToolMaterials.RUBY, 0, 1f,
@@ -114,7 +114,7 @@ public class ModItems {
             new ModPickaxe(ModToolMaterials.RUBY, 0, 1f,
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
     public static final Item RUBY_AXE = registerItem("ruby_axe",
-            new ModAxe(ModToolMaterials.RUBY, 8, 3f,
+            new ModBleedAxe(ModToolMaterials.RUBY, 8, 3f,
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
     public static final Item RUBY_HOE = registerItem("ruby_hoe",
             new ModHoe(ModToolMaterials.RUBY, 0, 0f,
@@ -176,9 +176,6 @@ public class ModItems {
     public static final Item AMETHYST_DUST = registerItem("amethyst_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
-    public static final Item AMETHYST_GEM = registerItem("amethyst_gem",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
-
     public static final Item BITUMEN_BALL = registerItem("bitumen_ball",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
@@ -192,7 +189,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item CHAINSAW = registerItem("chainsaw",
-            new ModAxe(ModToolMaterials.ADAMANTIUM,2, 23, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
+            new ModBleedAxe(ModToolMaterials.ADAMANTIUM,2, 23, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
 
     public static final Item CHLOROPHYTE_DUST = registerItem("chlorophyte_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -387,10 +384,10 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item MAGIC_AXE = registerItem("magic_axe",
-            new ModSlownessAxe(ModToolMaterials.MAGIC, 4, 0, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new ModBleedAxe(ModToolMaterials.MAGIC, 4, 0, new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MAGIC_SWORD = registerItem("magic_sword",
-            new ModSlownessSword(ModToolMaterials.MAGIC, 3, 2, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new ModBleedSword(ModToolMaterials.MAGIC, 3, 2, new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MAGIC_HOE = registerItem("magic_hoe",
             new ModHoe(ModToolMaterials.MAGIC, 0, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
@@ -415,6 +412,128 @@ public class ModItems {
 
     public static Item REINFORCED_SHIELD = registerItem("reinforced_shield",
             new ShieldItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(100).fireproof().rarity(Rarity.COMMON)));
+
+    public static Item COAL_COKE = registerItem("coal_coke",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
+
+    public static Item TITANIUM_SWORD = registerItem("titanium_sword",
+            new ModBleedSword(ModToolMaterials.TITANIUM, 7, 8.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1).fireproof().rarity(Rarity.RARE)));
+
+    public static Item TITANIUM_AXE = registerItem("titanium_axe",
+            new ModBleedAxe(ModToolMaterials.TITANIUM, 9, 11.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof().maxCount(1).rarity(Rarity.RARE)));
+
+    public static Item TITANIUM_PICKAXE = registerItem("titanium_pickaxe",
+            new ModPickaxe(ModToolMaterials.TITANIUM, 4, 5.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE).maxCount(1).fireproof()));
+
+    public static Item TITANIUM_HOE = registerItem("titanium_hoe",
+            new ModHoe(ModToolMaterials.TITANIUM, 1, 1.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE).maxCount(1).fireproof()));
+
+    public static Item TITANIUM_SHOVEL = registerItem("titanium_shovel",
+            new ShovelItem(ModToolMaterials.TITANIUM, 3, 2.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE).maxCount(1).fireproof()));
+
+    public static Item TITANIUM_HELMET = registerItem("titanium_helmet",
+            new ArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE)));
+
+    public static Item TITANIUM_CHESTPLATE = registerItem("titanium_chestplate",
+            new ArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE)));
+
+    public static Item TITANIUM_LEGGINGS = registerItem("titanium_leggings",
+            new ArmorItem(ModArmorMaterials.TITANIUM, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE)));
+
+    public static Item TITANIUM_BOOTS = registerItem("titanium_boots",
+            new ModTitaniumArmor(ModArmorMaterials.TITANIUM, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE)));
+
+    public static final Item TITANIUM_HORSE_ARMOR = registerItem("titanium_horse_armor",
+            new HorseArmorItem(12, "titanium",
+                    new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).rarity(Rarity.RARE)));
+
+    public static final Item RAW_TITANIUM = registerItem("raw_titanium",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static final Item OATS = registerItem("oats",
+            new AliasedBlockItem(ModBlocks.OATS, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.GRAPE)));
+
+    public static Item AMETHYST_SWORD = registerItem("amethyst_sword",
+            new ModBleedSword(ModToolMaterials.AMETHYST, 7, 8.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1).fireproof().rarity(Rarity.RARE)));
+
+    public static Item AMETHYST_AXE = registerItem("amethyst_axe",
+            new ModBleedAxe(ModToolMaterials.AMETHYST, 9, 11.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof().maxCount(1).rarity(Rarity.RARE)));
+
+    public static Item AMETHYST_PICKAXE = registerItem("amethyst_pickaxe",
+            new ModPickaxe(ModToolMaterials.AMETHYST, 4, 5.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE).maxCount(1).fireproof()));
+
+    public static Item AMETHYST_HOE = registerItem("amethyst_hoe",
+            new ModHoe(ModToolMaterials.AMETHYST, 1, 1.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE).maxCount(1).fireproof()));
+
+    public static Item AMETHYST_SHOVEL = registerItem("amethyst_shovel",
+            new ShovelItem(ModToolMaterials.AMETHYST, 3, 2.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE).maxCount(1).fireproof()));
+
+    public static Item AMETHYST_HELMET = registerItem("amethyst_helmet",
+            new ArmorItem(ModArmorMaterials.AMETHYST, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE)));
+
+    public static Item AMETHYST_CHESTPLATE = registerItem("amethyst_chestplate",
+            new ArmorItem(ModArmorMaterials.AMETHYST, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE)));
+
+    public static Item AMETHYST_LEGGINGS = registerItem("amethyst_leggings",
+            new ModAmethystArmor(ModArmorMaterials.AMETHYST, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE)));
+
+    public static Item AMETHYST_BOOTS = registerItem("amethyst_boots",
+            new ArmorItem(ModArmorMaterials.AMETHYST, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.RARE)));
+
+    public static final Item AMETHYST_HORSE_ARMOR = registerItem("amethyst_horse_armor",
+            new HorseArmorItem(16, "amethyst",
+                    new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).rarity(Rarity.RARE)));
+
+    public static final Item CUCUMBER = registerItem("cucumber",
+            new AliasedBlockItem(ModBlocks.CUCUMBER_PLANT, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.TOMATO)));
+
+    public static Item CITRINE_SWORD = registerItem("citrine_sword",
+            new ModBleedSword(ModToolMaterials.CITRINE, 7, 8.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+
+    public static Item CITRINE_AXE = registerItem("citrine_axe",
+            new ModBleedAxe(ModToolMaterials.CITRINE, 9, 11.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof().maxCount(1).rarity(Rarity.EPIC)));
+
+    public static Item CITRINE_PICKAXE = registerItem("citrine_pickaxe",
+            new ModPickaxe(ModToolMaterials.CITRINE, 4, 5.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
+
+    public static Item CITRINE_HOE = registerItem("citrine_hoe",
+            new ModHoe(ModToolMaterials.CITRINE, 1, 1.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
+
+    public static Item CITRINE_SHOVEL = registerItem("citrine_shovel",
+            new ShovelItem(ModToolMaterials.CITRINE, 3, 2.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
+
+    public static Item CITRINE_HELMET = registerItem("citrine_helmet",
+            new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC)));
+
+    public static Item CITRINE_CHESTPLATE = registerItem("citrine_chestplate",
+            new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC)));
+
+    public static Item CITRINE_LEGGINGS = registerItem("citrine_leggings",
+            new ArmorItem(ModArmorMaterials.CITRINE, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC)));
+
+    public static Item CITRINE_BOOTS = registerItem("citrine_boots",
+            new ModCitrineArmor(ModArmorMaterials.CITRINE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC)));
+
+    public static Item CITRINE = registerItem("citrine",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item RAW_CITRINE = registerItem("raw_citrine",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

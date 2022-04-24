@@ -1,0 +1,15 @@
+{
+  "type": "thommas:lightning",
+  "weather": "thundering",
+  "ingredients": [
+    {
+      "item": "thommas:tungsten_ore"
+    },
+    {
+      "item": "thommas:magic_charge"
+    }
+  ],
+  "output": {
+    "item": "thommas:ruby"
+  }
+}

@@ -9,7 +9,7 @@ https://github.com/magistermaks/fabric-simplelibs/blob/master/simple-config/Simp
 Distributed under MIT-License
 
 Several Pieces of code by KaupenJoe:
-His tutorials on coding a fabric mod on YouTube
+His tutorials on coding a fabric and forge mod on YouTube
 Distributed under MIT-License
 
 Some textures used released and freed of any copyright by sayblekitten:

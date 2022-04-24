@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "thommas:redwood_leaves"
+    "thommas:redwood_leaves",
+    "thommas:jacaranda_leaves",
+    "thommas:ebony_log"
   ]
 }

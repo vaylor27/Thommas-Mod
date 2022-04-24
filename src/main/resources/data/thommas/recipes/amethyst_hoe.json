@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "P": {
+      "item": "thommas:amethyst"
+    }
+  },
+  "result": {
+    "item": "thommas:amethyst_hoe"
+  }
+}

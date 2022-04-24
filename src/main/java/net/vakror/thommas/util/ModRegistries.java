@@ -49,7 +49,7 @@ public class ModRegistries {
     private static void registerFuels() {
         Thommas.LOGGER.info("Registering Fuels for " + Thommas.MOD_ID);
         FuelRegistry registry = FuelRegistry.INSTANCE;
-
+        registry.add(ModItems.COAL_COKE, 20000);
         registry.add(ModItems.CORRUPTED_DUST, 2000);
     }
 
@@ -66,6 +66,8 @@ public class ModRegistries {
         StrippableBlockRegistry.register(ModBlocks.REDWOOD_WOOD, ModBlocks.STRIPPED_REDWOOD_WOOD);
         StrippableBlockRegistry.register(ModBlocks.JACARANDA_LOG, ModBlocks.STRIPPED_JACARANDA_LOG);
         StrippableBlockRegistry.register(ModBlocks.JACARANDA_WOOD, ModBlocks.STRIPPED_JACARANDA_WOOD);
+        StrippableBlockRegistry.register(ModBlocks.EBONY_LOG, ModBlocks.STRIPPED_EBONY_LOG);
+        StrippableBlockRegistry.register(ModBlocks.EBONY_WOOD, ModBlocks.STRIPPED_EBONY_WOOD);
     }
 
     private static void registerFlammableBlock() {
@@ -83,6 +85,12 @@ public class ModRegistries {
         instance.add(ModBlocks.STRIPPED_JACARANDA_WOOD, 5, 5);
         instance.add(ModBlocks.JACARANDA_PLANKS, 5, 20);
         instance.add(ModBlocks.JACARANDA_LEAVES, 30, 60);
+        instance.add(ModBlocks.EBONY_LOG, 5, 5);
+        instance.add(ModBlocks.STRIPPED_EBONY_LOG, 5, 5);
+        instance.add(ModBlocks.EBONY_WOOD, 5, 5);
+        instance.add(ModBlocks.STRIPPED_EBONY_WOOD, 5, 5);
+        instance.add(ModBlocks.EBONY_PLANKS, 5, 20);
+        instance.add(ModBlocks.EBONY_LEAVES, 30, 60);
     }
 
     private static void registerOreConfiguredFeatures() {
@@ -164,6 +172,20 @@ public class ModRegistries {
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "tungsten_ore"), TUNGSTEN_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "citrine_ore"), CITRINE_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "deepslate_citrine_ore"), DEEPSLATE_CITRINE_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "netherrack_citrine_ore"), NETHERRACK_CITRINE_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "endstone_citrine_ore"), ENDSTONE_CITRINE_ORE_CONFIGURED_FEATURE);
+
+
     }
 
     private static void registerEvents() {

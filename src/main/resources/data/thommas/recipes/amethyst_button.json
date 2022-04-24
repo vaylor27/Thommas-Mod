@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:titanium_button"
+  }
+}

@@ -20,13 +20,13 @@ public enum ModArmorMaterials implements ArmorMaterial {
     MYTHRIL("mythril", 46, new int[]{3, 6, 8, 3}, 36, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, 3.0F, () -> {
         return Ingredient.ofItems(ModItems.MYTHRIL_INGOT);
     }),
-    TITANIUM("titanium", 18900, new int[]{4, 7, 9, 14}, 47, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, 8.0F, 0.0F, () -> {
+    TITANIUM("titanium", 64343, new int[]{4, 7, 9, 14}, 47, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, 8.0F, 0.0F, () -> {
         return Ingredient.ofItems(ModItems.TITANIUM_INGOT);
     }),
-    AMETHYST("amethyst", 24600, new int[]{25, 24, 26, 23}, 56, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, 15.0F, 2.0F, () -> {
+    AMETHYST("amethyst", 64334, new int[]{25, 24, 26, 23}, 56, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, 15.0F, 2.0F, () -> {
         return Ingredient.ofItems(ModItems.AMETHYST);
     }),
-    CITRINE("citrine", 3096800, new int[]{6, 8, 10, 14}, 56, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, 7.0F, 1.0F, () -> {
+    CITRINE("citrine", 4255, new int[]{6, 8, 10, 14}, 56, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, 9.0F, 1.0F, () -> {
         return Ingredient.ofItems(ModItems.CITRINE);
     }),
     RUBY("ruby", 1500, new int[]{3, 6, 8, 3}, 38, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F, 7.0F, () -> {

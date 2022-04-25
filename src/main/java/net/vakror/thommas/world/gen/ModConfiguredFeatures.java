@@ -121,7 +121,7 @@ public class ModConfiguredFeatures {
 
     public static final ConfiguredFeature<?, ?> CHLOROPHYTE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
-                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    new BlockMatchRuleTest(Blocks.DIRT),
                     ModBlocks.CHLOROPHYTE_ORE.getDefaultState(),
                     ModConfigs.NUMBER_OF_CHLOROPHYTE_ORE_IN_VEIN)); // Vein size
 
@@ -181,7 +181,7 @@ public class ModConfiguredFeatures {
 
     public static final ConfiguredFeature<?, ?> SALTPETER_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
-                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
+                    new BlockMatchRuleTest(Blocks.SANDSTONE),
                     ModBlocks.SALTPETER_ORE.getDefaultState(),
                     ModConfigs.NUMBER_OF_SALTPETER_ORE_IN_VEIN)); // Vein size
 

@@ -1,18 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#X "
+    "I#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:charcoal"
+    "I": {
+      "item": "thommas:weak_dark_crystal"
     },
-    "X": {
+    "#": {
       "item": "thommas:magic_dust"
     }
   },
   "result": {
-    "item": "thommas:coal_coke",
-    "count": 2
+    "item": "thommas:dark_crystal"
   }
 }

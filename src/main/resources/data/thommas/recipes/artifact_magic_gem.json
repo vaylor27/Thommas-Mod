@@ -2,18 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "III",
-    "I#I",
+    "IXI",
     "III"
   ],
   "key": {
     "I": {
-      "item": "minecraft:gunpowder"
+      "item": "thommas:magic_dust"
     },
-    "#": {
-      "item": "thommas:small_soulstone"
+    "X": {
+      "item": "thommas:dust"
     }
   },
   "result": {
-    "item": "thommas:corrupted_dust"
+    "item": "thommas:magic_gem",
+    "count": 1
   }
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:black_concrete"
+    },
+    "X": {
+      "item": "thommas:bloodstone"
+    }
+  },
+  "result": {
+    "item": "thommas:black_pearl",
+    "count": 2
+  }
+}

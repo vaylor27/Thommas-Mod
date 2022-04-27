@@ -1,19 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " # ",
-    "#X#",
-    " # "
+    "III",
+    "IXI",
+    "III"
   ],
   "key": {
-    "#": {
-      "item": "thommas:mythril_ingot"
+    "I": {
+      "item": "minecraft:soul_sand"
     },
     "X": {
       "item": "thommas:magic_gem"
     }
   },
   "result": {
-    "item": "thommas:speedy_block"
+    "item": "thommas:soul_plasm",
+    "count": 1
   }
 }

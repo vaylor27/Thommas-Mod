@@ -631,7 +631,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
 
     public static Item AMULET = registerItem("amulet",
-            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+            new AmuletItem(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
 
     public static Item DARK_CRYSTAL = registerItem("dark_crystal",
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));

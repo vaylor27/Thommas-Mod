@@ -1,19 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " # ",
-    "#X#",
-    " # "
+    "III",
+    "IXI",
+    "III"
   ],
   "key": {
-    "#": {
-      "item": "thommas:mythril_ingot"
+    "I": {
+      "item": "minecraft:cobblestone"
     },
     "X": {
       "item": "thommas:magic_gem"
     }
   },
   "result": {
-    "item": "thommas:speedy_block"
+    "item": "thommas:runestone",
+    "count": 1
   }
 }

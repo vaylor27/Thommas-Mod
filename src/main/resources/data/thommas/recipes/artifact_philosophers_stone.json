@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#I#",
+    "IXI",
+    "#I#"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:large_soulstone"
+    },
+    "X": {
+      "item": "thommas:bloodstone"
+    },
+    "I": {
+      "item": "thommas:dark_crystal"
+    }
+  },
+  "result": {
+    "item": "thommas:philosopher_stone",
+    "count": 2
+  }
+}

@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#  ",
-    "P  "
+    "#",
+    "P"
   ],
   "key": {
     "#": {
-      "item": "thommas:dust"
+      "item": "thommas:magic_gem"
     },
     "P": {
       "item": "thommas:corrupted_dust"

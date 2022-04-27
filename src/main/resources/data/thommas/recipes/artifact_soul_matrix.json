@@ -2,18 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "III",
-    "I#I",
+    "IXI",
     "III"
   ],
   "key": {
     "I": {
-      "item": "minecraft:gunpowder"
+      "tag": "minecraft:logs"
     },
-    "#": {
-      "item": "thommas:small_soulstone"
+    "X": {
+      "item": "thommas:soul_plasm"
     }
   },
   "result": {
-    "item": "thommas:corrupted_dust"
+    "item": "thommas:soul_matrix",
+    "count": 1
   }
 }

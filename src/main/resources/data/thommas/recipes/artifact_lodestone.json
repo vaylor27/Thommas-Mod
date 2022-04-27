@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:runestone"
+    },
+    "X": {
+      "item": "thommas:heart_mechanism"
+    }
+  },
+  "result": {
+    "item": "thommas:lodestone",
+    "count": 1
+  }
+}

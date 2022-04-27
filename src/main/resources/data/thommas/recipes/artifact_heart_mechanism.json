@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:treeheart"
+    }
+  },
+  "result": {
+    "item": "thommas:heart_mechanism"
+  }
+}

@@ -1,23 +1,23 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "XIX",
     "I#I",
-    "XIX"
+    "#X#",
+    "I#I"
   ],
   "key": {
     "I": {
-      "item": "minecraft:beacon"
+      "item": "thommas:medium_soulstone"
     },
     "#": {
-      "item": "thommas:reinforced_shield"
+      "item": "thommas:malign_ember"
     },
     "X": {
-      "item": "thommas:bloodstone"
+      "item": "thommas:ammonite"
     }
   },
   "result": {
-    "item": "thommas:heavenly_shield",
+    "item": "thommas:emperyan_jewel",
     "count": 1
   }
 }

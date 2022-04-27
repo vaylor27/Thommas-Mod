@@ -1,19 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
+    "# #",
     " # ",
-    "#X#",
-    " # "
+    " P "
   ],
   "key": {
-    "#": {
-      "item": "thommas:mythril_ingot"
-    },
-    "X": {
+    "P": {
       "item": "thommas:magic_gem"
+    },
+    "#": {
+      "item": "minecraft:string"
     }
   },
   "result": {
-    "item": "thommas:speedy_block"
+    "item": "thommas:amulet"
   }
 }

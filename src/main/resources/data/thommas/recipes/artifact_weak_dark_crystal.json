@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IXI",
+    "PIP"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:bloodstone"
+    },
+    "P": {
+      "item": "thommas:black_pearl"
+    },
+    "I": {
+      "item": "thommas:emperyan_jewel"
+    }
+  },
+  "result": {
+    "item": "thommas:weak_dark_crystal"
+  }
+}

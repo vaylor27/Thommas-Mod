@@ -9,14 +9,17 @@ If making a fork of this mod **DO NOT DELETE THE CREDITS.TXT**.
 
 # CRAFTING RECIPES
 
-**ALMOST** all ores can be smelted in the "Mythril Blaster" like in the image below ![](img/Blaster.png)
+for info on recipes please visit
 # LOOT TABLES
 
-**CREEPERS:**
-Drop corrupted dust
+**CREEPER:**
+Drops corrupted dust
 
 **VANILLA GRASS:**
-Drop modded seeds
+Drops modded seeds
+
+**SAND:**
+Rarely Drops Ammonite.
 
 # Features
 

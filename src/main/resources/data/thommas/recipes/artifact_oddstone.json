@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:large_soulstone"
+    },
+    "X": {
+      "item": "thommas:runestone"
+    }
+  },
+  "result": {
+    "item": "thommas:oddstone",
+    "count": 2
+  }
+}

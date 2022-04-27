@@ -6,14 +6,14 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:green_stained_glass"
-    },
     "P": {
-      "item": "thommas:emperyan_jewel"
+      "item": "thommas:medium_inert_soulstone"
+    },
+    "#": {
+      "item": "thommas:soul_plasm"
     }
   },
   "result": {
-    "item": "thommas:winter_window"
+    "item": "thommas:medium_soulstone"
   }
 }

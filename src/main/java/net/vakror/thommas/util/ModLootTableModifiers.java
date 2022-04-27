@@ -11,8 +11,10 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 public class ModLootTableModifiers {
-    private static final Identifier GRASS_BLOCK_ID
+    private static final Identifier GRASS_ID
             = new Identifier("minecraft", "blocks/grass");
+    private static final Identifier SAND_ID
+            = new Identifier("minecraft", "blocks/sand");
     private static final Identifier IGLOO_STRUCTURE_CHEST_ID
             = new Identifier("minecraft", "chests/igloo_chest");
     private static final Identifier DESERT_TEMPLE_CHEST_ID
@@ -24,7 +26,7 @@ public class ModLootTableModifiers {
     public static void modifyLootTables() {
         LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
             //check for grass block loot table.
-            if(GRASS_BLOCK_ID.equals(id)) {
+            if(GRASS_ID.equals(id)) {
                 // Adds Grape Seeds to the grass loot table.
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
@@ -153,6 +155,15 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.36f)) // Drops 1% of the time
                         .with(ItemEntry.builder(ModItems.CORRUPTED_DUST))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(4.0f, 9.0f)).build());
+                supplier.withPool(poolBuilder.build());
+            }
+            if(SAND_ID.equals(id)) {
+                // Adds a Corrupted Dust to Creepers.
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.01f)) // Drops 1% of the time
+                        .with(ItemEntry.builder(ModItems.AMMONITE))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(4.0f, 9.0f)).build());
                 supplier.withPool(poolBuilder.build());
             }

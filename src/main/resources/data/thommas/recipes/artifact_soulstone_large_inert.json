@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:medium_inert_soulstone"
+    },
+    "#": {
+      "item": "thommas:dark_crystal"
+    }
+  },
+  "result": {
+    "item": "thommas:large_inert_soulstone"
+  }
+}

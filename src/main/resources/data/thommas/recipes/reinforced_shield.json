@@ -7,10 +7,10 @@
   ],
   "key": {
     "I": {
-      "item": "thommas:tungsten_block"
+      "item": "thommas:philosopher_stone"
     },
     "#": {
-      "item": "minecraft:glass"
+      "item": "thommas:magic_gem"
     },
     "X": {
       "item": "minecraft:shield"

@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#X "
+    "I##"
   ],
   "key": {
     "#": {
-      "item": "minecraft:charcoal"
+      "item": "minecraft:stick"
     },
-    "X": {
-      "item": "thommas:magic_dust"
+    "I": {
+      "item": "thommas:lodestone"
     }
   },
   "result": {
-    "item": "thommas:coal_coke",
+    "item": "thommas:flute",
     "count": 2
   }
 }

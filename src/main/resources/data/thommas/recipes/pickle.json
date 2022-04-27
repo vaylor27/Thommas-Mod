@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IX"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:pickling_substance"
+    },
+    "X": {
+      "item": "thommas:cucumber"
+    }
+  },
+  "result": {
+    "item": "thommas:pickle",
+    "count": 1
+  }
+}

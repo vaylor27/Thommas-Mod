@@ -5,8 +5,10 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import net.vakror.thommas.blockitem.ModBlocks;
+import net.vakror.thommas.blockitem.ModItems;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
 import net.vakror.thommas.screen.LightningChannelerScreen;
 import net.vakror.thommas.screen.ModScreenHandlers;
@@ -43,6 +45,9 @@ public class ThommasClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CUCUMBER_PLANT, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_ROSE, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EBONY_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLIGHTSPORE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CAVEWHEAT, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CORN, RenderLayer.getCutout());
 
         ModModelPredicateProvider.registerModModels();
 

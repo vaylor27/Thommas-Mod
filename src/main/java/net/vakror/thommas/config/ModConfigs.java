@@ -67,6 +67,8 @@ public class ModConfigs {
     public static int NUMBER_OF_NETHERRACK_CITRINE_ORE_VEINS_IN_CHUNK;
     public static int NUMBER_OF_ENDSTONE_CITRINE_ORE_IN_VEIN;
     public static int NUMBER_OF_ENDSTONE_CITRINE_ORE_VEINS_IN_CHUNK;
+    public static int NUMBER_OF_SALT_ORE_VEINS_IN_CHUNK;
+    public static int NUMBER_OF_SALT_ORE_IN_VEIN;
 
     public static void registerConfigs() {
         configs = new ModConfigProvider();
@@ -115,6 +117,7 @@ public class ModConfigs {
         createOreConfig("deepslate_citrine", 4, 1);
         createOreConfig("netherrack_citrine", 2, 1);
         createOreConfig("endstone_citrine", 26, 3);
+        createOreConfig("salt", 40, 9);
     }
 
     private static void assignConfigs() {
@@ -176,8 +179,10 @@ public class ModConfigs {
         NUMBER_OF_DEEPSLATE_CITRINE_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_deepslate_citrine_ore_veins_in_chunk",4);
         NUMBER_OF_NETHERRACK_CITRINE_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_netherrack_citrine_ore_in_vein", 1);
         NUMBER_OF_NETHERRACK_CITRINE_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_netherrack_citrine_ore_veins_in_chunk", 2);
-        NUMBER_OF_ENDSTONE_CITRINE_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_endstone_citrine_ore_in_vein", 3);
-        NUMBER_OF_ENDSTONE_CITRINE_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_endstone_citrine_ore_veins_in_chunk", 26);
+        NUMBER_OF_ENDSTONE_CITRINE_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_endstone_citrine_ore_in_vein", 9);
+        NUMBER_OF_ENDSTONE_CITRINE_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_endstone_citrine_ore_veins_in_chunk", 40);
+        NUMBER_OF_SALT_ORE_IN_VEIN = CONFIG.getOrDefault("config.number_of_salt_ore_in_vein", 9);
+        NUMBER_OF_SALT_ORE_VEINS_IN_CHUNK = CONFIG.getOrDefault("config.number_of_salt_ore_veins_in_chunk", 40);
 
 
         Thommas.LOGGER.info("All " + configs.getConfigsList().size() + " configs have been set properly!");

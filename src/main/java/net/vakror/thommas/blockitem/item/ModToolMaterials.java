@@ -40,11 +40,11 @@ public enum ModToolMaterials implements ToolMaterial {
     TITANIUM(MiningLevels.NETHERITE, 10000, 35.0F, 7.0F, 40, () -> {
         return Ingredient.ofItems(ModItems.TITANIUM_INGOT);
     }),
-    AMETHYST(MiningLevels.NETHERITE, 7500, 25, 9.0F, 56, () -> {
+    AMETHYST(MiningLevels.NETHERITE, 544522, 40, 10F, 30, () -> {
         return Ingredient.ofItems(ModItems.AMETHYST);
     }),
 
-    CITRINE(MiningLevels.NETHERITE, 2140, 27, 13.0F, 76, () -> {
+    CITRINE(MiningLevels.NETHERITE, 5424365, 50, 20.0F, 30, () -> {
         return Ingredient.ofItems(ModItems.CITRINE);
     }),
 

@@ -1,5 +1,4 @@
 package net.vakror.thommas.effect;
-
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffect;
@@ -16,18 +15,6 @@ public class BleedEffect extends StatusEffect {
     public void applyUpdateEffect(LivingEntity entity, int pAmplifier) {
         if (entity.getHealth() > 5.0F) {
             entity.damage(DamageSource.MAGIC, 5.0F);
-        }
-        else if (entity.getHealth() > 4.0F) {
-            entity.damage(DamageSource.MAGIC, 4.0F);
-        }
-        else if (entity.getHealth() > 3.0F) {
-            entity.damage(DamageSource.MAGIC, 3.0F);
-        }
-        else if (entity.getHealth() > 2.0F) {
-            entity.damage(DamageSource.MAGIC, 2.0F);
-        }
-        else if (entity.getHealth() > 1.0F) {
-            entity.damage(DamageSource.MAGIC, 1.0F);
         }
         if (entity.getHealth() < 10.0) {
             entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 2000, 2));

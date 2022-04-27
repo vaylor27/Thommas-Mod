@@ -8,8 +8,6 @@ import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
-import net.minecraft.world.gen.trunk.GiantTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.config.ModConfigs;
@@ -106,12 +104,6 @@ public class ModConfiguredFeatures {
                     OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
                     ModBlocks.AMBER_ORE.getDefaultState(),
                     ModConfigs.NUMBER_OF_AMBER_ORE_IN_VEIN)); // Vein size
-
-    public static final ConfiguredFeature<?, ?> AMETHYST_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
-            (Feature.ORE, new OreFeatureConfig(
-                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
-                    ModBlocks.AMETHYST_ORE.getDefaultState(),
-                    ModConfigs.NUMBER_OF_AMETHYST_ORE_IN_VEIN)); // Vein size
 
     public static final ConfiguredFeature<?, ?> BITUMEN_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
@@ -227,31 +219,11 @@ public class ModConfiguredFeatures {
                     ModBlocks.TUNGSTEN_ORE.getDefaultState(),
                     ModConfigs.NUMBER_OF_TUNGSTEN_ORE_IN_VEIN)); // Vein size
 
-    public static final ConfiguredFeature<?, ?> CITRINE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+    public static final ConfiguredFeature<?, ?> SALT_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
             (Feature.ORE, new OreFeatureConfig(
-                    OreConfiguredFeatures.STONE_ORE_REPLACEABLES,
-                    ModBlocks.CITRINE_ORE.getDefaultState(),
-                    ModConfigs.NUMBER_OF_CITRINE_ORE_IN_VEIN)); // Vein size
-
-    public static final ConfiguredFeature<?, ?> DEEPSLATE_CITRINE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
-            (Feature.ORE, new OreFeatureConfig(
-                    OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES,
-                    ModBlocks.DEEPSLATE_CITRINE_ORE.getDefaultState(),
-                    ModConfigs.NUMBER_OF_DEEPSLATE_CITRINE_ORE_IN_VEIN)); // Vein size
-
-    public static final ConfiguredFeature<?, ?> NETHERRACK_CITRINE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
-            (Feature.ORE, new OreFeatureConfig(
-                    OreConfiguredFeatures.NETHERRACK,
-                    ModBlocks.NETHERRACK_CITRINE_ORE.getDefaultState(),
-                    ModConfigs.NUMBER_OF_NETHERRACK_CITRINE_ORE_IN_VEIN)); // Vein size
-
-    public static final ConfiguredFeature<?, ?> ENDSTONE_CITRINE_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
-            (Feature.ORE, new OreFeatureConfig(
-                    new BlockMatchRuleTest(Blocks.END_STONE),
-                    ModBlocks.ENDSTONE_CITRINE_ORE.getDefaultState(),
-                    ModConfigs.NUMBER_OF_ENDSTONE_CITRINE_ORE_IN_VEIN)); // Vein size
-
-
+                    new BlockMatchRuleTest(Blocks.SANDSTONE),
+                    ModBlocks.SALT_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_SALT_ORE_IN_VEIN)); // Vein size
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> CORRUPTED_FLOWER =
             ConfiguredFeatures.register("corrupted_flower", Feature.FLOWER,

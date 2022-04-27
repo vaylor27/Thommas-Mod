@@ -535,6 +535,141 @@ public class ModItems {
     public static Item RAW_CITRINE = registerItem("raw_citrine",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
+    public static Item BLIGHTSPORE_SEEDS = registerItem("blightspore_seeds",
+            new AliasedBlockItem(ModBlocks.BLIGHTSPORE, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.CAVE)));
+
+    public static Item CAVEWHEAT_SEEDS = registerItem("cavewheat_seeds",
+            new AliasedBlockItem(ModBlocks.CAVEWHEAT, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.CAVE)));
+
+    public static Item CORN_KERNEL = registerItem("corn_kernel",
+            new AliasedBlockItem(ModBlocks.CORN, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.CORN)));
+
+    public static Item COTTON_SEEDS = registerItem("cotton_seeds",
+            new AliasedBlockItem(ModBlocks.COTTON, new FabricItemSettings().group(ModItemGroup.NATURE).fireproof()));
+
+    public static Item COTTON_RAW = registerItem("cotton_raw",
+            new Item(new FabricItemSettings().group(ModItemGroup.NATURE)));
+
+    public static Item COTTON_BALL = registerItem("cotton_ball",
+            new Item(new FabricItemSettings().group(ModItemGroup.NATURE)));
+
+    public static final Item PICKLING_SUBSTANCE = registerItem("pickling_substance",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).maxCount(1)));
+
+    public static final Item PICKLE = registerItem("pickle",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).food(ModFoodComponents.PICKLE)));
+
+    public static final Item SALT_CRYSTAL = registerItem("salt_crystal",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static final Item SALT_DUST = registerItem("salt_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static final Item GOLDEN_PICKLE = registerItem("golden_pickle",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).food(ModFoodComponents.GOLDEN_PICKLE)));
+
+    public static final Item ENCHANTED_GOLDEN_PICKLE = registerItem("enchanted_golden_pickle",
+            new EnchantedGoldenPickle(new FabricItemSettings().group(ModItemGroup.ITEMS).food(ModFoodComponents.ENCHANTED_GOLDEN_PICKLE)));
+
+    public static Item ADAMANTIUM_SWORD = registerItem("adamantium_sword",
+            new ModBleedSword(ModToolMaterials.ADAMANTIUM, 23, 8.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+
+    public static Item ADAMANTIUM_AXE = registerItem("adamantium_axe",
+            new ModBleedAxe(ModToolMaterials.ADAMANTIUM, 63, 11.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof().maxCount(1).rarity(Rarity.EPIC)));
+
+    public static Item ADAMANTIUM_PICKAXE = registerItem("adamantium_pickaxe",
+            new ModPickaxe(ModToolMaterials.ADAMANTIUM, 44, 5.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
+
+    public static Item ADAMANTIUM_HOE = registerItem("adamantium_hoe",
+            new ModHoe(ModToolMaterials.ADAMANTIUM, 11, 1.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
+
+    public static Item ADAMANTIUM_SHOVEL = registerItem("adamantium_shovel",
+            new ShovelItem(ModToolMaterials.ADAMANTIUM, 35, 2.0F,
+                    new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
+
+    public static Item MAGIC_DUST = registerItem("magic_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
+
+    public static Item PHILOSOPHERS_STONE = registerItem("philosopher_stone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item MAGIC_GEM = registerItem("magic_gem",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item BLACK_PEARL = registerItem("black_pearl",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item BLOODSTONE = registerItem("bloodstone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item TREEHEART = registerItem("treeheart",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item SMALL_INERT_SOULSTONE = registerItem("small_inert_soulstone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item MEDIUM_INERT_SOULSTONE = registerItem("medium_inert_soulstone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item LARGE_INERT_SOULSTONE = registerItem("large_inert_soulstone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item SMALL_SOULSTONE = registerItem("small_soulstone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item MEDIUM_SOULSTONE = registerItem("medium_soulstone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item LARGE_SOULSTONE = registerItem("large_soulstone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item AMMONITE = registerItem("ammonite",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item AMULET = registerItem("amulet",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item DARK_CRYSTAL = registerItem("dark_crystal",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item EMPERYAN_JEWEL = registerItem("emperyan_jewel",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item FLUTE = registerItem("flute",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item FRIGID_RUNESTONE = registerItem("frigid_runestone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item HEART_MECHANISM = registerItem("heart_mechanism",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item LODESTONE = registerItem("lodestone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item MALIGN_EMBER = registerItem("malign_ember",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item ODDSTONE = registerItem("oddstone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item RUNESTONE = registerItem("runestone",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+
+    public static Item SOUL_MATRIX = registerItem("soul_matrix",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item SOUL_PLASM = registerItem("soul_plasm",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+    public static Item WEAK_DARK_CRYSTAL = registerItem("weak_dark_crystal",
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);
     }

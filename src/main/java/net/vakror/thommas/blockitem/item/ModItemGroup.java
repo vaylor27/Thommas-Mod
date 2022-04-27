@@ -36,4 +36,7 @@ public class ModItemGroup {
     public static final ItemGroup LAMPS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "lamps"),
             () -> new ItemStack(ModBlocks.MYTHRIL_LAMP));
 
+    public static final ItemGroup ARTIFACTS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "artifacts"),
+            () -> new ItemStack(ModItems.MAGIC_GEM));
+
 }

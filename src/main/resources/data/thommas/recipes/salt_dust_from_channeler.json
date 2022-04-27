@@ -1,0 +1,15 @@
+{
+  "type": "thommas:lightning",
+  "weather": "thundering",
+  "ingredients": [
+    {
+      "item": "thommas:salt_crystal"
+    },
+    {
+      "item": "thommas:dust"
+    }
+  ],
+  "output": {
+    "item": "thommas:salt_dust"
+  }
+}

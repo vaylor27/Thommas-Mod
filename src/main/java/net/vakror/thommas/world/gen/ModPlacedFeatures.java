@@ -78,14 +78,6 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             ));
 
-    public static final PlacedFeature AMETHYST_ORE_PLACED_FEATURE= new PlacedFeature(
-            RegistryEntry.of(AMETHYST_ORE_CONFIGURED_FEATURE),
-            Arrays.asList(
-                    CountPlacementModifier.of(NUMBER_OF_AMETHYST_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
-                    SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
-            ));
-
 
     public static final PlacedFeature BITUMEN_ORE_PLACED_FEATURE= new PlacedFeature(
             RegistryEntry.of(BITUMEN_ORE_CONFIGURED_FEATURE),
@@ -239,34 +231,10 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             ));
 
-    public static final PlacedFeature CITRINE_ORE_PLACED_FEATURE= new PlacedFeature(
-            RegistryEntry.of(CITRINE_ORE_CONFIGURED_FEATURE),
+    public static final PlacedFeature SALT_ORE_PLACED_FEATURE = new PlacedFeature(
+            RegistryEntry.of(SALT_ORE_CONFIGURED_FEATURE),
             Arrays.asList(
-                    CountPlacementModifier.of(NUMBER_OF_CITRINE_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
-                    SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
-            ));
-
-    public static final PlacedFeature DEEPSLATE_CITRINE_ORE_PLACED_FEATURE= new PlacedFeature(
-            RegistryEntry.of(DEEPSLATE_CITRINE_ORE_CONFIGURED_FEATURE),
-            Arrays.asList(
-                    CountPlacementModifier.of(NUMBER_OF_DEEPSLATE_CITRINE_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
-                    SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
-            ));
-
-    public static final PlacedFeature NETHERRACK_CITRINE_ORE_PLACED_FEATURE= new PlacedFeature(
-            RegistryEntry.of(NETHERRACK_CITRINE_ORE_CONFIGURED_FEATURE),
-            Arrays.asList(
-                    CountPlacementModifier.of(NUMBER_OF_NETHERRACK_CITRINE_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
-                    SquarePlacementModifier.of(),
-                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
-            ));
-
-    public static final PlacedFeature ENDSTONE_ORE_PLACED_FEATURE= new PlacedFeature(
-            RegistryEntry.of(ENDSTONE_CITRINE_ORE_CONFIGURED_FEATURE),
-            Arrays.asList(
-                    CountPlacementModifier.of(NUMBER_OF_ENDSTONE_CITRINE_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    CountPlacementModifier.of(NUMBER_OF_SALT_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
                     SquarePlacementModifier.of(),
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             ));
@@ -297,7 +265,6 @@ public class ModPlacedFeatures {
         registerPlacedFeature(RUBY_ORE_PLACED_FEATURE, "ruby_ore");
         registerPlacedFeature(ALUMINUM_ORE_PLACED_FEATURE, "aluminum_ore");
         registerPlacedFeature(AMBER_ORE_PLACED_FEATURE, "amber_ore");
-        registerPlacedFeature(AMETHYST_ORE_PLACED_FEATURE, "amethyst_ore");
         registerPlacedFeature(BITUMEN_ORE_PLACED_FEATURE, "bitumen_ore");
         registerPlacedFeature(CHLOROPHYTE_ORE_PLACED_FEATURE, "chlorophyte_ore");
         registerPlacedFeature(COPPER_ORE_PLACED_FEATURE, "copper_ore");
@@ -317,10 +284,7 @@ public class ModPlacedFeatures {
         registerPlacedFeature(TITANIUM_ORE_PLACED_FEATURE, "titanium_ore");
         registerPlacedFeature(TOPAZ_ORE_PLACED_FEATURE, "topaz_ore");
         registerPlacedFeature(TUNGSTEN_ORE_PLACED_FEATURE, "tungsten_ore");
-        registerPlacedFeature(CITRINE_ORE_PLACED_FEATURE, "citrine_ore");
-        registerPlacedFeature(DEEPSLATE_CITRINE_ORE_PLACED_FEATURE, "deepslate_citrine_ore");
-        registerPlacedFeature(NETHERRACK_CITRINE_ORE_PLACED_FEATURE, "netherrack_citrine_ore");
-        registerPlacedFeature(ENDSTONE_ORE_PLACED_FEATURE, "endstone_citrine_ore");
+        registerPlacedFeature(SALT_ORE_PLACED_FEATURE, "salt_ore");
     }
 
     public static final RegistryEntry<PlacedFeature> HONEY_OASIS = PlacedFeatures.register("honey_oasis", ModConfiguredFeatures.HONEY_OASIS, RarityFilterPlacementModifier.of(20), SquarePlacementModifier.of(), PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of());

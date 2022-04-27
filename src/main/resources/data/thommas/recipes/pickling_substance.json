@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#X",
+    " I ",
+    "   "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:glass_bottle"
+    },
+    "X": {
+      "item": "minecraft:honey_bottle"
+    },
+    "#": {
+      "item": "thommas:salt_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:pickling_substance",
+    "count": 9
+  }
+}

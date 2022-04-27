@@ -15,6 +15,8 @@ import net.vakror.thommas.command.home.SetHome;
 import net.vakror.thommas.command.secondaryhome.ReturnSecondaryHome;
 import net.vakror.thommas.command.secondaryhome.SetSecondaryHome;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
+import net.vakror.thommas.villager.trade.LightningGodTrades;
+import net.vakror.thommas.villager.trade.ModTrades;
 import net.vakror.thommas.world.dimensions.dimension.ModDimensions;
 import net.vakror.thommas.world.gen.ModWorldGen;
 import net.vakror.thommas.blockitem.ModItems;
@@ -41,8 +43,7 @@ public class ModRegistries {
     }
 
     private static void registerTrades() {
-        BlastMasterTrades.register();
-        VanillaVillagerTrades.register();
+        new ModTrades();
     }
 
 
@@ -111,9 +112,6 @@ public class ModRegistries {
                 new Identifier(Thommas.MOD_ID, "overworld_mythril_ore"), MYTHRIL_ORE_OVERWORLD_CONFIGURED_FEATURE);
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
-                new Identifier(Thommas.MOD_ID, "amethyst_ore"), AMETHYST_ORE_CONFIGURED_FEATURE);
-
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "amber_ore"), AMBER_ORE_CONFIGURED_FEATURE);
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
@@ -172,19 +170,6 @@ public class ModRegistries {
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "tungsten_ore"), TUNGSTEN_ORE_CONFIGURED_FEATURE);
-
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
-                new Identifier(Thommas.MOD_ID, "citrine_ore"), CITRINE_ORE_CONFIGURED_FEATURE);
-
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
-                new Identifier(Thommas.MOD_ID, "deepslate_citrine_ore"), DEEPSLATE_CITRINE_ORE_CONFIGURED_FEATURE);
-
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
-                new Identifier(Thommas.MOD_ID, "netherrack_citrine_ore"), NETHERRACK_CITRINE_ORE_CONFIGURED_FEATURE);
-
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
-                new Identifier(Thommas.MOD_ID, "endstone_citrine_ore"), ENDSTONE_CITRINE_ORE_CONFIGURED_FEATURE);
-
 
     }
 

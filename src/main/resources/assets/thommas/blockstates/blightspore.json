@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "thommas:block/blightspore0"
+    },
+    "age=1": {
+      "model": "thommas:block/blightspore1"
+    }
+    }
+  }

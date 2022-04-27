@@ -7,6 +7,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import net.vakror.thommas.effect.ModEffects;
 
+import java.util.Random;
+
 public class ModBleedAxe extends AxeItem {
     public ModBleedAxe(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
@@ -14,7 +16,10 @@ public class ModBleedAxe extends AxeItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 200, 2), attacker);
+        int random = new Random().nextInt(0, 10);
+        if (random == 3) {
+            target.addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 200, 2), attacker);
+        }
         return super.postHit(stack, target, attacker);
     }
 }

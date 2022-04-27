@@ -15,6 +15,8 @@ import net.minecraft.world.poi.PointOfInterestType;
 public class ModVillagers {
     public static final PointOfInterestType BLASTER_POI = registerPOI("blasterpoi", ModBlocks.MYTHRIL_BLASTER);
     public static final VillagerProfession BLAST_MASTER = registerProfession("blastmaster", BLASTER_POI);
+    public static final PointOfInterestType LIGHTNING_GOD_POI = registerPOI("lightninggodpoi", ModBlocks.LIGHTNING_CHANNELER_BLOCK);
+    public static final VillagerProfession LIGHTNING_GOD = registerProfession("lightninggod", LIGHTNING_GOD_POI);
 
 
     public static VillagerProfession registerProfession(String name, PointOfInterestType type) {
@@ -31,5 +33,6 @@ public class ModVillagers {
 
     public static void setupPOIs() {
         PointOfInterestTypeAccessor.callSetup(BLASTER_POI);
+        PointOfInterestTypeAccessor.callSetup(LIGHTNING_GOD_POI);
     }
 }

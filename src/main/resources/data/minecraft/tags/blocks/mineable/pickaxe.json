@@ -46,7 +46,6 @@
     "thommas:bronze_brick",
     "thommas:chlorophyte_block",
     "thommas:chlorophyte_brick",
-    "thommas:chlorophyte_ore",
     "thommas:copper_block",
     "thommas:copper_brick",
     "thommas:copper_ore",
@@ -170,6 +169,7 @@
     "thommas:netherrack_citrine_ore",
     "thommas:endstone_citrine_ore",
     "thommas:raw_citrine_block",
-    "thommas:citrine_ore"
+    "thommas:citrine_ore",
+    "thommas:salt_ore"
   ]
 }

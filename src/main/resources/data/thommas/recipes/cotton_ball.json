@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IX"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:honey_bottle"
+    },
+    "X": {
+      "item": "thommas:cotton_raw"
+    }
+  },
+  "result": {
+    "item": "thommas:cotton_ball",
+    "count": 1
+  }
+}

@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "thommas:citrine_ingot"
+      "item": "thommas:ebony_planks"
     }
   },
   "result": {
-    "item": "thommas:citrine_door",
+    "item": "thommas:ebony_door",
     "count": 3
   }
 }

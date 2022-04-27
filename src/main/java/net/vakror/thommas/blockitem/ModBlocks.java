@@ -778,6 +778,21 @@ public class ModBlocks {
     public static final Block EBONY_SAPLING = registerBlock("ebony_sapling",
             new ModSaplingBlock(new EbonySaplingGenerator(), FabricBlockSettings.of(Material.WOOD).nonOpaque()), ModItemGroup.NATURE);
 
+    public static final Block BLIGHTSPORE = registerBlockWithoutBlockItem("blightspore",
+            new BlightSpore(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
+
+    public static final Block CAVEWHEAT = registerBlockWithoutBlockItem("cavewheat",
+            new CaveWheat(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
+
+    public static final Block CORN = registerBlockWithoutBlockItem("corn",
+            new Corn(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
+
+    public static final Block COTTON = registerBlockWithoutBlockItem("cotton",
+            new Cotton(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
+
+    public static final Block SALT_ORE = registerBlock("salt_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(3.0f).requiresTool()), ModItemGroup.ORES);
+
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
     }

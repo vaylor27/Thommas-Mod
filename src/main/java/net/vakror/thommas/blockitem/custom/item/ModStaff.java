@@ -1,10 +1,7 @@
 package net.vakror.thommas.blockitem.custom.item;
 
 import net.minecraft.enchantment.Enchantments;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.*;
 import net.minecraft.util.ActionResult;
 
 public class ModStaff extends PickaxeItem {

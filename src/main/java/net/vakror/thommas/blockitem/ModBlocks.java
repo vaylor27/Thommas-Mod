@@ -793,6 +793,7 @@ public class ModBlocks {
     public static final Block SALT_ORE = registerBlock("salt_ore",
             new Block(FabricBlockSettings.of(Material.STONE).strength(3.0f).requiresTool()), ModItemGroup.ORES);
 
+
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
     }

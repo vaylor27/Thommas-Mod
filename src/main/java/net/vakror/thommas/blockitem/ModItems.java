@@ -669,7 +669,6 @@ public class ModItems {
     public static Item WEAK_DARK_CRYSTAL = registerItem("weak_dark_crystal",
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
 
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);
     }

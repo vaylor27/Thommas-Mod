@@ -482,7 +482,8 @@
   "itemGroup.thommas.crops": "Thommas Nature",
   "itemGroup.thommas.bricks": "Thommas Bricks",
   "itemGroup.thommas.lamps": "Thommas Lamps",
-  "itemGroup.thommas.artifacts": "Artifacts",
+  "itemGroup.thommas.artifacts": "Thommas Artifacts",
+  "itemGroup.thommas.books": "Thommas Books of Secrets",
 
   "entity.minecraft.villager.blastmaster": "Blastmaster",
   "entity.minecraft.villager.lightninggod": "Lightning God",

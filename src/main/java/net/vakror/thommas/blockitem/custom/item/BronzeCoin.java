@@ -27,7 +27,6 @@ public class BronzeCoin extends Item {
                 }
                 user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN, (count - 1)));
                 if (random <= 10)
-                    return null;
                 else if (random <= 14)
                     user.dropItem(new ItemStack(ModItems.CORRUPTED_DUST, 2), true);
                 else if (random <= 16)

@@ -28,7 +28,7 @@ public class GoldCoinFancy extends Item {
                 }
                 user.setStackInHand(hand, new ItemStack(ModItems.GOLD_COIN_FANCY, (count - 1)));
                 if (random <= 10)
-                    return null;
+                    return super.use(world, user, hand);
                 else if (random <= 14)
                     user.dropItem(new ItemStack(ModItems.PHILOSOPHERS_STONE, 2), true);
                 else if (random <= 16)

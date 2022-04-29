@@ -27,7 +27,7 @@ public class AluminumCoin extends Item {
                 }
                 user.setStackInHand(hand, new ItemStack(ModItems.ALUMINUM_COIN, (count - 1)));
                 if (random <= 10)
-                    return null;
+                    return super.use(world, user, hand);
                 else if (random <= 14)
                     user.dropItem(new ItemStack(ModItems.DUST, 2), true);
                 else if (random <= 16)

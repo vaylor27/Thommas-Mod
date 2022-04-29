@@ -28,7 +28,7 @@ public class SilverCoin extends Item {
                 }
                 user.setStackInHand(hand, new ItemStack(ModItems.SILVER_COIN, (count - 1)));
                 if (random <= 10)
-                    return null;
+                    return super.use(world, user, hand);
                 else if (random <= 14)
                     user.dropItem(new ItemStack(ModItems.COPPER_COIN, 2), true);
                 else if (random <= 16)

@@ -28,7 +28,7 @@ public class CopperCoin extends Item {
                 }
                 user.setStackInHand(hand, new ItemStack(ModItems.COPPER_COIN, (count - 1)));
                 if (random <= 10)
-                    return null;
+                    return super.use(world, user, hand);
                 else if (random <= 14)
                     user.dropItem(new ItemStack(Items.NETHERITE_SCRAP, 2), true);
                 else if (random <= 16)

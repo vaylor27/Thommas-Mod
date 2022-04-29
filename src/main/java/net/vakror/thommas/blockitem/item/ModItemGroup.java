@@ -39,4 +39,7 @@ public class ModItemGroup {
     public static final ItemGroup ARTIFACTS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "artifacts"),
             () -> new ItemStack(ModItems.MAGIC_GEM));
 
+    public static final ItemGroup COINS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "coins"),
+            () -> new ItemStack(ModItems.ALUMINUM_COIN));
+
 }

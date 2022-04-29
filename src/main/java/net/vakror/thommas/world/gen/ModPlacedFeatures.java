@@ -239,6 +239,14 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             ));
 
+    public static final PlacedFeature STONE_ZINC_ORE_PLACED_FEATURES = new PlacedFeature(
+            RegistryEntry.of(STONE_ZINC_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(NUMBER_OF_STONE_ZINC_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+            ));
+
 
 
 

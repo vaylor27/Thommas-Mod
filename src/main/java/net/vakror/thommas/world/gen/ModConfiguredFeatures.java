@@ -225,6 +225,12 @@ public class ModConfiguredFeatures {
                     ModBlocks.SALT_ORE.getDefaultState(),
                     ModConfigs.NUMBER_OF_SALT_ORE_IN_VEIN)); // Vein size
 
+    public static final ConfiguredFeature<?, ?> STONE_ZINC_ORE_CONFIGURED_FEATURE = new ConfiguredFeature<>
+            (Feature.ORE, new OreFeatureConfig(
+                    new BlockMatchRuleTest(Blocks.STONE),
+                    ModBlocks.STONE_ZINC_ORE.getDefaultState(),
+                    ModConfigs.NUMBER_OF_STONE_ZINC_ORE_IN_VEIN)); // Vein size
+
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> CORRUPTED_FLOWER =
             ConfiguredFeatures.register("corrupted_flower", Feature.FLOWER,
                     ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,

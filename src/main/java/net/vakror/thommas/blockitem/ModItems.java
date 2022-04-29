@@ -669,6 +669,55 @@ public class ModItems {
     public static Item WEAK_DARK_CRYSTAL = registerItem("weak_dark_crystal",
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
 
+    public static Item ALUMINUM_COIN = registerItem("aluminum_coin",
+            new AluminumCoin(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item BRONZE_COIN = registerItem("bronze_coin",
+            new BronzeCoin(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item BRONZE_COIN_FANCY = registerItem("bronze_coin_fancy",
+            new BronzeCoinFancy(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item COPPER_COIN = registerItem("copper_coin",
+            new CopperCoin(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item COPPER_COIN_FANCY = registerItem("copper_coin_fancy",
+            new CopperCoinFancy(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item GOLD_COIN = registerItem("gold_coin",
+            new GoldCoin(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item GOLD_COIN_FANCY = registerItem("gold_coin_fancy",
+            new GoldCoinFancy(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item IRON_COIN = registerItem("iron_coin",
+            new IronCoin(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item PLAIN_COIN_FANCY = registerItem("plain_coin_fancy",
+            new PlainCoinFancy(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item SILVER_COIN = registerItem("silver_coin",
+            new SilverCoin(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item SILVER_COIN_FANCY = registerItem("silver_coin_fancy",
+            new SilverCoinFancy(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item STEEL_COIN = registerItem("steel_coin",
+            new SteelCoin(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item TIN_COIN = registerItem("tin_coin",
+            new TinCoin(new FabricItemSettings().group(ModItemGroup.COINS).fireproof()));
+
+    public static Item ZINC_INGOT = registerItem("zinc_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item ZINC_CHUNKS = registerItem("zinc_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item ZINC_PLATE = registerItem("zinc_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);
     }

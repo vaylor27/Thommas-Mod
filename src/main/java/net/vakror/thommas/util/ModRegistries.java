@@ -98,7 +98,6 @@ public class ModRegistries {
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "aluminum_ore"), ALUMINUM_ORE_CONFIGURED_FEATURE);
 
-
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "ruby_ore"), RUBY_ORE_CONFIGURED_FEATURE);
 
@@ -170,6 +169,9 @@ public class ModRegistries {
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "tungsten_ore"), TUNGSTEN_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "stone_zinc_ore"), STONE_ZINC_ORE_CONFIGURED_FEATURE);
 
     }
 

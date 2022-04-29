@@ -217,6 +217,28 @@
   "item.thommas.soul_matrix": "Soul Matrix",
   "item.thommas.soul_plasm": "Soul Plasm",
   "item.thommas.weak_dark_crystal": "Weak Dark Crystal",
+  "item.thommas.tin_coin": "Tin Coin",
+  "item.thommas.steel_coin": "Steel Coin",
+  "item.thommas.silver_coin": "Silver Coin",
+  "item.thommas.silver_coin_fancy": "Fancy Silver Coin",
+  "item.thommas.plain_coin_fancy": "Fancy Plain Coin",
+  "item.thommas.iron_coin": "Iron Coin",
+  "item.thommas.gold_coin": "Gold Coin",
+  "item.thommas.gold_coin_fancy": "Fancy Gold Coin",
+  "item.thommas.copper_coin": "Copper Coin",
+  "item.thommas.copper_coin_fancy": "Fancy Copper COin",
+  "item.thommas.bronze_coin": "Bronze Coin",
+  "item.thommas.bronze_coin_fancy": "Fancy Bronze Coin",
+  "item.thommas.aluminum_coin": "Aluminum Coin",
+  "item.thommas.blightspore_seeds": "Blightspore Seeds",
+  "item.thommas.cavewheat_seeds": "Cavewheat Seeds",
+  "item.thommas.corn_kernel": "Corn Kernel",
+  "item.thommas.cotton_seeds": "Cotton Seeds",
+  "item.thommas.cotton_raw": "Raw Cotton",
+  "item.thommas.cotton_ball": "Cotton Ball",
+  "item.thommas.zinc_ingot": "Zinc Ingot",
+  "item.thommas.zinc_chunks": "Zinc Chunks",
+  "item.thommas.zinc_plate": "Zinc Plate",
 
 
   "block.thommas.salt_ore": "Salt Ore",
@@ -455,15 +477,7 @@
   "block.thommas.cavewheat": "Cavewheat",
   "block.thommas.corn": "Corn",
   "block.thommas.cotton": "Cotton",
-
-
-  "item.thommas.blightspore_seeds": "Blightspore Seeds",
-  "item.thommas.cavewheat_seeds": "Cavewheat Seeds",
-  "item.thommas.corn_kernel": "Corn Kernel",
-  "item.thommas.cotton_seeds": "Cotton Seeds",
-  "item.thommas.cotton_raw": "Raw Cotton",
-  "item.thommas.cotton_ball": "Cotton Ball",
-
+  "block.thommas.stone_zinc_ore": "Zinc Ore",
 
 
   "thommas.cane.posthit.message": "You have been crippled by Granny's Cane",

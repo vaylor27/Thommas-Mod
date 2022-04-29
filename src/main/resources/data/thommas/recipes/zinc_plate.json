@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:zinc_ingot"
+    },
+    "result": {
+      "item": "thommas:zinc_plate",
+      "count": 4
+    }
+  }
+}

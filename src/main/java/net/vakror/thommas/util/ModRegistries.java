@@ -15,13 +15,10 @@ import net.vakror.thommas.command.home.SetHome;
 import net.vakror.thommas.command.secondaryhome.ReturnSecondaryHome;
 import net.vakror.thommas.command.secondaryhome.SetSecondaryHome;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
-import net.vakror.thommas.villager.trade.LightningGodTrades;
 import net.vakror.thommas.villager.trade.ModTrades;
 import net.vakror.thommas.world.dimensions.dimension.ModDimensions;
 import net.vakror.thommas.world.gen.ModWorldGen;
 import net.vakror.thommas.blockitem.ModItems;
-import net.vakror.thommas.villager.trade.BlastMasterTrades;
-import net.vakror.thommas.villager.trade.VanillaVillagerTrades;
 
 import static net.vakror.thommas.world.gen.ModConfiguredFeatures.*;
 
@@ -172,6 +169,9 @@ public class ModRegistries {
 
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
                 new Identifier(Thommas.MOD_ID, "stone_zinc_ore"), STONE_ZINC_ORE_CONFIGURED_FEATURE);
+
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE,
+                new Identifier(Thommas.MOD_ID, "endstone_citrine_ore"), ENDSTONE_CITRINE_ORE_CONFIGURED_FEATURE);
 
     }
 

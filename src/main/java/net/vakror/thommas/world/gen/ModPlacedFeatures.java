@@ -247,6 +247,14 @@ public class ModPlacedFeatures {
                     HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
             ));
 
+    public static final PlacedFeature ENDSTONE_CITRINE_ORE_PLACED_FEATURES = new PlacedFeature(
+            RegistryEntry.of(ENDSTONE_CITRINE_ORE_CONFIGURED_FEATURE),
+            Arrays.asList(
+                    CountPlacementModifier.of(NUMBER_OF_ENDSTONE_CITRINE_ORE_VEINS_IN_CHUNK), // Number of veins per chunk
+                    SquarePlacementModifier.of(),
+                    HeightRangePlacementModifier.uniform(YOffset.getBottom(), YOffset.fixed(64))
+            ));
+
 
 
 
@@ -293,6 +301,7 @@ public class ModPlacedFeatures {
         registerPlacedFeature(TOPAZ_ORE_PLACED_FEATURE, "topaz_ore");
         registerPlacedFeature(TUNGSTEN_ORE_PLACED_FEATURE, "tungsten_ore");
         registerPlacedFeature(SALT_ORE_PLACED_FEATURE, "salt_ore");
+        registerPlacedFeature(ENDSTONE_CITRINE_ORE_PLACED_FEATURES, "endstone_citrine_ore");
     }
 
     public static final RegistryEntry<PlacedFeature> HONEY_OASIS = PlacedFeatures.register("honey_oasis", ModConfiguredFeatures.HONEY_OASIS, RarityFilterPlacementModifier.of(20), SquarePlacementModifier.of(), PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of());

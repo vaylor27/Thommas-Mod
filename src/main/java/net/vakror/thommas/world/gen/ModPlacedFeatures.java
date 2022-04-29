@@ -328,5 +328,4 @@ public class ModPlacedFeatures {
         Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, name), feature);
     }
 
-
 }

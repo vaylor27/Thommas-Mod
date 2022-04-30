@@ -17,16 +17,16 @@ public class MythrilOre extends Block {
     }
 
     protected int getExperienceWhenMined(Random random) {
-        return MathHelper.nextInt(random, 9, 37);
+        return MathHelper.nextInt(random, 52, 89);
     }
 
     @Override
     public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack stack) {
         super.onStacksDropped(state, world, pos, stack);
         if (EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, stack) == 0) {
-            int i = this.getExperienceWhenMined(world.random);
-            if (i > 0) {
-                this.dropExperience(world, pos, i);
+            int experienceWhenMined = this.getExperienceWhenMined(world.random);
+            if (experienceWhenMined > 0) {
+                this.dropExperience(world, pos, experienceWhenMined);
             }
         }
     }

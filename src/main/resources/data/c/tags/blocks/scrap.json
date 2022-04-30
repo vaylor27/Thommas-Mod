@@ -30,6 +30,7 @@
     "minecraft:diamond_ore",
     "minecraft:deepslate_diamond_ore",
     "minecraft:deepslate",
-    "minecraft:tuff"
+    "minecraft:tuff",
+    "thommas:slade_normal"
   ]
 }

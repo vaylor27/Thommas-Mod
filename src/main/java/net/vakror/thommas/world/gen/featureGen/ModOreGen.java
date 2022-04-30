@@ -54,8 +54,8 @@ public class ModOreGen {
         new Ore("red_sand_lignite_ore", ModBlocks.RED_SAND_LIGNITE_ORE, Blocks.RED_SAND, 8, 9);
         new Ore("sand_lignite", ModBlocks.SAND_LIGNITE_ORE, Blocks.SAND, 8, 9);
         new Ore("sand_oil", ModBlocks.SAND_OIL_ORE, Blocks.SAND, 8, 9);
-        new Ore("slade_deepslate", ModBlocks.SLADE_NORMAL, Blocks.DEEPSLATE, 2, 28);
-        new Ore("slade_stone", ModBlocks.SLADE_NORMAL, Blocks.STONE, 2, 28);
+        new Ore("slade_deepslate", ModBlocks.SLADE_NORMAL, Blocks.DEEPSLATE, 2, 50);
+        new Ore("slade_stone", ModBlocks.SLADE_NORMAL, Blocks.STONE, 2, 50);
         new Ore("slade_bones_0", ModBlocks.SLADE_BONES_ORE_0, ModBlocks.SLADE_NORMAL, 8, 9);
         new Ore("slade_bones_1", ModBlocks.SLADE_BONES_ORE_1, ModBlocks.SLADE_NORMAL, 8, 9);
         new Ore("slade_bones_2", ModBlocks.SLADE_BONES_ORE_2, ModBlocks.SLADE_NORMAL, 8, 9);

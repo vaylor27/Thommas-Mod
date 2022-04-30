@@ -2,19 +2,7 @@ package net.vakror.thommas.blockitem;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Material;
-import net.minecraft.block.PressurePlateBlock;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.WallBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.FlowerBlock;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.FlowerPotBlock;
-import net.minecraft.block.GlassBlock;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.LeavesBlock;
+import net.minecraft.block.*;
 import net.vakror.thommas.Thommas;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -22,6 +10,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.vakror.thommas.blockitem.block.entity.ModSignTypes;
 import net.vakror.thommas.blockitem.custom.block.*;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
 import net.vakror.thommas.effect.ModEffects;
@@ -225,7 +214,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block CHLOROPHYTE_BLOCK = registerBlock("chlorophyte_block",
-            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(1.0F)), ModItemGroup.BLOCKS);
 
     public static final Block CHLOROPHYTE_BRICK = registerBlock("chlorophyte_brick",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
@@ -795,6 +784,138 @@ public class ModBlocks {
 
     public static final Block STONE_ZINC_ORE = registerBlock("stone_zinc_ore",
             new Block(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block JACARANDA_WALL_SIGN_BLOCK = registerBlockWithoutBlockItem("jacaranda_wall_sign",
+            new WallSignBlock(FabricBlockSettings.copy(Blocks.OAK_WALL_SIGN), ModSignTypes.JACARANDA));
+
+    public static final Block JACARANDA_SIGN_BLOCK = registerBlockWithoutBlockItem("jacaranda_sign",
+            new SignBlock(FabricBlockSettings.copy(Blocks.OAK_SIGN), ModSignTypes.JACARANDA));
+
+    public static final Block BIG_STONE_AURICUPRIDE_ORE = registerBlock("big_stone_auricupride_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block BIG_STONE_BAUXITE_ORE = registerBlock("big_stone_bauxite_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block BIG_STONE_CYLINDRITE_ORE = registerBlock("big_stone_cylindrite_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block BIG_STONE_GAHNITE_ORE = registerBlock("big_stone_gahnite_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block BIG_STONE_GALENA_ORE = registerBlock("big_stone_galena_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block BIG_STONE_PENTLANDITE_ORE = registerBlock("big_stone_pentlandite_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block BIG_STONE_SPHALERITE_ORE = registerBlock("big_stone_sphalerite_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block DIRT_LIGNITE_ORE = registerBlock("dirt_lignite_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(1.0F)), ModItemGroup.ORES);
+
+    public static final Block DIRT_METAL_ORE = registerBlock("dirt_metal_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(1.0F)), ModItemGroup.ORES);
+
+    public static final Block ENDSTONE_RARE_EARTHS_ORE = registerBlock("endstone_rare_earths_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block GRAVEL_LIGNITE_ORE = registerBlock("gravel_lignite_ore",
+            new GravelBlock(FabricBlockSettings.of(Material.METAL).strength(1.0F)), ModItemGroup.ORES);
+
+    public static final Block GRAVEL_OIL_ORE = registerBlock("gravel_oil_ore",
+            new GravelBlock(FabricBlockSettings.of(Material.METAL).strength(1.0F)), ModItemGroup.ORES);
+
+    public static final Block NETHERRACK_ADAMANTIUM_ORE = registerBlock("netherrack_adamantium_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block NETHERRACK_PERFIDUM_ORE = registerBlock("netherrack_perfidum_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block RED_SAND_LIGNITE_ORE = registerBlock("red_sand_lignite_ore",
+            new SandBlock(11098145, FabricBlockSettings.of(Material.METAL).strength(1.0F)), ModItemGroup.ORES);
+
+    public static final Block SAND_LIGNITE_ORE = registerBlock("sand_lignite_ore",
+            new SandBlock(14406560, FabricBlockSettings.of(Material.METAL).strength(1.0F)), ModItemGroup.ORES);
+
+    public static final Block SAND_OIL_ORE = registerBlock("sand_oil_ore",
+            new SandBlock(14406560, FabricBlockSettings.of(Material.METAL).strength(1.0F)), ModItemGroup.ORES);
+
+    public static final Block SLADE_BONES_ORE_0 = registerBlock("slade_bones_ore_0",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_BONES_ORE_1 = registerBlock("slade_bones_ore_1",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_BONES_ORE_2 = registerBlock("slade_bones_ore_2",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_COAL_ORE = registerBlock("slade_coal_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_COPPER_ORE = registerBlock("slade_copper_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_DIAMOND_ORE = registerBlock("slade_diamond_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_GLOWSTONE_ORE = registerBlock("slade_glowstone_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool().luminance(12)), ModItemGroup.ORES);
+
+    public static final Block SLADE_GOLD_ORE = registerBlock("slade_gold_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_IRON_ORE = registerBlock("slade_iron_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_LAPIS_ORE = registerBlock("slade_lapis_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_LEAD_ORE = registerBlock("slade_lead_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_REALGAR_ORE = registerBlock("slade_realgar_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_ANTHRACITE_ORE = registerBlock("stone_anthracite_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_BONES_ORE = registerBlock("stone_bones_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_BRIMSTONE_ORE = registerBlock("stone_brimstone_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_COPPER_ORE_2 = registerBlock("stone_copper_ore_2",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_COPPER_ORE = registerBlock("stone_copper_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_LEAD_ORE_2 = registerBlock("stone_lead_ore_2",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_LEAD_ORE = registerBlock("stone_lead_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_SALTPETER_ORE = registerBlock("stone_saltpeter_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_SILVER_ORE = registerBlock("stone_silver_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block STONE_SOUL_ORE = registerBlock("stone_soul_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block TERRACOTTA_GOLD_ORE = registerBlock("terracotta_gold_ore",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.ORES);
+
+    public static final Block SLADE_NORMAL = registerBlock("slade_normal",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.BLOCKS);
+
+    public static final Block SLADE_COLUMN = registerBlock("slade_column",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.BLOCKS);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

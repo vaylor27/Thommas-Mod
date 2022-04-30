@@ -25,19 +25,25 @@ public class AluminumCoin extends Item {
                 } else {
                     count = user.getOffHandStack().getCount();
                 }
-                user.setStackInHand(hand, new ItemStack(ModItems.ALUMINUM_COIN, (count - 1)));
-                if (random <= 10)
-                    return super.use(world, user, hand);
-                else if (random <= 14)
+                if (random <= 14) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.ALUMINUM_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.DUST, 2), true);
-                else if (random <= 16)
+                } else if (random <= 16) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.ALUMINUM_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.MAGIC_DUST, 3), true);
-                else if (random == 17)
+                } else if (random == 17) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.ALUMINUM_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.MAGIC_CHARGE, 4), true);
-                else if (random <= 19)
+                } else if (random <= 19) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.ALUMINUM_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.PICKLE, 1), true);
-                else if (random == 20)
+                } else if (random == 20) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.ALUMINUM_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.BRONZE_COIN, 1), true);
+                }
+                else {
+                    user.setStackInHand(hand, new ItemStack(ModItems.ALUMINUM_COIN, (count - 1)));
+                }
             }
         return super.use(world, user, hand);
     }

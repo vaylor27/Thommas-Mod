@@ -27,19 +27,29 @@ public class IronCoin extends Item {
             } else {
                 count = user.getOffHandStack().getCount();
             }
-            user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
-            if (random <= 10)
-                return null;
-            else if (random <= 14)
+            if (random <= 14) {
+                user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.IRON_COIN, 2), true);
-            else if (random <= 16)
+            }
+            else if (random <= 16) {
+                user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.PICKLE, 3), true);
-            else if (random == 17)
+            }
+            else if (random == 17) {
+                user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModBlocks.TITANIUM_ORE, 4), true);
-            else if (random <= 19)
+            }
+            else if (random <= 19) {
+                user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.ZINC_PLATE, 9), true);
-            else if (random == 20)
+            }
+            else if (random == 20) {
+                user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModBlocks.AMETHYST_ORE, 7), true);
+            }
+            else {
+                user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
+            }
         }
         return super.use(world, user, hand);
     }

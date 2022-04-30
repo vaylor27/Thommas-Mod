@@ -21,6 +21,15 @@
     "minecraft:lava",
     "minecraft:cobblestone",
     "minecraft:sand",
-    "minecraft:sandstone"
+    "minecraft:sandstone",
+    "minecraft:clay",
+    "minecraft:iron_ore",
+    "minecraft:deepslate_iron_ore",
+    "minecraft:lapis_ore",
+    "minecraft:deepslate_lapis_ore",
+    "minecraft:diamond_ore",
+    "minecraft:deepslate_diamond_ore",
+    "minecraft:deepslate",
+    "minecraft:tuff"
   ]
 }

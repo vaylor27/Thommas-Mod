@@ -26,19 +26,29 @@ public class SteelCoin extends Item {
             } else {
                 count = user.getOffHandStack().getCount();
             }
-            user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
-            if (random <= 10)
-                return null;
-            else if (random <= 14)
+            if (random <= 14) {
+                user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.COPPER_COIN, 2), true);
-            else if (random <= 16)
+            }
+            else if (random <= 16) {
+                user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModBlocks.STONE_ZINC_ORE, 6), true);
-            else if (random == 17)
+            }
+            else if (random == 17) {
+                user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.ZINC_CHUNKS, 23), true);
-            else if (random <= 19)
+            }
+            else if (random <= 19) {
+                user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.ZINC_PLATE, 8), true);
-            else if (random == 20)
+            }
+            else if (random == 20) {
+                user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.COPPER_COIN_FANCY, 2), true);
+            }
+            else {
+                user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
+            }
         }
         return super.use(world, user, hand);
     }

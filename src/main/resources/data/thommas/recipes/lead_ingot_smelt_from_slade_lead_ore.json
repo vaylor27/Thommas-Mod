@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "coal",
+  "ingredient": {
+    "item": "thommas:slade_lead_ore"
+  },
+  "result": "thommas:lead_ingot",
+  "experience": 16,
+  "cookingtime": 150
+}

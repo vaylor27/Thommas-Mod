@@ -33,6 +33,9 @@ public class ModTags {
         public static final TagKey<Item> SCRAP =
                 createCommonTag("scrap");
 
+        public static final TagKey<Item> OIL =
+                createCommonTag("oil");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier(Thommas.MOD_ID, name));
         }

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "coal",
+  "ingredient": {
+    "item": "thommas:stone_soul_ore"
+  },
+  "result": "thommas:soul_plasm",
+  "experience": 16,
+  "cookingtime": 150
+}

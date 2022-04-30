@@ -32,7 +32,7 @@ dependencies {
 	include 'net.kyrptonaught:customportalapi:0.0.1-beta50-1.18'
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:8.1.457"
 	modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:8.1.457"
-
+	modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:8.1.457"
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }

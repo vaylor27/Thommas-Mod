@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "coal",
+  "ingredient": {
+    "item": "thommas:slade_gold_ore"
+  },
+  "result": "minecraft:gold_ingot",
+  "experience": 16,
+  "cookingtime": 150
+}

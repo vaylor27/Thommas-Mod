@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "coal",
+  "ingredient": {
+    "item": "thommas:silver_ore"
+  },
+  "result": "thommas:silver_ingot",
+  "experience": 16,
+  "cookingtime": 150
+}

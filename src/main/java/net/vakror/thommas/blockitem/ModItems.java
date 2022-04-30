@@ -717,6 +717,43 @@ public class ModItems {
     public static Item ZINC_PLATE = registerItem("zinc_plate",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
+    public static Item JACARANDA_SIGN = registerItem("jacaranda_sign",
+            new SignItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_BLOCKS).maxCount(64),
+                    ModBlocks.JACARANDA_SIGN_BLOCK, ModBlocks.JACARANDA_WALL_SIGN_BLOCK));
+
+    public static Item ALUMINUM_CHUNKS = registerItem("aluminum_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item BONE_CHUNKS = registerItem("bone_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item COPPER_CHUNKS = registerItem("copper_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item GOLD_CHUNKS = registerItem("gold_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item IRON_CHUNKS = registerItem("iron_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item LEAD_CHUNKS = registerItem("lead_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item NICKEL_CHUNKS = registerItem("nickel_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item SILVER_CHUNKS = registerItem("silver_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item TIN_CHUNKS = registerItem("tin_chunks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item PENTLANDITE_ROCK = registerItem("pentlandite_rock",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item OIL_BOTTLE = registerItem("oil_bottle",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

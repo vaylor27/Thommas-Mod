@@ -25,19 +25,29 @@ public class BronzeCoin extends Item {
                 } else {
                     count = user.getOffHandStack().getCount();
                 }
-                user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN, (count - 1)));
-                if (random <= 10)
-                    super.use(world, user,hand);
-                else if (random <= 14)
+                if (random <= 14) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.CORRUPTED_DUST, 2), true);
-                else if (random <= 16)
+                }
+                else if (random <= 16) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.COAL_COKE, 3), true);
-                else if (random == 17)
+                }
+                else if (random == 17) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.MAGIC_GEM, 3), true);
-                else if (random <= 19)
+                }
+                else if (random <= 19) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.PICKLE, 2), true);
-                else if (random == 20)
+                }
+                else if (random == 20) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.BRONZE_COIN_FANCY, 1), true);
+                }
+                else {
+                    user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN, (count - 1)));
+                }
             }
         return super.use(world, user, hand);
     }

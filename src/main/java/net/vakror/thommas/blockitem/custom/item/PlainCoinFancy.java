@@ -27,19 +27,29 @@ public class PlainCoinFancy extends Item {
                 } else {
                     count = user.getOffHandStack().getCount();
                 }
-                user.setStackInHand(hand, new ItemStack(ModItems.PLAIN_COIN_FANCY, (count - 1)));
-                if (random <= 10)
-                    return super.use(world, user, hand);
-                else if (random <= 14)
+                if (random <= 14) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.PLAIN_COIN_FANCY, (count - 1)));
                     user.dropItem(new ItemStack(ModBlocks.EBONY_SAPLING, 2), true);
-                else if (random <= 16)
+                }
+                else if (random <= 16) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.PLAIN_COIN_FANCY, (count - 1)));
                     user.dropItem(new ItemStack(ModBlocks.EBONY_LOG, 128), true);
-                else if (random == 17)
+                }
+                else if (random == 17) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.PLAIN_COIN_FANCY, (count - 1)));
                     user.dropItem(new ItemStack(ModBlocks.REDWOOD_SAPLING, 2), true);
-                else if (random <= 19)
+                }
+                else if (random <= 19) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.PLAIN_COIN_FANCY, (count - 1)));
                     user.dropItem(new ItemStack(ModBlocks.REDWOOD_LOG, 128), true);
-                else if (random == 20)
+                }
+                else if (random == 20) {
+                    user.setStackInHand(hand, new ItemStack(ModItems.PLAIN_COIN_FANCY, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.IRON_COIN, 2), true);
+                }
+                else {
+                    user.setStackInHand(hand, new ItemStack(ModItems.PLAIN_COIN_FANCY, (count - 1)));
+                }
             }
         return super.use(world, user, hand);
     }

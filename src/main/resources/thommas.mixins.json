@@ -6,7 +6,9 @@
   "mixins": [
     "ModEntityDataSaver",
     "BrewingRecipeRegistryMixin",
-    "NoExperimentFeaturesScreen"
+    "NoExperimentFeaturesScreen",
+    "SignTypeAccessor",
+    "BlockEntityTypeMixin"
   ],
   "client": [
     "ThommasMixin"

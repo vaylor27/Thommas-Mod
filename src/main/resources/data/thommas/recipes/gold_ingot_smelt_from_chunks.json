@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "coal",
+  "ingredient": {
+    "item": "thommas:gold_chunks"
+  },
+  "result": "minecraft:gold_ingot",
+  "experience": 16,
+  "cookingtime": 150
+}

@@ -29,7 +29,7 @@ public class ModConfiguredFeatures {
                     BlockStateProvider.of(ModBlocks.REDWOOD_LOG),
                     new StraightTrunkPlacer(24, 24, 24),
                     BlockStateProvider.of(ModBlocks.REDWOOD_LEAVES),
-                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 6),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 5),
                     new TwoLayersFeatureSize(3, 4, 2)).build());
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> EBONY_TREE =
@@ -37,35 +37,40 @@ public class ModConfiguredFeatures {
                     BlockStateProvider.of(ModBlocks.EBONY_LOG),
                     new StraightTrunkPlacer(12, 13, 12),
                     BlockStateProvider.of(ModBlocks.EBONY_LEAVES),
-                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 6),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 5),
+                    new TwoLayersFeatureSize(4, 5, 1)).build());
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BONE_TREE =
+            ConfiguredFeatures.register("bone_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.BONETREE_LOG),
+                    new StraightTrunkPlacer(20, 20, 20),
+                    BlockStateProvider.of(ModBlocks.BONETREE_LEAVES),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 5),
+                    new TwoLayersFeatureSize(4, 5, 4)).build());
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> GOLDENWOOD_TREE =
+            ConfiguredFeatures.register("goldenwood_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.GOLDENWOOD_LOG),
+                    new StraightTrunkPlacer(8, 15, 3),
+                    BlockStateProvider.of(ModBlocks.GOLDENWOOD_LEAVES),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 8),
                     new TwoLayersFeatureSize(6, 6, 6)).build());
 
-    public static final RegistryEntry<PlacedFeature> JACARANDA_CHECKED =
-            PlacedFeatures.register("jacaranda_checked", JACARANDA_TREE,
-                    PlacedFeatures.wouldSurvive(ModBlocks.JACARANDA_SAPLING));
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> CRONETREE =
+            ConfiguredFeatures.register("cronetree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.CRONETREE_LOG),
+                    new StraightTrunkPlacer(19, 5, 8),
+                    BlockStateProvider.of(ModBlocks.CRONETREE_LEAVES),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 5),
+                    new TwoLayersFeatureSize(4, 6, 6)).build());
 
-    public static final RegistryEntry<PlacedFeature> REDWOOD_CHECKED =
-            PlacedFeatures.register("redwood_checked", REDWOOD_TREE,
-                    PlacedFeatures.wouldSurvive(ModBlocks.REDWOOD_SAPLING));
-
-    public static final RegistryEntry<PlacedFeature> EBONY_CHECKED =
-            PlacedFeatures.register("ebony_checked", EBONY_TREE,
-                    PlacedFeatures.wouldSurvive(ModBlocks.EBONY_SAPLING));
-
-    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> JACARANDA_SPAWN =
-            ConfiguredFeatures.register("jacaranda_spawn", Feature.RANDOM_SELECTOR,
-                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(JACARANDA_CHECKED, 0.5f)),
-                            JACARANDA_CHECKED));
-
-    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> REDWOOD_SPAWN =
-            ConfiguredFeatures.register("redwood_spawn", Feature.RANDOM_SELECTOR,
-                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(REDWOOD_CHECKED, 0.5f)),
-                            REDWOOD_CHECKED));
-
-    public static final RegistryEntry<ConfiguredFeature<RandomFeatureConfig, ?>> EBONY_SPAWN =
-            ConfiguredFeatures.register("ebony_spawn", Feature.RANDOM_SELECTOR,
-                    new RandomFeatureConfig(List.of(new RandomFeatureEntry(EBONY_CHECKED, 0.5f)),
-                            EBONY_CHECKED));
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> GLOAMBLOSSOM =
+            ConfiguredFeatures.register("gloamblossom", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.GLOAMBLOSSOM_LOG),
+                    new StraightTrunkPlacer(24, 1, 16),
+                    BlockStateProvider.of(ModBlocks.GLOAMBLOSSOM_LEAVES),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(4, 3, 1)).build());
 
     public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> CORRUPTED_FLOWER =
             ConfiguredFeatures.register("corrupted_flower", Feature.FLOWER,

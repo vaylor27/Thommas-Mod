@@ -754,6 +754,30 @@ public class ModItems {
     public static Item OIL_BOTTLE = registerItem("oil_bottle",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
+    public static Item AURICUPRIDE_ROCK = registerItem("auricupride_rock",
+            new Item(new FabricItemSettings().group(ModItemGroup.MATERIALS)));
+
+    public static Item BAUXITE_ROCK = registerItem("bauxite_rock",
+            new Item(new FabricItemSettings().group(ModItemGroup.MATERIALS)));
+
+    public static Item CYLINDRITE_ROCK = registerItem("cylindrite_rock",
+            new Item(new FabricItemSettings().group(ModItemGroup.MATERIALS)));
+
+    public static Item GAHNITE_ROCK = registerItem("gahnite_rock",
+            new Item(new FabricItemSettings().group(ModItemGroup.MATERIALS)));
+
+    public static Item GALENA_ROCK = registerItem("galena_rock",
+            new Item(new FabricItemSettings().group(ModItemGroup.MATERIALS)));
+
+    public static Item REALGAR_ROCK = registerItem("realgar_rock",
+            new Item(new FabricItemSettings().group(ModItemGroup.MATERIALS)));
+
+    public static Item SPHALERITE_ROCK = registerItem("sphalerite_rock",
+            new Item(new FabricItemSettings().group(ModItemGroup.MATERIALS)));
+
+    public static Item GOLDENWOOD_ROD = registerItem("goldenwood_rod",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

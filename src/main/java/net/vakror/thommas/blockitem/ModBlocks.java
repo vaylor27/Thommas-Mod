@@ -13,10 +13,7 @@ import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.blockitem.block.entity.ModSignTypes;
 import net.vakror.thommas.blockitem.custom.block.*;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
-import net.vakror.thommas.effect.ModEffects;
-import net.vakror.thommas.world.gen.tree.sapling.EbonySaplingGenerator;
-import net.vakror.thommas.world.gen.tree.sapling.JacarandaSaplingGenerator;
-import net.vakror.thommas.world.gen.tree.sapling.RedwoodSaplingGenerator;
+import net.vakror.thommas.world.gen.tree.sapling.*;
 import net.vakror.thommas.blockitem.item.ModItemGroup;
 import net.vakror.thommas.sound.ModSounds;
 
@@ -151,7 +148,7 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)), ModItemGroup.BLOCKS);
 
     public static final Block REDWOOD_LEAVES = registerBlock("redwood_leaves",
-            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.NATURE);
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block TOMATO_PLANT = registerBlockWithoutBlockItem("tomato_plant",
             new TomatoPlant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()));
@@ -765,7 +762,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.0f)), ModItemGroup.ORES);
 
     public static final Block EBONY_SAPLING = registerBlock("ebony_sapling",
-            new ModSaplingBlock(new EbonySaplingGenerator(), FabricBlockSettings.of(Material.WOOD).nonOpaque()), ModItemGroup.NATURE);
+            new ModSaplingBlock(new EbonySaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block BLIGHTSPORE = registerBlockWithoutBlockItem("blightspore",
             new BlightSpore(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
@@ -916,6 +913,42 @@ public class ModBlocks {
 
     public static final Block SLADE_COLUMN = registerBlock("slade_column",
             new Block(FabricBlockSettings.of(Material.METAL).strength(3.0F).requiresTool()), ModItemGroup.BLOCKS);
+
+    public static final Block BONETREE_LOG = registerBlock("bonetree_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
+
+    public static final Block BONETREE_LEAVES = registerBlock("bonetree_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block BONETREE_SAPLING = registerBlock("bonetree_sapling",
+            new ModSaplingBlock(new BoneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block GOLDENWOOD_LOG = registerBlock("goldenwood_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
+
+    public static final Block GOLDENWOOD_LEAVES = registerBlock("goldenwood_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block GOLDENWOOD_SAPLING = registerBlock("goldenwood_sapling",
+            new ModSaplingBlock(new GoldenWoodSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block CRONETREE_LOG = registerBlock("cronetree_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
+
+    public static final Block CRONETREE_LEAVES = registerBlock("cronetree_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block CRONETREE_SAPLING = registerBlock("cronetree_sapling",
+            new ModSaplingBlock(new CroneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block GLOAMBLOSSOM_LOG = registerBlock("gloamblossom_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
+
+    public static final Block GLOAMBLOSSOM_LEAVES = registerBlock("gloamblossom_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block GLOAMBLOSSOM_SAPLING = registerBlock("gloamblossom_sapling",
+            new ModSaplingBlock(new GloamBlossomSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

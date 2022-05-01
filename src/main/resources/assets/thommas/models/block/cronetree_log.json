@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "thommas:block/cronetree_log_top",
+    "side": "thommas:block/cronetree_log"
+  }
+}

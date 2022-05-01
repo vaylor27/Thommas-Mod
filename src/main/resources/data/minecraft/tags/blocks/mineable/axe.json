@@ -8,20 +8,24 @@
     "thommas:safe_kaupen_door",
     "thommas:jacaranda_wood",
     "thommas:jacaranda_planks",
-    "thommas:jacaranda_log",
     "thommas:stripped_jacaranda_wood",
     "thommas:stripped_jacaranda_log",
     "thommas:redwood_wood",
     "thommas:redwood_planks",
-    "thommas:redwood_log",
     "thommas:stripped_redwood_wood",
     "thommas:stripped_redwood_log",
     "thommas:ebony_wood",
     "thommas:ebony_planks",
-    "thommas:ebony_log",
     "thommas:stripped_ebony_wood",
     "thommas:stripped_ebony_log",
     "thommas:ebony_trapdoor",
-    "thommas:ebony_door"
+    "thommas:ebony_door",
+    "thommas:redwood_log",
+    "thommas:jacaranda_log",
+    "thommas:ebony_log",
+    "thommas:bonetree_log",
+    "thommas:goldenwood_log",
+    "thommas:cronetree_log",
+    "thommas:gloamblossom_log"
   ]
 }

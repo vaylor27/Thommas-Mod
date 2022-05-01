@@ -42,4 +42,7 @@ public class ModItemGroup {
     public static final ItemGroup COINS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "coins"),
             () -> new ItemStack(ModItems.ALUMINUM_COIN));
 
+    public static final ItemGroup MATERIALS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "materials"),
+            () -> new ItemStack(ModItems.CITRINE));
+
 }

@@ -25,7 +25,7 @@
                   }
                 }
               ],
-              "name": "minecraft:slade_normal"
+              "name": "thommas:slade_normal"
             },
             {
               "type": "minecraft:item",
@@ -34,7 +34,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "minecraft:slade_column"
+              "name": "thommas:slade_column"
             }
           ]
         }

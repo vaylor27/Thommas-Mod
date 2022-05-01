@@ -250,6 +250,14 @@
   "item.thommas.tin_chunks": "Tin Chunks",
   "item.thommas.pentlandite_rock": "Pentlandite Rock",
   "item.thommas.oil_bottle": "Oil Bottle",
+  "item.thommas.auricupride_rock": "Auricupride Rock",
+  "item.thommas.bauxite_rock": "Bauxite Rock",
+  "item.thommas.cylindrite_rock": "Cylindrite Rock",
+  "item.thommas.gahnite_rock": "Gahnite Rock",
+  "item.thommas.galena_rock": "Galena Rock",
+  "item.thommas.realgar_rock": "Realgar Rock",
+  "item.thommas.sphalerite_rock": "Sphalerite Rock",
+  "item.thommas.goldenwood_rod": "Goldenwood Rod",
 
 
   "block.thommas.jacaranda_sign": "Jacaranda Sign",
@@ -532,6 +540,18 @@
   "block.thommas.slade_normal": "Slade",
   "block.thommas.slade_column": "Slade Column",
   "block.thommas.big_stone_sphalerite_ore": "Big Stone Sphalerite Ore",
+  "block.thommas.bonetree_sapling": "Bonetree Sapling",
+  "block.thommas.bonetree_log": "Bonetree Log",
+  "block.thommas.bonetree_leaves": "Bonetree Leaves",
+  "block.thommas.goldenwood_log": "Goldenwood Log",
+  "block.thommas.goldenwood_sapling": "Goldenwood Sapling",
+  "block.thommas.goldenwood_leaves": "Goldenwood Leaves",
+  "block.thommas.cronetree_sapling": "Crone Tree Sapling",
+  "block.thommas.cronetree_log": "Crone Tree Log",
+  "block.thommas.cronetree_leaves": "Cronetree Leaves",
+  "block.thommas.gloamblossom_log": "Gloamblossom Log",
+  "block.thommas.gloamblossom_sapling": "Gloamblossom Sapling",
+  "block.thommas.gloamblossom_leaves": "Gloamblossom Leaves",
 
 
   "thommas.cane.posthit.message": "You have been crippled by Granny's Cane",
@@ -552,6 +572,8 @@
   "itemGroup.thommas.lamps": "Thommas Lamps",
   "itemGroup.thommas.artifacts": "Thommas Artifacts",
   "itemGroup.thommas.coins": "Thommas Coins",
+  "itemGroup.thommas.materials": "Thommas Materials",
+  "itemGroup.thommas.everything": "All Thommas Blocks & Items",
 
   "entity.minecraft.villager.blastmaster": "Blastmaster",
   "entity.minecraft.villager.lightninggod": "Lightning God",

@@ -19,18 +19,6 @@ import java.util.Arrays;
 import static net.vakror.thommas.world.gen.ModConfiguredFeatures.*;
 
 public class ModPlacedFeatures {
-    public static final RegistryEntry<PlacedFeature> JACARANDA_PLACED = PlacedFeatures.register("jacaranda_placed",
-            JACARANDA_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0, 0.01F, 2)));
-
-    public static final RegistryEntry<PlacedFeature> REDWOOD_PLACED = PlacedFeatures.register("redwood_placed",
-            REDWOOD_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0, 0.01F, 5)));
-
-    public static final RegistryEntry<PlacedFeature> EBONY_PLACED = PlacedFeatures.register("ebony_placed",
-            EBONY_SPAWN, VegetationPlacedFeatures.modifiers(
-                    PlacedFeatures.createCountExtraModifier(0, 0.1F, 15)));
-
 
     public static final RegistryEntry<PlacedFeature> CORRUPTED_PLACED = PlacedFeatures.register("corrupted_placed",
             ModConfiguredFeatures.CORRUPTED_FLOWER, RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(),

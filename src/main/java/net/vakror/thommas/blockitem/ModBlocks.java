@@ -681,7 +681,7 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.BAD_OMEN, 200, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block POTTED_HYACINTH = registerBlockWithoutBlockItem("potted_hyacinth",
-            new FlowerPotBlock(ModBlocks.HYACINTH, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque().strength(3.0f)));
+            new FlowerPotBlock(ModBlocks.HYACINTH, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block OATS = registerBlockWithoutBlockItem("oats",
             new OatCrop(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()));

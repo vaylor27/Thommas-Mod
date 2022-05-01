@@ -147,12 +147,9 @@ public class ModBlocks {
     public static final Block REDWOOD_PLANKS = registerBlock("redwood_planks",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_PLANKS)), ModItemGroup.BLOCKS);
 
-    public static final Block REDWOOD_LEAVES = registerBlock("redwood_leaves",
-            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
-
     public static final Block TOMATO_PLANT = registerBlockWithoutBlockItem("tomato_plant",
             new TomatoPlant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()));
-    
+
     public static final Block ADAMANTIUM_BLOCK = registerBlock("adamantium_block",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
 
@@ -949,6 +946,15 @@ public class ModBlocks {
 
     public static final Block GLOAMBLOSSOM_SAPLING = registerBlock("gloamblossom_sapling",
             new ModSaplingBlock(new GloamBlossomSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block BLUEBELLS = registerBlock("bluebells",
+            new FlowerBlock(StatusEffects.ABSORPTION, 2000, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
+
+    public static final Block POTTED_BLUEBELLS = registerBlockWithoutBlockItem("potted_bluebells",
+            new FlowerPotBlock(ModBlocks.BLUEBELLS, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
+
+    public static final Block REDWOOD_LEAVES = registerBlock("redwood_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

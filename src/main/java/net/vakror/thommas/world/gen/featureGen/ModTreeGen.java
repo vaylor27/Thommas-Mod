@@ -12,18 +12,18 @@ import net.vakror.thommas.world.gen.ModPlacedFeatures;
 public class ModTreeGen {
     public static void generateTrees() {
 
-        new Tree("jacaranda", ModBlocks.JACARANDA_SAPLING, ModConfiguredFeatures.JACARANDA_TREE, Biome.Category.PLAINS);
+        new Tree("jacaranda", ModBlocks.JACARANDA_SAPLING, ModConfiguredFeatures.JACARANDA_TREE, Biome.Category.PLAINS, 0, 0.5f, 8);
 
-        new Tree("redwood", ModBlocks.REDWOOD_SAPLING, ModConfiguredFeatures.REDWOOD_TREE, Biome.Category.PLAINS);
+        new Tree("redwood", ModBlocks.REDWOOD_SAPLING, ModConfiguredFeatures.REDWOOD_TREE, Biome.Category.PLAINS, 2, 0.5f, 3);
 
-        new Tree("ebony", ModBlocks.EBONY_SAPLING, ModConfiguredFeatures.EBONY_TREE, Biome.Category.PLAINS);
+        new Tree("ebony", ModBlocks.EBONY_SAPLING, ModConfiguredFeatures.EBONY_TREE, Biome.Category.PLAINS, 4, 0.5f, 6);
 
-        new Tree("bone", ModBlocks.BONETREE_SAPLING, ModConfiguredFeatures.BONE_TREE, Biome.Category.PLAINS);
+        new Tree("bone", ModBlocks.BONETREE_SAPLING, ModConfiguredFeatures.BONE_TREE, Biome.Category.PLAINS,4,0.5f, 3);
 
-        new Tree("goldenwood", ModBlocks.GOLDENWOOD_SAPLING, ModConfiguredFeatures.GOLDENWOOD_TREE, Biome.Category.PLAINS);
+        new Tree("goldenwood", ModBlocks.GOLDENWOOD_SAPLING, ModConfiguredFeatures.GOLDENWOOD_TREE, Biome.Category.PLAINS, 2,0.5f, 3);
 
-        new Tree("cronetree", ModBlocks.CRONETREE_SAPLING, ModConfiguredFeatures.CRONETREE, Biome.Category.PLAINS);
+        new Tree("cronetree", ModBlocks.CRONETREE_SAPLING, ModConfiguredFeatures.CRONETREE, Biome.Category.PLAINS,0,1, 6);
 
-        new Tree("gloamblossom", ModBlocks.GLOAMBLOSSOM_SAPLING, ModConfiguredFeatures.GLOAMBLOSSOM, Biome.Category.PLAINS);
+        new Tree("gloamblossom", ModBlocks.GLOAMBLOSSOM_SAPLING, ModConfiguredFeatures.GLOAMBLOSSOM, Biome.Category.PLAINS,8,0.01f, 6);
     }
 }

@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "thommas:block/redwood_leaves"
-    }
+    "": { "model": "thommas:block/redwood_leaves" }
   }
 }

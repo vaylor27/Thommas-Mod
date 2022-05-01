@@ -72,27 +72,6 @@ public class ModConfiguredFeatures {
                     new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 4),
                     new TwoLayersFeatureSize(4, 3, 1)).build());
 
-    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> CORRUPTED_FLOWER =
-            ConfiguredFeatures.register("corrupted_flower", Feature.FLOWER,
-                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
-                            new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.CORRUPTED_FLOWER)))));
-
-    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> ORCHID =
-            ConfiguredFeatures.register("orchid", Feature.FLOWER,
-                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
-                            new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.ORCHID)))));
-
-    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> HYACINTH =
-            ConfiguredFeatures.register("hyacinth", Feature.FLOWER,
-                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
-                            new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.HYACINTH)))));
-
-    public static final RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> PINK_ROSE =
-            ConfiguredFeatures.register("pink_rose", Feature.FLOWER,
-                    ConfiguredFeatures.createRandomPatchFeatureConfig(64, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
-                            new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.PINK_ROSE)))));
-
-
 
     public static final RegistryEntry<ConfiguredFeature<LakeFeature.Config, ?>> HONEY_OASIS =
             ConfiguredFeatures.register("honey_oasis", Feature.LAKE,

@@ -18,11 +18,11 @@ import java.util.List;
 
 
 public class Tree {
-    public Tree(String name, Block saplingBlock, RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> treeFeatureConfig, Biome.Category biome) {
-        makeTree(name, saplingBlock, treeFeatureConfig, biome);
+    public Tree(String name, Block saplingBlock, RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> treeFeatureConfig, Biome.Category biome, int countPerChunk, float extraChance, int extraCount) {
+        makeTree(name, saplingBlock, treeFeatureConfig, biome, countPerChunk, extraChance, extraCount);
     }
 
-    private static void makeTree(String name, Block saplingBlock, RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> treeFeatureConfig, Biome.Category biome) {
+    private static void makeTree(String name, Block saplingBlock, RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> treeFeatureConfig, Biome.Category biome, int countPerChunk, float extraChance, int extraCount) {
 
         RegistryEntry<PlacedFeature> TREE_CHECKED = PlacedFeatures.register(name + "_checked", treeFeatureConfig,
                 PlacedFeatures.wouldSurvive(saplingBlock));
@@ -33,7 +33,7 @@ public class Tree {
 
         RegistryEntry<PlacedFeature> TREE_PLACED = PlacedFeatures.register(name + "_placed",
                 TREE_SPAWN, VegetationPlacedFeatures.modifiers(
-                        PlacedFeatures.createCountExtraModifier(0, 0.1F, 5)));
+                        PlacedFeatures.createCountExtraModifier(countPerChunk, extraChance, extraCount)));
 
         BiomeModifications.addFeature(BiomeSelectors.categories(biome),
                 GenerationStep.Feature.VEGETAL_DECORATION, TREE_PLACED.getKey().get());

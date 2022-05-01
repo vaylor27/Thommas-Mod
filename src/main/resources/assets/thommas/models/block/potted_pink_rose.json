@@ -1,3 +1,6 @@
 {
-  "parent": "minecraft:block/flower_pot_cross"
+  "parent": "minecraft:block/flower_pot_cross",
+  "textures": {
+    "plant": "thommas:block/pink_rose"
+  }
 }

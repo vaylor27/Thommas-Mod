@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IOI",
+    "VXV",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:small_casing"
+    },
+    "O": {
+      "item": "thommas:switch"
+    },
+    "V": {
+      "item": "thommas:triple_electric_outlet"
+    },
+    "X": {
+      "item": "thommas:datacard_7"
+    },
+    "P": {
+      "item": "thommas:current_toggler"
+    }
+  },
+  "result": {
+    "item": "thommas:datacard_6",
+    "count": 1
+  }
+}

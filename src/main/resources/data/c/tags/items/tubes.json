@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "thommas:plastic_tube",
+    "thommas:iron_tube",
+    "thommas:galvanized_tube",
+    "thommas:copper_tube"
+  ]
+}

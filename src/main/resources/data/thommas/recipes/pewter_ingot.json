@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:copper_ingot"
+    },
+    "I": {
+      "item": "thommas:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:pewter_ingot",
+    "count": 2
+  }
+}

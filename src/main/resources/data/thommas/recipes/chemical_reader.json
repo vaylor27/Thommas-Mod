@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PXO",
+    "#I#",
+    "OXP"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:chip_1"
+    },
+    "X": {
+      "item": "thommas:data_tablet_screen"
+    },
+    "#": {
+      "tag": "c:circuit"
+    },
+    "P": {
+      "item": "thommas:capacitor_1"
+    },
+    "O": {
+      "item": "thommas:datacard_6"
+    }
+  },
+  "result": {
+    "item": "thommas:chemical_reader",
+    "count": 1
+  }
+}

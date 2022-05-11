@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "I#I",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:steel_ingot"
+    },
+    "X": {
+      "item": "thommas:wire"
+    },
+    "#": {
+      "item": "thommas:switch"
+    },
+    "P": {
+      "item": "thommas:triple_electric_outlet"
+    }
+  },
+  "result": {
+    "item": "thommas:light_bulb_base",
+    "count": 1
+  }
+}

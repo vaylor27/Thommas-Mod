@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "thommas:small_bronze_plate",
+    "thommas:small_ceramic_plate",
+    "thommas:small_clay_plate",
+    "thommas:small_copper_plate",
+    "thommas:small_galvanized_plate",
+    "thommas:small_gold_plate",
+    "thommas:small_iron_plate",
+    "thommas:small_laminated_brown_plate",
+    "thommas:small_laminated_green_plate",
+    "thommas:small_leatherbound_plate",
+    "thommas:small_nickel_plate",
+    "thommas:small_plastic_plate",
+    "thommas:small_steel_plate",
+    "thommas:small_tin_plate",
+    "thommas:small_wood_plate"
+  ]
+}

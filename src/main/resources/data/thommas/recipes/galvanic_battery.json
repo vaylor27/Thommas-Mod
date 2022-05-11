@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IXI",
+    "PIP"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:galvanized_plate"
+    },
+    "X": {
+      "item": "thommas:battery_components"
+    },
+    "P": {
+      "item": "thommas:dualcoil_2"
+    }
+  },
+  "result": {
+    "item": "thommas:ferrite",
+    "count": 1
+  }
+}

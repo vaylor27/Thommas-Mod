@@ -37,7 +37,7 @@ public class IronCoin extends Item {
             }
             else if (random == 17) {
                 user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
-                user.dropItem(new ItemStack(ModBlocks.TITANIUM_ORE, 4), true);
+                user.dropItem(new ItemStack(ModItems.RAW_CITRINE, 4), true);
             }
             else if (random <= 19) {
                 user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
@@ -45,7 +45,7 @@ public class IronCoin extends Item {
             }
             else if (random == 20) {
                 user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));
-                user.dropItem(new ItemStack(ModBlocks.AMETHYST_ORE, 7), true);
+                user.dropItem(new ItemStack(ModBlocks.NETHERRACK_CITRINE_ORE, 7), true);
             }
             else {
                 user.setStackInHand(hand, new ItemStack(ModItems.IRON_COIN, (count - 1)));

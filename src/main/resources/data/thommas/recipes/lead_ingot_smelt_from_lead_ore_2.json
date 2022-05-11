@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "group": "coal",
   "ingredient": {
-    "item": "thommas:stone_lead_ore_2"
+    "item": "thommas:stone_lead_2_ore"
   },
   "result": "thommas:lead_ingot",
   "experience": 16,

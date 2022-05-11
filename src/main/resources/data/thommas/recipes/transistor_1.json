@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "thommas:transistor_3"
+    }
+  },
+  "result": {
+    "item": "thommas:transistor_1",
+    "count": 1
+  }
+}

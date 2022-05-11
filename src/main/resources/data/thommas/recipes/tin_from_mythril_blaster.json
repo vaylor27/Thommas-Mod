@@ -2,7 +2,7 @@
    "type": "thommas:mythril_blaster",
    "ingredients": [
       {
-         "item": "thommas:tin_ore"
+         "item": "thommas:stone_tin_ore"
       },
       {
          "item": "thommas:magic_charge"

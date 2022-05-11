@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "I#I",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "#": {
+      "item": "thommas:coil_old"
+    }
+  },
+  "result": {
+    "item": "thommas:copper_wire",
+    "count": 1
+  }
+}

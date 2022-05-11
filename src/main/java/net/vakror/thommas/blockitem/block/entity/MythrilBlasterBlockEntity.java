@@ -138,6 +138,7 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
             inventory.setStack(i, entity.getStack(i));
         }
 
+        assert world != null;
         Optional<MythrilBlasterRecipe> match = world.getRecipeManager()
                 .getFirstMatch(MythrilBlasterRecipe.Type.INSTANCE, inventory, world);
 
@@ -152,6 +153,7 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
             inventory.setStack(i, entity.getStack(i));
         }
 
+        assert world != null;
         Optional<MythrilBlasterRecipe> match = world.getRecipeManager()
                 .getFirstMatch(MythrilBlasterRecipe.Type.INSTANCE, inventory, world);
 

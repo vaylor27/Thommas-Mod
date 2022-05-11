@@ -203,9 +203,6 @@ public class ModItems {
     public static final Item COPPER_DUST = registerItem("copper_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
-    public static final Item HARD_COPPER_INGOT = registerItem("hard_copper_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
-
     public static final Item CRIMTANE_DUST = registerItem("crimtane_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
@@ -715,7 +712,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static Item ZINC_PLATE = registerItem("zinc_plate",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS)));
 
     public static Item JACARANDA_SIGN = registerItem("jacaranda_sign",
             new SignItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_BLOCKS).maxCount(64),
@@ -777,6 +774,447 @@ public class ModItems {
 
     public static Item GOLDENWOOD_ROD = registerItem("goldenwood_rod",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static Item WISDOM_FRUIT = registerItem("wisdom_fruit",
+            new WisdomFruit(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.WISDOM)));
+
+    public static Item SWEETPOD_STEW = registerItem("sweetpod_stew",
+            new SweetPodSoupItem(new FabricItemSettings().group(ModItemGroup.ITEMS).food(ModFoodComponents.SWEETPOD_STEW)));
+
+    public static Item SWEETPOD = registerItem("sweetpod",
+            new AliasedBlockItem(ModBlocks.SWEETPOD, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.SWEETPOD_STEW)));
+
+    public static Item PORK_SLAB_RAW = registerItem("pork_slab_raw",
+            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.RAW)));
+
+    public static Item PORK_SLAB_SALTED = registerItem("pork_slab_salted",
+            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.SALTED)));
+
+    public static Item PORK_SLAB_COOKED = registerItem("pork_slab_cooked",
+            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.COOKED)));
+
+    public static Item ADAMANTIUM_PLATE = registerItem("adamantium_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item ADAMANTIUM_WIRE = registerItem("adamantium_wire",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item ALUMINUM_PLATE = registerItem("aluminum_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BATTERY_COMPONENTS = registerItem("battery_components",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BLANK_PUNCHCARD = registerItem("blank_punchcard",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BRASS_PLATE = registerItem("brass_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BRONZE_GEAR = registerItem("bronze_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BRONZE_PLATE = registerItem("bronze_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BULB_0 = registerItem("bulb_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BULB_1 = registerItem("bulb_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BULB_2 = registerItem("bulb_2",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BULB_3 = registerItem("bulb_3",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BULB_4 = registerItem("bulb_4",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BULB_5 = registerItem("bulb_5",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BULB_6 = registerItem("bulb_6",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CAN = registerItem("can",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CAPACITOR_0 = registerItem("capacitor_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CAPACITOR_1 = registerItem("capacitor_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CHAINLINKS = registerItem("chainlinks",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CHEMICAL_READER = registerItem("chemical_reader",
+            new ChemicalReaderItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CHIP_0 = registerItem("chip_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CHIP_1 = registerItem("chip_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CIRCUIT_BLUE = registerItem("circuit_blue",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CIRCUIT_DISCRETE = registerItem("circuit_discrete",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CIRCUIT_INTEGRATED = registerItem("circuit_integrated",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CIRCUIT_OLD_0 = registerItem("circuit_old_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CIRCUIT_OLD_1 = registerItem("circuit_old_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CIRCUIT_PRINTED = registerItem("circuit_printed",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item COIL_COPPER = registerItem("coil_copper",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item COIL_GOLD = registerItem("coil_gold",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item COIL_OLD = registerItem("coil_old",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item COIL_RAREEARTHS = registerItem("coil_rareearths",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item COIL_SILVER = registerItem("coil_silver",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CONDENSER = registerItem("condenser",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item COPPER_GEAR = registerItem("copper_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item COPPER_PLATE = registerItem("copper_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item COPPER_TUBE = registerItem("copper_tube",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item COPPER_WIRE = registerItem("copper_wire",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CURRENT_SWITCHER = registerItem("current_switcher",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item CURRENT_TOGGLER = registerItem("current_toggler",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DARK_GEAR = registerItem("dark_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_0 = registerItem("datacard_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_1 = registerItem("datacard_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_2 = registerItem("datacard_2",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_3 = registerItem("datacard_3",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_4 = registerItem("datacard_4",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_5 = registerItem("datacard_5",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_6 = registerItem("datacard_6",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_7 = registerItem("datacard_7",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_8 = registerItem("datacard_8",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATACARD_9 = registerItem("datacard_9",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DATAREEL = registerItem("datareel",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DUALCOIL_0 = registerItem("dualcoil_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DUALCOIL_1 = registerItem("dualcoil_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item DUALCOIL_2 = registerItem("dualcoil_2",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item ELECTRIC_MAGNET = registerItem("electric_magnet",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item ELECTRUM_GEAR = registerItem("electrum_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item FERRITE = registerItem("ferrite",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item GALVANIC_BATTERY = registerItem("galvanic_battery",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item GALVANIZED_PLATE = registerItem("galvanized_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item GALVANIZED_TUBE = registerItem("galvanized_tube",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item GLOWING_GEAR = registerItem("glowing_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item GOLD_GEAR = registerItem("gold_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item GOLD_PLATE = registerItem("gold_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item GOLD_WIRE = registerItem("gold_wire",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item IRON_GEAR = registerItem("iron_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item IRON_PLATE = registerItem("iron_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item IRON_TUBE = registerItem("iron_tube",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item IRON_WIRE = registerItem("iron_wire",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item LEAD_GEAR = registerItem("lead_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item LEAD_PLATE = registerItem("lead_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MAGNET = registerItem("magnet",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MODERN_BATTERY_0 = registerItem("modern_battery_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MODERN_BATTERY_1 = registerItem("modern_battery_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MODERN_BATTERY_2 = registerItem("modern_battery_2",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MODERN_BATTERY_3 = registerItem("modern_battery_3",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MODERN_BATTERY_4 = registerItem("modern_battery_4",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MOTOR_0 = registerItem("motor_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MOTOR_1 = registerItem("motor_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MOTOR_2 = registerItem("motor_2",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item MOTOR_3 = registerItem("motor_3",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item LIGHT_BULB_BASE = registerItem("light_bulb_base",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item NICKEL_GEAR = registerItem("nickel_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item NICKEL_PLATE = registerItem("nickel_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item PEWTER_PLATE = registerItem("pewter_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item PLASTIC_TUBE = registerItem("plastic_tube",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item RAREEARTHS_PLATE = registerItem("rareearths_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item RESISTOR_0 = registerItem("resistor_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item RESISTOR_1 = registerItem("resistor_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item RIVETS_PLATE = registerItem("rivets_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item ROPE = registerItem("rope",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item RUSTY_OLD_BATTERY = registerItem("rusty_old_battery",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SILVER_PLATE = registerItem("silver_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SILVER_WIRE = registerItem("silver_wire",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_BRONZE_PLATE = registerItem("small_bronze_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_CERAMIC_PLATE = registerItem("small_ceramic_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_CLAY_PLATE = registerItem("small_clay_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_COPPER_PLATE = registerItem("small_copper_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_GALVANIZED_PLATE = registerItem("small_galvanized_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_GOLD_PLATE = registerItem("small_gold_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_IRON_PLATE = registerItem("small_iron_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_LAMINATED_BROWN_PLATE = registerItem("small_laminated_brown_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_LAMINATED_GREEN_PLATE = registerItem("small_laminated_green_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_LEATHERBOUND_PLATE = registerItem("small_leatherbound_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_NICKEL_PLATE = registerItem("small_nickel_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_PLASTIC_PLATE = registerItem("small_plastic_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_STEEL_PLATE = registerItem("small_steel_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_STONE_PLATE = registerItem("small_stone_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_TIN_PLATE = registerItem("small_tin_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SMALL_WOOD_PLATE = registerItem("small_wood_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item STEEL_CASING = registerItem("steel_casing",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item STEEL_GEAR = registerItem("steel_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item STEEL_PLATE = registerItem("steel_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SUPERALLOY_PLATE = registerItem("superalloy_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SUPERALLOY_WIRE = registerItem("superalloy_wire",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item SWITCH = registerItem("switch",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item THERMIONIC_VALVE_0 = registerItem("thermionic_valve_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item THERMIONIC_VALVE_1 = registerItem("thermionic_valve_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item THERMIONIC_VALVE_2 = registerItem("thermionic_valve_2",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item THERMIONIC_VALVE_3 = registerItem("thermionic_valve_3",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item THERMIONIC_VALVE_4 = registerItem("thermionic_valve_4",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item RUSTY_OLD_THERMIONIC_VALVE = registerItem("rusty_old_thermionic_valve",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item THICK_GALVANIZED_PLATE = registerItem("thick_galvanized_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item THICK_STEEL_PLATE = registerItem("thick_steel_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item TIN_GEAR = registerItem("tin_gear",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item TIN_PLATE = registerItem("tin_plate",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item TITANIUM_INFUSED_STEEL_CASING = registerItem("titanium_infused_steel_casing",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item TRANSISTOR_0 = registerItem("transistor_0",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item TRANSISTOR_1 = registerItem("transistor_1",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item TRANSISTOR_2 = registerItem("transistor_2",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item TRANSISTOR_3 = registerItem("transistor_3",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item TRANSISTOR_4 = registerItem("transistor_4",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item TRIPLE_ELECTRIC_OUTLET = registerItem("triple_electric_outlet",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item WIRE = registerItem("wire",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item WRITTEN_PUNCHCARD = registerItem("written_punchcard",
+            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+
+    public static Item BRASS_INGOT = registerItem("brass_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
+
+    public static Item RAREEARTHS_INGOT = registerItem("rareearths_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
+
+    public static Item RAREEARTH_CRYSTAL = registerItem("rareearth_crystal",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
+
+    public static Item NICKEL_INGOT = registerItem("nickel_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
+
+    public static Item PEWTER_INGOT = registerItem("pewter_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
+
+    public static Item LITHIUM_BATTERY = registerItem("lithium_battery",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
 
 
     private static Item registerItem(String name, Item item) {

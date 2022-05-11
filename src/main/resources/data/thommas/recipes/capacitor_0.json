@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "I#I",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "I": {
+      "tag": "c:tubes"
+    },
+    "#": {
+      "item": "thommas:battery_components"
+    },
+    "P": {
+      "item": "thommas:dualcoil_0"
+    }
+  },
+  "result": {
+    "item": "thommas:can",
+    "count": 1
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:circuit"
+    },
+    "X": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "result": {
+    "item": "thommas:circuit_blue",
+    "count": 1
+  }
+}

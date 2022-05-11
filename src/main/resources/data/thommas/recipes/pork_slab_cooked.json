@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "coal",
+  "ingredient": {
+    "item": "thommas:pork_slab_salted"
+  },
+  "result": "thommas:pork_slab_cooked",
+  "experience": 16,
+  "cookingtime": 150
+}

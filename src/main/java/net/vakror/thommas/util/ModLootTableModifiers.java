@@ -18,10 +18,15 @@ public class ModLootTableModifiers {
     private static final Identifier IGLOO_STRUCTURE_CHEST_ID
             = new Identifier("minecraft", "chests/igloo_chest");
     private static final Identifier DESERT_TEMPLE_CHEST_ID
-            = new Identifier("minecraft", "chests/desert_pyramid_chest");
+            = new Identifier("minecraft", "chests/desert_pyramid");
     private static final Identifier CREEPER_ID
             = new Identifier("minecraft", "entities/creeper");
+    private static final Identifier PIG_ID
+            = new Identifier("minecraft", "entities/pig");
     private static final Identifier GLOW_LICHEN_ID = new Identifier("minecraft", "blocks/glow_lichen");
+    private static final Identifier SHIPWRECK_ID
+            = new Identifier("minecraft", "chests/shipwreck_treasure");
+
 
     public static void modifyLootTables() {
         LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
@@ -136,14 +141,14 @@ public class ModLootTableModifiers {
                 // Adds a Corrupted Dust to Creepers.
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.18f)) // Drops 1% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.09f)) // Drops 1% of the time
                         .with(ItemEntry.builder(ModItems.GOLDEN_PICKLE))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(4.0f, 9.0f)).build());
                 supplier.withPool(poolBuilder.build());
 
                 FabricLootPoolBuilder poolBuilders = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.16f)) // Drops 1% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.05f)) // Drops 1% of the time
                         .with(ItemEntry.builder(ModItems.ENCHANTED_GOLDEN_PICKLE))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(4.0f, 9.0f)).build());
                 supplier.withPool(poolBuilders.build());
@@ -162,10 +167,71 @@ public class ModLootTableModifiers {
                 // Adds a Corrupted Dust to Creepers.
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.01f)) // Drops 1% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.09f)) // Drops 1% of the time
                         .with(ItemEntry.builder(ModItems.AMMONITE))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(4.0f, 9.0f)).build());
                 supplier.withPool(poolBuilder.build());
+            }
+            if(PIG_ID.equals(id)) {
+                // Adds a Pork Slab to Pigs.
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.4f)) // Drops 40% of the time
+                        .with(ItemEntry.builder(ModItems.PORK_SLAB_RAW))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 9.0f)).build());
+                supplier.withPool(poolBuilder.build());
+            }
+            if (SHIPWRECK_ID.equals(id)) {
+                // Add Old Stuff to shipwreck
+                FabricLootPoolBuilder builder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.CHIP_0))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 8)).build());
+                supplier.withPool(builder.build());
+                FabricLootPoolBuilder builders = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.CIRCUIT_OLD_0))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 8)).build());
+                supplier.withPool(builders.build());
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.CIRCUIT_OLD_1))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 8)).build());
+                supplier.withPool(poolBuilder.build());
+                FabricLootPoolBuilder poolBuilders = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.RUSTY_OLD_BATTERY))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 8)).build());
+                supplier.withPool(poolBuilders.build());
+                FabricLootPoolBuilder poolbuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.RUSTY_OLD_THERMIONIC_VALVE))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 8)).build());
+                supplier.withPool(poolbuilder.build());
+                FabricLootPoolBuilder poolbuilders = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.COIL_OLD))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 8)).build());
+                supplier.withPool(poolbuilders.build());
+                FabricLootPoolBuilder poolsbuilders = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.COIL_OLD))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 8)).build());
+                supplier.withPool(poolsbuilders.build());
+                FabricLootPoolBuilder poolsBuilders = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.5f))
+                        .with(ItemEntry.builder(ModItems.MAGNET))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 8)).build());
+                supplier.withPool(poolsBuilders.build());
+
             }
         }));
     }

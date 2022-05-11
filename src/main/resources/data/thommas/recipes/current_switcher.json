@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OPO",
+    "XIX",
+    "OPO"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:dualcoil_2"
+    },
+    "P": {
+      "item": "thommas:resistor_0"
+    },
+    "I": {
+      "item": "thommas:electric_magnet"
+    },
+    "O": {
+      "item": "thommas:transistor_0"
+    }
+  },
+  "result": {
+    "item": "thommas:current_switcher",
+    "count": 1
+  }
+}

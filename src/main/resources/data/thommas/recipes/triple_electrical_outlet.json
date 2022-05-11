@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#P#",
+    "P#P",
+    "###"
+  ],
+  "key": {
+    "P": {
+      "item": "thommas:wire"
+    },
+    "#": {
+      "item": "thommas:titanium_infused_steel_casing"
+    }
+  },
+  "result": {
+    "item": "thommas:triple_electric_outlet",
+    "count": 1
+  }
+}

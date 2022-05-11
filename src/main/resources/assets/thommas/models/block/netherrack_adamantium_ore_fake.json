@@ -1,0 +1,6 @@
+{
+   "parent": "block/cube_all",
+   "textures": {
+      "all": "thommas:block/netherrack_adamantium_ore_fake"
+   }
+}

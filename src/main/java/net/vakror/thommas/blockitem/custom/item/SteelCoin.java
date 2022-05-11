@@ -32,7 +32,7 @@ public class SteelCoin extends Item {
             }
             else if (random <= 16) {
                 user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
-                user.dropItem(new ItemStack(ModBlocks.STONE_ZINC_ORE, 6), true);
+                user.dropItem(new ItemStack(ModItems.AMETHYST, 6), true);
             }
             else if (random == 17) {
                 user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));

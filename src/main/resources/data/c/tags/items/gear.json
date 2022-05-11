@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "thommas:tin_gear",
+    "thommas:steel_gear",
+    "thommas:nickel_gear",
+    "thommas:lead_gear",
+    "thommas:iron_gear",
+    "thommas:gold_gear",
+    "thommas:electrum_gear",
+    "thommas:dark_gear",
+    "thommas:copper_gear",
+    "thommas:bronze_gear"
+  ]
+}

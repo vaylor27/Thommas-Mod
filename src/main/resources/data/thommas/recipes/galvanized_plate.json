@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PIP",
+    "PPP"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:steel_plate"
+    },
+    "P": {
+      "item": "thommas:zinc_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:galvanized_plate",
+    "count": 1
+  }
+}

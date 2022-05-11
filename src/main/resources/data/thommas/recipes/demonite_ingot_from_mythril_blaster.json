@@ -2,7 +2,7 @@
    "type": "thommas:mythril_blaster",
    "ingredients": [
       {
-         "item": "thommas:demonite_ore"
+         "item": "thommas:nether_demonite_ore"
       },
       {
          "item": "thommas:magic_charge"

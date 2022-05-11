@@ -18,7 +18,7 @@ public enum ModToolMaterials implements ToolMaterial {
     MYTHRIL(MiningLevels.DIAMOND, 738, 14.0F, 2.0F, 28, () -> {
         return Ingredient.ofItems(ModItems.MYTHRIL_INGOT);
     }),
-    RUBY(MiningLevels.NETHERITE, 1500, 23.0F, 5.0F, 34, () -> {
+    RUBY(MiningLevels.NETHERITE, 2986, 28.0F, 7.0F, 34, () -> {
         return Ingredient.ofItems(ModItems.RUBY);
     }),
     ADAMANTIUM(MiningLevels.NETHERITE, 2452, 43.0F, 2.0F, 36, () -> {

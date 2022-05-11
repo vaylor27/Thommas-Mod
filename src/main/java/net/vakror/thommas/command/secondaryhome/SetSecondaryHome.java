@@ -7,7 +7,7 @@ import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.LiteralText;
 import net.minecraft.util.math.BlockPos;
-import net.vakror.thommas.util.IEntityDataSaver;
+import net.vakror.thommas.util.IEntityDataSaverNumber2;
 
 public class SetSecondaryHome {
     public static void register(CommandDispatcher<ServerCommandSource> dispatcher, boolean dedicated) {
@@ -16,11 +16,11 @@ public class SetSecondaryHome {
     }
 
     public static int run(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
-        IEntityDataSaver player = (IEntityDataSaver)context.getSource().getPlayer();
+        IEntityDataSaverNumber2 player = (IEntityDataSaverNumber2)context.getSource().getPlayer();
         BlockPos playerPos = context.getSource().getPlayer().getBlockPos();
         String pos = "(" + playerPos.getX() + ", " + playerPos.getY() + ", " + playerPos.getZ() + ")";
 
-        player.getPersistentData().putIntArray("secondaryhome",
+        player.data().putIntArray("secondaryhomepos",
                 new int[] {playerPos.getX(), playerPos.getY(), playerPos.getZ() });
 
         context.getSource().sendFeedback(new LiteralText("Set Secondary Home at " + pos), true);

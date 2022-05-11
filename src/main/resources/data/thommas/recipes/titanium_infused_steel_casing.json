@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:steel_casing"
+    },
+    "#": {
+      "item": "thommas:titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:titanium_infused_steel_casing",
+    "count": 1
+  }
+}

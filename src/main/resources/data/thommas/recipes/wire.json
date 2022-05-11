@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "tag": "c:wire"
+    }
+  },
+  "result": {
+    "item": "thommas:triple_electric_outlet",
+    "count": 1
+  }
+}

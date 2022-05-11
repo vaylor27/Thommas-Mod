@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:motor_0"
+    }
+  },
+  "result": {
+    "item": "thommas:motor_1",
+    "count": 1
+  }
+}

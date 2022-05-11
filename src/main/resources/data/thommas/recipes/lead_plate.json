@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II",
+    "II"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:lead_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:lead_plate",
+    "count": 4
+  }
+}

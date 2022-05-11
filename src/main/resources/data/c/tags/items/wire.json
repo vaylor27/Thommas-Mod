@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "thommas:superalloy_wire",
+    "thommas:silver_wire",
+    "thommas:iron_wire",
+    "thommas:gold_wire",
+    "thommas:copper_wire",
+    "thommas:adamantium_wire"
+  ]
+}

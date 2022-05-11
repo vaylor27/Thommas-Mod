@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "IPI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:wire"
+    },
+    "P": {
+      "item": "thommas:magnet"
+    },
+    "X": {
+      "item": "thommas:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:magnet",
+    "count": 1
+  }
+}

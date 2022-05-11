@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "group": "coal",
   "ingredient": {
-    "item": "thommas:tin_ore"
+    "item": "thommas:stone_tin_ore"
   },
   "result": "thommas:tin_ingot",
   "experience": 16,

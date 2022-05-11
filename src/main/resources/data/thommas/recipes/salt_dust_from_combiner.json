@@ -1,0 +1,14 @@
+{
+  "type": "thommas:combiner",
+  "ingredients": [
+    {
+      "item": "minecraft:glowstone"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "output": {
+    "item": "thommas:salt_dust"
+  }
+}

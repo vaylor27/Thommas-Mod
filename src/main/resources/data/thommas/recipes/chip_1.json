@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PXO",
+    "#I#",
+    "OXL"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:chip_0"
+    },
+    "X": {
+      "item": "thommas:titanium_infused_steel_casing"
+    },
+    "#": {
+      "tag": "c:circuit"
+    },
+    "P": {
+      "item": "thommas:switch"
+    },
+    "L": {
+      "item": "thommas:current_toggler"
+    },
+    "O": {
+      "tag": "c:small_plate"
+    }
+  },
+  "result": {
+    "item": "thommas:chip_1",
+    "count": 1
+  }
+}

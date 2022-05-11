@@ -16,9 +16,13 @@ import net.vakror.thommas.villager.ModVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 public class Thommas implements ModInitializer {
 	public static final String MOD_ID = "thommas";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+	public static boolean autofish = false;
+	public static boolean flyhack = false;
 
 	@Override
 	public void onInitialize() {
@@ -34,5 +38,7 @@ public class Thommas implements ModInitializer {
 		ModVillagers.setupPOIs();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
+
+		// check if riding
 	}
 }

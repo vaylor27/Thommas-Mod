@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IXI",
+    "PIP"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "thommas:nickel_chunks"
+    },
+    "P": {
+      "item": "thommas:zinc_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:ferrite",
+    "count": 1
+  }
+}

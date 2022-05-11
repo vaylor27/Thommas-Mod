@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "coal",
+  "ingredient": {
+    "item": "thommas:rareearth_crystal"
+  },
+  "result": "thommas:rareearths_ingot",
+  "experience": 16,
+  "cookingtime": 150
+}

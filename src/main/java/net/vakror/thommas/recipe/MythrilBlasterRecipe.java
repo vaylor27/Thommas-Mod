@@ -27,7 +27,6 @@ public class MythrilBlasterRecipe implements Recipe<SimpleInventory> {
         if(recipeItems.get(0).test(inventory.getStack(1))) {
             return recipeItems.get(1).test(inventory.getStack(2));
         }
-
         return false;
     }
 

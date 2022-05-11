@@ -13,7 +13,7 @@ public class ModItemGroup {
             () -> new ItemStack(ModBlocks.MYTHRIL_BLOCK));
 
     public static final ItemGroup ORES = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "ores"),
-            () -> new ItemStack(ModBlocks.MYTHRIL_ORE));
+            () -> new ItemStack(ModBlocks.DEEPSLATE_CITRINE_ORE));
 
     public static final ItemGroup ITEMS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "items"),
             () -> new ItemStack(ModItems.MYTHRIL_INGOT));
@@ -45,4 +45,6 @@ public class ModItemGroup {
     public static final ItemGroup MATERIALS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "materials"),
             () -> new ItemStack(ModItems.CITRINE));
 
+    public static final ItemGroup ELECTRONICS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "electronics"),
+            () -> new ItemStack(ModItems.BATTERY_COMPONENTS));
 }

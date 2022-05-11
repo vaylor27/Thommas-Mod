@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "IMI",
+    "P P"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:steel_ingot"
+    },
+    "P": {
+      "item": "thommas:coil_copper"
+    },
+    "X": {
+      "item": "thommas:steel_ingot"
+    },
+    "M": {
+      "item": "thommas:dualcoil_0"
+    }
+  },
+  "result": {
+    "item": "thommas:dualcoil_1",
+    "count": 1
+  }
+}

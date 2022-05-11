@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "IPI",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:titanium_infused_steel_casing"
+    },
+    "P": {
+      "item": "thommas:titanium_ingot"
+    },
+    "X": {
+      "item": "thommas:dualcoil_1"
+    }
+  },
+  "result": {
+    "item": "thommas:dualcoil_2",
+    "count": 1
+  }
+}

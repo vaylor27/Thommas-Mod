@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "XI"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:current_switcher"
+    },
+    "X": {
+      "item": "thommas:current_toggler"
+    },
+    "#": {
+      "item": "thommas:wire"
+    }
+  },
+  "result": {
+    "item": "thommas:switch",
+    "count": 4
+  }
+}

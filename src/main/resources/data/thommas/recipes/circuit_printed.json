@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:circuits_old"
+    },
+    "X": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "thommas:circuit_printed",
+    "count": 9
+  }
+}

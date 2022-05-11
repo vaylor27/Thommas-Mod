@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XIX",
+    "XXX"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:pork_slab_raw"
+    },
+    "X": {
+      "item": "thommas:salt_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:pork_slab_salted",
+    "count": 9
+  }
+}

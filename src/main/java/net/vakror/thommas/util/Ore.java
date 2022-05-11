@@ -2,8 +2,12 @@ package net.vakror.thommas.util;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.Material;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
@@ -20,15 +24,27 @@ import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.vakror.thommas.Thommas;
+import net.vakror.thommas.blockitem.custom.block.FakeOreBlock;
+import net.vakror.thommas.blockitem.item.ModItemGroup;
 
 import java.util.Arrays;
 
 
 public class Ore {
-    public Ore(String initName, Block block, Block replacedBlock, int veinsInChunk , int veinSize) {
-        String name = initName + "_ore";
-        configuredFeature(name, replacedBlock, veinSize, block);
-        placedFeature(name, veinsInChunk);
+    public Ore(String initName, Block replacesBlock, int veinsInChunk , int veinSize, boolean hasFake) {
+        register(initName + "_ore", replacesBlock, veinsInChunk, veinSize);
+        if (hasFake)
+            registerFake(initName + "_ore_fake", veinsInChunk, veinSize);
+    }
+
+    public Ore(String initName, Block replacesBlock, int veinsInChunk , int veinSize) {
+        register(initName + "_ore", replacesBlock, veinsInChunk, veinSize);
+        registerFake(initName + "_ore_fake", veinsInChunk, veinSize);
+    }
+
+    public Ore(String initName, Block block, Block replacesBlock, int veinsInChunk, int veinSize) {
+        configuredFeature(initName, replacesBlock, veinSize, block);
+        placedFeature(initName, veinsInChunk);
     }
     private static ConfiguredFeature<?, ?> CONFIGURED_FEATURE = null;
 
@@ -74,5 +90,32 @@ public class Ore {
         }
 
         Registry.register(BuiltinRegistries.PLACED_FEATURE, new Identifier(Thommas.MOD_ID, name), feature);
+
+    }
+
+    private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
+    }
+
+
+    private static Block BLOCK;
+
+    private static void register(String name, Block replacedBlock, int veinsInChunk , int veinSize) {
+        BLOCK = registerBlock(name, new Block(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool()));
+        configuredFeature(name, replacedBlock, veinSize, BLOCK);
+        placedFeature(name, veinsInChunk);
+    }
+
+
+    private static void registerFake(String name, int veinsInChunk , int veinSize) {
+        Block FAKEBLOCK = registerBlock(name, new FakeOreBlock(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool()));
+        configuredFeature(name, BLOCK, veinSize, FAKEBLOCK);
+        placedFeature(name, 50);
+    }
+
+    private static Item registerBlockItem(String name, Block block) {
+        return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings().group(ModItemGroup.ORES)));
     }
 }

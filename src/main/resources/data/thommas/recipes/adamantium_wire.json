@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "X": {
+      "tag": "c:tubes"
+    },
+    "I": {
+      "item": "thommas:adamantium_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:adamantium_wire",
+    "count": 6
+  }
+}

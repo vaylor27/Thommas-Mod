@@ -13,6 +13,22 @@
     "sources": "https://github.com/vaylor27/Thommas-Mod"
   },
 
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.thommas.curseforge": "https://curseforge.com/minecraft/mc-mods/Thommas"
+      },
+      "badges": [],
+      "parent": {
+        "id": "all-thommas",
+        "name": "Thommas Mods",
+        "description": "The parent for thommas-mod",
+        "icon": "assets/thommas/Icon.png",
+        "badges": []
+      }
+    }
+  },
+
   "license": "MIT",
   "icon": "assets/thommas/Icon.png",
 

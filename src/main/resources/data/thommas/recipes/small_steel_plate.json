@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:steel_plate"
+    }
+  },
+  "result": {
+    "item": "thommas:small_steel_plate",
+    "count": 4
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "P#P",
+    "XIX"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:light_bulb_base"
+    },
+    "#": {
+      "item": "thommas:wire"
+    },
+    "P": {
+      "item": "minecraft:glass"
+    },
+    "X": {
+      "item": "thommas:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:bulb_0",
+    "count": 1
+  }
+}

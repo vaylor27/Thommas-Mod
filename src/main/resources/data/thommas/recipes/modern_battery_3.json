@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:galvanic_battery"
+    }
+  },
+  "result": {
+    "item": "thommas:modern_battery_3",
+    "count": 1
+  }
+}

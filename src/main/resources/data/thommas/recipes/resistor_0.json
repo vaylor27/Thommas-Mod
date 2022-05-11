@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "#X#",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "tag": "c:tubes"
+    },
+    "X": {
+      "item": "thommas:lithium_battery"
+    },
+    "#": {
+      "item": "thommas:wire"
+    }
+  },
+  "result": {
+    "item": "thommas:resistor_0",
+    "count": 1
+  }
+}

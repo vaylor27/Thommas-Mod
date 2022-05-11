@@ -10,16 +10,28 @@ import net.vakror.thommas.blockitem.ModBlocks;
 public class ModBlockEntities {
     public static BlockEntityType<MythrilBlasterBlockEntity> MYTHRIL_BLASTER;
     public static BlockEntityType<LightningChannelerBlockEntity> LIGHTNING_CHANNELER_BLOCK_ENTITY;
+    public static BlockEntityType<CombinerBlockEntity> COMBINER_BLOCK_ENTITY;
 
     public static void registerAllBlockEntities() {
         MYTHRIL_BLASTER = Registry.register(Registry.BLOCK_ENTITY_TYPE,
                 new Identifier(Thommas.MOD_ID, "mythril_blaster"),
-                FabricBlockEntityTypeBuilder.create(MythrilBlasterBlockEntity::new,
+                FabricBlockEntityTypeBuilder.create((pos, state) -> {
+                    return new MythrilBlasterBlockEntity(pos, state);
+                        },
                         ModBlocks.MYTHRIL_BLASTER).build(null));
 
         LIGHTNING_CHANNELER_BLOCK_ENTITY =
                 Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "lightning_channeler"),
-                        FabricBlockEntityTypeBuilder.create(LightningChannelerBlockEntity::new,
+                        FabricBlockEntityTypeBuilder.create((pos, state) -> {
+                                    return new LightningChannelerBlockEntity(pos, state);
+                                },
                                 ModBlocks.LIGHTNING_CHANNELER_BLOCK).build(null));
+
+        COMBINER_BLOCK_ENTITY =
+                Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "combiner"),
+                        FabricBlockEntityTypeBuilder.create((pos, state) -> {
+                                    return new CombinerBlockEntity(pos, state);
+                                },
+                                ModBlocks.COMBINER).build(null));
     }
 }

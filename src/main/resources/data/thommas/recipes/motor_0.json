@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#XP",
+    "XIX",
+    "PX#"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:lithium_battery"
+    },
+    "X": {
+      "item": "thommas:titanium_infused_steel_casing"
+    },
+    "#": {
+      "item": "thommas:dualcoil_2"
+    },
+    "P": {
+      "item": "thommas:wire"
+    }
+  },
+  "result": {
+    "item": "thommas:motor_0",
+    "count": 1
+  }
+}

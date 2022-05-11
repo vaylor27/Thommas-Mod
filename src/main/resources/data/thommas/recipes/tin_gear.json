@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "XXX",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:tin_gear",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "group": "coal",
+  "ingredient": {
+    "item": "thommas:zinc_ingot"
+  },
+  "result": "thommas:nickel_ingot",
+  "experience": 16,
+  "cookingtime": 150
+}

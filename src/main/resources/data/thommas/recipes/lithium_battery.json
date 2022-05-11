@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II",
+    "II"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:modern_battery_1"
+    }
+  },
+  "result": {
+    "item": "thommas:lithium_battery",
+    "count": 1
+  }
+}

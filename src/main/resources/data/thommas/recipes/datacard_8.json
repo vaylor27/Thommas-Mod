@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:datacard_3"
+    },
+    "X": {
+      "item": "thommas:corrupted_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:datacard_8",
+    "count": 1
+  }
+}

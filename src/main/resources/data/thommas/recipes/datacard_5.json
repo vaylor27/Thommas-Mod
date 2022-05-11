@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:datacard_1"
+    }
+  },
+  "result": {
+    "item": "thommas:datacard_5",
+    "count": 1
+  }
+}

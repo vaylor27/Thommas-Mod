@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "I",
-    "I"
+    "P  ",
+    "P  "
   ],
   "key": {
-    "I": {
+    "P": {
       "item": "thommas:redwood_planks"
     }
   },
   "result": {
     "item": "thommas:goldenwood_rod",
-    "count": 2
+    "count": 4
   }
 }

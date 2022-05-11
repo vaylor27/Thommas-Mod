@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II",
+    "II"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:bulb_0"
+    }
+  },
+  "result": {
+    "item": "thommas:bulb_1",
+    "count": 2
+  }
+}

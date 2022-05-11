@@ -1,0 +1,34 @@
+{
+  "parent": "thommas:vakror/salty",
+  "display": {
+    "icon": {
+      "item": "thommas:pickling_substance"
+    },
+    "title": {
+      "translate": "advancements.vakror.picklifiying.title"
+    },
+    "description": {
+      "translate": "advancements.vakror.picklifiying.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "rewards": {
+      "experience": 30
+    }
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thommas:pickling_substance"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

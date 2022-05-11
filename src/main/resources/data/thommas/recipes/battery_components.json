@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XIX",
+    "XPX"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:circuit_integrated"
+    },
+    "X": {
+      "item": "thommas:wire"
+    },
+    "P": {
+      "item": "thommas:switch"
+    }
+  },
+  "result": {
+    "item": "thommas:battery_components",
+    "count": 1
+  }
+}

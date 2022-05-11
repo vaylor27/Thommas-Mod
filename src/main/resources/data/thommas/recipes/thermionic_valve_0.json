@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:rusty_old_thermionic_valve"
+    }
+  },
+  "result": {
+    "item": "thommas:thermionic_valve_0",
+    "count": 4
+  }
+}

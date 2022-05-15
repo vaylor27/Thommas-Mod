@@ -13,7 +13,6 @@ import net.minecraft.world.World;
 
 public class CombinerScreenHandler extends ScreenHandler {
     private final Inventory inventory;
-    private final World world;
     private final PropertyDelegate propertyDelegate;
 
     public CombinerScreenHandler(int syncId, PlayerInventory playerInventory) {
@@ -25,7 +24,7 @@ public class CombinerScreenHandler extends ScreenHandler {
         super(ModScreenHandlers.COMBINER_SCREEN_HANDLER, syncId);
         checkSize(inventory, 3);
         this.inventory = inventory;
-        this.world = playerInventory.player.world;
+        World world = playerInventory.player.world;
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
 

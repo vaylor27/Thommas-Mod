@@ -753,8 +753,11 @@ public class ModBlocks {
     public static final Block SWEETPOD = registerBlockWithoutBlockItem("sweetpod",
             new SweetPodBlock(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
 
-    public static final Block COMBINER = registerBlockWithoutBlockItem("combiner",
-            new CombinerBlock(FabricBlockSettings.of(Material.METAL)));
+    public static final Block COMBINER = registerBlock("combiner",
+            new CombinerBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block PLUMP_HELMET = registerBlockWithoutBlockItem("plump_helmet",
+            new PlumpHelmetBlock(FabricBlockSettings.of(Material.METAL)));
 
 
         private static Block registerBlockWithoutBlockItem(String name, Block block) {

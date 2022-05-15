@@ -403,6 +403,10 @@
   "item.thommas.brass_ingot": "Brass Ingot",
   "item.thommas.rareearths_ingot": "Rareearths Ingot",
   "item.thommas.rareearth_crystal": "Rareearths Crystal",
+  "item.thommas.nickel_ingot": "Nickel Ingot",
+  "item.thommas.pewter_ingot": "Pewter Ingot",
+  "item.thommas.plump_helmet": "Plump Helmet",
+  "item.thommas.plump_helmet_seeds": "Plump Helmet Seeds",
 
 
   "block.thommas.jacaranda_sign": "Jacaranda Sign",
@@ -764,6 +768,7 @@
   "block.thommas.copper_ore_fake": "Trapped Copper Ore",
   "block.thommas.aluminum_ore_fake": "Trapped Aluminum Ore",
   "block.thommas.pure_diamond_ore_fake": "Trapped Pure Diamond Ore",
+  "block.thommas.plump_helmet": "Plump Helmet",
 
 
 

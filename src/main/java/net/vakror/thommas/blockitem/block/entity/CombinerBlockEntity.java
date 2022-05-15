@@ -34,7 +34,7 @@ public class CombinerBlockEntity extends BlockEntity implements NamedScreenHandl
     private int progress = 0;
     // How many ticks it will take to craft the item (divide by twenty to get seconds count)
     // In our case this should be even divisible by 21 as that's our pixel count for our progress arrow
-    private int maxProgress = 21;
+    private int maxProgress = 0;
 
     public CombinerBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.COMBINER_BLOCK_ENTITY, pos, state);

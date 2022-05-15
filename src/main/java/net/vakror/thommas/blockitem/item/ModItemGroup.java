@@ -1,9 +1,11 @@
 package net.vakror.thommas.blockitem.item;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.blockitem.ModItems;

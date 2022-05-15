@@ -11,9 +11,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.blockitem.ModItems;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
-import net.vakror.thommas.screen.LightningChannelerScreen;
-import net.vakror.thommas.screen.ModScreenHandlers;
-import net.vakror.thommas.screen.MythrilBlasterScreen;
+import net.vakror.thommas.screen.*;
 import net.vakror.thommas.util.ModModelPredicateProvider;
 
 public class ThommasClientMod implements ClientModInitializer {
@@ -61,6 +59,7 @@ public class ThommasClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUEBELLS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_BLUEBELLS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SWEETPOD, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PLUMP_HELMET, RenderLayer.getCutout());
 
         ModModelPredicateProvider.registerModModels();
 
@@ -75,5 +74,6 @@ public class ThommasClientMod implements ClientModInitializer {
 
         ScreenRegistry.register(ModScreenHandlers.MYTHRIL_BLASTER_SCREEN_HANDLER, MythrilBlasterScreen::new);
         ScreenRegistry.register(ModScreenHandlers.LIGHTNING_CHANNELER_SCREEN_HANDLER, LightningChannelerScreen::new);
+        ScreenRegistry.register(ModScreenHandlers.COMBINER_SCREEN_HANDLER, CombinerScreen::new);
     }
 }

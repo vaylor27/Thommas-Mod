@@ -25,7 +25,6 @@ public class AutoFishMixin {
 
         if (caughtFish && Thommas.autofish) {
             client.interactionManager.interactItem(client.player, client.world, Hand.MAIN_HAND);
-
         }
 
     }

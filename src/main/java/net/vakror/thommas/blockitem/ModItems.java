@@ -35,7 +35,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.STRAWBERRY)));
 
     public static final Item ROTTEN_STRAWBERRY = registerItem("rotten_strawberry",
-            new Item(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.ROTTEN)));
+            new Item(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.ROTTEN_STRAWBERRY)));
 
     public static final Item MYTHRIL_SWORD = registerItem("mythril_sword",
             new ModBleedSword(ModToolMaterials.MYTHRIL, 1, 4,new FabricItemSettings().group(ModItemGroup.TOOLS)));
@@ -533,10 +533,10 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static Item BLIGHTSPORE_SEEDS = registerItem("blightspore_seeds",
-            new AliasedBlockItem(ModBlocks.BLIGHTSPORE, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.CAVE)));
+            new AliasedBlockItem(ModBlocks.BLIGHTSPORE, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.CAVEWHEAT)));
 
     public static Item CAVEWHEAT_SEEDS = registerItem("cavewheat_seeds",
-            new AliasedBlockItem(ModBlocks.CAVEWHEAT, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.CAVE)));
+            new AliasedBlockItem(ModBlocks.CAVEWHEAT, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.CAVEWHEAT)));
 
     public static Item CORN_KERNEL = registerItem("corn_kernel",
             new AliasedBlockItem(ModBlocks.CORN, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.CORN)));
@@ -776,7 +776,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static Item WISDOM_FRUIT = registerItem("wisdom_fruit",
-            new WisdomFruit(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.WISDOM)));
+            new WisdomFruit(new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.WISDOM_FRUIT)));
 
     public static Item SWEETPOD_STEW = registerItem("sweetpod_stew",
             new SweetPodSoupItem(new FabricItemSettings().group(ModItemGroup.ITEMS).food(ModFoodComponents.SWEETPOD_STEW)));
@@ -785,13 +785,13 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.SWEETPOD, new FabricItemSettings().group(ModItemGroup.NATURE).food(ModFoodComponents.SWEETPOD_STEW)));
 
     public static Item PORK_SLAB_RAW = registerItem("pork_slab_raw",
-            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.RAW)));
+            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.RAW_PORK_SLAB)));
 
     public static Item PORK_SLAB_SALTED = registerItem("pork_slab_salted",
-            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.SALTED)));
+            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.SALTED_PORK_SLAB)));
 
     public static Item PORK_SLAB_COOKED = registerItem("pork_slab_cooked",
-            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.COOKED)));
+            new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(ModFoodComponents.COOKED_PORK_SLAB)));
 
     public static Item ADAMANTIUM_PLATE = registerItem("adamantium_plate",
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
@@ -1215,6 +1215,12 @@ public class ModItems {
 
     public static Item LITHIUM_BATTERY = registerItem("lithium_battery",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
+
+    public static Item PLUMP_HELMET_SEEDS = registerItem("plump_helmet_seeds",
+            new AliasedBlockItem(ModBlocks.PLUMP_HELMET, new FabricItemSettings().group(ModItemGroup.NATURE)));
+
+    public static Item PLUMP_HELMET = registerItem("plump_helmet",
+            new Item(new FabricItemSettings().group(ModItemGroup.NATURE).fireproof().food(ModFoodComponents.PLUMP_HELMET)));
 
 
     private static Item registerItem(String name, Item item) {

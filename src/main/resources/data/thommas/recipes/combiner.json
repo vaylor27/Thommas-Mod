@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#",
+    "OIP",
+    "###"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:thermionic_valve_4"
+    },
+    "X": {
+      "item": "minecraft:stonecutter"
+    },
+    "#": {
+      "item": "thommas:steel_block"
+    },
+    "O": {
+      "item": "thommas:switch"
+    },
+    "P": {
+      "item": "thommas:wire"
+    }
+  },
+  "result": {
+    "item": "thommas:combiner",
+    "count": 1
+  }
+}

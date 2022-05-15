@@ -18,6 +18,9 @@ public class ModTags {
         public static final TagKey<Block> FAKE_ORES =
                 createCommonTag("fake_ores");
 
+        public static final TagKey<Block> PAXEL =
+                createTag("paxel");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(Thommas.MOD_ID, name));
         }

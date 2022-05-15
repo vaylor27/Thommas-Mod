@@ -10,6 +10,7 @@ import net.vakror.thommas.blockitem.ModItems;
 import net.vakror.thommas.blockitem.block.painting.ModPaintings;
 import net.vakror.thommas.blockitem.item.potion.ModPotions;
 import net.vakror.thommas.recipe.ModRecipes;
+import net.vakror.thommas.screen.ModScreenHandlers;
 import net.vakror.thommas.util.ModLootTableModifiers;
 import net.vakror.thommas.util.ModRegistries;
 import net.vakror.thommas.villager.ModVillagers;
@@ -20,6 +21,8 @@ import org.slf4j.LoggerFactory;
 public class Thommas implements ModInitializer {
 	public static final String MOD_ID = "thommas";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static int TIMEOUT = 0;
+	public static Thommas INSTANCE = null;
 
 	public static boolean autofish = false;
 	public static boolean flyhack = false;
@@ -35,6 +38,7 @@ public class Thommas implements ModInitializer {
 		ModLootTableModifiers.modifyLootTables();
 		ModBlockEntities.registerAllBlockEntities();
 		ModRecipes.registerRecipes();
+		ModScreenHandlers.registerAllScreenHandlers();
 		ModVillagers.setupPOIs();
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();

@@ -14,5 +14,6 @@ public class ModFlowerGen {
         new Flower("orchid", ModBlocks.ORCHID, 64,3,Biome.Category.PLAINS);
         new Flower("hyacinth", ModBlocks.HYACINTH, 64, 2, Biome.Category.PLAINS);
         new Flower("bluebells", ModBlocks.BLUEBELLS, 64, 1, Biome.Category.PLAINS);
+        new Flower("plumphelmet", ModBlocks.PLUMP_HELMET, 64, 1, Biome.Category.TAIGA);
     }
 }

@@ -2,7 +2,7 @@
   "type": "thommas:combiner",
   "ingredients": [
     {
-      "item": "minecraft:glowstone"
+      "item": "minecraft:glowstone_dust"
     },
     {
       "item": "minecraft:redstone"

@@ -11,6 +11,6 @@ public class ModPlayerPlayerEventCopyFromTwo implements ServerPlayerEvents.CopyF
         IEntityDataSaverNumber2 original = ((IEntityDataSaverNumber2) oldPlayer);
         IEntityDataSaverNumber2 player = ((IEntityDataSaverNumber2) newPlayer);
 
-        player.data().putIntArray("homepos", original.data().getIntArray("homepos"));
+        player.data().putIntArray("secondaryhomepos", original.data().getIntArray("secondaryhomepos"));
     }
 }

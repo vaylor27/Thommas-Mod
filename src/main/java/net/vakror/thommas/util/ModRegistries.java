@@ -13,9 +13,11 @@ import net.vakror.thommas.Thommas;
 import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.command.home.ReturnHome;
 import net.vakror.thommas.command.home.SetHome;
+import net.vakror.thommas.command.player.NewPlayer;
 import net.vakror.thommas.command.secondaryhome.ReturnSecondaryHome;
 import net.vakror.thommas.command.secondaryhome.SetSecondaryHome;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
+import net.vakror.thommas.event.ModPlayerPlayerEventCopyFromTwo;
 import net.vakror.thommas.villager.trade.ModTrades;
 import net.vakror.thommas.world.dimensions.dimension.ModDimensions;
 import net.vakror.thommas.world.gen.ModWorldGen;
@@ -45,6 +47,7 @@ public class ModRegistries {
         FuelRegistry registry = FuelRegistry.INSTANCE;
         registry.add(ModItems.COAL_COKE, 20000);
         registry.add(ModItems.CORRUPTED_DUST, 2000);
+        registry.add(ModItems.MOTOR_3, 200000);
     }
 
     private static void registerCommands() {
@@ -89,5 +92,6 @@ public class ModRegistries {
 
     private static void registerEvents() {
         ServerPlayerEvents.COPY_FROM.register(new ModPlayerPlayerEventCopyFrom());
+        ServerPlayerEvents.COPY_FROM.register(new ModPlayerPlayerEventCopyFromTwo());
     }
 }

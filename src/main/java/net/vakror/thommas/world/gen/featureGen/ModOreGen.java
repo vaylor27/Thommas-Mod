@@ -16,7 +16,7 @@ public class ModOreGen {
         new Ore("ruby", Blocks.STONE, 9, 4);
         new Ore("aluminum", Blocks.STONE, 3, 4);
         new Ore("amber", Blocks.STONE, 7, 3);
-        new Ore("amethyst", Blocks.STONE, 1, 2);
+        new Ore("amethyst", Blocks.STONE, 10, 1);
         new Ore("bitumen", Blocks.STONE, 6, 3);
         new Ore("chlorophyte", Blocks.DIRT, 4, 3);
         new Ore("copper", Blocks.STONE, 7, 8);

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:plains",
+      "lakes": false,
+      "features": false,
+      "layers": [
+          {
+          "block": "minecraft:stone",
+          "height": 81
+        },
+        {
+          "block": "minecraft:bedrock",
+          "height": 80
+        }
+      ],
+      "structure_overrides": [
+        "minecraft:strongholds"
+      ]
+    }
+  }
+}

@@ -21,6 +21,9 @@ public class ModTags {
         public static final TagKey<Block> PAXEL =
                 createTag("paxel");
 
+        public static final TagKey<Block> ALL =
+                createTag("all");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY, new Identifier(Thommas.MOD_ID, name));
         }

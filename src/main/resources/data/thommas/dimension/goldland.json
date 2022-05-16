@@ -1,8 +1,8 @@
 {
     "type": "minecraft:overworld",
     "generator": {
+        "seed": 0,
         "type": "minecraft:noise",
-        "seed": -1641339366,
         "settings": "minecraft:overworld",
         "biome_source": {
             "type": "minecraft:fixed",

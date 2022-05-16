@@ -11,6 +11,9 @@ import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
 
 public class ModLootTableModifiers {
+    public ModLootTableModifiers() {
+        modifyLootTables();
+    }
     private static final Identifier GRASS_ID
             = new Identifier("minecraft", "blocks/grass");
     private static final Identifier SAND_ID
@@ -28,7 +31,8 @@ public class ModLootTableModifiers {
             = new Identifier("minecraft", "chests/shipwreck_treasure");
 
 
-    public static void modifyLootTables() {
+
+    private static void modifyLootTables() {
         LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
             //check for grass block loot table.
             if(GRASS_ID.equals(id)) {

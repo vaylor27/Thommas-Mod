@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:smooth_amethyst_block"
+    }
+  },
+  "result": {
+    "item": "thommas:amethyst",
+    "count": 9
+  }
+}

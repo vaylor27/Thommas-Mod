@@ -1,0 +1,20 @@
+
+
+
+{
+  "ultrawarm": false,
+  "natural": true,
+  "piglin_safe": false,
+  "respawn_anchor_works": true,
+  "bed_works": true,
+  "has_raids": true,
+  "has_skylight": true,
+  "has_ceiling": false,
+  "coordinate_scale": 100,
+  "ambient_light": 15,
+  "fixed_time": 1560,
+  "logical_height": 256,
+  "infiniburn": "#minecraft:anvil",
+  "min_y": 0,
+  "height": 256
+}

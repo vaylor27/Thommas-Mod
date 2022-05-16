@@ -7,7 +7,7 @@ import net.minecraft.tag.TagKey;
 import net.vakror.thommas.util.ModTags;
 
 public class PickAxeLe extends MiningToolItem {
-    public PickAxeLe(float attackDamage, float attackSpeed, ToolMaterial material, TagKey<Block> effectiveBlocks, Settings settings) {
+    public PickAxeLe(float attackDamage, float attackSpeed, ToolMaterial material, Settings settings) {
         super(attackDamage, attackSpeed, material, ModTags.Blocks.PAXEL, settings);
     }
 }

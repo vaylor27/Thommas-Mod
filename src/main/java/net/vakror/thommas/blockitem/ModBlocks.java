@@ -598,7 +598,7 @@ public class ModBlocks {
             new SlabBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block AMETHYST_STAIRS = registerBlock("amethyst_stairs",
-            new ModStairs(ModBlocks.AMETHYST_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL).requiresTool().strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new ModStairs(ModBlocks.SMOOTH_AMETHYST_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL).requiresTool().strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block HYACINTH = registerBlock("hyacinth",
             new FlowerBlock(StatusEffects.BAD_OMEN, 200, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);

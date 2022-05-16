@@ -1,6 +1,7 @@
 package net.vakror.thommas.blockitem;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -240,7 +241,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item GEM_STEEL_STAFF = registerItem("gem_steel_staff",
-            new ModStaff(ModToolMaterials.GEM_STEEL,40 , 40, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new PickAxeLe(40 , 40, ModToolMaterials.GEM_STEEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
 
     public static final Item HAND_DRILL = registerItem("hand_drill",
             new ModPickaxe(ModToolMaterials.HAND_DRILL,40 , 40, new FabricItemSettings().group(ModItemGroup.TOOLS)));
@@ -836,7 +837,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item BULB_6 = registerItem("bulb_6",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new AliasedBlockItem(Blocks.LIGHT, new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item CAN = registerItem("can",
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
@@ -1222,6 +1223,32 @@ public class ModItems {
     public static Item PLUMP_HELMET = registerItem("plump_helmet",
             new Item(new FabricItemSettings().group(ModItemGroup.NATURE).fireproof().food(ModFoodComponents.PLUMP_HELMET)));
 
+    public static Item ADAMANTIUM_HAMMER = registerItem("adamantium_hammer",
+            new PickAxeLe(10, 1, ModToolMaterials.ADAMANTIUM, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static Item BRONZE_HAMMER = registerItem("bronze_hammer",
+            new PickAxeLe(10, 1, ModToolMaterials.BRONZE, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static Item DIAMOND_HAMMER = registerItem("diamond_hammer",
+            new PickAxeLe(10, 1, ToolMaterials.DIAMOND, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static Item GOLD_HAMMER = registerItem("gold_hammer",
+            new PickAxeLe(10, 1, ToolMaterials.GOLD, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static Item IRON_HAMMER = registerItem("iron_hammer",
+            new PickAxeLe(10, 1, ToolMaterials.IRON, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static Item STEEL_HAMMER = registerItem("steel_hammer",
+            new PickAxeLe(10, 1, ModToolMaterials.STEEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static Item STONE_HAMMER = registerItem("stone_hammer",
+            new PickAxeLe(10, 1, ToolMaterials.STONE, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static Item SUPERALLOY_HAMMER = registerItem("superalloy_hammer",
+            new PickAxeLe(10, 1, ModToolMaterials.GEM_STEEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static Item TIN_HAMMER = registerItem("tin_hammer",
+            new PickAxeLe(10, 1, ModToolMaterials.TIN, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

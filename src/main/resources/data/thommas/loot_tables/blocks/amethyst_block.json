@@ -7,7 +7,7 @@
          "entries": [
             {
                "type": "minecraft:item",
-               "name": "thommas:amethyst_block"
+               "name": "thommas:smooth_amethyst_block"
             }
          ],
          "conditions": [

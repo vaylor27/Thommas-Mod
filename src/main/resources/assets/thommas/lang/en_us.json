@@ -416,6 +416,44 @@
   "item.thommas.stone_hammer": "Stone Hammer",
   "item.thommas.superalloy_hammer": "God Hammer",
   "item.thommas.tin_hammer": "Tin Hammer",
+  "item.thommas.noise_from_class": "Noise From Class",
+  "item.thommas.noise_from_class.desc": "Vakror - Noises From Class",
+  "item.thommas.tin_sword": "Tin Sword",
+  "item.thommas.adamantium_shears": "Adamantium Shears",
+  "item.thommas.bone_pickaxe": "Bone Pickaxe",
+  "item.thommas.bronze_axe": "Bronze Axe",
+  "item.thommas.bronze_hoe": "Bronze Hoe",
+  "item.thommas.bronze_pickaxe": "Bronze Pickaxe",
+  "item.thommas.bronze_shears": "Bronze Shears",
+  "item.thommas.bronze_shovel": "Bronze Shovel",
+  "item.thommas.bronze_sword": "Bronze Sword",
+  "item.thommas.copper_axe": "Copper Axe",
+  "item.thommas.copper_hoe": "Copper Hoe",
+  "item.thommas.copper_pickaxe": "Copper Pickaxe",
+  "item.thommas.copper_shears": "Copper Shears",
+  "item.thommas.copper_shovel": "Copper Shovel",
+  "item.thommas.copper_sword": "Copper Sword",
+  "item.thommas.dynamite": "Dynamite",
+  "item.thommas.gold_shears": "Gold Shears",
+  "item.thommas.lead_axe": "Lead Axe",
+  "item.thommas.lead_hoe": "Lead Hoe",
+  "item.thommas.lead_pickaxe": "Lead Pickaxe",
+  "item.thommas.lead_shears": "Lead Shears",
+  "item.thommas.lead_shovel": "Lead Shovel",
+  "item.thommas.lead_sword": "Lead Sword",
+  "item.thommas.pewter_shears": "Pewter Shears",
+  "item.thommas.steel_axe": "Steel Axe",
+  "item.thommas.steel_hoe": "Steel Hoe",
+  "item.thommas.steel_pickaxe": "Steel Pickaxe",
+  "item.thommas.steel_shears": "Steel Shears",
+  "item.thommas.steel_shovel": "Steel Shovel",
+  "item.thommas.steel_sword": "Steel Sword",
+  "item.thommas.tin_axe": "Tin Axe",
+  "item.thommas.tin_hoe": "Tin Hoe",
+  "item.thommas.tin_pickaxe": "Tin Pickaxe",
+  "item.thommas.tin_shears": "Tin Shears",
+  "item.thommas.tin_shovel": "Tin Shovel",
+  "item.thommas.enderman_heart": "Enderman Heart",
 
 
   "block.thommas.jacaranda_sign": "Jacaranda Sign",
@@ -753,8 +791,6 @@
   "block.thommas.stone_silver_ore_fake": "Trapped Stone Silver Ore",
   "block.thommas.stone_soul_ore_fake": "Trapped Stone Soul Ore",
   "block.thommas.terracotta_gold_ore_fake": "Trapped Terracotta Gold Ore",
-
-
   "block.thommas.demonite_ore_fake": "Trapped Demonite Ore",
   "block.thommas.crimtane_ore_fake": "Trapped Crimtane Ore",
   "block.thommas.saltpeter_ore_fake": "Trapped Saltpeter Ore",
@@ -778,6 +814,8 @@
   "block.thommas.aluminum_ore_fake": "Trapped Aluminum Ore",
   "block.thommas.pure_diamond_ore_fake": "Trapped Pure Diamond Ore",
   "block.thommas.plump_helmet": "Plump Helmet",
+  "block.thommas.packed_feathers": "Packed Feathers",
+  "block.thommas.combiner": "Combiner",
 
 
 
@@ -805,8 +843,10 @@
 
   "entity.minecraft.villager.blastmaster": "Blastmaster",
   "entity.minecraft.villager.lightninggod": "Lightning God",
+  "entity.minecraft.villager.combiner": "Combiner",
 
   "enchantment.thommas.the_massacre": "The Massacre",
+  "enchantment.thommas.sharpgod": "Sharper Than Sharp",
 
   "advancements.vakror.mythril.description": "The power lies in Mythril!",
   "advancements.vakror.mythril.title": "Mythril!",
@@ -844,10 +884,7 @@
   "chem_read.ore_is_real": "PHEW: This Block is REAL!",
   "chem_read.tooltip": "Uses its chemical sensors on MOST blocks to see if they are Trapped",
 
-
   "effect.thommas.freeze": "Freeze",
   "effect.thommas.bleed": "Bleeding",
-  "effect.thommas.heartbreak": "Heartbreak",
-
-  "modmenu.thommas.curseforge": "Curseforge"
+  "effect.thommas.heartbreak": "Heartbreak"
 }

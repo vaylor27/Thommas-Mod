@@ -23,7 +23,7 @@ public class ReturnSecondaryHome {
             int[] playerPos = player.data().getIntArray("secondaryhomepos");
             context.getSource().getPlayer().requestTeleport(playerPos[0], playerPos[1], playerPos[2]);
 
-            context.getSource().sendFeedback(new LiteralText("Player returned Home!"), true);
+            context.getSource().sendFeedback(new LiteralText( context.getSource().getName().toString() + " returned home!"), true);
             return 1;
         }
         else {

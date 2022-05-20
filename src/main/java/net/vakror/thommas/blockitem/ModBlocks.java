@@ -3,6 +3,9 @@ package net.vakror.thommas.blockitem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.client.sound.Sound;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvent;
 import net.vakror.thommas.Thommas;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
@@ -386,7 +389,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BRICKS);
 
     public static final Block SMOOTH_AMETHYST_BLOCK = registerBlock("smooth_amethyst_block",
-            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6).sounds(BlockSoundGroup.AMETHYST_BLOCK)), ModItemGroup.BLOCKS);
 
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6)), ModItemGroup.BLOCKS);
@@ -757,7 +760,10 @@ public class ModBlocks {
             new CombinerBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block PLUMP_HELMET = registerBlockWithoutBlockItem("plump_helmet",
-            new PlumpHelmetBlock(FabricBlockSettings.of(Material.METAL)));
+            new PlumpHelmetBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()));
+
+    public static final Block PACKED_FEATHERS = registerBlock("packed_feathers",
+            new FeatherBlock(FabricBlockSettings.of(Material.STONE)), ModItemGroup.SPECIAL_BLOCKS);
 
 
         private static Block registerBlockWithoutBlockItem(String name, Block block) {

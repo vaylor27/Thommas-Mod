@@ -6,11 +6,17 @@ import net.minecraft.client.gui.screen.ScreenTexts;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.option.GameOptions;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.PlayerAbilities;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.LiteralText;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.GameMode;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.config.ModConfigs;
+
+import java.util.Objects;
+import java.util.UUID;
 
 public class ThommasScreen extends Screen {
     private final Screen parent;
@@ -30,9 +36,9 @@ public class ThommasScreen extends Screen {
     }
     LiteralText flyText() {
         if (Thommas.flyhack)
-            return new LiteralText("BoatFly is Enabled");
+            return new LiteralText("Creative");
         else
-            return new LiteralText("BoatFly is Disabled");
+            return new LiteralText("Not Creative");
     }
 
     protected void init() {
@@ -41,11 +47,6 @@ public class ThommasScreen extends Screen {
             this.addDrawableChild(new ButtonWidget(this.width / 2 - 100, this.height / 6 + 90, 200, 20, fishText(), (button) -> {
                 Thommas.autofish = !Thommas.autofish;
                 button.setMessage(fishText());
-            }));
-
-            this.addDrawableChild(new ButtonWidget(this.width / 2 - 100, this.height / 6 + 110, 200, 20, flyText(), (button) -> {
-                Thommas.flyhack = !Thommas.flyhack;
-                button.setMessage(flyText());
             }));
 
             // Back Button

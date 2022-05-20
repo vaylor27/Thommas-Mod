@@ -42,5 +42,13 @@
         "stream": true
       }
     ]
+  },
+  "noise_from_class": {
+    "sounds": [
+      {
+        "name": "thommas:noise_from_class",
+        "stream": true
+      }
+    ]
   }
 }

@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "north": "thommas:block/packed_feathers_side",
+    "east": "thommas:block/packed_feathers_end",
+    "south": "thommas:block/packed_feathers_side",
+    "west": "thommas:block/packed_feathers_end",
+    "up": "thommas:block/packed_feathers_side"
+  }
+}

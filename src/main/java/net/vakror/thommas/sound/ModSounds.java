@@ -16,6 +16,7 @@ public class ModSounds {
     public static SoundEvent MYTHRIL_LAMP_FALL = registerSoundEvent("mythril_lamp_fall");
 
     public static SoundEvent BAR_BRAWL = registerSoundEvent("bar_brawl");
+    public static SoundEvent NOISE = registerSoundEvent("noise_from_class");
 
     public static BlockSoundGroup MYTHRIL_SOUNDS = new BlockSoundGroup(1f, 1f,
             ModSounds.MYTHRIL_LAMP_BREAK, ModSounds.MYTHRIL_LAMP_STEP, ModSounds.MYTHRIL_LAMP_PLACE,

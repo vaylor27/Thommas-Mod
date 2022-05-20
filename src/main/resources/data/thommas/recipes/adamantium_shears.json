@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #",
+    "# "
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:adamantium_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:adamantium_shears",
+    "count": 1
+  }
+}

@@ -6,6 +6,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
@@ -570,23 +571,23 @@ public class ModItems {
             new EnchantedGoldenPickle(new FabricItemSettings().group(ModItemGroup.ITEMS).food(ModFoodComponents.ENCHANTED_GOLDEN_PICKLE)));
 
     public static Item ADAMANTIUM_SWORD = registerItem("adamantium_sword",
-            new ModBleedSword(ModToolMaterials.ADAMANTIUM, 23, 8.0F,
+            new ModBleedSword(ModToolMaterials.ADAMANTIUM, 16, 8.0F,
                     new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1).fireproof().rarity(Rarity.EPIC)));
 
     public static Item ADAMANTIUM_AXE = registerItem("adamantium_axe",
-            new ModBleedAxe(ModToolMaterials.ADAMANTIUM, 63, 11.0F,
+            new ModBleedAxe(ModToolMaterials.ADAMANTIUM, 17, 11.0F,
                     new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof().maxCount(1).rarity(Rarity.EPIC)));
 
     public static Item ADAMANTIUM_PICKAXE = registerItem("adamantium_pickaxe",
-            new ModPickaxe(ModToolMaterials.ADAMANTIUM, 44, 5.0F,
+            new ModPickaxe(ModToolMaterials.ADAMANTIUM, 14, 5.0F,
                     new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
 
     public static Item ADAMANTIUM_HOE = registerItem("adamantium_hoe",
-            new ModHoe(ModToolMaterials.ADAMANTIUM, 11, 1.0F,
+            new ModHoe(ModToolMaterials.ADAMANTIUM, 1, 1.0F,
                     new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
 
     public static Item ADAMANTIUM_SHOVEL = registerItem("adamantium_shovel",
-            new ShovelItem(ModToolMaterials.ADAMANTIUM, 35, 2.0F,
+            new ShovelItem(ModToolMaterials.ADAMANTIUM, 12, 2.0F,
                     new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
 
     public static Item MAGIC_DUST = registerItem("magic_dust",
@@ -1249,6 +1250,186 @@ public class ModItems {
 
     public static Item TIN_HAMMER = registerItem("tin_hammer",
             new PickAxeLe(10, 1, ModToolMaterials.TIN, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static final Item NOISE_FROM_CLASS = registerItem("noise_from_class",
+            new ModMusicDiscItem(7, ModSounds.NOISE, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
+
+    public static final Item TIN_SHEARS = registerItem("tin_shears",
+            new ShearsItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(16542)));
+
+    public static final Item STEEL_SHEARS = registerItem("steel_shears",
+            new ShearsItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(97648)));
+
+    public static final Item PEWTER_SHEARS = registerItem("pewter_shears",
+            new ShearsItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(19483)));
+
+    public static final Item LEAD_SHEARS = registerItem("lead_shears",
+            new ShearsItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(86246)));
+
+    public static final Item GOLD_SHEARS = registerItem("gold_shears",
+            new ShearsItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(10486)));
+
+    public static final Item COPPER_SHEARS = registerItem("copper_shears",
+            new ShearsItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(32345)));
+
+    public static final Item BRONZE_SHEARS = registerItem("bronze_shears",
+            new ShearsItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(54327)));
+
+    public static final Item ADAMANTIUM_SHEARS = registerItem("adamantium_shears",
+            new ShearsItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(4632564)));
+    
+    public static final Item TIN_PICKAXE = registerItem("tin_pickaxe",
+            new ModPickaxe(ModToolMaterials.TIN, 12, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item TIN_AXE = registerItem("tin_axe",
+            new ModBleedAxe(ModToolMaterials.TIN, 19, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item TIN_HOE = registerItem("tin_hoe",
+            new ModHoe(ModToolMaterials.TIN, 10, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item TIN_SWORD = registerItem("tin_sword",
+            new ModBleedSword(ModToolMaterials.TIN, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item TIN_SHOVEL = registerItem("tin_shovel",
+            new ModShovel(ModToolMaterials.TIN, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe",
+            new ModPickaxe(ModToolMaterials.STEEL, 12, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item STEEL_AXE = registerItem("steel_axe",
+            new ModBleedAxe(ModToolMaterials.STEEL, 19, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item STEEL_HOE = registerItem("steel_hoe",
+            new ModHoe(ModToolMaterials.STEEL, 10, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item STEEL_SWORD = registerItem("steel_sword",
+            new ModBleedSword(ModToolMaterials.STEEL, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item STEEL_SHOVEL = registerItem("steel_shovel",
+            new ModShovel(ModToolMaterials.STEEL, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item LEAD_PICKAXE = registerItem("lead_pickaxe",
+            new ModPickaxe(ModToolMaterials.LEAD, 12, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item LEAD_AXE = registerItem("lead_axe",
+            new ModBleedAxe(ModToolMaterials.LEAD, 19, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item LEAD_HOE = registerItem("lead_hoe",
+            new ModHoe(ModToolMaterials.LEAD, 10, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item LEAD_SWORD = registerItem("lead_sword",
+            new ModBleedSword(ModToolMaterials.LEAD, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item LEAD_SHOVEL = registerItem("lead_shovel",
+            new ModShovel(ModToolMaterials.LEAD, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe",
+            new ModPickaxe(ModToolMaterials.COPPER, 12, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item COPPER_AXE = registerItem("copper_axe",
+            new ModBleedAxe(ModToolMaterials.COPPER, 19, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item COPPER_HOE = registerItem("copper_hoe",
+            new ModHoe(ModToolMaterials.COPPER, 10, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item COPPER_SWORD = registerItem("copper_sword",
+            new ModBleedSword(ModToolMaterials.COPPER, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item COPPER_SHOVEL = registerItem("copper_shovel",
+            new ModShovel(ModToolMaterials.COPPER, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item BRONZE_PICKAXE = registerItem("bronze_pickaxe",
+            new ModPickaxe(ModToolMaterials.BRONZE, 12, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item BRONZE_AXE = registerItem("bronze_axe",
+            new ModBleedAxe(ModToolMaterials.BRONZE, 19, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item BRONZE_HOE = registerItem("bronze_hoe",
+            new ModHoe(ModToolMaterials.BRONZE, 10, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item BRONZE_SWORD = registerItem("bronze_sword",
+            new ModBleedSword(ModToolMaterials.BRONZE, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item BRONZE_SHOVEL = registerItem("bronze_shovel",
+            new ModShovel(ModToolMaterials.BRONZE, 16, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item BONE_PICKAXE = registerItem("bone_pickaxe",
+            new ModPickaxe(ModToolMaterials.BONE, 12, 1, new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
+    public static final Item DYNAMITE = registerItem("dynamite",
+            new DynamiteItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
+
+    public static final Item ENDERMAN_HEART = registerItem("enderman_heart",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item DONKEY_HIDE = registerItem("donkey_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item HORSE_HIDE = registerItem("horse_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item LLAMA_HIDE = registerItem("llama_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item MOOSHROOM_HIDE = registerItem("mooshroom_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item MULE_HIDE = registerItem("mule_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item OCELOT_HIDE = registerItem("ocelot_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item PIG_HIDE = registerItem("pig_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item POLARBEAR_HIDE = registerItem("polarbear_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item BLOODY_HIDE = registerItem("bloody_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item POG_HIDE = registerItem("pog_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item WOLF_HIDE = registerItem("wolf_hide",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item PEARL = registerItem("pearl",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item PSYLLID_LERPS = registerItem("psyllid_lerps",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item SEASHELL = registerItem("seashell",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item SILKWORM = registerItem("silkworm",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item SILVERFISH_DUST = registerItem("silverfish_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item SLIME_BOLUS = registerItem("slime_bolus",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item VENOM_SAC = registerItem("venom_sac",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item WITHER_FLESH = registerItem("wither_flesh",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item ZOMBIE_LIVER = registerItem("zombie_liver",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item CREEPER_GALL = registerItem("creeper_gall",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item DRY_MARROW = registerItem("dry_marrow",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item CRYSTALLIZED_ENDERMAN_HEART = registerItem("crystallized_enderman_heart",
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

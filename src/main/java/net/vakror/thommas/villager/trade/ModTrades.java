@@ -5,5 +5,6 @@ public class ModTrades {
         BlastMasterTrades.register();
         LightningGodTrades.register();
         VanillaVillagerTrades.register();
+        CombinerVillager.register();
     }
 }

@@ -9,11 +9,7 @@
       "layers": [
           {
           "block": "minecraft:stone",
-          "height": 81
-        },
-        {
-          "block": "minecraft:bedrock",
-          "height": 80
+          "height": 50
         }
       ],
       "structure_overrides": [

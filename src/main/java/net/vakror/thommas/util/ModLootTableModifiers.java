@@ -2,6 +2,7 @@ package net.vakror.thommas.util;
 
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
+import net.minecraft.item.Items;
 import net.vakror.thommas.blockitem.ModItems;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
@@ -29,6 +30,80 @@ public class ModLootTableModifiers {
     private static final Identifier GLOW_LICHEN_ID = new Identifier("minecraft", "blocks/glow_lichen");
     private static final Identifier SHIPWRECK_ID
             = new Identifier("minecraft", "chests/shipwreck_treasure");
+    private static final Identifier SHIPWRECK_ID_2
+            = new Identifier("minecraft", "chests/shipwreck_supply");
+    private static final Identifier SHIPWRECK_ID_3
+            = new Identifier("minecraft", "chests/shipwreck_map");
+    private static final Identifier DUNGEON_ID
+            = new Identifier("minecraft", "chests/simple_dungeon");
+    private static final Identifier STRONGHOLD_CORRIDOR
+            = new Identifier("minecraft", "chests/stronghold_corridor");
+    private static final Identifier STRONGHOLD_CROSSING
+            = new Identifier("minecraft", "chests/stronghold_crossing");
+    private static final Identifier STRONGHOLD_LIBRARY
+            = new Identifier("minecraft", "chests/stronghold_library");
+    private static final Identifier UNDERWATER_RUIN_1
+            = new Identifier("minecraft", "chests/underwater_ruin_small");
+    private static final Identifier UNDERWATER_RUIN_2
+            = new Identifier("minecraft", "chests/underwater_ruin_big");
+    private static final Identifier MANSION
+            = new Identifier("minecraft", "chests/woodland_mansion");
+    private static final Identifier PILLAGER_OUTPOST
+            = new Identifier("minecraft", "chests/pillager_outpost");
+    private static final Identifier PORTAL
+            = new Identifier("minecraft", "chests/ruined_portal");
+    private static final Identifier BRIDGE
+            = new Identifier("minecraft", "chests/nether_bridge");
+    private static final Identifier TEMPLE
+            = new Identifier("minecraft", "chests/jungle_temple");
+    private static final Identifier END_CITY
+            = new Identifier("minecraft", "chests/end_city_treasure");
+    private static final Identifier TREASURE
+            = new Identifier("minecraft", "chests/buried_treasure");
+    private static final Identifier BASTION_TREASURE
+            = new Identifier("minecraft", "chests/bastion_treasure");
+    private static final Identifier BASTION_OTHER
+            = new Identifier("minecraft", "chests/bastion_other");
+    private static final Identifier BASTION_STABLE
+            = new Identifier("minecraft", "chests/bastion_hoglin_stable");
+    private static final Identifier BASTION_BRIDGE
+            = new Identifier("minecraft", "chests/bastion_bridge");
+    private static final Identifier MINESHAFT
+            = new Identifier("minecraft", "chests/abandoned_mineshaft");
+    private static final Identifier ARMORER
+            = new Identifier("minecraft", "chests/village/village_armorer");
+    private static final Identifier BUTCHER
+            = new Identifier("minecraft", "chests/village/village_butcher");
+    private static final Identifier CARTOGRAPHER
+            = new Identifier("minecraft", "chests/village/village_cartographer");
+    private static final Identifier DESERT_HOUSE
+            = new Identifier("minecraft", "chests/village/village_desert_house");
+    private static final Identifier FISHER
+            = new Identifier("minecraft", "chests/village/village_fisher");
+    private static final Identifier FLETCHER
+            = new Identifier("minecraft", "chests/village/village_fletcher");
+    private static final Identifier MASON
+            = new Identifier("minecraft", "chests/village/village_mason");
+    private static final Identifier PLAINS_HOUSE
+            = new Identifier("minecraft", "chests/village/village_plains_house");
+    private static final Identifier SAVANNA_HOUSE
+            = new Identifier("minecraft", "chests/village/village_savanna_house");
+    private static final Identifier SHEPHERD
+            = new Identifier("minecraft", "chests/village/village_shepherd");
+    private static final Identifier SNOWY_HOUSE
+            = new Identifier("minecraft", "chests/village/village_snowy_house");
+    private static final Identifier TAIGA_HOUSE
+            = new Identifier("minecraft", "chests/village/village_taiga_house");
+    private static final Identifier TANNERY
+            = new Identifier("minecraft", "chests/village/village_tannery");
+    private static final Identifier VILLAGE_TEMPLE
+            = new Identifier("minecraft", "chests/village/village_temple");
+    private static final Identifier TOOLSMITH
+            = new Identifier("minecraft", "chests/village/village_toolsmith");
+    private static final Identifier WEAPONSMITH
+            = new Identifier("minecraft", "chests/village/village_weaponsmith");
+    private static final Identifier TREASURE_FISH
+            = new Identifier("minecraft", "gameplay/fishing/junk");
 
 
 
@@ -60,7 +135,7 @@ public class ModLootTableModifiers {
 
                 FabricLootPoolBuilder PoolBuilder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.08F)) // Drops 24% of the time
+                        .conditionally(RandomChanceLootCondition.builder(0.6F)) // Drops 24% of the time
                         .with(ItemEntry.builder(ModItems.TOMATO))
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
                 supplier.withPool(PoolBuilder.build());
@@ -185,7 +260,7 @@ public class ModLootTableModifiers {
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 9.0f)).build());
                 supplier.withPool(poolBuilder.build());
             }
-            if (SHIPWRECK_ID.equals(id)) {
+            if (SHIPWRECK_ID.equals(id) || MANSION.equals(id) || UNDERWATER_RUIN_1.equals(id) || UNDERWATER_RUIN_2.equals(id) || STRONGHOLD_LIBRARY.equals(id) || STRONGHOLD_CROSSING.equals(id) || STRONGHOLD_CORRIDOR.equals(id) || DUNGEON_ID.equals(id) || SHIPWRECK_ID_2.equals(id) || SHIPWRECK_ID_3.equals(id) || PORTAL.equals(id) || PILLAGER_OUTPOST.equals(id) || BRIDGE.equals(id) || TEMPLE.equals(id) || IGLOO_STRUCTURE_CHEST_ID.equals(id) || END_CITY.equals(id) || DESERT_TEMPLE_CHEST_ID.equals(id) || TREASURE.equals(id) || BASTION_TREASURE.equals(id) || BASTION_OTHER.equals(id) || BASTION_STABLE.equals(id) || BASTION_BRIDGE.equals(id) || MINESHAFT.equals(id) || ARMORER.equals(id) || BUTCHER.equals(id) || CARTOGRAPHER.equals(id) || DESERT_HOUSE.equals(id) || FISHER.equals(id) || FLETCHER.equals(id) || MASON.equals(id) || PLAINS_HOUSE.equals(id) || SAVANNA_HOUSE.equals(id) || SHEPHERD.equals(id) || SNOWY_HOUSE.equals(id) || TAIGA_HOUSE.equals(id) || TANNERY.equals(id) || VILLAGE_TEMPLE.equals(id) || TOOLSMITH.equals(id) || WEAPONSMITH.equals(id) || TREASURE_FISH.equals(id)) {
                 // Add Old Stuff to shipwreck
                 FabricLootPoolBuilder builder = FabricLootPoolBuilder.builder()
                         .rolls(ConstantLootNumberProvider.create(1))

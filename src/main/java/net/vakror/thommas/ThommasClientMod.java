@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
@@ -14,7 +15,15 @@ import net.vakror.thommas.blockitem.block.fluid.ModFluids;
 import net.vakror.thommas.screen.*;
 import net.vakror.thommas.util.ModModelPredicateProvider;
 
+import static net.fabricmc.fabric.impl.networking.client.ClientNetworkingImpl.clientInit;
+
 public class ThommasClientMod implements ClientModInitializer {
+
+    private static ThommasClientMod instance;
+
+    public ThommasClientMod() {
+        instance = this;
+    }
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DETRANIUM_TRAPDOOR, RenderLayer.getCutout());

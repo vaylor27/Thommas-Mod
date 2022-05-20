@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "thommas:block/barrel_sides",
+    "up": "thommas:block/barrel_sides",
+    "north": "thommas:block/barrel_sides",
+    "east": "thommas:block/barrel_ends",
+    "south": "thommas:block/barrel_sides",
+    "west": "thommas:block/barrel_ends",
+    "particle": "thommas:block/barrel_sides"
+  }
+}

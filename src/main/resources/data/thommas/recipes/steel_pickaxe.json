@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:goldenwood_rod"
+    },
+    "P": {
+      "item": "thommas:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:steel_pickaxe"
+  }
+}

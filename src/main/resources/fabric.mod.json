@@ -44,7 +44,7 @@
   "mixins": [
     "thommas.mixins.json"
   ],
-
+  "accessWidener": "thommas.accessWidener",
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",

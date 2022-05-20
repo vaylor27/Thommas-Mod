@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:goldenwood_rod"
+    },
+    "P": {
+      "item": "thommas:lead_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:lead_shovel"
+  }
+}

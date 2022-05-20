@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
@@ -23,8 +24,8 @@ public class ModItemGroup {
     public static final ItemGroup TOOLS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "tools"),
             () -> new ItemStack(ModItems.MYTHRIL_SWORD));
 
-    public static final ItemGroup SPECIAL_ITEMS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "special_items"),
-            () -> new ItemStack(ModItems.DATA_TABLET));
+    public static final ItemGroup SPECIAL_ITEMS = ( FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "special_items"),
+            () -> new ItemStack(ModItems.DATA_TABLET)));
 
     public static final ItemGroup SPECIAL_BLOCKS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "special_blocks"),
             () -> new ItemStack(ModBlocks.SPEEDY_BLOCK));
@@ -49,4 +50,7 @@ public class ModItemGroup {
 
     public static final ItemGroup ELECTRONICS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "electronics"),
             () -> new ItemStack(ModItems.BATTERY_COMPONENTS));
+
+    public static final ItemGroup DROPS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "drops"),
+            () -> new ItemStack(ModItems.LLAMA_HIDE));
 }

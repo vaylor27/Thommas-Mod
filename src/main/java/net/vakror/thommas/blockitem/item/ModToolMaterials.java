@@ -21,10 +21,16 @@ public enum ModToolMaterials implements ToolMaterial {
     RUBY(MiningLevels.NETHERITE, 41366, 28.0F, 7.0F, 34, () -> {
         return Ingredient.ofItems(ModItems.RUBY);
     }),
-    ADAMANTIUM(MiningLevels.NETHERITE, 436575, 43.0F, 2.0F, 36, () -> {
+
+    ADAMANTIUM(MiningLevels.NETHERITE, 436575, 43.0F, 1.0F, 36, () -> {
         return Ingredient.ofItems(ModItems.ADAMANTIUM_INGOT);
     }),
+
     PURE_DIAMOND(MiningLevels.NETHERITE, 43652, 10.0F, 8.0F, 0, () -> {
+        return Ingredient.ofItems(ModItems.PURE_DIAMOND_GEM);
+    }),
+
+    COPPER(MiningLevels.NETHERITE, 256721, 34.0F, 8.0F, 0, () -> {
         return Ingredient.ofItems(ModItems.PURE_DIAMOND_GEM);
     }),
     GEM_STEEL(MiningLevels.NETHERITE, 314675237, 1000.0F, 50.0F, 49, () -> {
@@ -52,11 +58,19 @@ public enum ModToolMaterials implements ToolMaterial {
         return Ingredient.ofItems(ModItems.CITRINE);
     }),
 
+    LEAD(MiningLevels.NETHERITE, 5423921, 32, 1.0F, 20, () -> {
+        return Ingredient.ofItems(ModItems.CITRINE);
+    }),
+
     STEEL(MiningLevels.NETHERITE, 45432, 46, 16.0F, 20, () -> {
         return Ingredient.ofItems(ModItems.STEEL_INGOT);
     }),
 
-    BRONZE(MiningLevels.NETHERITE, 4251, 23, 3.0f, 20, () -> {
+    BRONZE(MiningLevels.NETHERITE, 34657, 32, 3.0f, 20, () -> {
+        return Ingredient.ofItems(ModItems.BRONZE_INGOT);
+    }),
+
+    BONE(MiningLevels.NETHERITE, 46532, 36, 3.0f, 20, () -> {
         return Ingredient.ofItems(ModItems.BRONZE_INGOT);
     }),
 

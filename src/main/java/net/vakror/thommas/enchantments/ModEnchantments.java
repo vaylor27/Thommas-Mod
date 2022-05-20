@@ -14,11 +14,6 @@ public class ModEnchantments {
     public static Enchantment SHARPGOD = register("sharpgod",
             new SharpGod(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
 
-    static EquipmentSlot[] ALL_ARMOR = new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
-
-    public static Enchantment DEATH = register("death",
-            new ProtectGod(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.ARMOR, ALL_ARMOR));
-
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(Thommas.MOD_ID, name), enchantment);
     }

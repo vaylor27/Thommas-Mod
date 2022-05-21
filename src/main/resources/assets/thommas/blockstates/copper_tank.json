@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "empty=true": { "model": "thommas:block/copper_tank_empty" },
+    "filled_with_lava=true": { "model": "thommas:block/lava_copper_tank" },
+    "filled_with_water=true": { "model": "thommas:block/water_copper_tank" }
+  }
+}

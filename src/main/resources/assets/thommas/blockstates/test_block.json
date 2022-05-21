@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "clicked=false": { "model": "thommas:block/test_block_normal" },
-    "clicked=true": { "model": "thommas:block/test_block_clicked" }
-  }
-}

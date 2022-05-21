@@ -15,7 +15,7 @@ public class TheMassacre extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 5;
+        return 10;
     }
 
     @Override
@@ -37,54 +37,10 @@ public class TheMassacre extends Enchantment {
             ServerWorld world = (ServerWorld) user.world;
             PlayerEntity player = (PlayerEntity) user;
             BlockPos position = target.getBlockPos();
-
-            if (level == 1) {
-                target.damage(DamageSource.player(player), 2);
-            }
-            else if (level == 2) {
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-            }
-            else if (level == 3) {
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-            }
-            else if (level == 4) {
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-            }
-            else if (level == 5) {
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player, position,
-                        SpawnReason.TRIGGERED, true, true);
-
+            int bolts = 0;
+            while (bolts < level * 10) {
+                EntityType.LIGHTNING_BOLT.spawn(world, null, null, player,position, SpawnReason.TRIGGERED, false, false);
+                bolts++;
             }
         }
 

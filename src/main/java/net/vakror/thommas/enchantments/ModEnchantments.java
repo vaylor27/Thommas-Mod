@@ -11,9 +11,6 @@ public class ModEnchantments {
     public static Enchantment THE_MASSACRE = register("the_massacre",
             new TheMassacre(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
 
-    public static Enchantment SHARPGOD = register("sharpgod",
-            new SharpGod(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-
     private static Enchantment register(String name, Enchantment enchantment) {
         return Registry.register(Registry.ENCHANTMENT, new Identifier(Thommas.MOD_ID, name), enchantment);
     }

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "thommas:block/copper_tank_ends",
+    "up": "thommas:block/copper_tank_ends",
+    "north": "thommas:block/copper_tank_sides",
+    "east": "thommas:block/copper_tank_sides",
+    "south": "thommas:block/copper_tank_sides",
+    "west": "thommas:block/copper_tank_window",
+    "particle": "thommas:block/copper_tank_sides"
+  }
+}

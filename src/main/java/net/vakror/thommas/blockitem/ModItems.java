@@ -1384,27 +1384,12 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
 
     public static final Item POLARBEAR_HIDE = registerItem("polarbear_hide",
-            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
-
-    public static final Item BLOODY_HIDE = registerItem("bloody_hide",
-            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));;
 
     public static final Item POG_HIDE = registerItem("pog_hide",
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
 
     public static final Item WOLF_HIDE = registerItem("wolf_hide",
-            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
-
-    public static final Item PEARL = registerItem("pearl",
-            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
-
-    public static final Item PSYLLID_LERPS = registerItem("psyllid_lerps",
-            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
-
-    public static final Item SEASHELL = registerItem("seashell",
-            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
-
-    public static final Item SILKWORM = registerItem("silkworm",
             new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
 
     public static final Item SILVERFISH_DUST = registerItem("silverfish_dust",
@@ -1425,11 +1410,10 @@ public class ModItems {
     public static final Item CREEPER_GALL = registerItem("creeper_gall",
             new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
 
-    public static final Item DRY_MARROW = registerItem("dry_marrow",
-            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
-
     public static final Item CRYSTALLIZED_ENDERMAN_HEART = registerItem("crystallized_enderman_heart",
             new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

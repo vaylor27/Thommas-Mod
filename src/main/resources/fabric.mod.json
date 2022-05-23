@@ -39,9 +39,6 @@
     ],
     "client": [
       "net.vakror.thommas.ThommasClientMod"
-    ],
-    "rei": [
-      "net.vakror.thommas.rei.plugin.ExampleClientPlugin"
     ]
   },
   "mixins": [

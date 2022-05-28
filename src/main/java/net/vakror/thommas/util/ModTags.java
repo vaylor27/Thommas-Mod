@@ -1,11 +1,11 @@
 package net.vakror.thommas.util;
 
-import net.vakror.thommas.Thommas;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.vakror.thommas.Thommas;
 
 public class ModTags {
     public static class Blocks {

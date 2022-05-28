@@ -11,7 +11,6 @@ import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.vakror.thommas.world.gen.ModConfiguredFeatures;
 
 public class Flower {
     public Flower(String name, Block flower, int triesPerChunk, int rarityFilterPlacementModifier, Biome.Category biome) {

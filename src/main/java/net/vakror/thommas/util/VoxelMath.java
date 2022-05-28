@@ -1,10 +1,10 @@
 package net.vakror.thommas.util;
 
-import java.util.ArrayList;
-
 import net.minecraft.util.math.Box;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
+
+import java.util.ArrayList;
 
 public class VoxelMath {
 	public static Box[] shapeToBoxes(VoxelShape shape) {

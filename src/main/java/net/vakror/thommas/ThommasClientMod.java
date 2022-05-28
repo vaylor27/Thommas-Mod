@@ -5,17 +5,22 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
-import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.blockitem.ModItems;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
-import net.vakror.thommas.screen.*;
+import net.vakror.thommas.entity.ModEntities;
+import net.vakror.thommas.entity.client.RaccoonRenderer;
+import net.vakror.thommas.entity.client.RatRenderer;
+import net.vakror.thommas.entity.client.armor.MythrilArmorRenderer;
+import net.vakror.thommas.entity.client.armor.RubyArmorRenderer;
+import net.vakror.thommas.screen.CombinerScreen;
+import net.vakror.thommas.screen.LightningChannelerScreen;
+import net.vakror.thommas.screen.ModScreenHandlers;
+import net.vakror.thommas.screen.MythrilBlasterScreen;
 import net.vakror.thommas.util.ModModelPredicateProvider;
-
-import static net.fabricmc.fabric.impl.networking.client.ClientNetworkingImpl.clientInit;
+import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class ThommasClientMod implements ClientModInitializer {
 
@@ -29,6 +34,7 @@ public class ThommasClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DETRANIUM_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SAFE_DETRANIUM_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KAUPEN_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KAUPEN_DOOR, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SAFE_KAUPEN_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CORRUPTED_FLOWER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_CORRUPTED_FLOWER, RenderLayer.getCutout());
@@ -84,5 +90,14 @@ public class ThommasClientMod implements ClientModInitializer {
         ScreenRegistry.register(ModScreenHandlers.MYTHRIL_BLASTER_SCREEN_HANDLER, MythrilBlasterScreen::new);
         ScreenRegistry.register(ModScreenHandlers.LIGHTNING_CHANNELER_SCREEN_HANDLER, LightningChannelerScreen::new);
         ScreenRegistry.register(ModScreenHandlers.COMBINER_SCREEN_HANDLER, CombinerScreen::new);
+
+        EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
+        EntityRendererRegistry.register(ModEntities.RAT, RatRenderer::new);
+
+        GeoArmorRenderer.registerArmorRenderer(new MythrilArmorRenderer(), ModItems.MYTHRIL_BOOTS,
+                ModItems.MYTHRIL_LEGGINGS, ModItems.MYTHRIL_CHESTPLATE, ModItems.MYTHRIL_HELMET);
+
+        GeoArmorRenderer.registerArmorRenderer(new RubyArmorRenderer(), ModItems.RUBY_BOOTS,
+                ModItems.RUBY_LEGGINGS, ModItems.RUBY_CHESTPLATE, ModItems.RUBY_HELMET);
     }
 }

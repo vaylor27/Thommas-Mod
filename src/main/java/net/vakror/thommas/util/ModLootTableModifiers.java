@@ -2,19 +2,15 @@ package net.vakror.thommas.util;
 
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
-import net.minecraft.item.Items;
-import net.vakror.thommas.blockitem.ModItems;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
+import net.vakror.thommas.blockitem.ModItems;
 
 public class ModLootTableModifiers {
-    public ModLootTableModifiers() {
-        modifyLootTables();
-    }
     private static final Identifier GRASS_ID
             = new Identifier("minecraft", "blocks/grass");
     private static final Identifier SAND_ID
@@ -107,7 +103,7 @@ public class ModLootTableModifiers {
 
 
 
-    private static void modifyLootTables() {
+    public static void modifyLootTables() {
         LootTableLoadingCallback.EVENT.register(((resourceManager, manager, id, supplier, setter) -> {
             //check for grass block loot table.
             if(GRASS_ID.equals(id)) {

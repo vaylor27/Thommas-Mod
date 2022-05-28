@@ -23,6 +23,10 @@ repositories {
 	maven { url "https://maven.shedaniel.me" }
 }
 
+repositories {
+	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -35,6 +39,7 @@ dependencies {
 	modCompileOnly "me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:8.1.457"
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.18:3.0.42'
 }
 
 processResources {

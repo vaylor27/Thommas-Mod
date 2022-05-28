@@ -10,7 +10,8 @@
     "ModEntityDataSaverTwo",
     "NoExperimentFeaturesScreen",
     "PauseButtonMixin",
-    "SignTypeAccessor"
+    "SignTypeAccessor",
+    "StructureFeatureAccessor"
   ],
   "client": [
     "AutoFishMixin",

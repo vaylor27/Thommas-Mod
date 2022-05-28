@@ -37,10 +37,6 @@ public class ModRegistries {
         CommandRegistrationCallback.EVENT.register(ReturnHome::register);
         CommandRegistrationCallback.EVENT.register(SetSecondaryHome::register);
         CommandRegistrationCallback.EVENT.register(ReturnSecondaryHome::register);
-        CommandRegistrationCallback.EVENT.register(VakrorModeCommand::register);
-        CommandRegistrationCallback.EVENT.register(VakrorKickCommand::register);
-        CommandRegistrationCallback.EVENT.register(VakrorAdvancementCommand::register);
-        CommandRegistrationCallback.EVENT.register(VakrorGiveCommand::register);
     }
 
     public static void registerStrippables() {

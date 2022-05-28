@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "thommas:abandoned_ore_attic",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 615947,
+    "spacing": 200,
+    "separation": 150,
+
+    "type": "minecraft:random_spread"
+  }
+}

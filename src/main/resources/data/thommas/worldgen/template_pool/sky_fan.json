@@ -1,0 +1,18 @@
+{
+"name": "thommas:run_down_house/side_pool",
+
+"fallback": "minecraft:empty",
+"elements": [
+{
+"weight": 1,
+"element": {
+
+"location": "thommas:sky_fan",
+
+"processors": "thommas:randomize_stonebrick",
+"projection": "rigid",
+"element_type": "minecraft:single_pool_element"
+}
+}
+]
+}

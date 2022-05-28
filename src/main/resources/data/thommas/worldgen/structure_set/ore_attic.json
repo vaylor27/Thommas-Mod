@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "thommas:ore_attic",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 43622436,
+    "spacing": 200,
+    "separation": 150,
+
+    "type": "minecraft:random_spread"
+  }
+}

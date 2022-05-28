@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:village",
+
+  "config": {
+    "start_pool": "thommas:run_down_house/start_pool",
+
+    "size": 2
+  },
+
+  "biomes": "#thommas:has_structure/json_only_house_biomes",
+
+  "adapt_noise": true,
+
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:illusioner",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "type": "minecraft:pillager",
+          "weight": 2,
+          "minCount": 1,
+          "maxCount": 4
+        }
+      ]
+    },
+    "creature": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:parrot",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 4
+        }
+      ]
+    }
+  }
+}

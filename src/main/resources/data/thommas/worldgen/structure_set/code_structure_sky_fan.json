@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "thommas:code_structure_sky_fan",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1224466880,
+    "spacing": 19,
+    "separation": 6,
+
+    "type": "minecraft:random_spread"
+  }
+}

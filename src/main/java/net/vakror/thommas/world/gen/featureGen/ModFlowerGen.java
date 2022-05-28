@@ -1,12 +1,8 @@
 package net.vakror.thommas.world.gen.featureGen;
 
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.gen.GenerationStep;
 import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.util.Flower;
-import net.vakror.thommas.world.gen.ModPlacedFeatures;
 
 public class ModFlowerGen {
     public static void generateFlowers() {

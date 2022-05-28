@@ -1,7 +1,6 @@
 package net.vakror.thommas.world.gen.featureGen;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.tag.BlockTags;
 import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.util.Ore;
 

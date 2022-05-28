@@ -3,7 +3,6 @@ package net.vakror.thommas.world.gen.tree.sapling;
 import net.minecraft.block.sapling.SaplingGenerator;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.RandomFeatureConfig;
 import net.vakror.thommas.world.gen.ModConfiguredFeatures;
 import org.jetbrains.annotations.Nullable;
 

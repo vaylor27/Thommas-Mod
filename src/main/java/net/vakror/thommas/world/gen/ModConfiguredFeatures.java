@@ -1,7 +1,6 @@
 package net.vakror.thommas.world.gen;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.feature.*;
@@ -10,9 +9,6 @@ import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.vakror.thommas.blockitem.ModBlocks;
-import net.vakror.thommas.config.ModConfigs;
-
-import java.util.List;
 
 public class ModConfiguredFeatures {
 

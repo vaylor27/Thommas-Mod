@@ -1,13 +1,9 @@
 package net.vakror.thommas.world.gen.featureGen;
 
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.gen.GenerationStep;
 import net.vakror.thommas.blockitem.ModBlocks;
 import net.vakror.thommas.util.Tree;
 import net.vakror.thommas.world.gen.ModConfiguredFeatures;
-import net.vakror.thommas.world.gen.ModPlacedFeatures;
 
 public class ModTreeGen {
     public static void generateTrees() {

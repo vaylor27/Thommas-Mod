@@ -2,22 +2,35 @@ package net.vakror.thommas.util;
 
 import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.blockitem.ModBlocks;
-import net.vakror.thommas.command.hack.*;
-import net.vakror.thommas.command.home.*;
+import net.vakror.thommas.blockitem.ModItems;
+import net.vakror.thommas.command.home.ReturnHome;
+import net.vakror.thommas.command.home.SetHome;
 import net.vakror.thommas.command.secondaryhome.ReturnSecondaryHome;
 import net.vakror.thommas.command.secondaryhome.SetSecondaryHome;
-import net.vakror.thommas.config.ModConfigs;
+import net.vakror.thommas.entity.ModEntities;
+import net.vakror.thommas.entity.custom.RaccoonEntity;
+import net.vakror.thommas.entity.custom.RatEntity;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFromTwo;
 import net.vakror.thommas.villager.trade.ModTrades;
-import net.vakror.thommas.blockitem.ModItems;
 
 public class ModRegistries {
+    
+    public static void registerModStuffs() {
+        registerFuels();
+        registerCommands();
+        registerEvents();
+        registerTrades();
+        registerStrippables();
+        registerFlammableBlock();
+        registerAttributes();
+    }
 
     public static void registerTrades() {
         new ModTrades();
@@ -37,6 +50,11 @@ public class ModRegistries {
         CommandRegistrationCallback.EVENT.register(ReturnHome::register);
         CommandRegistrationCallback.EVENT.register(SetSecondaryHome::register);
         CommandRegistrationCallback.EVENT.register(ReturnSecondaryHome::register);
+    }
+    
+    public static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(ModEntities.RACCOON, RaccoonEntity.setAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.RAT, RatEntity.setAttributes());
     }
 
     public static void registerStrippables() {

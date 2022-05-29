@@ -1413,16 +1413,16 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
 
     public static final Item LEAD_HELMET = registerItem("lead_helmet",
-            new Item(new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new LeadArmorItem(ModArmorMaterials.LEAD, EquipmentSlot.HEAD, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
 
     public static final Item LEAD_CHESTPLATE = registerItem("lead_chestplate",
-            new Item(new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new LeadArmorItem(ModArmorMaterials.LEAD, EquipmentSlot.CHEST, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
 
     public static final Item LEAD_LEGGINGS = registerItem("lead_leggings",
-            new Item(new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new LeadArmorItem(ModArmorMaterials.LEAD, EquipmentSlot.LEGS, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
 
     public static final Item LEAD_BOOTS = registerItem("lead_boots",
-            new Item(new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new LeadArmorItem(ModArmorMaterials.LEAD, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
 
 
 

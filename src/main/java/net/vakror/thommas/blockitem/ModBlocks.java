@@ -764,10 +764,10 @@ public class ModBlocks {
             new FeatherBlock(FabricBlockSettings.of(Material.STONE)), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block WHITE_ELEVATOR = registerBlock("white_elevator",
-            new ElevatorBlock(FabricBlockSettings.of(Material.STONE)), ModItemGroup.SPECIAL_BLOCKS);
+            new ElevatorBlock(FabricBlockSettings.of(Material.STONE).strength(1.8F)), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block BLACK_ELEVATOR = registerBlock("black_elevator",
-            new ElevatorBlock(FabricBlockSettings.of(Material.STONE)), ModItemGroup.SPECIAL_BLOCKS);
+            new ElevatorBlock(FabricBlockSettings.of(Material.STONE).strength(1.8F)), ModItemGroup.SPECIAL_BLOCKS);
 
 
         private static Block registerBlockWithoutBlockItem(String name, Block block) {

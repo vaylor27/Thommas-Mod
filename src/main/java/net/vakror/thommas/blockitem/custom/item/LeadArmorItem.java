@@ -19,8 +19,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class RubyArmorItem extends ModRubyArmor implements IAnimatable {
-    public RubyArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+public class LeadArmorItem extends ModLeadArmor implements IAnimatable {
+    public LeadArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 
@@ -54,8 +54,8 @@ public class RubyArmorItem extends ModRubyArmor implements IAnimatable {
 
             // Make sure the player is wearing all the armor. If they are, continue playing
             // the animation, otherwise stop
-            boolean isWearingAll = armorList.containsAll(Arrays.asList(ModItems.RUBY_BOOTS,
-                    ModItems.RUBY_LEGGINGS, ModItems.RUBY_CHESTPLATE, ModItems.RUBY_HELMET));
+            boolean isWearingAll = armorList.containsAll(Arrays.asList(ModItems.LEAD_BOOTS,
+                    ModItems.LEAD_LEGGINGS, ModItems.LEAD_CHESTPLATE, ModItems.LEAD_HELMET));
             return isWearingAll ? PlayState.CONTINUE : PlayState.STOP;
         }
         return PlayState.STOP;

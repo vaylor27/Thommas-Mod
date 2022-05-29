@@ -29,6 +29,7 @@ public class Thommas implements ModInitializer {
 	public static final String MOD_ID = "thommas";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static ThommasConfig CONFIG;
+	public static boolean isConfigLoaded = false;
 
 	public static boolean autofish = false;
 	public static boolean flyhack = false;
@@ -37,6 +38,8 @@ public class Thommas implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+
 		AutoConfig.register(ThommasConfig.class, GsonConfigSerializer::new);
 		CONFIG = AutoConfig.getConfigHolder(ThommasConfig.class).getConfig();
 		ModConfigs.registerConfigs();

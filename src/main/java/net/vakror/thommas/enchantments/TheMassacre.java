@@ -7,6 +7,7 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
+import net.vakror.thommas.Thommas;
 
 public class TheMassacre extends Enchantment {
     public TheMassacre(Rarity weight, EnchantmentTarget type, EquipmentSlot... slotTypes) {
@@ -15,7 +16,7 @@ public class TheMassacre extends Enchantment {
 
     @Override
     public int getMaxLevel() {
-        return 10;
+        return Thommas.CONFIG.massacreMaxLevel;
     }
 
     @Override

@@ -471,10 +471,15 @@
   "item.thommas.zombie_liver": "Zombie Liver",
   "item.thommas.creeper_gall": "Creeper Gall",
   "item.thommas.crystallized_enderman_heart": "Crystallized Enderman Heart",
+  "item.thommas.lead_leggings": "Lead Leggings",
+  "item.thommas.lead_chestplate": "Lead Chestplate",
+  "item.thommas.lead_helmet": "Lead Helmet",
+  "item.thommas.lead_boots": "Lead Boots",
 
 
   "text.autoconfig.thommas.title": "Thommas",
   "text.autoconfig.thommas.option.quartzElevatorDistance": "Max Distance of Elevator",
+  "text.autoconfig.thommas.option.mixTypes": "Moving between Different Elevator Types",
   "text.autoconfig.thommas.option.isPlayerOnly": "Player Only",
   "text.autoconfig.thommas.option.displayParticles": "Display particles",
 

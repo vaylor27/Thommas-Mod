@@ -5,16 +5,15 @@
 
 package net.vakror.thommas.blockitem.item;
 
-import java.util.function.Supplier;
-
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
 import net.vakror.thommas.blockitem.ModItems;
+
+import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     MYTHRIL("mythril", 46, new int[]{3, 6, 8, 3}, 36, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, 3.0F, () -> {
@@ -22,6 +21,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }),
     TITANIUM("titanium", 64343, new int[]{4, 7, 9, 14}, 47, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, 8.0F, 0.0F, () -> {
         return Ingredient.ofItems(ModItems.TITANIUM_INGOT);
+    }),
+    LEAD("lead", 678924, new int[]{6, 5, 5, 4}, 47, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, 9.0F, 0.0F, () -> {
+        return Ingredient.ofItems(ModItems.LEAD_INGOT);
     }),
     AMETHYST("amethyst", 64334, new int[]{25, 24, 26, 23}, 56, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, 15.0F, 2.0F, () -> {
         return Ingredient.ofItems(ModItems.AMETHYST);
@@ -43,7 +45,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Lazy<Ingredient> repairIngredientSupplier;
 
-    private ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredientSupplier) {
+    ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredientSupplier) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
@@ -71,7 +73,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }
 
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredientSupplier.get();
+        return this.repairIngredientSupplier.get();
     }
 
     public String getName() {

@@ -15,13 +15,23 @@ import net.vakror.thommas.blockitem.item.ModArmorMaterials;
 
 import java.util.Map;
 
-public class ModArmor extends ArmorItem {
+public class ModLeadArmor extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
-                    .put(ModArmorMaterials.MYTHRIL,
-                            new StatusEffectInstance(StatusEffects.LUCK, 400, 1)).build();
+                    .put(ModArmorMaterials.LEAD,
+                            new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 1)).build();
 
-    public ModArmor(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAPS =
+            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                    .put(ModArmorMaterials.LEAD,
+                            new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 4)).build();
+
+    private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAPSE =
+            (new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>())
+                    .put(ModArmorMaterials.LEAD,
+                            new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 200, 1)).build();
+
+    public ModLeadArmor(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }
 
@@ -42,6 +52,22 @@ public class ModArmor extends ArmorItem {
 
     private void evaluateArmorEffects(PlayerEntity player) {
         for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAP.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry.getKey();
+            StatusEffectInstance mapStatusEffect = entry.getValue();
+
+            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            }
+        }
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAPS.entrySet()) {
+            ArmorMaterial mapArmorMaterial = entry.getKey();
+            StatusEffectInstance mapStatusEffect = entry.getValue();
+
+            if(hasCorrectArmorOn(mapArmorMaterial, player)) {
+                addStatusEffectForMaterial(player, mapArmorMaterial, mapStatusEffect);
+            }
+        }
+        for (Map.Entry<ArmorMaterial, StatusEffectInstance> entry : MATERIAL_TO_EFFECT_MAPSE.entrySet()) {
             ArmorMaterial mapArmorMaterial = entry.getKey();
             StatusEffectInstance mapStatusEffect = entry.getValue();
 
@@ -75,15 +101,16 @@ public class ModArmor extends ArmorItem {
     }
 
     private boolean hasCorrectArmorOn(ArmorMaterial material, PlayerEntity player) {
-        ArmorItem boots = ((ArmorItem) player.getInventory().getArmorStack(0).getItem());
-        ArmorItem leggings = ((ArmorItem) player.getInventory().getArmorStack(1).getItem());
+        ArmorItem boots = ((ArmorItem)player.getInventory().getArmorStack(0).getItem());
+        ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
         ArmorItem breastplate;
         if (player.getInventory().getArmorStack(2).getItem() != Items.ELYTRA) {
-            breastplate = ((ArmorItem) player.getInventory().getArmorStack(2).getItem());
-        } else {
+            breastplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
+        }
+        else {
             breastplate = null;
         }
-        ArmorItem helmet = ((ArmorItem) player.getInventory().getArmorStack(3).getItem());
+        ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
 
         if (breastplate != null) {
             return helmet.getMaterial() == material && breastplate.getMaterial() == material &&

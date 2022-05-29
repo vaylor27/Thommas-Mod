@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MythrilArmorItem extends ModArmor implements IAnimatable {
+public class MythrilArmorItem extends ModMythrilArmor implements IAnimatable {
     public MythrilArmorItem(ArmorMaterial material, EquipmentSlot slot, Settings settings) {
         super(material, slot, settings);
     }

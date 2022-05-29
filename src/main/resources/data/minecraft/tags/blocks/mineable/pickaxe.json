@@ -261,6 +261,8 @@
     "thommas:lead_ore_fake",
     "thommas:copper_ore_fake",
     "thommas:aluminum_ore_fake",
-    "thommas:pure_diamond_ore_fake"
+    "thommas:pure_diamond_ore_fake",
+    "thommas:white_elevator",
+    "thommas:black_elevator"
   ]
 }

@@ -13,6 +13,7 @@ import net.vakror.thommas.blockitem.block.fluid.ModFluids;
 import net.vakror.thommas.entity.ModEntities;
 import net.vakror.thommas.entity.client.RaccoonRenderer;
 import net.vakror.thommas.entity.client.RatRenderer;
+import net.vakror.thommas.entity.client.armor.LeadArmorRenderer;
 import net.vakror.thommas.entity.client.armor.MythrilArmorRenderer;
 import net.vakror.thommas.entity.client.armor.RubyArmorRenderer;
 import net.vakror.thommas.screen.CombinerScreen;
@@ -99,5 +100,11 @@ public class ThommasClientMod implements ClientModInitializer {
 
         GeoArmorRenderer.registerArmorRenderer(new RubyArmorRenderer(), ModItems.RUBY_BOOTS,
                 ModItems.RUBY_LEGGINGS, ModItems.RUBY_CHESTPLATE, ModItems.RUBY_HELMET);
+
+
+        GeoArmorRenderer.registerArmorRenderer(new LeadArmorRenderer(), ModItems.LEAD_BOOTS,
+                ModItems.LEAD_LEGGINGS, ModItems.LEAD_CHESTPLATE, ModItems.LEAD_HELMET);
+
+
     }
 }

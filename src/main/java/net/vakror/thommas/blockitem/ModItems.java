@@ -6,7 +6,6 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
-import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
@@ -61,7 +60,7 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.FEET,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
-            new ModArmor(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new ModMythrilArmor(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
             new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS,new FabricItemSettings().group(ModItemGroup.TOOLS)));
@@ -600,7 +599,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
 
     public static Item BLACK_PEARL = registerItem("black_pearl",
-            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
+            new BlackPearlItem(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
 
     public static Item BLOODSTONE = registerItem("bloodstone",
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
@@ -1384,7 +1383,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
 
     public static final Item POLARBEAR_HIDE = registerItem("polarbear_hide",
-            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));;
+            new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
 
     public static final Item POG_HIDE = registerItem("pog_hide",
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
@@ -1412,6 +1411,18 @@ public class ModItems {
 
     public static final Item CRYSTALLIZED_ENDERMAN_HEART = registerItem("crystallized_enderman_heart",
             new Item(new FabricItemSettings().group(ModItemGroup.DROPS).fireproof()));
+
+    public static final Item LEAD_HELMET = registerItem("lead_helmet",
+            new Item(new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static final Item LEAD_CHESTPLATE = registerItem("lead_chestplate",
+            new Item(new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static final Item LEAD_LEGGINGS = registerItem("lead_leggings",
+            new Item(new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+
+    public static final Item LEAD_BOOTS = registerItem("lead_boots",
+            new Item(new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
 
 
 

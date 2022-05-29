@@ -18,14 +18,7 @@
       "links": {
         "modmenu.thommas.curseforge": "https://curseforge.com/minecraft/mc-mods/Thommas"
       },
-      "badges": [],
-      "parent": {
-        "id": "all-thommas",
-        "name": "Thommas Mods",
-        "description": "The parent for thommas-mod",
-        "icon": "assets/thommas/Icon.png",
-        "badges": []
-      }
+      "badges": []
     }
   },
 

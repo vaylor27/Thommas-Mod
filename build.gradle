@@ -27,6 +27,12 @@ repositories {
 	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 }
 
+repositories {
+	maven {
+		url "https://maven.terraformersmc.com/releases/"
+	}
+}
+
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -40,6 +46,11 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.18:3.0.42'
+	modImplementation "com.terraformersmc:modmenu:3.1.0"
+
+	modApi("me.shedaniel.cloth:cloth-config-fabric:6.2.57") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
 }
 
 processResources {

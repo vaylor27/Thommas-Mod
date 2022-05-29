@@ -471,13 +471,16 @@
   "item.thommas.zombie_liver": "Zombie Liver",
   "item.thommas.creeper_gall": "Creeper Gall",
   "item.thommas.crystallized_enderman_heart": "Crystallized Enderman Heart",
-  "item.thommas.amongus_chestplate": "Amongus Chestplate",
-  "item.thommas.amongus_boots": "Amongus Boots",
-  "item.thommas.amongus_helmet": "Amongus Helmet",
-  "item.thommas.amongus_leggings": "Amongus Leggings",
-  "item.thommas.impostor": "Impostor",
 
 
+  "text.autoconfig.thommas.title": "Thommas",
+  "text.autoconfig.thommas.option.quartzElevatorDistance": "Max Distance of Elevator",
+  "text.autoconfig.thommas.option.isPlayerOnly": "Player Only",
+  "text.autoconfig.thommas.option.displayParticles": "Display particles",
+
+
+  "block.thommas.white_elevator": "White Elevator",
+  "block.thommas.black_elevator": "Black Elevator",
   "block.thommas.jacaranda_sign": "Jacaranda Sign",
   "block.thommas.salt_ore": "Salt Ore",
   "block.thommas.crown": "Crown",

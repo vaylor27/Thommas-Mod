@@ -21,6 +21,10 @@ Some code by rdvdev2:
 https://github.com/rdvdev2/DisableCustomWorldsAdvice/
 under GNU Lesser General Public License v3.0
 
+Elevator code by Aton Kish:
+https://github.com/Aton-Kish/quartz-elevator
+under MIT License
+
 some textures by malcolmriley:
 https://github.com/malcolmriley/unused-textures
 under CC-BY-4.0 License

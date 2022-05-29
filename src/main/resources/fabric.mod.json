@@ -39,6 +39,9 @@
     ],
     "client": [
       "net.vakror.thommas.ThommasClientMod"
+    ],
+    "modmenu": [
+      "net.vakror.thommas.config.ConfigMenu"
     ]
   },
   "mixins": [

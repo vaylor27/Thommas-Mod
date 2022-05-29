@@ -3,22 +3,20 @@ package net.vakror.thommas.blockitem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
-import net.minecraft.client.sound.Sound;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.sound.SoundEvent;
-import net.vakror.thommas.Thommas;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.vakror.thommas.Thommas;
 import net.vakror.thommas.blockitem.block.entity.ModSignTypes;
-import net.vakror.thommas.blockitem.custom.block.*;
 import net.vakror.thommas.blockitem.block.fluid.ModFluids;
+import net.vakror.thommas.blockitem.custom.block.*;
 import net.vakror.thommas.blockitem.item.ModItemGroup;
-import net.vakror.thommas.world.gen.tree.sapling.*;
 import net.vakror.thommas.sound.ModSounds;
+import net.vakror.thommas.world.gen.tree.sapling.*;
 
 public class ModBlocks {
 
@@ -764,6 +762,12 @@ public class ModBlocks {
 
     public static final Block PACKED_FEATHERS = registerBlock("packed_feathers",
             new FeatherBlock(FabricBlockSettings.of(Material.STONE)), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block WHITE_ELEVATOR = registerBlock("white_elevator",
+            new ElevatorBlock(FabricBlockSettings.of(Material.STONE)), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block BLACK_ELEVATOR = registerBlock("black_elevator",
+            new ElevatorBlock(FabricBlockSettings.of(Material.STONE)), ModItemGroup.SPECIAL_BLOCKS);
 
 
         private static Block registerBlockWithoutBlockItem(String name, Block block) {

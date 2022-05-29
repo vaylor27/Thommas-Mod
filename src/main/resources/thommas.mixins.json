@@ -6,11 +6,15 @@
   "mixins": [
     "BlockEntityTypeMixin",
     "BrewingRecipeRegistryMixin",
+    "EntityMixin",
+    "LivingEntityMixin",
+    "MagmaCubeEntityMixin",
     "ModEntityDataSaver",
     "ModEntityDataSaverTwo",
     "NoExperimentFeaturesScreen",
     "PauseButtonMixin",
     "SignTypeAccessor",
+    "SlimeEntityMixin",
     "StructureFeatureAccessor"
   ],
   "client": [

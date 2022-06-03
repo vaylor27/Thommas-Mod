@@ -1,0 +1,14 @@
+{
+  "type": "thommas:orichalcum_blaster",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_pickaxe"
+    },
+    {
+      "item": "thommas:orichalcum_ingot"
+    }
+  ],
+  "output": {
+    "item": "thommas:orichalcum_pickaxe"
+  }
+}

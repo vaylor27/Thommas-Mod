@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:goldenwood_rod"
+    },
+    "P": {
+      "item": "thommas:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:cobalt_hoe"
+  }
+}

@@ -21,6 +21,15 @@ public class ModTags {
         public static final TagKey<Block> PAXEL =
                 createTag("paxel");
 
+        public static final TagKey<Block> DOWSING_ROD_DETECTABLE_BLOCKS =
+                createTag("dowsing_rod_detectable_blocks");
+
+        public static final TagKey<Block> ORICHALCUM_BLOCKS =
+                createCommonTag("orichalcum_blocks");
+
+        public static final TagKey<Block> ORICHALCUM_ORES =
+                createCommonTag("orichalcum_ores");
+
         public static final TagKey<Block> ALL =
                 createTag("all");
 
@@ -59,6 +68,12 @@ public class ModTags {
 
         public static final TagKey<Item> GEAR =
                 createCommonTag("gear");
+
+        public static final TagKey<Item> ORICHALCUM_INGOTS =
+                createCommonTag("orichalcum_ingots");
+
+        public static final TagKey<Item> ORICHALCUM_NUGGETS =
+                createCommonTag("orichalcum_nuggets");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier(Thommas.MOD_ID, name));

@@ -8,7 +8,7 @@ import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
-import net.vakror.thommas.blockitem.ModItems;
+import net.vakror.thommas.item.ModItems;
 
 public class ModLootTableModifiers {
     private static final Identifier GRASS_ID
@@ -100,6 +100,8 @@ public class ModLootTableModifiers {
             = new Identifier("minecraft", "chests/village/village_weaponsmith");
     private static final Identifier TREASURE_FISH
             = new Identifier("minecraft", "gameplay/fishing/junk");
+    private static final Identifier ENDERMAN
+            = new Identifier("minecraft", "entities/enderman");
 
 
 
@@ -307,6 +309,22 @@ public class ModLootTableModifiers {
                         .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3, 8)).build());
                 supplier.withPool(poolsBuilders.build());
 
+            }
+            if(ENDERMAN.equals(id)) {
+                // Adds a Pork Slab to Pigs.
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.4f)) // Drops 40% of the time
+                        .with(ItemEntry.builder(ModItems.ENDERMAN_HEART))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 9.0f)).build());
+                supplier.withPool(poolBuilder.build());
+
+                FabricLootPoolBuilder poolBuilders = FabricLootPoolBuilder.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.1f)) // Drops 40% of the time
+                        .with(ItemEntry.builder(ModItems.CRYSTALLIZED_ENDERMAN_HEART))
+                        .withFunction(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 9.0f)).build());
+                supplier.withPool(poolBuilder.build());
             }
         }));
     }

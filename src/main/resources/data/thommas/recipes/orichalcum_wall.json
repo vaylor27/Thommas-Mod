@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:orichalcum_block"
+    }
+  },
+  "result": {
+    "item": "thommas:orichalcum_wall"
+  }
+}

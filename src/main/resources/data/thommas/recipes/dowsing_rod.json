@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "X#X",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:goldenwood_rod"
+    },
+    "X": {
+      "item": "thommas:orichalcum_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:dowsing_rod"
+  }
+}

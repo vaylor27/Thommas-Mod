@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
-import net.vakror.thommas.blockitem.ModItems;
+import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.villager.ModVillagers;
 
 public class CombinerVillagerTrades {
@@ -28,9 +28,9 @@ public class CombinerVillagerTrades {
         TradeOfferHelper.registerVillagerOffers(ModVillagers.COMBINER, 2,
                 factories -> {
                     factories.add((entity, random) -> new TradeOffer(
-                            new ItemStack(Items.EMERALD, 2),
-                            new ItemStack(ModItems.TIN_HAMMER, 1),
-                            6, 2, 0.02f));
+                            new ItemStack(Items.EMERALD, 14),
+                            new ItemStack(ModItems.ORICHALCUM_PAXEL, 1),
+                            2, 8, 0.4f));
 
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 1),

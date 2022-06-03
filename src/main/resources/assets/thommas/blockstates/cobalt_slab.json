@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "thommas:block/cobalt_slab"
+    },
+    "type=double": {
+      "model": "thommas:block/cobalt_block"
+    },
+    "type=top": {
+      "model": "thommas:block/cobalt_slab_top"
+    }
+  }
+}

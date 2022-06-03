@@ -263,6 +263,13 @@
     "thommas:aluminum_ore_fake",
     "thommas:pure_diamond_ore_fake",
     "thommas:white_elevator",
-    "thommas:black_elevator"
+    "thommas:black_elevator",
+    "thommas:deepslate_orichalcum_ore",
+    "thommas:orichalcum_block",
+    "thommas:orichalcum_lamp",
+    "thommas:orichalcum_ore",
+    "thommas:pink_rose",
+    "thommas:raw_orichalcum_block",
+    "thommas:speedy_block"
   ]
 }

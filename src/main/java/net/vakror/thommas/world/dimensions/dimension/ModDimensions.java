@@ -3,9 +3,9 @@ package net.vakror.thommas.world.dimensions.dimension;
 import net.minecraft.block.Blocks;
 import net.minecraft.fluid.Fluids;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.ModBlocks;
-import net.vakror.thommas.blockitem.ModItems;
-import net.vakror.thommas.blockitem.block.fluid.ModFluids;
+import net.vakror.thommas.block.ModBlocks;
+import net.vakror.thommas.fluid.ModFluids;
+import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.util.Dimension;
 
 public class ModDimensions {

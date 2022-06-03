@@ -5,7 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
-import net.vakror.thommas.blockitem.ModItems;
+import net.vakror.thommas.item.ModItems;
 
 public class VanillaVillagerTrades {
     protected static void register() {

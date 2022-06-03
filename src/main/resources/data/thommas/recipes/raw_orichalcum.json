@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:raw_orichalcum_block"
+    }
+  },
+  "result": {
+    "item": "thommas:raw_orichalcum",
+    "count": 9
+  }
+}

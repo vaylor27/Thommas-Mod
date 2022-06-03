@@ -6,10 +6,12 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
@@ -24,8 +26,8 @@ import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.custom.block.FakeOreBlock;
-import net.vakror.thommas.blockitem.item.ModItemGroup;
+import net.vakror.thommas.block.custom.FakeOreBlock;
+import net.vakror.thommas.item.ModItemGroup;
 
 import java.util.Arrays;
 
@@ -102,7 +104,7 @@ public class Ore {
     private static Block BLOCK;
 
     private static void register(String name, Block replacedBlock, int veinsInChunk , int veinSize) {
-        BLOCK = registerBlock(name, new Block(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool()));
+        BLOCK = registerBlock(name, new OreBlock(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool(), UniformIntProvider.create(9, 27)));
         configuredFeature(name, replacedBlock, veinSize, BLOCK);
         placedFeature(name, veinsInChunk);
     }

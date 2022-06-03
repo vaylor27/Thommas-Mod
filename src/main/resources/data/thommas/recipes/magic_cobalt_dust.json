@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XXX",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:magic_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:magic_cobalt_dust",
+    "count": 1
+  }
+}

@@ -1,6 +1,6 @@
 package net.vakror.thommas.entity.client.armor;
 
-import net.vakror.thommas.blockitem.custom.item.MythrilArmorItem;
+import net.vakror.thommas.item.custom.MythrilArmorItem;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class MythrilArmorRenderer extends GeoArmorRenderer<MythrilArmorItem> {

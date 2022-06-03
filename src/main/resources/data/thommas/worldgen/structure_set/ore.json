@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "thommas:ore",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 9425645,
+    "spacing": 26,
+    "separation": 13,
+
+    "type": "minecraft:random_spread"
+  }
+}

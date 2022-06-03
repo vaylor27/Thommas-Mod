@@ -2,7 +2,7 @@ package net.vakror.thommas.entity.client.armor;
 
 import net.minecraft.util.Identifier;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.custom.item.LeadArmorItem;
+import net.vakror.thommas.item.custom.LeadArmorItem;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 
 public class LeadArmorModel extends AnimatedGeoModel<LeadArmorItem> {

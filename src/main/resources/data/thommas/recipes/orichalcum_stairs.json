@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " ##",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:orichalcum_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:orichalcum_stairs",
+    "count": 4
+  }
+}

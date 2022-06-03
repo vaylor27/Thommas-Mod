@@ -35,6 +35,8 @@
     ],
     "modmenu": [
       "net.vakror.thommas.config.ConfigMenu"
+    ],
+    "rei": [
     ]
   },
   "mixins": [

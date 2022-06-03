@@ -8,7 +8,7 @@ import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
-import net.vakror.thommas.blockitem.ModBlocks;
+import net.vakror.thommas.block.ModBlocks;
 
 public class ModConfiguredFeatures {
 
@@ -67,6 +67,14 @@ public class ModConfiguredFeatures {
                     BlockStateProvider.of(ModBlocks.GLOAMBLOSSOM_LEAVES),
                     new BlobFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(0), 4),
                     new TwoLayersFeatureSize(4, 3, 1)).build());
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> CHERRY_BLOSSOM_TREE =
+            ConfiguredFeatures.register("cherry_blossom", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.CHERRY_BLOSSOM_LOG),
+                    new StraightTrunkPlacer(5, 6, 3),
+                    BlockStateProvider.of(ModBlocks.CHERRY_BLOSSOM_LEAVES),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+                    new TwoLayersFeatureSize(1, 0, 2)).build());
 
 
     public static final RegistryEntry<ConfiguredFeature<LakeFeature.Config, ?>> HONEY_OASIS =

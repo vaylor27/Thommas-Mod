@@ -1,6 +1,6 @@
 package net.vakror.thommas.entity.client.armor;
 
-import net.vakror.thommas.blockitem.custom.item.LeadArmorItem;
+import net.vakror.thommas.item.custom.LeadArmorItem;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class LeadArmorRenderer extends GeoArmorRenderer<LeadArmorItem> {

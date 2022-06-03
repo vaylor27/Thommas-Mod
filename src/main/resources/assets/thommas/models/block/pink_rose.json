@@ -1,6 +1,6 @@
 {
-   "parent": "block/cross",
-   "textures": {
-      "cross": "thommas:block/pink_rose"
-   }
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "thommas:block/pink_rose"
+  }
 }

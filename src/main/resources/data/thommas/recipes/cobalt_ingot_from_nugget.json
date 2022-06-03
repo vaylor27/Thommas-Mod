@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:cobalt_nugget"
+    }
+  },
+  "result": {
+    "item": "thommas:cobalt_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:cobalt_block"
+    }
+  },
+  "result": {
+    "item": "thommas:cobalt_ingot",
+    "count": 9
+  }
+}

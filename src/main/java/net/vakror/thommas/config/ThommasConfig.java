@@ -10,5 +10,4 @@ public class ThommasConfig implements ConfigData {
     public boolean mixTypes = false;
     public boolean isPlayerOnly = false;
     public boolean displayParticles = true;
-    public byte massacreMaxLevel = 10;
 }

@@ -7,19 +7,18 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.client.render.RenderLayer;
-import net.vakror.thommas.blockitem.ModBlocks;
-import net.vakror.thommas.blockitem.ModItems;
-import net.vakror.thommas.blockitem.block.fluid.ModFluids;
+import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.entity.ModEntities;
 import net.vakror.thommas.entity.client.RaccoonRenderer;
 import net.vakror.thommas.entity.client.RatRenderer;
+import net.vakror.thommas.entity.client.TigerRenderer;
 import net.vakror.thommas.entity.client.armor.LeadArmorRenderer;
 import net.vakror.thommas.entity.client.armor.MythrilArmorRenderer;
+import net.vakror.thommas.entity.client.armor.OrichalcumArmorRenderer;
 import net.vakror.thommas.entity.client.armor.RubyArmorRenderer;
-import net.vakror.thommas.screen.CombinerScreen;
-import net.vakror.thommas.screen.LightningChannelerScreen;
-import net.vakror.thommas.screen.ModScreenHandlers;
-import net.vakror.thommas.screen.MythrilBlasterScreen;
+import net.vakror.thommas.fluid.ModFluids;
+import net.vakror.thommas.item.ModItems;
+import net.vakror.thommas.screen.*;
 import net.vakror.thommas.util.ModModelPredicateProvider;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
@@ -76,6 +75,14 @@ public class ThommasClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_BLUEBELLS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SWEETPOD, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PLUMP_HELMET, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CHERRY_BLOSSOM_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CHERRY_BLOSSOM_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TURNIP_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_PINK_ROSE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ORICHALCUM_BLASTER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CHERRY_BLOSSOM_LEAVES, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CHERRY_BLOSSOM_SAPLING, RenderLayer.getCutout());
+
 
         ModModelPredicateProvider.registerModModels();
 
@@ -91,9 +98,14 @@ public class ThommasClientMod implements ClientModInitializer {
         ScreenRegistry.register(ModScreenHandlers.MYTHRIL_BLASTER_SCREEN_HANDLER, MythrilBlasterScreen::new);
         ScreenRegistry.register(ModScreenHandlers.LIGHTNING_CHANNELER_SCREEN_HANDLER, LightningChannelerScreen::new);
         ScreenRegistry.register(ModScreenHandlers.COMBINER_SCREEN_HANDLER, CombinerScreen::new);
+        ScreenRegistry.register(ModScreenHandlers.ORICHALCUM_BLASTER_SCREEN_HANDLER, OrichalcumBlasterScreen::new);
 
         EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
         EntityRendererRegistry.register(ModEntities.RAT, RatRenderer::new);
+        EntityRendererRegistry.register(ModEntities.TIGER, TigerRenderer::new);
+
+        GeoArmorRenderer.registerArmorRenderer(new OrichalcumArmorRenderer(), ModItems.ORICHALCUM_BOOTS,
+                ModItems.ORICHALCUM_LEGGINGS, ModItems.ORICHALCUM_CHESTPLATE, ModItems.ORICHALCUM_HELMET);
 
         GeoArmorRenderer.registerArmorRenderer(new MythrilArmorRenderer(), ModItems.MYTHRIL_BOOTS,
                 ModItems.MYTHRIL_LEGGINGS, ModItems.MYTHRIL_CHESTPLATE, ModItems.MYTHRIL_HELMET);

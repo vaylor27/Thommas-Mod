@@ -1,6 +1,6 @@
 package net.vakror.thommas.entity.client.armor;
 
-import net.vakror.thommas.blockitem.custom.item.RubyArmorItem;
+import net.vakror.thommas.item.custom.RubyArmorItem;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class RubyArmorRenderer extends GeoArmorRenderer<RubyArmorItem> {

@@ -2,9 +2,8 @@ package net.vakror.thommas.villager.trade;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
-import net.vakror.thommas.blockitem.ModItems;
+import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.villager.ModVillagers;
 
 public class BlastMasterTrades {

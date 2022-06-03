@@ -7,7 +7,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.custom.block.ElevatorBlock;
+import net.vakror.thommas.block.custom.ElevatorBlock;
 
 import java.util.regex.Pattern;
 

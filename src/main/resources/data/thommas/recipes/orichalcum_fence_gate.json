@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P#P",
+    "P#P"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:goldenwood_rod"
+    },
+    "P": {
+      "item": "thommas:orichalcum_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:orichalcum_fence_gate"
+  }
+}

@@ -11,10 +11,12 @@ public class ModStructures {
     public static StructureFeature<?> HOUSE = new HouseStructure();
     public static StructureFeature<?> ORE_ATTIC = new OreAttic();
     public static StructureFeature<?> ABANDONED_ORE_ATTIC = new AbandonedOreAttic();
+    public static StructureFeature<?> ORE_PLATFORM = new OrePlatform();
     public static void registerStructureFeatures() {
         StructureFeatureAccessor.callRegister(new Identifier(Thommas.MOD_ID, "sky_structures").toString(), SKY_STRUCTURES, GenerationStep.Feature.SURFACE_STRUCTURES);
         StructureFeatureAccessor.callRegister(new Identifier(Thommas.MOD_ID, "house").toString(), HOUSE, GenerationStep.Feature.SURFACE_STRUCTURES);
         StructureFeatureAccessor.callRegister(new Identifier(Thommas.MOD_ID, "ore_attic").toString(), ORE_ATTIC, GenerationStep.Feature.SURFACE_STRUCTURES);
         StructureFeatureAccessor.callRegister(new Identifier(Thommas.MOD_ID, "abandoned_ore_attic").toString(), ABANDONED_ORE_ATTIC, GenerationStep.Feature.SURFACE_STRUCTURES);
+        StructureFeatureAccessor.callRegister(new Identifier(Thommas.MOD_ID, "ore").toString(), ORE_PLATFORM, GenerationStep.Feature.SURFACE_STRUCTURES);
     }
 }

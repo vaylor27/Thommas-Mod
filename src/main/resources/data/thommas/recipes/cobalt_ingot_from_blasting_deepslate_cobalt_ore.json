@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "thommas:deepslate_cobalt_ore"
+  },
+  "result": "thommas:cobalt_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

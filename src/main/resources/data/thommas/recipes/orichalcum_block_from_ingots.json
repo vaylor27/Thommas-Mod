@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:orichalcum_ingots"
+    }
+  },
+  "result": {
+    "item": "thommas:orichalcum_block"
+  }
+}

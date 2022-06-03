@@ -2,7 +2,7 @@ package net.vakror.thommas.entity.client.armor;
 
 import net.minecraft.util.Identifier;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.custom.item.RubyArmorItem;
+import net.vakror.thommas.item.custom.RubyArmorItem;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 
 public class RubyArmorModel extends AnimatedGeoModel<RubyArmorItem> {

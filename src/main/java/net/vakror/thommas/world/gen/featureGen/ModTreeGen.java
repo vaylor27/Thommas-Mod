@@ -1,7 +1,7 @@
 package net.vakror.thommas.world.gen.featureGen;
 
 import net.minecraft.world.biome.Biome;
-import net.vakror.thommas.blockitem.ModBlocks;
+import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.util.Tree;
 import net.vakror.thommas.world.gen.ModConfiguredFeatures;
 
@@ -21,5 +21,7 @@ public class ModTreeGen {
         new Tree("cronetree", ModBlocks.CRONETREE_SAPLING, ModConfiguredFeatures.CRONETREE, Biome.Category.PLAINS,0,1, 6);
 
         new Tree("gloamblossom", ModBlocks.GLOAMBLOSSOM_SAPLING, ModConfiguredFeatures.GLOAMBLOSSOM, Biome.Category.PLAINS,8,0.01f, 6);
+
+        new Tree("cherry_blossom", ModBlocks.CHERRY_BLOSSOM_SAPLING, ModConfiguredFeatures.CHERRY_BLOSSOM_TREE, Biome.Category.PLAINS,8,0.01f, 6);
     }
 }

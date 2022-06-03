@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#I#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "thommas:orichalcum_ingot"
+    },
+    "I": {
+    "item": "thommas:magic_gem"
+  }
+  },
+  "result": {
+    "item": "thommas:orichalcum_lamp"
+  }
+}

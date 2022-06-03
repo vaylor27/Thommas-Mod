@@ -1,0 +1,6 @@
+{
+    "parent": "thommas:item/orichalcum_bow",
+    "textures": {
+        "layer0": "thommas:item/orichalcum_bow_pulling_1"
+    }
+}

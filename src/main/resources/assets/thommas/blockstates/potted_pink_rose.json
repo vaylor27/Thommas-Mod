@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "thommas:block/potted_pink_rose"
-    }
+    "": { "model": "thommas:block/potted_pink_rose" }
   }
 }

@@ -3,14 +3,14 @@ package net.vakror.thommas.villager;
 import com.google.common.collect.ImmutableSet;
 import net.fabricmc.fabric.mixin.object.builder.PointOfInterestTypeAccessor;
 import net.fabricmc.fabric.mixin.object.builder.VillagerProfessionAccessor;
-import net.vakror.thommas.Thommas;
-import net.vakror.thommas.blockitem.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.village.VillagerProfession;
 import net.minecraft.world.poi.PointOfInterestType;
+import net.vakror.thommas.Thommas;
+import net.vakror.thommas.block.ModBlocks;
 
 public class ModVillagers {
     public static final PointOfInterestType BLASTER_POI = registerPOI("blasterpoi", ModBlocks.MYTHRIL_BLASTER);

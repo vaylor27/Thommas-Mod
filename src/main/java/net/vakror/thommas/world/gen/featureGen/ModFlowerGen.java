@@ -1,7 +1,7 @@
 package net.vakror.thommas.world.gen.featureGen;
 
 import net.minecraft.world.biome.Biome;
-import net.vakror.thommas.blockitem.ModBlocks;
+import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.util.Flower;
 
 public class ModFlowerGen {

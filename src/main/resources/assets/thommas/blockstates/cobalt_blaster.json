@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "thommas:block/cobalt_blaster" },
+    "facing=east": { "model": "thommas:block/cobalt_blaster", "y": 90 },
+    "facing=south": { "model": "thommas:block/cobalt_blaster", "y": 180 },
+    "facing=west": { "model": "thommas:block/cobalt_blaster", "y": 270 }
+  }
+}

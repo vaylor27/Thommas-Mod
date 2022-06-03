@@ -26,6 +26,13 @@
     "thommas:bonetree_log",
     "thommas:goldenwood_log",
     "thommas:cronetree_log",
-    "thommas:gloamblossom_log"
+    "thommas:gloamblossom_log",
+    "thommas:cherry_blossom_door",
+    "thommas:cherry_blossom_leaves",
+    "thommas:cherry_blossom_log",
+    "thommas:cherry_blossom_planks",
+    "thommas:cherry_blossom_sapling",
+    "thommas:cherry_blossom_trapdoor",
+    "thommas:stripped_cherry_blossom_log"
   ]
 }

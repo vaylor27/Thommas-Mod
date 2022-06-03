@@ -1,7 +1,7 @@
 package net.vakror.thommas.world.gen.featureGen;
 
 import net.minecraft.block.Blocks;
-import net.vakror.thommas.blockitem.ModBlocks;
+import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.util.Ore;
 
 
@@ -78,6 +78,12 @@ public class ModOreGen {
         new Ore("stone_soul", Blocks.STONE, 8, 9);
         new Ore("stone_tin", Blocks.STONE, 8, 9, false);
         new Ore("terracotta_gold", Blocks.ORANGE_TERRACOTTA, 8, 9);
+        new Ore("orichalcum", ModBlocks.ORICHALCUM_ORE, Blocks.STONE, 8, 9);
+        new Ore("deepslate_orichalcum", ModBlocks.DEEPSLATE_ORICHALCUM_ORE, Blocks.DEEPSLATE, 8, 9);
+        new Ore("cobalt", ModBlocks.COBALT_ORE, Blocks.STONE, 8, 9);
+        new Ore("deepslate_cobalt", ModBlocks.DEEPSLATE_COBALT_ORE, Blocks.DEEPSLATE, 8, 9);
+        new Ore("netherrack_citrine", ModBlocks.NETHERRACK_CITRINE_ORE, Blocks.NETHERRACK, 12, 9);
+        new Ore("citrine", ModBlocks.CITRINE_ORE, Blocks.DEEPSLATE, 8, 9);
 
 
     }

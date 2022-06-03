@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:dust"
+    },
+    "X": {
+      "item": "thommas:magic_cobalt_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:magic_orichalcum_dust",
+    "count": 1
+  }
+}

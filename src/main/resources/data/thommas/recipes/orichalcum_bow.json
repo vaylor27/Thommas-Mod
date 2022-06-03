@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XIX",
+    "XXX"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:detranium_bow"
+    },
+    "X": {
+      "item": "thommas:orichalcum_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:orichalcum_bow"
+  }
+}

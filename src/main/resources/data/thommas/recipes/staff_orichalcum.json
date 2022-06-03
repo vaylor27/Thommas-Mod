@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XIX",
+    "XXX"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:staff"
+    },
+    "X": {
+      "item": "thommas:orichalcum_ingot"
+    }
+  },
+  "result": {
+    "item": "thommas:orichalcum_staff",
+    "count": 1
+  }
+}

@@ -83,7 +83,7 @@ public class ModOreGen {
         new Ore("cobalt", ModBlocks.COBALT_ORE, Blocks.STONE, 8, 9);
         new Ore("deepslate_cobalt", ModBlocks.DEEPSLATE_COBALT_ORE, Blocks.DEEPSLATE, 8, 9);
         new Ore("netherrack_citrine", ModBlocks.NETHERRACK_CITRINE_ORE, Blocks.NETHERRACK, 12, 9);
-        new Ore("citrine", ModBlocks.CITRINE_ORE, Blocks.DEEPSLATE, 8, 9);
+        new Ore("citrine", ModBlocks.CITRINE_ORE, Blocks.STONE, 8, 9);
 
 
     }

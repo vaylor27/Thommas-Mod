@@ -192,25 +192,7 @@ public class ModItems {
     public static final Item CHAINSAW = registerItem("chainsaw",
             new ModBleedAxe(ModToolMaterials.ADAMANTIUM,2, 23, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
 
-    public static final Item CHLOROPHYTE_DUST = registerItem("chlorophyte_dust",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
-
-    public static final Item CHLOROPHYTE_INGOT = registerItem("chlorophyte_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
-
-    public static final Item CHLOROPHYTE_NUGGET = registerItem("chlorophyte_nugget",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
-
     public static final Item COPPER_DUST = registerItem("copper_dust",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
-
-    public static final Item CRIMTANE_DUST = registerItem("crimtane_dust",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
-
-    public static final Item CRIMTANE_INGOT = registerItem("crimtane_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
-
-    public static final Item CRIMTANE_NUGGET = registerItem("crimtane_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item DEMONITE_DUST = registerItem("demonite_dust",

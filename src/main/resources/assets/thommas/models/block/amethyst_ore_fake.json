@@ -1,6 +1,6 @@
 {
    "parent": "block/cube_all",
    "textures": {
-      "all": "thommas:block/amethyst_ore_fake"
+      "all": "thommas:block/amethyst_ore"
    }
 }

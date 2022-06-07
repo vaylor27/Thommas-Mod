@@ -54,6 +54,9 @@ public class ModBlocks {
     public static final Block DETRANIUM_TRAPDOOR = registerBlock("detranium_trapdoor",
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool().nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
+    public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ORES);
+
     public static final Block SAFE_DETRANIUM_TRAPDOOR = registerBlock("safe_detranium_trapdoor",
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(4f).requiresTool().nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
@@ -186,22 +189,10 @@ public class ModBlocks {
     public static final Block BRONZE_BRICK = registerBlock("bronze_brick",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
-    public static final Block CHLOROPHYTE_BLOCK = registerBlock("chlorophyte_block",
-            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(1.0F)), ModItemGroup.BLOCKS);
-
-    public static final Block CHLOROPHYTE_BRICK = registerBlock("chlorophyte_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
-
     public static final Block COPPER_BLOCK = registerBlock("copper_block",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
 
     public static final Block COPPER_BRICK = registerBlock("copper_brick",
-            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
-
-    public static final Block CRIMTANE_BLOCK = registerBlock("crimtane_block",
-            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BLOCKS);
-
-    public static final Block CRIMTANE_BRICK = registerBlock("crimtane_brick",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block DEMONITE_BLOCK = registerBlock("demonite_block",

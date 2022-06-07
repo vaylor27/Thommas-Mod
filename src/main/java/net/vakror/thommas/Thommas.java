@@ -3,6 +3,7 @@ package net.vakror.thommas;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.util.Identifier;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.block.entity.ModBlockEntities;
 import net.vakror.thommas.config.ModConfigs;
@@ -38,8 +39,6 @@ public class Thommas implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-
-
 		AutoConfig.register(ThommasConfig.class, GsonConfigSerializer::new);
 		CONFIG = AutoConfig.getConfigHolder(ThommasConfig.class).getConfig();
 		ModConfigs.registerConfigs();
@@ -59,5 +58,10 @@ public class Thommas implements ModInitializer {
 		// check if riding
 
 		GeckoLib.initialize();
+	}
+
+
+	public static Identifier asResource(String path) {
+		return new Identifier(MOD_ID, path);
 	}
 }

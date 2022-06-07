@@ -33,15 +33,8 @@ import java.util.Arrays;
 
 
 public class Ore {
-    public Ore(String initName, Block replacesBlock, int veinsInChunk , int veinSize, boolean hasFake) {
-        register(initName + "_ore", replacesBlock, veinsInChunk, veinSize);
-        if (hasFake)
-            registerFake(initName + "_ore_fake", veinsInChunk, veinSize);
-    }
-
     public Ore(String initName, Block replacesBlock, int veinsInChunk , int veinSize) {
         register(initName + "_ore", replacesBlock, veinsInChunk, veinSize);
-        registerFake(initName + "_ore_fake", veinsInChunk, veinSize);
     }
 
     public Ore(String initName, Block block, Block replacesBlock, int veinsInChunk, int veinSize) {

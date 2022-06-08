@@ -3,7 +3,7 @@ package net.vakror.thommas.item.custom;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.text.LiteralText;
+import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
@@ -25,7 +25,7 @@ public class ChemicalReaderItem extends Item {
             int[] playerPos = player.getPersistentData().getIntArray("homepos");
             user.requestTeleport(playerPos[0], playerPos[1], playerPos[2]);
 
-            user.sendSystemMessage(new LiteralText(user.getName().asString() + " Returned Hone"), null);
+            user.sendMessage(Text.literal(user.getName().getString() + " Returned Hone"));
         }
         return super.use(world, user, hand);
     }

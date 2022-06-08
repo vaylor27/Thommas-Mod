@@ -12,7 +12,7 @@ public class RaccoonRenderer extends GeoEntityRenderer<RaccoonEntity> {
     }
 
     @Override
-    public Identifier getTextureLocation(RaccoonEntity instance) {
+    public Identifier getTextureResource(RaccoonEntity instance) {
         return new Identifier(Thommas.MOD_ID, "textures/entity/raccoon/raccoon.png");
     }
 }

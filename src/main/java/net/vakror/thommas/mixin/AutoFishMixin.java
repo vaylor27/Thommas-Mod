@@ -24,7 +24,7 @@ public class AutoFishMixin {
         MinecraftClient client = MinecraftClient.getInstance();
 
         if (caughtFish && Thommas.autofish) {
-            client.interactionManager.interactItem(client.player, client.world, Hand.MAIN_HAND);
+            client.interactionManager.interactItem(client.player, Hand.MAIN_HAND);
         }
 
     }

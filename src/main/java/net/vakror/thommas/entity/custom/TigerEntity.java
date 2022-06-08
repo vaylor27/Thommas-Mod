@@ -186,12 +186,6 @@ public class TigerEntity extends TameableEntity implements Mount, IAnimatable {
         this.dataTracker.startTracking(SITTING, false);
     }
 
-    /* RIDEABLE */
-    @Override
-    public boolean canBeControlledByRider() {
-        return this.getPrimaryPassenger() instanceof LivingEntity;
-    }
-
     @Override
     @Nullable
     public Entity getPrimaryPassenger() {
@@ -204,7 +198,7 @@ public class TigerEntity extends TameableEntity implements Mount, IAnimatable {
             return;
         }
 
-        if (!(this.hasPassengers() && this.canBeControlledByRider())) {
+        if (!(this.hasPassengers() && this.getPrimaryPassenger().isAlive())) {
             this.airStrafingSpeed = 0.02f;
             super.travel(movementInput);
             return;

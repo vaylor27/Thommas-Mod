@@ -9,11 +9,10 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.vakror.thommas.item.ModItems;
-
-import java.util.Random;
 
 public class PlumpHelmetBlock extends CropBlock {
     public PlumpHelmetBlock(Settings settings) {

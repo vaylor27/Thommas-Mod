@@ -12,7 +12,7 @@ public class RatRenderer extends GeoEntityRenderer<RatEntity> {
     }
 
     @Override
-    public Identifier getTextureLocation(RatEntity instance) {
+    public Identifier getTextureResource(RatEntity instance) {
         return new Identifier(Thommas.MOD_ID, "textures/entity/rat/rat.png");
     }
 }

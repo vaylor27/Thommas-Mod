@@ -1,6 +1,6 @@
 package net.vakror.thommas.util;
 
-import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -50,10 +50,10 @@ public class ModRegistries {
     }
 
     public static void registerCommands() {
-        CommandRegistrationCallback.EVENT.register(SetHome::register);
-        CommandRegistrationCallback.EVENT.register(ReturnHome::register);
-        CommandRegistrationCallback.EVENT.register(SetSecondaryHome::register);
-        CommandRegistrationCallback.EVENT.register(ReturnSecondaryHome::register);
+        CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {SetHome.register(dispatcher);}));
+        CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {ReturnHome.register(dispatcher);}));
+        CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {SetSecondaryHome.register(dispatcher);}));
+        CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {ReturnSecondaryHome.register(dispatcher);}));
     }
     
     public static void registerAttributes() {

@@ -3,7 +3,6 @@ package net.vakror.thommas.mixin;
 import net.minecraft.client.gui.screen.GameMenuScreen;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.vakror.thommas.config.ModConfigs;
 import net.vakror.thommas.screen.ThommasScreen;
@@ -21,7 +20,7 @@ public abstract class PauseButtonMixin extends Screen {
     @Inject(at = @At("HEAD"), method = "initWidgets")
     private void initWidgets(CallbackInfo ci) {
         if (ModConfigs.hacks) {
-            this.addDrawableChild(new ButtonWidget(10, 20, 90, 20, new LiteralText("Thommas"), button -> {
+            this.addDrawableChild(new ButtonWidget(10, 20, 90, 20, Text.literal("Thommas"), button -> {
 
                 this.client.setScreen(new ThommasScreen(this, this.client.options));
             }));

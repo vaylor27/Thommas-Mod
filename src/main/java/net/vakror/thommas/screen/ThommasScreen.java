@@ -1,44 +1,28 @@
 package net.vakror.thommas.screen;
 
-import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.screen.ScreenTexts;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.option.GameOptions;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.PlayerAbilities;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.LiteralText;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.world.GameMode;
+import net.minecraft.screen.ScreenTexts;
+import net.minecraft.text.Text;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.config.ModConfigs;
-
-import java.util.Objects;
-import java.util.UUID;
 
 public class ThommasScreen extends Screen {
     private final Screen parent;
     private final GameOptions settings;
 
     public ThommasScreen(Screen parent, GameOptions gameOptions) {
-        super(new LiteralText("Thommas Mod"));
+        super(Text.literal("Thommas Mod"));
         this.parent = parent;
         this.settings = gameOptions;
     }
 
-    LiteralText fishText() {
+    Text fishText() {
         if (Thommas.autofish)
-            return new LiteralText("Autofish is Enabled");
+            return Text.literal("Autofish is Enabled");
         else
-            return new LiteralText("Autofish is Disabled");
-    }
-    LiteralText flyText() {
-        if (Thommas.flyhack)
-            return new LiteralText("Creative");
-        else
-            return new LiteralText("Not Creative");
+            return Text.literal("Autofish is Disabled");
     }
 
     protected void init() {

@@ -7,17 +7,17 @@ import software.bernie.geckolib3.model.AnimatedGeoModel;
 
 public class LeadArmorModel extends AnimatedGeoModel<LeadArmorItem> {
     @Override
-    public Identifier getModelLocation(LeadArmorItem object) {
+    public Identifier getModelResource(LeadArmorItem object) {
         return new Identifier(Thommas.MOD_ID, "geo/lead_armor.geo.json");
     }
 
     @Override
-    public Identifier getTextureLocation(LeadArmorItem object) {
+    public Identifier getTextureResource(LeadArmorItem object) {
         return new Identifier(Thommas.MOD_ID, "textures/models/armor/lead_armor.png");
     }
 
     @Override
-    public Identifier getAnimationFileLocation(LeadArmorItem animatable) {
+    public Identifier getAnimationResource(LeadArmorItem animatable) {
         return new Identifier(Thommas.MOD_ID, "animations/armor_animation.json");
     }
 }

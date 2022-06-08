@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.block.Block;
 import net.minecraft.util.registry.RegistryEntry;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
@@ -13,10 +12,10 @@ import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 
 public class Flower {
-    public Flower(String name, Block flower, int triesPerChunk, int rarityFilterPlacementModifier, Biome.Category biome) {
+    public Flower(String name, Block flower, int triesPerChunk, int rarityFilterPlacementModifier) {
         registerConfiguredFeature(name, flower, triesPerChunk);
         registerPlacedFeature(name, rarityFilterPlacementModifier);
-        generateFlower(biome);
+        generateFlower();
     }
 
     private static RegistryEntry<ConfiguredFeature<RandomPatchFeatureConfig, ?>> FLOWER;
@@ -34,8 +33,8 @@ public class Flower {
                 PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
     }
 
-    private static void generateFlower(Biome.Category biome) {
-        BiomeModifications.addFeature(BiomeSelectors.categories(biome),
+    private static void generateFlower() {
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
                 GenerationStep.Feature.VEGETAL_DECORATION, FLOWER_PLACED.getKey().get());
     }
 }

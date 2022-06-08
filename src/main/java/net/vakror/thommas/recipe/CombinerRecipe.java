@@ -11,8 +11,6 @@ import net.minecraft.util.JsonHelper;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.world.World;
 
-import java.util.Objects;
-
 public class CombinerRecipe implements Recipe<SimpleInventory> {
 
     private final Identifier id;
@@ -111,7 +109,7 @@ public class CombinerRecipe implements Recipe<SimpleInventory> {
             for (Ingredient ing : recipe.getIngredients()) {
                 ing.write(buf);
             }
-            buf.writeItemStack(recipe.getOutput());;
+            buf.writeItemStack(recipe.getOutput());
         }
     }
 }

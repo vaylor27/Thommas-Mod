@@ -65,6 +65,7 @@ public class ModOreGen {
         new Ore("stone_silver", Blocks.STONE, 8, 9);
         new Ore("stone_soul", Blocks.STONE, 8, 9);
         new Ore("stone_tin", Blocks.STONE, 8, 9);
+        new Ore("stone_zinc", Blocks.STONE, 8, 9);
         new Ore("terracotta_gold", Blocks.ORANGE_TERRACOTTA, 8, 9);
         new Ore("orichalcum", ModBlocks.ORICHALCUM_ORE, Blocks.STONE, 8, 9);
         new Ore("deepslate_orichalcum", ModBlocks.DEEPSLATE_ORICHALCUM_ORE, Blocks.DEEPSLATE, 8, 9);

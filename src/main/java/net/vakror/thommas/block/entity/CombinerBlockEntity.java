@@ -11,7 +11,6 @@ import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
@@ -59,7 +58,7 @@ public class CombinerBlockEntity extends BlockEntity implements NamedScreenHandl
 
     @Override
     public Text getDisplayName() {
-        return new LiteralText("Combiner");
+        return Text.literal("Combiner");
     }
 
     @Nullable

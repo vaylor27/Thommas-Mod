@@ -1,19 +1,32 @@
 {
-  "type": "minecraft:village",
 
-  "config": {
-    "start_pool": "thommas:run_down_house/start_pool",
+  "type": "minecraft:jigsaw",
 
-    "size": 2
-  },
+
+  "start_pool": "thommas:run_down_house/start_pool",
+
+
+  "size": 2,
+
+  "max_distance_from_center": 80,
 
   "biomes": "#thommas:has_structure/json_only_house_biomes",
 
-  "adapt_noise": true,
+  "step": "surface_structures",
+
+
+  "start_height": {
+    "absolute": 1
+  },
+
+
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+
+  "use_expansion_hack": false,
 
   "spawn_overrides": {
     "monster": {
-      "bounding_box": "piece",
+      "bounding_box": "full",
       "spawns": [
         {
           "type": "minecraft:illusioner",

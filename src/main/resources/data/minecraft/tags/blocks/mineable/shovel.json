@@ -1,9 +1,6 @@
 {
   "replace": false,
   "values": [
-    "thommas:chlorophyte_ore",
-    "thommas:dirt_lignite_ore",
-    "thommas:dirt_metal_ore",
     "thommas:red_sand_lignite_ore",
     "thommas:sand_lignite_ore",
     "thommas:sand_oil_ore",

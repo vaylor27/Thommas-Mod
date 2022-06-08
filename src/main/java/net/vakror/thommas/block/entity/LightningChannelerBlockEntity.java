@@ -14,7 +14,6 @@ import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
@@ -62,7 +61,7 @@ public class LightningChannelerBlockEntity extends BlockEntity implements NamedS
 
     @Override
     public Text getDisplayName() {
-        return new LiteralText("Lightning Channeler");
+        return Text.literal("Lightning Channeler");
     }
 
     @Nullable

@@ -1,17 +1,28 @@
 {
-  "type": "thommas:house",
 
-  "config": {
-    "start_pool": "thommas:house",
+  "type": "thommas:sky_structures",
 
-    "size": 1
+
+  "start_pool": "thommas:sky_fan",
+
+
+  "size": 1,
+
+
+  "max_distance_from_center": 80,
+
+  "biomes": "#thommas:has_structure/code_structure_sky_fan_biomes",
+
+
+  "step": "surface_structures",
+
+  "start_height": {
+    "absolute": 67
   },
 
-  "biomes": "#thommas:has_structure/json_only_house_biomes",
+   "project_start_to_heightmap": "WORLD_SURFACE_WG",
 
-  "adapt_noise": false,
-
-  "spawn_overrides": {
+   "spawn_overrides": {
     "monster": {
       "bounding_box": "piece",
       "spawns": [
@@ -26,12 +37,6 @@
           "weight": 1,
           "minCount": 1,
           "maxCount": 1
-        },
-        {
-          "type": "minecraft:illusioner",
-          "weight": 1,
-          "minCount": 3,
-          "maxCount": 5
         }
       ]
     }

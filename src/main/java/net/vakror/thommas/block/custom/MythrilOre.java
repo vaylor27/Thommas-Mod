@@ -8,8 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
-
-import java.util.Random;
+import net.minecraft.util.math.random.Random;
 
 public class MythrilOre extends Block {
     public MythrilOre(Settings settings) {
@@ -21,8 +20,8 @@ public class MythrilOre extends Block {
     }
 
     @Override
-    public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack stack) {
-        super.onStacksDropped(state, world, pos, stack);
+    public void onStacksDropped(BlockState state, ServerWorld world, BlockPos pos, ItemStack stack, boolean dropExperience) {
+        super.onStacksDropped(state, world, pos, stack, dropExperience);
         if (EnchantmentHelper.getLevel(Enchantments.SILK_TOUCH, stack) == 0) {
             int experienceWhenMined = this.getExperienceWhenMined(world.random);
             if (experienceWhenMined > 0) {

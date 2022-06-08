@@ -10,12 +10,11 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.vakror.thommas.item.ModItems;
-
-import java.util.Random;
 
 public class ModTurnipBlock extends CropBlock {
     public static final IntProperty AGE = Properties.AGE_3;
@@ -50,7 +49,6 @@ public class ModTurnipBlock extends CropBlock {
         if (random.nextInt(3) != 0) {
             super.randomTick(state, world, pos, random);
         }
-
     }
 
     @Override

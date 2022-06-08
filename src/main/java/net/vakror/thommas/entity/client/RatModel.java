@@ -10,17 +10,17 @@ import software.bernie.geckolib3.model.provider.data.EntityModelData;
 
 public class RatModel extends AnimatedGeoModel<RatEntity> {
     @Override
-    public Identifier getModelLocation(RatEntity object) {
+    public Identifier getModelResource(RatEntity object) {
         return new Identifier(Thommas.MOD_ID, "geo/rat.geo.json");
     }
 
     @Override
-    public Identifier getTextureLocation(RatEntity object) {
+    public Identifier getTextureResource(RatEntity object) {
         return new Identifier(Thommas.MOD_ID, "textures/entity/rat/rat.png");
     }
 
     @Override
-    public Identifier getAnimationFileLocation(RatEntity animatable) {
+    public Identifier getAnimationResource(RatEntity animatable) {
         return new Identifier(Thommas.MOD_ID, "animations/rat.animation.json");
     }
 

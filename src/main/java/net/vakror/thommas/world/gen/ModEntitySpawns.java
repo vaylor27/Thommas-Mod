@@ -7,11 +7,12 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.entity.SpawnRestriction;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.world.Heightmap;
+import net.minecraft.world.biome.BiomeKeys;
 import net.vakror.thommas.entity.ModEntities;
 
 public class ModEntitySpawns {
     public static void addEntitySpawns() {
-        BiomeModifications.addSpawn(BiomeSelectors.foundInOverworld(),
+        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
                 SpawnGroup.CREATURE, ModEntities.RACCOON, 10, 2, 7);
 
         SpawnRestrictionAccessor.callRegister(ModEntities.RACCOON, SpawnRestriction.Location.ON_GROUND,

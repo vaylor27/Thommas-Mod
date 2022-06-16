@@ -25,6 +25,7 @@
   "license": "MIT",
   "icon": "assets/thommas/Icon.png",
 
+  "accessWidener": "thommas.accesswidener",
 
   "environment": "*",
   "entrypoints": {

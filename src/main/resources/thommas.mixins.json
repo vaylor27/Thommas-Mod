@@ -13,7 +13,8 @@
     "ModEntityDataSaverTwo",
     "PauseButtonMixin",
     "SignTypeAccessor",
-    "SlimeEntityMixin"
+    "SlimeEntityMixin",
+    "VillagerProfessionMixin"
   ],
   "client": [
     "AutoFishMixin",

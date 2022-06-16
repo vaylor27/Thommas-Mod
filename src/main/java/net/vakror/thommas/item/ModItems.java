@@ -52,16 +52,16 @@ public class ModItems {
             new ShovelItem(ModToolMaterials.MYTHRIL, 1, 1,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MYTHRIL_HELMET = registerItem("mythril_helmet",
-            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD,new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new MythrilArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.HEAD,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MYTHRIL_BOOTS = registerItem("mythril_boots",
-            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.FEET,new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new MythrilArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.FEET,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MYTHRIL_CHESTPLATE = registerItem("mythril_chestplate",
-            new ModMythrilArmor(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new MythrilArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.CHEST,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item MYTHRIL_LEGGINGS = registerItem("mythril_leggings",
-            new ArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS,new FabricItemSettings().group(ModItemGroup.TOOLS)));
+            new MythrilArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item DUST = registerItem("dust",
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
@@ -105,6 +105,7 @@ public class ModItems {
     public static final Item RUBY_SWORD = registerItem("ruby_sword",
             new ModBleedSword(ModToolMaterials.RUBY, 3, 1f,
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
+
     public static final Item RUBY_SHOVEL = registerItem("ruby_shovel",
             new ShovelItem(ModToolMaterials.RUBY, 0, 1f,
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
@@ -122,19 +123,19 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
-            new ModRubyArmor(ModArmorMaterials.RUBY, EquipmentSlot.HEAD,
+            new RubyArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
-            new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.CHEST,
+            new RubyArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings",
-            new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.LEGS,
+            new RubyArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item RUBY_BOOTS = registerItem("ruby_boots",
-            new ArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.FEET,
+            new RubyArmorItem(ModArmorMaterials.RUBY, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item RUBY_HORSE_ARMOR = registerItem("ruby_horse_armor",
@@ -1552,6 +1553,17 @@ public class ModItems {
     public static final Item POUCH = registerItem("pouch",
             new BundleItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
 
+    public static final Item RAW_TANZANITE = registerItem("raw_tanzanite",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static final Item TANZANITE = registerItem("tanzanite",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+    
+    public static final Item ZIRCON = registerItem("zircon",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static final Item RAW_ZIRCON = registerItem("raw_zircon",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

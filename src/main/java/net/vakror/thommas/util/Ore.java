@@ -26,8 +26,8 @@ import net.minecraft.world.gen.placementmodifier.CountPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.block.custom.FakeOreBlock;
 import net.vakror.thommas.item.ModItemGroup;
+import net.vakror.thommas.world.biome.ModBiomes;
 
 import java.util.Arrays;
 
@@ -74,7 +74,7 @@ public class Ore {
                             new Identifier(Thommas.MOD_ID, name)));
         }
         if (name.contains("end")) {
-            BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
+            BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.MIDLANDS_FOREST, ModBiomes.HIGHLANDS_FOREST, ModBiomes.BARRENS_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
                     RegistryKey.of(Registry.PLACED_FEATURE_KEY,
                             new Identifier(Thommas.MOD_ID, name)));
         }
@@ -97,16 +97,9 @@ public class Ore {
     private static Block BLOCK;
 
     private static void register(String name, Block replacedBlock, int veinsInChunk , int veinSize) {
-        BLOCK = registerBlock(name, new OreBlock(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool(), UniformIntProvider.create(9, 27)));
+        BLOCK = registerBlock(name, new OreBlock(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool(), UniformIntProvider.create(17, 38)));
         configuredFeature(name, replacedBlock, veinSize, BLOCK);
         placedFeature(name, veinsInChunk);
-    }
-
-
-    private static void registerFake(String name, int veinsInChunk , int veinSize) {
-        Block FAKEBLOCK = registerBlock(name, new FakeOreBlock(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool()));
-        configuredFeature(name, BLOCK, veinSize, FAKEBLOCK);
-        placedFeature(name, 50);
     }
 
     private static Item registerBlockItem(String name, Block block) {

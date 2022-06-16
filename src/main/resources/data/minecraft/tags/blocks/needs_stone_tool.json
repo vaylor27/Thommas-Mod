@@ -198,6 +198,16 @@
     "thommas:terracotta_gold_ore",
     "thommas:slade_normal",
     "thommas:slade_column",
-    "thommas:salt_ore"
+    "thommas:salt_ore",
+    "thommas:tanzanite_block",
+    "thommas:tanzanite_ore",
+    "thommas:deepslate_tanzanite_ore",
+    "thommas:endstone_tanzanite_ore",
+    "thommas:netherrack_tanzanite_ore",
+    "thommas:zircon_ore",
+    "thommas:zircon_block",
+    "thommas:deepslate_zircon_ore",
+    "thommas:endstone_zircon_ore",
+    "thommas:netherrack_zircon_ore"
   ]
 }

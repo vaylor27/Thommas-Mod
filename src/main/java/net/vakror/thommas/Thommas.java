@@ -3,8 +3,6 @@ package net.vakror.thommas;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.block.entity.ModBlockEntities;
 import net.vakror.thommas.config.ModConfigs;
@@ -18,7 +16,7 @@ import net.vakror.thommas.recipe.ModRecipes;
 import net.vakror.thommas.screen.ModScreenHandlers;
 import net.vakror.thommas.util.ModLootTableModifiers;
 import net.vakror.thommas.util.ModRegistries;
-import net.vakror.thommas.villager.PointsOfInterest;
+import net.vakror.thommas.world.biome.ModBiomes;
 import net.vakror.thommas.world.dimensions.dimension.ModDimensions;
 import net.vakror.thommas.world.gen.ModWorldGen;
 import net.vakror.thommas.world.structure.ModStructures;
@@ -44,6 +42,7 @@ public class Thommas implements ModInitializer {
 		CONFIG = AutoConfig.getConfigHolder(ThommasConfig.class).getConfig();
 		ModConfigs.registerConfigs();
 		ModRegistries.registerModStuffs();
+		ModBiomes.registerBiomes();
 		ModWorldGen.generateModWorldGen();
 		ModDimensions.register();
 		ModPaintings.registerPaintings();
@@ -52,17 +51,11 @@ public class Thommas implements ModInitializer {
 		ModBlockEntities.registerAllBlockEntities();
 		ModRecipes.registerRecipes();
 		ModScreenHandlers.registerAllScreenHandlers();
-		PointsOfInterest.registerPois(Registry.POINT_OF_INTEREST_TYPE);
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
 		ModStructures.registerStructureFeatures();
 		// check if riding
 
 		GeckoLib.initialize();
-	}
-
-
-	public static Identifier asResource(String path) {
-		return new Identifier(MOD_ID, path);
 	}
 }

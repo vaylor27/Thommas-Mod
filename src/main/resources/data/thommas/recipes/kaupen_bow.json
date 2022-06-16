@@ -10,7 +10,7 @@
       "item": "thommas:iron_wool"
     },
     "P": {
-      "item": "thommas:goldenwood_rod"
+      "tag": "c:sticks"
     },
     "I": {
       "item": "thommas:magic_gem"

@@ -75,6 +75,9 @@ public class ModTags {
         public static final TagKey<Item> ORICHALCUM_NUGGETS =
                 createCommonTag("orichalcum_nuggets");
 
+        public static final TagKey<Item> STICKS =
+                createCommonTag("sticks");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier(Thommas.MOD_ID, name));
         }

@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
+import net.vakror.thommas.world.biome.ModBiomes;
 
 import java.util.List;
 
@@ -28,7 +29,7 @@ public class Tree {
                 TREE_SPAWN, VegetationPlacedFeatures.modifiers(
                         PlacedFeatures.createCountExtraModifier(countPerChunk, extraChance, extraCount)));
 
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.BARRENS_FOREST, ModBiomes.HIGHLANDS_FOREST, ModBiomes.MIDLANDS_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, TREE_PLACED.getKey().get());
     }
 }

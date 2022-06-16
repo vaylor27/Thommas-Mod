@@ -7,9 +7,9 @@ import net.vakror.thommas.util.Ore;
 
 public class ModOreGen {
     public static void generateOres() {
-        new Ore("slade_deepslate",ModBlocks.SLADE_NORMAL, Blocks.DEEPSLATE, 2, 50);
-        new Ore("slade_stone", ModBlocks.SLADE_NORMAL, Blocks.STONE, 2, 50);
-        new Ore("netherrack_mythril", Blocks.NETHERRACK, 2, 26);
+        new Ore("slade_deepslate",ModBlocks.SLADE_NORMAL, Blocks.DEEPSLATE, 5, 50);
+        new Ore("slade_stone", ModBlocks.SLADE_NORMAL, Blocks.STONE, 8, 50);
+        new Ore("netherrack_mythril", Blocks.NETHERRACK, 8, 26);
         new Ore("deepslate_mythril", Blocks.DEEPSLATE, 9, 4);
         new Ore("mythril", Blocks.STONE, 8, 9);
         new Ore("ruby", Blocks.STONE, 9, 4);
@@ -73,7 +73,13 @@ public class ModOreGen {
         new Ore("deepslate_cobalt", ModBlocks.DEEPSLATE_COBALT_ORE, Blocks.DEEPSLATE, 8, 9);
         new Ore("netherrack_citrine", ModBlocks.NETHERRACK_CITRINE_ORE, Blocks.NETHERRACK, 12, 9);
         new Ore("citrine", ModBlocks.CITRINE_ORE, Blocks.STONE, 8, 9);
-
-
+        new Ore("tanzanite", ModBlocks.TANZANITE_ORE, Blocks.STONE, 12, 9);
+        new Ore("deepslate_tanzanite", ModBlocks.DEEPSLATE_TANZANITE_ORE, Blocks.DEEPSLATE, 14, 9);
+        new Ore("endstone_tanzanite", ModBlocks.ENDSTONE_TANZANITE_ORE, Blocks.END_STONE, 27, 9);
+        new Ore("netherrack_tanzanite", ModBlocks.NETHERRACK_TANZANITE_ORE, Blocks.NETHERRACK, 17, 9);
+        new Ore("zircon", ModBlocks.ZIRCON_ORE, Blocks.STONE, 12, 9);
+        new Ore("deepslate_zircon", ModBlocks.DEEPSLATE_ZIRCON_ORE, Blocks.DEEPSLATE, 14, 9);
+        new Ore("endstone_zircon", ModBlocks.ENDSTONE_ZIRCON_ORE, Blocks.END_STONE, 27, 9);
+        new Ore("netherrack_zircon", ModBlocks.NETHERRACK_ZIRCON_ORE, Blocks.NETHERRACK, 17, 9);
     }
 }

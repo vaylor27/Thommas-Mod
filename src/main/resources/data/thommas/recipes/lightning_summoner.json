@@ -10,7 +10,7 @@
       "item": "minecraft:stone"
     },
     "P": {
-      "item": "thommas:goldenwood_rod"
+      "tag": "c:sticks"
     },
     "X":{
       "item": "thommas:philosopher_stone"

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "thommas:block/safe_kaupen_door_bottom",
+    "top": "thommas:block/safe_kaupen_door_top"
+  }
+}

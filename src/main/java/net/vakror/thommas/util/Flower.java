@@ -10,6 +10,7 @@ import net.minecraft.world.gen.placementmodifier.BiomePlacementModifier;
 import net.minecraft.world.gen.placementmodifier.RarityFilterPlacementModifier;
 import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.vakror.thommas.world.biome.ModBiomes;
 
 public class Flower {
     public Flower(String name, Block flower, int triesPerChunk, int rarityFilterPlacementModifier) {
@@ -34,7 +35,7 @@ public class Flower {
     }
 
     private static void generateFlower() {
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.HIGHLANDS_FOREST, ModBiomes.BARRENS_FOREST, ModBiomes.MIDLANDS_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, FLOWER_PLACED.getKey().get());
     }
 }

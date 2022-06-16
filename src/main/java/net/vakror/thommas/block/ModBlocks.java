@@ -55,7 +55,7 @@ public class ModBlocks {
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool().nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()), ModItemGroup.ORES);
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(), UniformIntProvider.create(8,63)), ModItemGroup.ORES);
 
     public static final Block SAFE_DETRANIUM_TRAPDOOR = registerBlock("safe_detranium_trapdoor",
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(4f).requiresTool().nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
@@ -64,7 +64,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool()), ModItemGroup.BLOCKS);
 
     public static final Block CORRUPTED_FLOWER = registerBlock("corrupted_flower",
-            new FlowerBlock(StatusEffects.FIRE_RESISTANCE, 12, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
+            new ModFlowerBlock(StatusEffects.FIRE_RESISTANCE, 12, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block KAUPEN_DOOR = registerBlock("kaupen_door",
             new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
@@ -509,11 +509,11 @@ public class ModBlocks {
 
     public static final Block JACARANDA_SAPLING = registerBlock("jacaranda_sapling",
             new ModSaplingBlock(new JacarandaSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
 
     public static final Block REDWOOD_SAPLING = registerBlock("redwood_sapling",
             new ModSaplingBlock(new RedwoodSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
 
     public static final Block MYTHRIL_BLASTER = registerBlock("mythril_blaster",
             new MythrilBlasterBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.0f).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
@@ -537,7 +537,7 @@ public class ModBlocks {
             new LightningChannelerBlock(FabricBlockSettings.of(Material.METAL).strength(3.0f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block ORCHID = registerBlock("orchid",
-            new FlowerBlock(StatusEffects.WITHER, 200, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
+            new ModFlowerBlock(StatusEffects.WITHER, 200, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block POTTED_ORCHID = registerBlockWithoutBlockItem("potted_orchid",
             new FlowerPotBlock(ModBlocks.ORCHID, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
@@ -594,7 +594,7 @@ public class ModBlocks {
             new ModStairsBlock(ModBlocks.SMOOTH_AMETHYST_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.METAL).requiresTool().strength(6f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block HYACINTH = registerBlock("hyacinth",
-            new FlowerBlock(StatusEffects.BAD_OMEN, 200, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
+            new ModFlowerBlock(StatusEffects.BAD_OMEN, 200, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block POTTED_HYACINTH = registerBlockWithoutBlockItem("potted_hyacinth",
             new FlowerPotBlock(ModBlocks.HYACINTH, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
@@ -630,7 +630,7 @@ public class ModBlocks {
             new CucumberPlant(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque().noCollision()));
 
     public static final Block DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(6.0f)), ModItemGroup.ORES);
+            new OreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(6.0f), UniformIntProvider.create(23,28)), ModItemGroup.ORES);
 
     public static final Block EBONY_TRAPDOOR = registerBlock("ebony_trapdoor",
             new ModTrapdoorBlock(FabricBlockSettings.copy(Blocks.IRON_TRAPDOOR)), ModItemGroup.SPECIAL_BLOCKS);
@@ -657,10 +657,10 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.NATURE);
 
     public static final Block NETHERRACK_CITRINE_ORE = registerBlock("netherrack_citrine_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(2.0f).requiresTool()), ModItemGroup.ORES);
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f).requiresTool(), UniformIntProvider.create(16, 23)), ModItemGroup.ORES);
 
     public static final Block PINK_ROSE = registerBlock("pink_rose",
-            new FlowerBlock(StatusEffects.ABSORPTION, 200, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
+            new ModFlowerBlock(StatusEffects.ABSORPTION, 200, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block POTTED_PINK_ROSE = registerBlockWithoutBlockItem("potted_pink_rose",
             new FlowerPotBlock(ModBlocks.PINK_ROSE, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
@@ -669,10 +669,10 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(5.1f).requiresTool()), ModItemGroup.BLOCKS);
 
     public static final Block CITRINE_ORE = registerBlock("citrine_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.0f)), ModItemGroup.ORES);
+            new OreBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.0f), UniformIntProvider.create(17, 26)), ModItemGroup.ORES);
 
     public static final Block EBONY_SAPLING = registerBlock("ebony_sapling",
-            new ModSaplingBlock(new EbonySaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+            new ModSaplingBlock(new EbonySaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
 
     public static final Block BLIGHTSPORE = registerBlockWithoutBlockItem("blightspore",
             new BlightSpore(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
@@ -705,7 +705,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block BONETREE_SAPLING = registerBlock("bonetree_sapling",
-            new ModSaplingBlock(new BoneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+            new ModSaplingBlock(new BoneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
 
     public static final Block GOLDENWOOD_LOG = registerBlock("goldenwood_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
@@ -714,7 +714,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block GOLDENWOOD_SAPLING = registerBlock("goldenwood_sapling",
-            new ModSaplingBlock(new GoldenWoodSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+            new ModSaplingBlock(new GoldenWoodSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
 
     public static final Block CRONETREE_LOG = registerBlock("cronetree_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
@@ -723,7 +723,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block CRONETREE_SAPLING = registerBlock("cronetree_sapling",
-            new ModSaplingBlock(new CroneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+            new ModSaplingBlock(new CroneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
 
     public static final Block GLOAMBLOSSOM_LOG = registerBlock("gloamblossom_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
@@ -732,10 +732,10 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block GLOAMBLOSSOM_SAPLING = registerBlock("gloamblossom_sapling",
-            new ModSaplingBlock(new GloamBlossomSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque()), ModItemGroup.NATURE);
+            new ModSaplingBlock(new GloamBlossomSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
 
     public static final Block BLUEBELLS = registerBlock("bluebells",
-            new FlowerBlock(StatusEffects.ABSORPTION, 2000, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
+            new ModFlowerBlock(StatusEffects.ABSORPTION, 2000, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block POTTED_BLUEBELLS = registerBlockWithoutBlockItem("potted_bluebells",
             new FlowerPotBlock(ModBlocks.BLUEBELLS, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
@@ -763,10 +763,10 @@ public class ModBlocks {
 
     public static final Block ORICHALCUM_ORE = registerBlock("orichalcum_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool(),
-                    UniformIntProvider.create(3, 7)), ModItemGroup.ORES);
+                    UniformIntProvider.create(14, 26)), ModItemGroup.ORES);
 
     public static final Block DEEPSLATE_ORICHALCUM_ORE = registerBlock("deepslate_orichalcum_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()), ModItemGroup.ORES);
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(16, 37)), ModItemGroup.ORES);
 
     public static final Block RAW_ORICHALCUM_BLOCK = registerBlock("raw_orichalcum_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()), ModItemGroup.BLOCKS);
@@ -837,7 +837,7 @@ public class ModBlocks {
 
     public static final Block CHERRY_BLOSSOM_SAPLING = registerBlock("cherry_blossom_sapling",
             new ModSaplingBlock(new CherryBlossomSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroup.NATURE);
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING), () -> Blocks.END_STONE), ModItemGroup.NATURE);
 
     public static final Block COBALT_BLOCK = registerBlock("cobalt_block",
             new Block(FabricBlockSettings.of(Material.METAL)
@@ -845,15 +845,15 @@ public class ModBlocks {
 
     public static final Block COBALT_ORE = registerBlock("cobalt_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE)
-                    .strength(4f).requiresTool(), UniformIntProvider.create(3, 7)), ModItemGroup.ORES);
+                    .strength(4f).requiresTool(), UniformIntProvider.create(13, 27)), ModItemGroup.ORES);
 
     public static final Block RAW_COBALT_BLOCK = registerBlock("raw_cobalt_block",
             new Block(FabricBlockSettings.of(Material.STONE)
                     .strength(2f).requiresTool()), ModItemGroup.BLOCKS);
 
     public static final Block DEEPSLATE_COBALT_ORE = registerBlock("deepslate_cobalt_ore",
-            new Block(FabricBlockSettings.of(Material.STONE)
-                    .strength(2f).requiresTool()), ModItemGroup.ORES);
+            new OreBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(2f).requiresTool(), UniformIntProvider.create(23, 43)), ModItemGroup.ORES);
 
     public static final Block COBALT_STAIRS = registerBlock("cobalt_stairs",
             new StairsBlock(COBALT_BLOCK.getDefaultState(),
@@ -890,6 +890,48 @@ public class ModBlocks {
                     .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
+    public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
+            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.BLOCKS);
+
+    public static final Block TANZANITE_ORE = registerBlock("tanzanite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
+                    UniformIntProvider.create(14, 26)), ModItemGroup.ORES);
+
+    public static final Block DEEPSLATE_TANZANITE_ORE = registerBlock("deepslate_tanzanite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
+                    UniformIntProvider.create(32, 38)), ModItemGroup.ORES);
+
+    public static final Block ENDSTONE_TANZANITE_ORE = registerBlock("endstone_tanzanite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
+                    UniformIntProvider.create(38, 46)), ModItemGroup.ORES);
+
+    public static final Block NETHERRACK_TANZANITE_ORE = registerBlock("netherrack_tanzanite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
+                    UniformIntProvider.create(8, 13)), ModItemGroup.ORES);
+
+    public static final Block ZIRCON_BLOCK = registerBlock("zircon_block",
+            new Block(FabricBlockSettings.of(Material.STONE)
+                    .strength(6f).requiresTool()), ModItemGroup.BLOCKS);
+
+    public static final Block ZIRCON_ORE = registerBlock("zircon_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(6f).requiresTool(),
+                    UniformIntProvider.create(14, 26)), ModItemGroup.ORES);
+
+    public static final Block DEEPSLATE_ZIRCON_ORE = registerBlock("deepslate_zircon_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(6f).requiresTool(),
+                    UniformIntProvider.create(32, 38)), ModItemGroup.ORES);
+
+    public static final Block ENDSTONE_ZIRCON_ORE = registerBlock("endstone_zircon_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(6f).requiresTool(),
+                    UniformIntProvider.create(38, 46)), ModItemGroup.ORES);
+
+    public static final Block NETHERRACK_ZIRCON_ORE = registerBlock("netherrack_zircon_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(6f).requiresTool(),
+                    UniformIntProvider.create(8, 13)), ModItemGroup.ORES);
     
         private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

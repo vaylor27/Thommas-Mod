@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 4.8,
+  "group": "tanzanite",
+  "ingredient": {
+    "item": "thommas:deepslate_tanzanite_ore"
+  },
+  "result": "thommas:tanzanite"
+}

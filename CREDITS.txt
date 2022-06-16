@@ -21,8 +21,8 @@ Raccoon by Yoruniii (https://creativecommons.org/licenses/by-sa/4.0/):
 https://www.fiverr.com/yoruniii/make-and-animate-3d-model-in-blockbench
 
 Structure Code & JSON Files all from TelepathicGrunt
-(Under MIT-License: https://github.com/TelepathicGrunt/StructureTutorialMod/blob/1.18.2-Forge-Jigsaw/LICENSE.txt):
-https://github.com/TelepathicGrunt/StructureTutorialMod
+(Under MIT-License: https://github.com/TelepathicGrunt/Structurethommas/blob/1.18.2-Forge-Jigsaw/LICENSE.txt):
+https://github.com/TelepathicGrunt/Structurethommas
 
 Several Pieces of code and textures by KaupenJoe:
 His tutorials on coding a fabric and forge mod on YouTube

@@ -514,6 +514,10 @@
   "item.thommas.cobalt_bow": "Cobalt Bow",
   "item.thommas.magic_cobalt_dust": "Magic Cobalt Dust",
   "item.thommas.pouch": "Magic Cobalt Dust",
+  "item.thommas.raw_tanzanite": "Raw Tanzanite",
+  "item.thommas.tanzanite": "Tanzanite",
+  "item.thommas.zircon": "Zircon",
+  "item.thommas.raw_zircon": "Raw Zircon",
 
 
   "item.thommas.dowsing_rod.no_valuables": "No Valuables found!",
@@ -527,6 +531,17 @@
   "text.autoconfig.thommas.option.isPlayerOnly": "Player Only",
   "text.autoconfig.thommas.option.displayParticles": "Display particles",
 
+
+  "block.thommas.zircon_block": "Block of Zircon",
+  "block.thommas.zircon_ore": "Zircon Ore",
+  "block.thommas.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "block.thommas.endstone_zircon_ore": "Endstone Zircon Ore",
+  "block.thommas.netherrack_zircon_ore": "Netherrack Zircon Ore",
+  "block.thommas.tanzanite_block": "Block of Tanzanite",
+  "block.thommas.tanzanite_ore": "Tanzanite Ore",
+  "block.thommas.endstone_tanzanite_ore": "Endstone Tanzanite Ore",
+  "block.thommas.netherrack_tanzanite_ore": "Tanzanite Ore",
+  "block.thommas.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
   "block.thommas.cobalt_block": "Cobalt Block",
   "block.thommas.cobalt_ore": "Cobalt Ore",
   "block.thommas.raw_cobalt_block": "Raw Cobalt Block",

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "textures": {
+    "bottom": "thommas:block/titanium_door_bottom",
+    "top": "thommas:block/titanium_door_top"
+  }
+}

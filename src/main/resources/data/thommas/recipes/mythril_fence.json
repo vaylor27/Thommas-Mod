@@ -9,7 +9,7 @@
       "item": "thommas:mythril_ingot"
     },
     "P": {
-      "item": "thommas:goldenwood_rod"
+      "tag": "c:sticks"
     }
   },
   "result": {

@@ -2,12 +2,21 @@ package net.vakror.thommas;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.collection.DefaultedList;
+import net.minecraft.util.math.BlockPos;
 import net.vakror.thommas.block.ModBlocks;
+import net.vakror.thommas.block.entity.BigCrystalChestEntity;
+import net.vakror.thommas.block.entity.CrystalChestEntity;
+import net.vakror.thommas.block.entity.HumongousCrystalChestEntity;
+import net.vakror.thommas.block.entity.MassiveCrystalChestEntity;
 import net.vakror.thommas.entity.ModEntities;
 import net.vakror.thommas.entity.client.RaccoonRenderer;
 import net.vakror.thommas.entity.client.RatRenderer;
@@ -19,18 +28,17 @@ import net.vakror.thommas.entity.client.armor.RubyArmorRenderer;
 import net.vakror.thommas.fluid.ModFluids;
 import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.screen.*;
+import net.vakror.thommas.util.ModBlockEntityRenderer;
 import net.vakror.thommas.util.ModModelPredicateProvider;
+import net.vakror.thommas.util.ModTextures;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class ThommasClientMod implements ClientModInitializer {
-
-    private static ThommasClientMod instance;
-
-    public ThommasClientMod() {
-        instance = this;
-    }
     @Override
     public void onInitializeClient() {
+        ModScreenHandlers.registerChestScreenHandlers();
+        ModBlockEntityRenderer.registerBlockEntityRenderer();
+        ModTextures.registerTextures();
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DETRANIUM_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SAFE_DETRANIUM_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KAUPEN_DOOR, RenderLayer.getCutout());
@@ -84,6 +92,8 @@ public class ThommasClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMETHYST_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.KAUPEN_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SAFE_KAUPEN_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TITANIUM_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMETHYST_DOOR, RenderLayer.getCutout());
 
 
         ModModelPredicateProvider.registerModModels();
@@ -101,6 +111,7 @@ public class ThommasClientMod implements ClientModInitializer {
         ScreenRegistry.register(ModScreenHandlers.LIGHTNING_CHANNELER_SCREEN_HANDLER, LightningChannelerScreen::new);
         ScreenRegistry.register(ModScreenHandlers.COMBINER_SCREEN_HANDLER, CombinerScreen::new);
         ScreenRegistry.register(ModScreenHandlers.ORICHALCUM_BLASTER_SCREEN_HANDLER, OrichalcumBlasterScreen::new);
+        ScreenRegistry.register(ModScreenHandlers.UPGRADER_SCREEN_HANDLER, UpgraderScreen::new);
 
         EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
         EntityRendererRegistry.register(ModEntities.RAT, RatRenderer::new);
@@ -117,6 +128,59 @@ public class ThommasClientMod implements ClientModInitializer {
 
         GeoArmorRenderer.registerArmorRenderer(new LeadArmorRenderer(), ModItems.LEAD_BOOTS,
                 ModItems.LEAD_LEGGINGS, ModItems.LEAD_CHESTPLATE, ModItems.LEAD_HELMET);
+
+
+        // Crystal Chest Rendering
+        ClientPlayNetworking.registerGlobalReceiver(Thommas.UPDATE_INV_PACKET_ID_NORMAL, (client, handler, buf, responseSender) -> {
+            BlockPos pos = buf.readBlockPos();
+            DefaultedList<ItemStack> inv = DefaultedList.ofSize(12, ItemStack.EMPTY);
+            for (int i = 0; i < 12; i++) {
+                inv.set(i, buf.readItemStack());
+            }
+            client.execute(() -> {
+                CrystalChestEntity blockEntity = (CrystalChestEntity) MinecraftClient.getInstance().world.getBlockEntity(pos);
+                blockEntity.setInvStackList(inv);
+            });
+        });
+
+
+        ClientPlayNetworking.registerGlobalReceiver(Thommas.UPDATE_INV_PACKET_ID_BIG, (client, handler, buf, responseSender) -> {
+            BlockPos pos = buf.readBlockPos();
+            DefaultedList<ItemStack> inv = DefaultedList.ofSize(12, ItemStack.EMPTY);
+            for (int i = 0; i < 12; i++) {
+                inv.set(i, buf.readItemStack());
+            }
+            client.execute(() -> {
+                BigCrystalChestEntity blockEntity = (BigCrystalChestEntity) MinecraftClient.getInstance().world.getBlockEntity(pos);
+                blockEntity.setInvStackList(inv);
+            });
+        });
+
+
+        ClientPlayNetworking.registerGlobalReceiver(Thommas.UPDATE_INV_PACKET_ID_MASSIVE, (client, handler, buf, responseSender) -> {
+            BlockPos pos = buf.readBlockPos();
+            DefaultedList<ItemStack> inv = DefaultedList.ofSize(12, ItemStack.EMPTY);
+            for (int i = 0; i < 12; i++) {
+                inv.set(i, buf.readItemStack());
+            }
+            client.execute(() -> {
+                MassiveCrystalChestEntity blockEntity = (MassiveCrystalChestEntity) MinecraftClient.getInstance().world.getBlockEntity(pos);
+                blockEntity.setInvStackList(inv);
+            });
+        });
+
+
+        ClientPlayNetworking.registerGlobalReceiver(Thommas.UPDATE_INV_PACKET_ID_HUMONGOUS, (client, handler, buf, responseSender) -> {
+            BlockPos pos = buf.readBlockPos();
+            DefaultedList<ItemStack> inv = DefaultedList.ofSize(12, ItemStack.EMPTY);
+            for (int i = 0; i < 12; i++) {
+                inv.set(i, buf.readItemStack());
+            }
+            client.execute(() -> {
+                HumongousCrystalChestEntity blockEntity = (HumongousCrystalChestEntity) MinecraftClient.getInstance().world.getBlockEntity(pos);
+                blockEntity.setInvStackList(inv);
+            });
+        });
 
 
     }

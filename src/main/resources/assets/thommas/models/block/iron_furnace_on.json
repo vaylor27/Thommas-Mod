@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "thommas:block/iron_furnace_top",
+        "front": "thommas:block/iron_furnace_front_on",
+        "side": "thommas:block/iron_furnace_side"
+    }
+}

@@ -1,6 +1,5 @@
 package net.vakror.thommas.mixin;
 
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;

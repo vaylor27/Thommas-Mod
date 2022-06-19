@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:diamond_furnace"
+    },
+    {
+      "item": "thommas:normal_furnace_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:obsidian_furnace"
+  }
+}

@@ -37,6 +37,11 @@ public class LightningChannelerRecipe implements Recipe<SimpleInventory> {
         this.weather = weather;
     }
 
+    @Override
+    public DefaultedList<Ingredient> getIngredients() {
+        return recipeItems;
+    }
+
     public Weather getWeather() {
         return weather;
     }

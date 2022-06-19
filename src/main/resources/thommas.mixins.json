@@ -4,20 +4,26 @@
   "package": "net.vakror.thommas.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "AbstractFurnaceEntityMixin",
     "BlockEntityTypeMixin",
     "BrewingRecipeRegistryMixin",
+    "ClampedEntityAttributeMixin",
+    "DamageUtilMixin",
     "EntityMixin",
+    "FurnaceXPMixin",
+    "InGameHudMixin",
+    "IntegratedServerLoaderMixin",
     "LivingEntityMixin",
     "MagmaCubeEntityMixin",
     "ModEntityDataSaver",
     "ModEntityDataSaverTwo",
     "PauseButtonMixin",
     "SignTypeAccessor",
-    "SlimeEntityMixin",
-    "VillagerProfessionMixin"
+    "SlimeEntityMixin"
   ],
   "client": [
     "AutoFishMixin",
+    "InGameHudMixin",
     "ThommasMixin"
   ],
   "injectors": {

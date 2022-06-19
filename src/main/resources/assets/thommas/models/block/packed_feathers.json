@@ -5,6 +5,8 @@
     "east": "thommas:block/packed_feathers_end",
     "south": "thommas:block/packed_feathers_side",
     "west": "thommas:block/packed_feathers_end",
-    "up": "thommas:block/packed_feathers_side"
+    "up": "thommas:block/packed_feathers_side",
+    "down": "thommas:block/packed_feathers_side",
+    "particle": "thommas:block/packed_feathers_side"
   }
 }

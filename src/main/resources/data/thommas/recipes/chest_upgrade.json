@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "TXT",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:citrine_block"
+    },
+    "X": {
+      "item": "minecraft:diamond_block"
+    },
+    "P": {
+      "item": "thommas:magic_orichalcum_dust"
+    },
+    "T": {
+      "tag": "thommas:logs"
+    }
+  },
+  "result": {
+    "item": "thommas:chest_upgrade",
+    "count": 1
+  }
+}

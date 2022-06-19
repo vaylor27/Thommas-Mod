@@ -1,7 +1,3 @@
-//
-// Source code recreated from a .class file by IntelliJ IDEA
-// (powered by FernFlower decompiler)
-//
 
 package net.vakror.thommas.item;
 
@@ -14,70 +10,70 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    MYTHRIL(MiningLevels.DIAMOND, 1365, 34.0F, 2.0F, 28, () -> {
+    MYTHRIL(MiningLevels.DIAMOND, 1365, 34.0F, 25.0F, 28, () -> {
         return Ingredient.ofItems(ModItems.MYTHRIL_INGOT);
     }),
-    RUBY(MiningLevels.NETHERITE, 41366, 48.0F, 7.0F, 34, () -> {
+    RUBY(MiningLevels.NETHERITE, 41366, 48.0F, 38.0F, 34, () -> {
         return Ingredient.ofItems(ModItems.RUBY);
     }),
-    ORICHALCUM(MiningLevels.DIAMOND, 46733, 57.5F, 3.5F, 25, () ->
+    ORICHALCUM(MiningLevels.DIAMOND, 46733, 57.5F, 43.5F, 25, () ->
             Ingredient.ofItems(ModItems.ORICHALCUM_INGOT)),
 
-    ADAMANTIUM(MiningLevels.NETHERITE, 436575, 53.0F, 1.0F, 36, () -> {
+    ADAMANTIUM(MiningLevels.NETHERITE, 436575, 53.0F, 56.0F, 36, () -> {
         return Ingredient.ofItems(ModItems.ADAMANTIUM_INGOT);
     }),
 
-    PURE_DIAMOND(MiningLevels.NETHERITE, 43652, 30.0F, 8.0F, 0, () -> {
+    PURE_DIAMOND(MiningLevels.NETHERITE, 43652, 30.0F, 36.0F, 0, () -> {
         return Ingredient.ofItems(ModItems.PURE_DIAMOND_GEM);
     }),
 
-    COPPER(MiningLevels.NETHERITE, 256721, 44.0F, 8.0F, 0, () -> {
+    COPPER(MiningLevels.NETHERITE, 256721, 44.0F, 43.0F, 0, () -> {
         return Ingredient.ofItems(ModItems.PURE_DIAMOND_GEM);
     }),
-    GEM_STEEL(MiningLevels.NETHERITE, 314675237, 1000.0F, 50.0F, 49, () -> {
+    GEM_STEEL(MiningLevels.NETHERITE, 314675237, 1000.0F, 500.0F, 49, () -> {
         return Ingredient.ofItems(ModItems.GEM_STEEL_INGOT);
     }),
-    CANE(MiningLevels.WOOD, 398042570, 0.0F, 14.0F, 0, () -> {
+    CANE(MiningLevels.WOOD, 398042570, 0.0F, 45.4F, 0, () -> {
         return Ingredient.ofItems(Items.STICK);
     }),
-    HAND_DRILL(MiningLevels.IRON, 4361, 30.0F, 2.0F, 10, () -> {
+    HAND_DRILL(MiningLevels.IRON, 4361, 30.0F, 53.0F, 10, () -> {
         return Ingredient.ofItems(Items.OAK_LOG);
     }),
 
-    TITANIUM(MiningLevels.NETHERITE, 17854, 55.0F, 7.0F, 40, () -> {
+    TITANIUM(MiningLevels.NETHERITE, 17854, 55.0F, 62.0F, 40, () -> {
         return Ingredient.ofItems(ModItems.TITANIUM_INGOT);
     }),
 
-    TIN(MiningLevels.NETHERITE, 46352, 45.0F, 7.0F, 40, () -> {
+    TIN(MiningLevels.NETHERITE, 46352, 45.0F, 54.0F, 40, () -> {
         return Ingredient.ofItems(ModItems.TIN_INGOT);
     }),
-    AMETHYST(MiningLevels.NETHERITE, 544522, 50, 10F, 30, () -> {
+    AMETHYST(MiningLevels.NETHERITE, 544522, 50, 68F, 30, () -> {
         return Ingredient.ofItems(ModItems.AMETHYST);
     }),
-    COBALT(MiningLevels.NETHERITE, 96785, 46, 7F, 25, () -> {
+    COBALT(MiningLevels.NETHERITE, 96785, 46, 58F, 25, () -> {
         return Ingredient.ofItems(ModItems.AMETHYST);
     }),
-    CITRINE(MiningLevels.NETHERITE, 5424365, 56, 20.0F, 30, () -> {
+    CITRINE(MiningLevels.NETHERITE, 5424365, 56, 79.0F, 30, () -> {
         return Ingredient.ofItems(ModItems.CITRINE);
     }),
 
-    LEAD(MiningLevels.NETHERITE, 5423921, 42, 1.0F, 20, () -> {
-        return Ingredient.ofItems(ModItems.CITRINE);
+    LEAD(MiningLevels.NETHERITE, 5423921, 10, 84.0F, 20, () -> {
+        return Ingredient.ofItems(ModItems.LEAD_INGOT);
     }),
 
-    STEEL(MiningLevels.NETHERITE, 45432, 46, 16.0F, 20, () -> {
+    STEEL(MiningLevels.NETHERITE, 45432, 46, 76.0F, 20, () -> {
         return Ingredient.ofItems(ModItems.STEEL_INGOT);
     }),
 
-    BRONZE(MiningLevels.NETHERITE, 34657, 42, 3.0f, 20, () -> {
+    BRONZE(MiningLevels.NETHERITE, 34657, 42, 74.0f, 20, () -> {
         return Ingredient.ofItems(ModItems.BRONZE_INGOT);
     }),
 
-    BONE(MiningLevels.NETHERITE, 46532, 46, 3.0f, 20, () -> {
+    BONE(MiningLevels.NETHERITE, 46532, 46, 64.0f, 20, () -> {
         return Ingredient.ofItems(ModItems.BRONZE_INGOT);
     }),
 
-    MAGIC(MiningLevels.DIAMOND, 26934, 44.0F, 2.0F, 30, () -> {
+    MAGIC(MiningLevels.DIAMOND, 26934, 44.0F, 73.0F, 30, () -> {
         return Ingredient.ofItems(ModItems.MAGIC_INGOT);
     });
 
@@ -106,7 +102,7 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     public float getAttackDamage() {
-        return this.attackDamage;
+        return this.attackDamage * 0.5F;
     }
 
     public int getMiningLevel() {

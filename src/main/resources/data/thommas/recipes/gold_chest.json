@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:iron_chest"
+    },
+    {
+      "item": "thommas:chest_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:gold_chest"
+  }
+}

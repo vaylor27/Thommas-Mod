@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:obsidian_chest"
+    },
+    {
+      "item": "thommas:crystal_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:crystal_chest"
+  }
+}

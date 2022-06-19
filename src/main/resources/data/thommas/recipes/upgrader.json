@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "tag": "minecraft:stone_tool_materials"
+    },
+    "X": {
+      "item": "thommas:normal_furnace_upgrade"
+    }
+  },
+  "result": {
+    "item": "thommas:upgrader",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "thommas:item/void_totem"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "thommas:has_learned": 0
+      },
+      "model": "thommas:item/void_totem"
+    },
+    {
+      "predicate": {
+        "thommas:has_learned": 1
+      },
+      "model": "thommas:item/void_totem_active"
+    }
+  ]
+}

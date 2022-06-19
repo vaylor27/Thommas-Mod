@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "PXP",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:dark_crystal"
+    },
+    "X": {
+      "item": "thommas:chest_upgrade"
+    },
+    "P": {
+      "item": "thommas:large_soulstone"
+    }
+  },
+  "result": {
+    "item": "thommas:crystal_upgrade",
+    "count": 1
+  }
+}

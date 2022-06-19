@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "thommas:block/cherry_blossom_door_bottom",
+    "top": "thommas:block/cherry_blossom_door_top"
+  }
+}

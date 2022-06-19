@@ -67,10 +67,10 @@ public class ModBlocks {
             new ModFlowerBlock(StatusEffects.FIRE_RESISTANCE, 12, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block KAUPEN_DOOR = registerBlock("kaupen_door",
-            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).strength(1f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new ModDoorBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque().strength(1f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block SAFE_KAUPEN_DOOR = registerBlock("safe_kaupen_door",
-            new ModDoorBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(4f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+            new ModDoorBlock(FabricBlockSettings.of(Material.METAL).requiresTool().nonOpaque().strength(4f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block POTTED_CORRUPTED_FLOWER = registerBlockWithoutBlockItem("potted_corrupted_flower",
             new FlowerPotBlock(ModBlocks.CORRUPTED_FLOWER, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
@@ -546,7 +546,7 @@ public class ModBlocks {
             new ModTrapdoorBlock(FabricBlockSettings.copy(Blocks.IRON_TRAPDOOR)), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block TITANIUM_DOOR = registerBlock("titanium_door",
-            new ModDoorBlock(FabricBlockSettings.copy(Blocks.IRON_DOOR)), ModItemGroup.SPECIAL_BLOCKS);
+            new ModDoorBlock(FabricBlockSettings.copy(Blocks.IRON_DOOR).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block TITANIUM_BUTTON = registerBlock("titanium_button",
             new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(2f).requiresTool().noCollision()), ModItemGroup.SPECIAL_BLOCKS);
@@ -573,7 +573,7 @@ public class ModBlocks {
             new ModTrapdoorBlock(FabricBlockSettings.copy(Blocks.IRON_TRAPDOOR)), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block AMETHYST_DOOR = registerBlock("amethyst_door",
-            new ModDoorBlock(FabricBlockSettings.copy(Blocks.IRON_DOOR)), ModItemGroup.SPECIAL_BLOCKS);
+            new ModDoorBlock(FabricBlockSettings.copy(Blocks.IRON_DOOR).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block AMETHYST_BUTTON = registerBlock("amethyst_button",
             new ModStoneButtonBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(2f).requiresTool().noCollision()), ModItemGroup.SPECIAL_BLOCKS);
@@ -932,6 +932,41 @@ public class ModBlocks {
             new OreBlock(FabricBlockSettings.of(Material.STONE)
                     .strength(6f).requiresTool(),
                     UniformIntProvider.create(8, 13)), ModItemGroup.ORES);
+
+    public static final Block UPGRADER = registerBlock("upgrader",
+            new UpgraderBlock(FabricBlockSettings.of(Material.METAL)), ModItemGroup.SPECIAL_BLOCKS);
+
+
+    public static final Block COPPER_CHEST = registerBlock("copper_chest",
+            new GenericChestBlock(ChestTypes.COPPER.setting(), ChestTypes.COPPER), ModItemGroup.SPECIAL_BLOCKS);
+    
+    public static final Block IRON_CHEST = registerBlock("iron_chest",
+            new GenericChestBlock(ChestTypes.IRON.setting(), ChestTypes.IRON), ModItemGroup.SPECIAL_BLOCKS);
+    
+    public static final Block GOLD_CHEST = registerBlock("gold_chest",
+            new GenericChestBlock(ChestTypes.GOLD.setting(), ChestTypes.GOLD), ModItemGroup.SPECIAL_BLOCKS);
+    
+    public static final Block DIAMOND_CHEST = registerBlock("diamond_chest",
+            new GenericChestBlock(ChestTypes.DIAMOND.setting(), ChestTypes.DIAMOND), ModItemGroup.SPECIAL_BLOCKS);
+    
+    public static final Block EMERALD_CHEST = registerBlock("emerald_chest",
+            new GenericChestBlock(ChestTypes.EMERALD.setting(), ChestTypes.EMERALD), ModItemGroup.SPECIAL_BLOCKS);
+    
+    public static final Block CRYSTAL_CHEST = registerBlock("crystal_chest",
+            new CrystalChestBlock(ChestTypes.CRYSTAL), ModItemGroup.SPECIAL_BLOCKS);
+    
+    public static final Block OBSIDIAN_CHEST = registerBlock("obsidian_chest",
+            new GenericChestBlock(ChestTypes.OBSIDIAN.setting(), ChestTypes.OBSIDIAN), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block BIG_CRYSTAL_CHEST = registerBlock("big_crystal_chest",
+            new BigCrystalChestBlock(ChestTypes.BIG_CRYSTAL), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block MASSIVE_CRYSTAL_CHEST = registerBlock("massive_crystal_chest",
+            new MassiveCrystalChestBlock(ChestTypes.MASSIVE_CRYSTAL), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block HUMONGOUS_CRYSTAL_CHEST = registerBlock("humongous_crystal_chest",
+            new HumongousCrystalChestBlock(ChestTypes.HUMONGOUS_CRYSTAL), ModItemGroup.SPECIAL_BLOCKS);
+    
     
         private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

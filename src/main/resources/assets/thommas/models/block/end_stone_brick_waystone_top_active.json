@@ -1,0 +1,7 @@
+{
+	"parent": "thommas:block/base_waystone_top",
+	"textures": {
+		"body": "thommas:block/end_stone_brick_waystone_active",
+		"particle": "block/end_stone_bricks"
+	}
+}

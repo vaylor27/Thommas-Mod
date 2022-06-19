@@ -44,3 +44,20 @@ under MIT License
 some textures by malcolmriley:
 https://github.com/malcolmriley/unused-textures
 under CC-BY-4.0 License
+
+Furnace Textures and Several mixins and pieces of code for types of furnaces by Draylar1:
+https://github.com/Draylar/fabric-furnaces
+under MIT License
+
+InGameHudMixin, DamageUtilMixin, and ClampedEntityAttributeMixin by Flytre7:
+https://www.curseforge.com/minecraft/mc-mods/attribute
+under MIT License
+
+Several Textures and classes by 4nner:
+https://github.com/4nner/IronChests
+Under GPL – 3.0 License
+
+Rei Plugin (Inspiration) by VazkiiMods:
+https://github.com/VazkiiMods/Botania/
+Under custom license:
+https://github.com/VazkiiMods/Botania/blob/1.18.x/LICENSE.txt

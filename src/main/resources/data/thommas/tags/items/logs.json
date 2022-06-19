@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "thommas:redwood_log",
+    "thommas:jacaranda_log",
+    "thommas:ebony_log",
+    "thommas:bonetree_log",
+    "thommas:goldenwood_log",
+    "thommas:cronetree_log",
+    "thommas:gloamblossom_log",
+    "thommas:cherry_blossom_log"
+  ]
+}

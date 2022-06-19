@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "minecraft:chest"
+    },
+    {
+      "item": "thommas:chest_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:copper_chest"
+  }
+}

@@ -64,7 +64,7 @@ public class ModItems {
             new MythrilArmorItem(ModArmorMaterials.MYTHRIL, EquipmentSlot.LEGS,new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item DUST = registerItem("dust",
-            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
 
     public static final Item DATA_TABLET = registerItem("data_tablet",
             new DataTabletItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
@@ -573,7 +573,7 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC).maxCount(1).fireproof()));
 
     public static Item MAGIC_DUST = registerItem("magic_dust",
-            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
 
     public static Item PHILOSOPHERS_STONE = registerItem("philosopher_stone",
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS).fireproof()));
@@ -1548,7 +1548,7 @@ public class ModItems {
             new ModCobaltBow(new FabricItemSettings().group(ModItemGroup.ITEMS).maxDamage(8635)));
     
     public static final Item MAGIC_COBALT_DUST = registerItem("magic_cobalt_dust",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
 
     public static final Item POUCH = registerItem("pouch",
             new BundleItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
@@ -1564,6 +1564,17 @@ public class ModItems {
 
     public static final Item RAW_ZIRCON = registerItem("raw_zircon",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static final Item NORMAL_FURNACE_UPGRADE = registerItem("normal_furnace_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item CHEST_UPGRADE = registerItem("chest_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item CRYSTAL_UPGRADE = registerItem("crystal_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);

@@ -23,6 +23,11 @@ public class MythrilBlasterRecipe implements Recipe<SimpleInventory> {
     }
 
     @Override
+    public DefaultedList<Ingredient> getIngredients() {
+        return recipeItems;
+    }
+
+    @Override
     public boolean matches(SimpleInventory inventory, World world) {
         if (world.isClient) {return false;}
         if(recipeItems.get(0).test(inventory.getStack(1))) {

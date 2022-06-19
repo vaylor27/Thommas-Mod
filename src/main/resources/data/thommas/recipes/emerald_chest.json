@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:diamond_chest"
+    },
+    {
+      "item": "thommas:chest_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:emerald_chest"
+  }
+}

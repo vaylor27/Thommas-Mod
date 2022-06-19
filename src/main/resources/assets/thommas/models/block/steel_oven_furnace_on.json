@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "thommas:block/steel_block",
+        "front": "thommas:block/steel_oven_front_on",
+        "side": "thommas:block/steel_block"
+    }
+}

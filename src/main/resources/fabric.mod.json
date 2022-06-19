@@ -38,7 +38,8 @@
     "modmenu": [
       "net.vakror.thommas.config.ConfigMenu"
     ],
-    "rei": [
+    "rei_client": [
+      "net.vakror.thommas.compat.rei.ThommasREIPlugin"
     ]
   },
   "mixins": [

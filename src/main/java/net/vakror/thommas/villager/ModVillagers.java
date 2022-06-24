@@ -23,6 +23,7 @@ public class ModVillagers {
     public static final VillagerProfession LIGHTNING_GOD = registerProfession("lightninggod",
             RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Thommas.MOD_ID, "lightninggodpoi")));
 
+
     public static VillagerProfession register(String name, Block block) {
         registerPOI(name + "poi", block);
         return registerProfession(name, RegistryKey.of(Registry.POINT_OF_INTEREST_TYPE_KEY, new Identifier(Thommas.MOD_ID, name + "poi")));

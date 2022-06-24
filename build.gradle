@@ -43,10 +43,6 @@ repositories {
 	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 }
 
-loom {
-	accessWidenerPath = file("src/main/resources/thommas.accesswidener")
-}
-
 repositories {
 	maven {
 		url "https://maven.terraformersmc.com/releases/"

@@ -10,10 +10,10 @@
       "tag": "c:sticks"
     },
     "P": {
-      "item": "thommas:titanium_ingot"
+      "item": "thommas:amethyst_ingot"
     }
   },
   "result": {
-    "item": "thommas:titanium_axe"
+    "item": "thommas:amethyst_axe"
   }
 }

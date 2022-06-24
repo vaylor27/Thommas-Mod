@@ -9,6 +9,8 @@ import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.FurnaceBlocks;
 import net.vakror.thommas.block.ModBlocks;
+import net.vakror.thommas.block.entity.chest.*;
+import net.vakror.thommas.block.entity.furnace.VakrorFurnaceEntity;
 
 public class ModBlockEntities {
     public static BlockEntityType<MythrilBlasterBlockEntity> MYTHRIL_BLASTER;
@@ -31,7 +33,7 @@ public class ModBlockEntities {
 
     public static void registerAllBlockEntities() {
         VAKROR_FURNACE = register(
-                "fabric_furnace",
+                "vakror_furnace",
                 FabricBlockEntityTypeBuilder.create(VakrorFurnaceEntity::new,
                         FurnaceBlocks.getFurnaces().toArray(new Block[0])
                 ).build(null));

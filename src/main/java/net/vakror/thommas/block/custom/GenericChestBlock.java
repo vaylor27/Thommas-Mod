@@ -13,7 +13,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.vakror.thommas.block.ChestTypes;
-import net.vakror.thommas.block.entity.GenericChestEntity;
+import net.vakror.thommas.block.entity.chest.GenericChestEntity;
 
 public class GenericChestBlock extends ChestBlock {
     private final ChestTypes type;

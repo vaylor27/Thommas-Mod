@@ -141,7 +141,7 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
         Optional<MythrilBlasterRecipe> match = world.getRecipeManager()
                 .getFirstMatch(MythrilBlasterRecipe.Type.INSTANCE, inventory, world);
 
-        return match.isPresent() && canInsertAmountIntoOutputSlot(inventory)
+        return match.isPresent() && canInsertAmountIntoOutputSlot(inventory, match.get().getOutput().getCount())
                 && canInsertItemIntoOutputSlot(inventory, match.get().getOutput());
     }
 
@@ -161,7 +161,7 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
             entity.removeStack(2,1);
 
             entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
-                    entity.getStack(3).getCount() + 1));
+                    entity.getStack(3).getCount() + match.get().getOutput().getCount()));
 
             entity.resetProgress();
         }
@@ -175,7 +175,7 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
         return inventory.getStack(3).getItem() == output.getItem() || inventory.getStack(3).isEmpty();
     }
 
-    private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory) {
-        return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount();
+    private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory, int count) {
+        return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount() + count;
     }
 }

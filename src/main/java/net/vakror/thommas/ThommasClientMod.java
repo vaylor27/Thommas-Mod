@@ -13,10 +13,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.vakror.thommas.block.ModBlocks;
-import net.vakror.thommas.block.entity.BigCrystalChestEntity;
-import net.vakror.thommas.block.entity.CrystalChestEntity;
-import net.vakror.thommas.block.entity.HumongousCrystalChestEntity;
-import net.vakror.thommas.block.entity.MassiveCrystalChestEntity;
+import net.vakror.thommas.block.entity.chest.BigCrystalChestEntity;
+import net.vakror.thommas.block.entity.chest.CrystalChestEntity;
+import net.vakror.thommas.block.entity.chest.HumongousCrystalChestEntity;
+import net.vakror.thommas.block.entity.chest.MassiveCrystalChestEntity;
 import net.vakror.thommas.entity.ModEntities;
 import net.vakror.thommas.entity.client.RaccoonRenderer;
 import net.vakror.thommas.entity.client.RatRenderer;
@@ -36,7 +36,6 @@ import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 public class ThommasClientMod implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        ModScreenHandlers.registerChestScreenHandlers();
         ModBlockEntityRenderer.registerBlockEntityRenderer();
         ModTextures.registerTextures();
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DETRANIUM_TRAPDOOR, RenderLayer.getCutout());
@@ -183,5 +182,8 @@ public class ThommasClientMod implements ClientModInitializer {
         });
 
 
+
+
+        ModScreenHandlers.registerChestScreenHandlers();
     }
 }

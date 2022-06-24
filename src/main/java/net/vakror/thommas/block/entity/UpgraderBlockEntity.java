@@ -102,29 +102,32 @@ public class UpgraderBlockEntity extends BlockEntity implements NamedScreenHandl
             inventory.setStack(i, entity.getStack(i));
         }
 
+        assert world != null;
         Optional<UpgraderRecipe> match = world.getRecipeManager()
                 .getFirstMatch(UpgraderRecipe.Type.INSTANCE, inventory, world);
 
-        return match.isPresent()
-                && canInsertAmountIntoOutputSlot(inventory)
+        return match.isPresent() && canInsertAmountIntoOutputSlot(inventory, match.get().getOutput().getCount())
                 && canInsertItemIntoOutputSlot(inventory, match.get().getOutput());
     }
 
     private static void craftItem(UpgraderBlockEntity entity) {
+
         World world = entity.world;
         SimpleInventory inventory = new SimpleInventory(entity.inventory.size());
         for (int i = 0; i < entity.inventory.size(); i++) {
             inventory.setStack(i, entity.getStack(i));
         }
 
+        assert world != null;
         Optional<UpgraderRecipe> match = world.getRecipeManager()
                 .getFirstMatch(UpgraderRecipe.Type.INSTANCE, inventory, world);
 
         if(match.isPresent()) {
-            entity.removeStack(0,1);
             entity.removeStack(1,1);
-            entity.setStack(2, new ItemStack(match.get().getOutput().getItem(),
-                    entity.getStack(2).getCount() + 1));
+            entity.removeStack(2,1);
+
+            entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
+                    entity.getStack(3).getCount() + match.get().getOutput().getCount()));
 
             entity.resetProgress();
         }
@@ -138,7 +141,7 @@ public class UpgraderBlockEntity extends BlockEntity implements NamedScreenHandl
         return inventory.getStack(2).getItem() == output.getItem() || inventory.getStack(2).isEmpty();
     }
 
-    private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory) {
-        return inventory.getStack(2).getMaxCount() > inventory.getStack(2).getCount();
+    private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory, int count) {
+        return inventory.getStack(2).getMaxCount() > inventory.getStack(2).getCount() + count;
     }
 }

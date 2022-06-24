@@ -81,5 +81,7 @@ public class ModOreGen {
         new Ore("deepslate_zircon", ModBlocks.DEEPSLATE_ZIRCON_ORE, Blocks.DEEPSLATE, 14, 9);
         new Ore("endstone_zircon", ModBlocks.ENDSTONE_ZIRCON_ORE, Blocks.END_STONE, 27, 9);
         new Ore("netherrack_zircon", ModBlocks.NETHERRACK_ZIRCON_ORE, Blocks.NETHERRACK, 17, 9);
+        new Ore("deepslate_benitoite", ModBlocks.DEEPSLATE_BENITOITE_ORE, Blocks.END_STONE, 27, 9);
+        new Ore("benitoite", ModBlocks.BENITOITE_ORE, Blocks.NETHERRACK, 17, 9);
     }
 }

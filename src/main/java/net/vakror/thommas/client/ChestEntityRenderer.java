@@ -24,10 +24,10 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3f;
 import net.minecraft.world.World;
 import net.vakror.thommas.block.custom.GenericChestBlock;
-import net.vakror.thommas.block.entity.BigCrystalChestEntity;
-import net.vakror.thommas.block.entity.CrystalChestEntity;
-import net.vakror.thommas.block.entity.HumongousCrystalChestEntity;
-import net.vakror.thommas.block.entity.MassiveCrystalChestEntity;
+import net.vakror.thommas.block.entity.chest.BigCrystalChestEntity;
+import net.vakror.thommas.block.entity.chest.CrystalChestEntity;
+import net.vakror.thommas.block.entity.chest.HumongousCrystalChestEntity;
+import net.vakror.thommas.block.entity.chest.MassiveCrystalChestEntity;
 
 @Environment(EnvType.CLIENT)
 public class ChestEntityRenderer<T extends ChestBlockEntity> extends ChestBlockEntityRenderer<T> {

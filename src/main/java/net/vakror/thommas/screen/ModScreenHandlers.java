@@ -71,13 +71,13 @@ public class ModScreenHandlers {
                          (syncId, inventory) -> new ChestScreenHandler(OBSIDIAN_CHEST, ChestTypes.OBSIDIAN, syncId, inventory, ScreenHandlerContext.EMPTY));
 
         BIG_CRYSTAL_CHEST = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "big_crystal_chest"),
-                         (syncId, inventory) -> new ChestScreenHandler(EMERALD_CHEST, ChestTypes.EMERALD, syncId, inventory, ScreenHandlerContext.EMPTY));
+                         (syncId, inventory) -> new ChestScreenHandler(BIG_CRYSTAL_CHEST, ChestTypes.BIG_CRYSTAL, syncId, inventory, ScreenHandlerContext.EMPTY));
 
         MASSIVE_CRYSTAL_CHEST = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "massive_crystal_chest"),
-                         (syncId, inventory) -> new ChestScreenHandler(CRYSTAL_CHEST, ChestTypes.CRYSTAL, syncId, inventory, ScreenHandlerContext.EMPTY));
+                         (syncId, inventory) -> new ChestScreenHandler(MASSIVE_CRYSTAL_CHEST, ChestTypes.MASSIVE_CRYSTAL, syncId, inventory, ScreenHandlerContext.EMPTY));
 
         HUMONGOUS_CRYSTAL_CHEST = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "humongous_crystal_chest"),
-                         (syncId, inventory) -> new ChestScreenHandler(OBSIDIAN_CHEST, ChestTypes.OBSIDIAN, syncId, inventory, ScreenHandlerContext.EMPTY));
+                         (syncId, inventory) -> new ChestScreenHandler(HUMONGOUS_CRYSTAL_CHEST, ChestTypes.HUMONGOUS_CRYSTAL, syncId, inventory, ScreenHandlerContext.EMPTY));
 
     }
     
@@ -89,9 +89,9 @@ public class ModScreenHandlers {
         ScreenRegistry.register(EMERALD_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
         ScreenRegistry.register(CRYSTAL_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
         ScreenRegistry.register(OBSIDIAN_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
-        ScreenRegistry.register(NETHERITE_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
         ScreenRegistry.register(BIG_CRYSTAL_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
         ScreenRegistry.register(MASSIVE_CRYSTAL_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
         ScreenRegistry.register(HUMONGOUS_CRYSTAL_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
+
     }
 }

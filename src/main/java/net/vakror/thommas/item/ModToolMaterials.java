@@ -73,6 +73,10 @@ public enum ModToolMaterials implements ToolMaterial {
         return Ingredient.ofItems(ModItems.BRONZE_INGOT);
     }),
 
+    BENIOTITE(MiningLevels.NETHERITE, 625265, 46, 67.0f, 20, () -> {
+        return Ingredient.ofItems(ModItems.PERFECT_POG);
+    }),
+
     MAGIC(MiningLevels.DIAMOND, 26934, 44.0F, 73.0F, 30, () -> {
         return Ingredient.ofItems(ModItems.MAGIC_INGOT);
     });
@@ -102,7 +106,7 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     public float getAttackDamage() {
-        return this.attackDamage * 0.5F;
+        return this.attackDamage * 1.5F;
     }
 
     public int getMiningLevel() {

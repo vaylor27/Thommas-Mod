@@ -840,8 +840,7 @@ public class ModBlocks {
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING), () -> Blocks.END_STONE), ModItemGroup.NATURE);
 
     public static final Block COBALT_BLOCK = registerBlock("cobalt_block",
-            new Block(FabricBlockSettings.of(Material.METAL)
-                    .strength(5f).requiresTool()), ModItemGroup.BLOCKS);
+            new Block(FabricBlockSettings.copy(Blocks.STONE)), ModItemGroup.BLOCKS);
 
     public static final Block COBALT_ORE = registerBlock("cobalt_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE)
@@ -966,7 +965,16 @@ public class ModBlocks {
 
     public static final Block HUMONGOUS_CRYSTAL_CHEST = registerBlock("humongous_crystal_chest",
             new HumongousCrystalChestBlock(ChestTypes.HUMONGOUS_CRYSTAL), ModItemGroup.SPECIAL_BLOCKS);
-    
+
+    public static final Block BENITOITE_ORE = registerBlock("benitoite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(6f).requiresTool(),
+                    UniformIntProvider.create(26, 34)), ModItemGroup.ORES);
+
+    public static final Block DEEPSLATE_BENITOITE_ORE = registerBlock("deepslate_benitoite_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE)
+                    .strength(6f).requiresTool(),
+                    UniformIntProvider.create(34, 43)), ModItemGroup.ORES);
     
         private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

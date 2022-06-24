@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "benitoite",
+  "ingredient": {
+    "item": "thommas:benitoite_ore"
+  },
+  "result": "thommas:benitoite_shard",
+  "experience": 2.0,
+  "cookingtime": 100
+}

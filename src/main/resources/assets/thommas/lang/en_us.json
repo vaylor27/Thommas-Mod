@@ -521,11 +521,19 @@
   "item.thommas.normal_furnace_upgrade": "Furnace Upgrade",
   "item.thommas.chest_upgrade": "Chest Upgrade",
   "item.thommas.crystal_upgrade": "Crystal Upgrade",
+  "item.thommas.perfect_pog": "Perfect Pog",
+  "item.thommas.benitoite_shard": "Benitoite Shard",
+  "item.thommas.raw_benitoite": "Raw Benitoite",
+  "item.thommas.benitoite_shovel": "Benitoite Shovel",
+  "item.thommas.benitoite_sword": "Benitoite Sword",
+  "item.thommas.benitoite_hoe": "Benitoite Hoe",
+  "item.thommas.benitoite_axe": "Benitoite Axe",
+  "item.thommas.benitoite_pickaxe": "Benitoite Pickaxe",
 
 
   "item.thommas.dowsing_rod.no_valuables": "No Valuables found!",
   "item.thommas.dowsing_rod.tooltip.shift": "Right Click to find valuables",
-  "item.thommas.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
+  "item.thommas.dowsing_rode.tooltip": "Press §eSHIFT§r for more Information",
 
 
   "text.autoconfig.thommas.title": "Thommas",
@@ -965,6 +973,8 @@
   "block.thommas.big_crystal_chest": "Big Crystal Chest",
   "block.thommas.massive_crystal_chest": "Massive Crystal Chest",
   "block.thommas.humongous_crystal_chest": "Humongous Crystal Chest",
+  "block.thommas.benitoite_ore": "Benitoite Ore",
+  "block.thommas.deepslate_benitoite_ore": "Deepslate Benitoite Ore",
 
   "thommas.text.dupelabel": " Dupe chance: %d",
   "thommas.text.speedlabel": " Speed increase: %dx",

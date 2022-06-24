@@ -9,8 +9,8 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.world.World;
 import net.vakror.thommas.block.ChestTypes;
-import net.vakror.thommas.block.entity.GenericChestEntity;
-import net.vakror.thommas.block.entity.HumongousCrystalChestEntity;
+import net.vakror.thommas.block.entity.chest.GenericChestEntity;
+import net.vakror.thommas.block.entity.chest.HumongousCrystalChestEntity;
 
 public class HumongousCrystalChestBlock extends GenericChestBlock {
     public HumongousCrystalChestBlock(ChestTypes chestTypes) {

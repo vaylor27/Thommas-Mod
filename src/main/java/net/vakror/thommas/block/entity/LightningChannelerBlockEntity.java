@@ -105,11 +105,12 @@ public class LightningChannelerBlockEntity extends BlockEntity implements NamedS
             inventory.setStack(i, entity.getStack(i));
         }
 
+        assert world != null;
         Optional<LightningChannelerRecipe> match = world.getRecipeManager()
                 .getFirstMatch(LightningChannelerRecipe.Type.INSTANCE, inventory, world);
 
-        return match.isPresent() && evaluateWeather(match.get().getWeather(), world)
-                && canInsertAmountIntoOutputSlot(inventory)
+
+        return match.isPresent() && evaluateWeather(match.get().getWeather(), world) && canInsertAmountIntoOutputSlot(inventory, match.get().getOutput().getCount())
                 && canInsertItemIntoOutputSlot(inventory, match.get().getOutput());
     }
 
@@ -120,14 +121,17 @@ public class LightningChannelerBlockEntity extends BlockEntity implements NamedS
             inventory.setStack(i, entity.getStack(i));
         }
 
+        assert world != null;
         Optional<LightningChannelerRecipe> match = world.getRecipeManager()
                 .getFirstMatch(LightningChannelerRecipe.Type.INSTANCE, inventory, world);
 
         if(match.isPresent()) {
-            entity.removeStack(0,1);
             entity.removeStack(1,1);
-            entity.setStack(2, new ItemStack(match.get().getOutput().getItem(),
-                    entity.getStack(2).getCount() + 1));
+            entity.removeStack(2,1);
+
+            entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
+                    entity.getStack(3).getCount() + match.get().getOutput().getCount()));
+
 
             if(!world.isClient() && match.get().getWeather() == LightningChannelerRecipe.Weather.THUNDERING) {
                 EntityType.LIGHTNING_BOLT.spawn((ServerWorld) world, null, null, null, entity.pos,
@@ -136,6 +140,7 @@ public class LightningChannelerBlockEntity extends BlockEntity implements NamedS
 
             entity.resetProgress();
         }
+
     }
 
     private void resetProgress() {
@@ -146,8 +151,8 @@ public class LightningChannelerBlockEntity extends BlockEntity implements NamedS
         return inventory.getStack(2).getItem() == output.getItem() || inventory.getStack(2).isEmpty();
     }
 
-    private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory) {
-        return inventory.getStack(2).getMaxCount() > inventory.getStack(2).getCount();
+    private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory, int count) {
+        return inventory.getStack(2).getMaxCount() > inventory.getStack(2).getCount() + count;
     }
 
     private static boolean evaluateWeather(LightningChannelerRecipe.Weather weather, World world) {

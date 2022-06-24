@@ -31,7 +31,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.vakror.thommas.block.entity.ModBlockEntities;
-import net.vakror.thommas.block.entity.VakrorFurnaceEntity;
+import net.vakror.thommas.block.entity.furnace.VakrorFurnaceEntity;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;

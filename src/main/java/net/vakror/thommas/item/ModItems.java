@@ -1558,7 +1558,7 @@ public class ModItems {
 
     public static final Item TANZANITE = registerItem("tanzanite",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
-    
+
     public static final Item ZIRCON = registerItem("zircon",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
@@ -1572,6 +1572,30 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
 
     public static final Item CRYSTAL_UPGRADE = registerItem("crystal_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item BENITOITE_SWORD = registerItem("benitoite_sword",
+            new ModBleedSword(ModToolMaterials.BENIOTITE, 7, 3,new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1)));
+
+    public static final Item BENITOITE_SHOVEL = registerItem("benitoite_shovel",
+            new ModShovel(ModToolMaterials.BENIOTITE, 2, 14,new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1)));
+
+    public static final Item BENITOITE_AXE = registerItem("benitoite_axe",
+            new ModBleedAxe(ModToolMaterials.BENIOTITE, 16, 2,new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1)));
+
+    public static final Item BENITOITE_HOE = registerItem("benitoite_hoe",
+            new ModHoe(ModToolMaterials.BENIOTITE, 1, 30, new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1)));
+
+    public static final Item BENITOITE_PICKAXE = registerItem("benitoite_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.BENIOTITE, 5, 3, new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1)));
+
+    public static final Item BENITOITE_SHARD = registerItem("benitoite_shard",
+            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+
+    public static final Item RAW_BENITOITE = registerItem("raw_benitoite",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item PERFECT_POG = registerItem("perfect_pog",
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
 
 

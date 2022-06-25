@@ -2,7 +2,7 @@
   "type": "thommas:mythril_blaster",
   "ingredients": [
     {
-      "item": "thommas:netherrack_benitoite_ore"
+      "item": "thommas:benitoite_ore"
     },
     {
       "item": "thommas:magic_charge"

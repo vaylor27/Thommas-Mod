@@ -76,9 +76,9 @@ public class ModBlocks {
             new FlowerPotBlock(ModBlocks.CORRUPTED_FLOWER, FabricBlockSettings.copy(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     public static final Block MYTHRIL_LAMP = registerBlock("mythril_lamp",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block WINTER_WINDOW = registerBlock("winter_window",
@@ -256,99 +256,99 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(6.0F)), ModItemGroup.BRICKS);
 
     public static final Block REDSTONE_LAMP_BLACK = registerBlock("redstone_lamp_black",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_BLUE = registerBlock("redstone_lamp_blue",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_BROWN = registerBlock("redstone_lamp_brown",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_CYAN = registerBlock("redstone_lamp_cyan",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_GRAY = registerBlock("redstone_lamp_gray",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_GREEN = registerBlock("redstone_lamp_green",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_LIGHT_BLUE = registerBlock("redstone_lamp_light_blue",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_LIME = registerBlock("redstone_lamp_lime",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_MAGENTA = registerBlock("redstone_lamp_magenta",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_ORANGE = registerBlock("redstone_lamp_orange",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_PINK = registerBlock("redstone_lamp_pink",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_PURPLE = registerBlock("redstone_lamp_purple",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_RED = registerBlock("redstone_lamp_red",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_SILVER = registerBlock("redstone_lamp_silver",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_WHITE = registerBlock("redstone_lamp_white",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block REDSTONE_LAMP_YELLOW = registerBlock("redstone_lamp_yellow",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block SALTPETER_BLOCK = registerBlock("saltpeter_block",
@@ -753,7 +753,7 @@ public class ModBlocks {
             new PlumpHelmetBlock(FabricBlockSettings.of(Material.METAL).nonOpaque()));
 
     public static final Block PACKED_FEATHERS = registerBlock("packed_feathers",
-            new FeatherBlock(FabricBlockSettings.of(Material.STONE)), ModItemGroup.SPECIAL_BLOCKS);
+            new FeatherBlock(FabricBlockSettings.of(Material.STONE).strength(2.0f)), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block WHITE_ELEVATOR = registerBlock("white_elevator",
             new ElevatorBlock(FabricBlockSettings.of(Material.STONE).strength(1.8F)), ModItemGroup.SPECIAL_BLOCKS);
@@ -801,8 +801,8 @@ public class ModBlocks {
             new ModTrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool().nonOpaque()), ModItemGroup.BLOCKS);
 
     public static final Block ORICHALCUM_LAMP = registerBlock("orichalcum_lamp",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+            new LampBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block TURNIP_CROP = registerBlockWithoutBlockItem("turnip_crop",
@@ -884,9 +884,9 @@ public class ModBlocks {
                     .strength(2f).requiresTool()), ModItemGroup.BLOCKS);
 
     public static final Block COBALT_LAMP = registerBlock("cobalt_lamp",
-            new MythrilLampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
+            new LampBlock(FabricBlockSettings.of(Material.METAL).requiresTool()
                     .strength(1f).requiresTool()
-                    .luminance((state) -> state.get(MythrilLampBlock.CLICKED) ? 15 : 0)
+                    .luminance((state) -> state.get(LampBlock.CLICKED) ? 15 : 0)
                     .sounds(ModSounds.MYTHRIL_SOUNDS)), ModItemGroup.LAMPS);
 
     public static final Block TANZANITE_BLOCK = registerBlock("tanzanite_block",
@@ -980,7 +980,7 @@ public class ModBlocks {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
     }
 
-    private static Block registerBlock(String name, Block block, ItemGroup group) {
+    public static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
     }
@@ -991,6 +991,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        Thommas.LOGGER.info("Registering ModBlocks for " + Thommas.MOD_ID + "!");
+            Thommas.LOGGER.info("Registering ModBlocks for " + Thommas.MOD_ID + "!");
     }
 }

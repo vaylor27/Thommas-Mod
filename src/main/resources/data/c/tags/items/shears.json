@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "thommas:tin_shears",
+    "thommas:steel_shears",
+    "thommas:pewter_shears",
+    "thommas:lead_shears",
+    "thommas:gold_shears",
+    "thommas:copper_shears",
+    "thommas:bronze_shears",
+    "thommas:adamantium_shears"
+  ]
+}

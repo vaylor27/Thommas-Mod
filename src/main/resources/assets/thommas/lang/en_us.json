@@ -1004,13 +1004,14 @@
   "itemGroup.thommas.electronics": "Thommas Electronics & Parts",
   "itemGroup.thommas.drops": "Thommas Mob Drops",
   "itemGroup.thommas.all": "All Thommas Blocks & Items",
+  "itemGroup.thommas.pedestals": "Thommas Pedestals",
 
   "entity.minecraft.villager.blastmaster": "Blastmaster",
   "entity.minecraft.villager.lightninggod": "Lightning God",
   "entity.minecraft.villager.combiner": "Combiner",
+  "entity.minecraft.villager.jumpmaster": "Jump Master",
 
   "enchantment.thommas.the_massacre": "The Massacre",
-  "enchantment.thommas.sharpgod": "Sharper Than Sharp",
 
   "advancements.vakror.mythril.description": "The power lies in Mythril!",
   "advancements.vakror.mythril.title": "Mythril!",

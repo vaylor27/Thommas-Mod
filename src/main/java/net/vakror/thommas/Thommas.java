@@ -3,6 +3,7 @@ package net.vakror.thommas;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.util.Identifier;
 import net.vakror.thommas.block.FurnaceBlocks;
 import net.vakror.thommas.block.ModBlocks;
@@ -20,6 +21,8 @@ import net.vakror.thommas.recipe.ModRecipes;
 import net.vakror.thommas.screen.ModScreenHandlers;
 import net.vakror.thommas.util.ModLootTableModifiers;
 import net.vakror.thommas.util.ModRegistries;
+import net.vakror.thommas.util.ModTrades;
+import net.vakror.thommas.villager.ModVillagers;
 import net.vakror.thommas.world.biome.ModBiomes;
 import net.vakror.thommas.world.dimensions.dimension.ModDimensions;
 import net.vakror.thommas.world.gen.ModWorldGen;
@@ -37,9 +40,12 @@ public class Thommas implements ModInitializer {
 	public static final Identifier UPDATE_INV_PACKET_ID_HUMONGOUS = new Identifier(MOD_ID, "update_humongous");
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static ThommasConfig CONFIG;
+	boolean isDevelopmentEnvironment = FabricLoader.getInstance().isDevelopmentEnvironment();
 
 	public static boolean autofish = false;
 	public static boolean flyhack = false;
+	
+	
 
 	@Override
 	public void onInitialize() {
@@ -63,7 +69,12 @@ public class Thommas implements ModInitializer {
 		ModEffects.registerEffects();
 		ModPotions.registerPotions();
 		ModStructures.registerStructureFeatures();
-		ModItemGroup.printNumberOfItems(MOD_ID);
+		ModVillagers.registerVillagers();
+		ModTrades.registerTrades();
+
+		if (isDevelopmentEnvironment) {
+			ModItemGroup.printNumberOfItems(MOD_ID);
+		}
 		// check if riding
 
 		GeckoLib.initialize();

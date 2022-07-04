@@ -88,7 +88,8 @@ public class MythrilBlasterRecipe implements Recipe<SimpleInventory> {
                 inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
             }
 
-            return new MythrilBlasterRecipe(id, output, inputs);
+            ItemStack finalOutput = new ItemStack(output.getItem(), 9);
+            return new MythrilBlasterRecipe(id, finalOutput, inputs);
         }
 
         @Override
@@ -100,7 +101,9 @@ public class MythrilBlasterRecipe implements Recipe<SimpleInventory> {
             }
 
             ItemStack output = buf.readItemStack();
-            return new MythrilBlasterRecipe(id, output, inputs);
+            ItemStack finalOutput = new ItemStack(output.getItem(), 9);
+
+            return new MythrilBlasterRecipe(id, finalOutput, inputs);
         }
 
         @Override

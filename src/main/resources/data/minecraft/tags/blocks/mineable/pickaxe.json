@@ -210,6 +210,8 @@
     "thommas:zircon_block",
     "thommas:deepslate_zircon_ore",
     "thommas:endstone_zircon_ore",
-    "thommas:netherrack_zircon_ore"
+    "thommas:netherrack_zircon_ore",
+    "thommas:orichalcum_stairs",
+    "thommas:combiner"
   ]
 }

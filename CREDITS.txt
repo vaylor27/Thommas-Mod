@@ -61,3 +61,7 @@ Rei Plugin (Inspiration) by VazkiiMods:
 https://github.com/VazkiiMods/Botania/
 Under custom license:
 https://github.com/VazkiiMods/Botania/blob/1.18.x/LICENSE.txt
+
+Several pieces of code making shears work by samedifferent:
+https://github.com/samedifferent/CustomShears
+Under MIT License

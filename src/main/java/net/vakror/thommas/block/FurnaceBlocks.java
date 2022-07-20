@@ -25,27 +25,36 @@ public class FurnaceBlocks {
 
     public static final List<Block> allFurnaces = new ArrayList<>();
     public static final List<Block> regularFurnaces = new ArrayList<>();
+    public static Block IRON_FURNACE;
+    public static Block GOLD_FURNACE;
+    public static Block EMERALD_FURNACE;
+    public static Block DIAMOND_FURNACE;
+    public static Block OBSIDIAN_FURNACE;
+    public static Block STEEL_OVEN;
 
     public static void init() {
-        RegisterFurnaces.furnaceData.forEach(FurnaceBlocks::registerFurnace);
+        IRON_FURNACE = registerFurnace(RegisterFurnaces.furnaceData.get(0));
+        GOLD_FURNACE = registerFurnace(RegisterFurnaces.furnaceData.get(1));
+        EMERALD_FURNACE = registerFurnace(RegisterFurnaces.furnaceData.get(2));
+        DIAMOND_FURNACE = registerFurnace(RegisterFurnaces.furnaceData.get(3));
+        OBSIDIAN_FURNACE = registerFurnace(RegisterFurnaces.furnaceData.get(4));
+        STEEL_OVEN = registerFurnace(RegisterFurnaces.furnaceData.get(5));
     }
 
-    private static void registerFurnace(FurnaceData data) {
+    private static Block registerFurnace(FurnaceData data) {
         if (!data.getName().contains("steel_oven")) {
             VakrorFurnaceBlock baseFurnace = register(data.getName(), new VakrorFurnaceBlock(FabricBlockSettings.of(Material.STONE).hardness(3.5f).luminance(createLightLevelFromBlockState(13)).nonOpaque(), data.getSpeedModifier(), data.getFuelModifier(), data.getDuplicationChance()));
             Registry.register(Registry.ITEM, data.getID(), new FurnaceItem(baseFurnace, new Item.Settings().group(ModItemGroup.SPECIAL_BLOCKS)));
             regularFurnaces.add(baseFurnace);
             allFurnaces.add(baseFurnace);
-            BlockRenderLayerMap.INSTANCE.putBlock(baseFurnace, RenderLayer.getTranslucent());
-            BlockRenderLayerMap.INSTANCE.putBlock(baseFurnace, RenderLayer.getCutout());
+            return baseFurnace;
         }
         else {
             VakrorFurnaceBlock baseFurnace = register("steel_oven", new VakrorFurnaceBlock(FabricBlockSettings.of(Material.STONE).hardness(3.5f).luminance(createLightLevelFromBlockState(13)).nonOpaque(), data.getSpeedModifier(), data.getFuelModifier(), data.getDuplicationChance()));
             Registry.register(Registry.ITEM, data.getID(), new FurnaceItem(baseFurnace, new Item.Settings().group(ModItemGroup.SPECIAL_BLOCKS)));
             regularFurnaces.add(baseFurnace);
             allFurnaces.add(baseFurnace);
-            BlockRenderLayerMap.INSTANCE.putBlock(baseFurnace, RenderLayer.getTranslucent());
-            BlockRenderLayerMap.INSTANCE.putBlock(baseFurnace, RenderLayer.getCutout());
+            return baseFurnace;
         }
     }
 

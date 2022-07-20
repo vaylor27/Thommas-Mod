@@ -33,6 +33,16 @@
     "thommas:cherry_blossom_planks",
     "thommas:cherry_blossom_sapling",
     "thommas:cherry_blossom_trapdoor",
-    "thommas:stripped_cherry_blossom_log"
+    "thommas:stripped_cherry_blossom_log",
+    "thommas:copper_chest",
+    "thommas:iron_chest",
+    "thommas:gold_chest",
+    "thommas:diamond_chest",
+    "thommas:emerald_chest",
+    "thommas:crystal_chest",
+    "thommas:obsidian_chest",
+    "thommas:big_crystal_chest",
+    "thommas:massive_crystal_chest",
+    "thommas:humongous_crystal_chest"
   ]
 }

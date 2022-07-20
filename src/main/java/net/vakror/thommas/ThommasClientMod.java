@@ -8,11 +8,14 @@ import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.vakror.thommas.block.FurnaceBlocks;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.block.entity.chest.BigCrystalChestEntity;
 import net.vakror.thommas.block.entity.chest.CrystalChestEntity;
@@ -94,6 +97,11 @@ public class ThommasClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SAFE_KAUPEN_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TITANIUM_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMETHYST_DOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.IRON_FURNACE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.GOLD_FURNACE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.EMERALD_FURNACE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.DIAMOND_FURNACE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.OBSIDIAN_FURNACE, RenderLayer.getTranslucent());
 
 
         ModModelPredicateProvider.registerModModels();
@@ -138,7 +146,9 @@ public class ThommasClientMod implements ClientModInitializer {
                 inv.set(i, buf.readItemStack());
             }
             client.execute(() -> {
+                assert MinecraftClient.getInstance().world != null;
                 CrystalChestEntity blockEntity = (CrystalChestEntity) MinecraftClient.getInstance().world.getBlockEntity(pos);
+                assert blockEntity != null;
                 blockEntity.setInvStackList(inv);
             });
         });
@@ -151,7 +161,9 @@ public class ThommasClientMod implements ClientModInitializer {
                 inv.set(i, buf.readItemStack());
             }
             client.execute(() -> {
+                assert MinecraftClient.getInstance().world != null;
                 BigCrystalChestEntity blockEntity = (BigCrystalChestEntity) MinecraftClient.getInstance().world.getBlockEntity(pos);
+                assert blockEntity != null;
                 blockEntity.setInvStackList(inv);
             });
         });
@@ -164,7 +176,9 @@ public class ThommasClientMod implements ClientModInitializer {
                 inv.set(i, buf.readItemStack());
             }
             client.execute(() -> {
+                assert MinecraftClient.getInstance().world != null;
                 MassiveCrystalChestEntity blockEntity = (MassiveCrystalChestEntity) MinecraftClient.getInstance().world.getBlockEntity(pos);
+                assert blockEntity != null;
                 blockEntity.setInvStackList(inv);
             });
         });
@@ -177,7 +191,9 @@ public class ThommasClientMod implements ClientModInitializer {
                 inv.set(i, buf.readItemStack());
             }
             client.execute(() -> {
+                assert MinecraftClient.getInstance().world != null;
                 HumongousCrystalChestEntity blockEntity = (HumongousCrystalChestEntity) MinecraftClient.getInstance().world.getBlockEntity(pos);
+                assert blockEntity != null;
                 blockEntity.setInvStackList(inv);
             });
         });

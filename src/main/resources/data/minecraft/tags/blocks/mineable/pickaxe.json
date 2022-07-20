@@ -212,6 +212,18 @@
     "thommas:endstone_zircon_ore",
     "thommas:netherrack_zircon_ore",
     "thommas:orichalcum_stairs",
-    "thommas:combiner"
+    "thommas:combiner",
+    "thommas:cobalt_ore",
+    "thommas:deepslate_cobalt_ore",
+    "thommas:raw_cobalt_block",
+    "thommas:cobalt_lamp",
+    "thommas:cobalt_block",
+    "thommas:cobalt_stairs",
+    "thommas:cobalt_slab",
+    "thommas:cobalt_button",
+    "thommas:cobalt_pressure_plate",
+    "thommas:cobalt_fence",
+    "thommas:cobalt_fence_gate",
+    "thommas:cobalt_wall"
   ]
 }

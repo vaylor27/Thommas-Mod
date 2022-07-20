@@ -16,16 +16,18 @@ public class ModPotions {
     public static Potion FREEZE_POTION;
     public static Potion BLEED_POTION;
     public static Potion HEARTBREAK_POTION;
+    public static Potion IRON_SKIN_POTION;
 
     private static Potion registerPotion(String name, StatusEffect effect) {
         return Registry.register(Registry.POTION, new Identifier(Thommas.MOD_ID, name),
-                new Potion(new StatusEffectInstance(effect, 2000, 2)));
+                new Potion(new StatusEffectInstance(effect, 60000, 2)));
     }
 
     public static void registerPotions() {
         FREEZE_POTION = registerPotion("freeze_potion", ModEffects.FREEZE);
         BLEED_POTION = registerPotion("bleed_potion", ModEffects.BLEED);
         HEARTBREAK_POTION = registerPotion("heartbreak_potion", ModEffects.HEARTBREAK);
+        IRON_SKIN_POTION = registerPotion("iron_skin_potion", ModEffects.IRON_SKIN);
         registerPotionRecipes();
 
     }
@@ -48,5 +50,11 @@ public class ModPotions {
 
         BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.STRONG_TURTLE_MASTER, Items.FERMENTED_SPIDER_EYE,
                 HEARTBREAK_POTION);
+
+        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.WEAKNESS, Items.FERMENTED_SPIDER_EYE,
+                HEARTBREAK_POTION);
+
+        BrewingRecipeRegistryMixin.invokeRegisterPotionRecipe(Potions.WEAKNESS, Items.FERMENTED_SPIDER_EYE,
+                IRON_SKIN_POTION);
     }
 }

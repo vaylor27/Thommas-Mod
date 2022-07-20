@@ -508,12 +508,12 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block JACARANDA_SAPLING = registerBlock("jacaranda_sapling",
-            new ModSaplingBlock(new JacarandaSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new JacarandaSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
 
     public static final Block REDWOOD_SAPLING = registerBlock("redwood_sapling",
-            new ModSaplingBlock(new RedwoodSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new RedwoodSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
 
     public static final Block MYTHRIL_BLASTER = registerBlock("mythril_blaster",
             new MythrilBlasterBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.0f).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
@@ -672,7 +672,7 @@ public class ModBlocks {
             new OreBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.0f), UniformIntProvider.create(17, 26)), ModItemGroup.ORES);
 
     public static final Block EBONY_SAPLING = registerBlock("ebony_sapling",
-            new ModSaplingBlock(new EbonySaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new EbonySaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
 
     public static final Block BLIGHTSPORE = registerBlockWithoutBlockItem("blightspore",
             new BlightSpore(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
@@ -705,7 +705,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block BONETREE_SAPLING = registerBlock("bonetree_sapling",
-            new ModSaplingBlock(new BoneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new BoneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
 
     public static final Block GOLDENWOOD_LOG = registerBlock("goldenwood_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
@@ -714,7 +714,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block GOLDENWOOD_SAPLING = registerBlock("goldenwood_sapling",
-            new ModSaplingBlock(new GoldenWoodSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new GoldenWoodSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
 
     public static final Block CRONETREE_LOG = registerBlock("cronetree_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
@@ -723,7 +723,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block CRONETREE_SAPLING = registerBlock("cronetree_sapling",
-            new ModSaplingBlock(new CroneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new CroneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
 
     public static final Block GLOAMBLOSSOM_LOG = registerBlock("gloamblossom_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
@@ -732,7 +732,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block GLOAMBLOSSOM_SAPLING = registerBlock("gloamblossom_sapling",
-            new ModSaplingBlock(new GloamBlossomSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new GloamBlossomSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
 
     public static final Block BLUEBELLS = registerBlock("bluebells",
             new ModFlowerBlock(StatusEffects.ABSORPTION, 2000, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
@@ -836,8 +836,8 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroup.NATURE);
 
     public static final Block CHERRY_BLOSSOM_SAPLING = registerBlock("cherry_blossom_sapling",
-            new ModSaplingBlock(new CherryBlossomSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING), () -> Blocks.END_STONE), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new CherryBlossomSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
 
     public static final Block COBALT_BLOCK = registerBlock("cobalt_block",
             new Block(FabricBlockSettings.copy(Blocks.STONE)), ModItemGroup.BLOCKS);

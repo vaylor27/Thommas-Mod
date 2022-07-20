@@ -27,6 +27,7 @@ public class ModScreenHandlers {
     public static ScreenHandlerType<ChestScreenHandler> BIG_CRYSTAL_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> MASSIVE_CRYSTAL_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> HUMONGOUS_CRYSTAL_CHEST;
+    public static ScreenHandlerType<ChestScreenHandler> SMALL_BACKPACK;
 
     public static void registerAllScreenHandlers() {
         MYTHRIL_BLASTER_SCREEN_HANDLER =
@@ -79,6 +80,9 @@ public class ModScreenHandlers {
         HUMONGOUS_CRYSTAL_CHEST = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "humongous_crystal_chest"),
                          (syncId, inventory) -> new ChestScreenHandler(HUMONGOUS_CRYSTAL_CHEST, ChestTypes.HUMONGOUS_CRYSTAL, syncId, inventory, ScreenHandlerContext.EMPTY));
 
+        SMALL_BACKPACK = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "small_backpack"),
+                         (syncId, inventory) -> new ChestScreenHandler(SMALL_BACKPACK, ChestTypes.SMALL_BACKPACK, syncId, inventory, ScreenHandlerContext.EMPTY));
+
     }
     
     public static void registerChestScreenHandlers() {
@@ -92,6 +96,7 @@ public class ModScreenHandlers {
         ScreenRegistry.<ChestScreenHandler, CottonInventoryScreen<ChestScreenHandler>>register(BIG_CRYSTAL_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
         ScreenRegistry.<ChestScreenHandler, CottonInventoryScreen<ChestScreenHandler>>register(MASSIVE_CRYSTAL_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
         ScreenRegistry.<ChestScreenHandler, CottonInventoryScreen<ChestScreenHandler>>register(HUMONGOUS_CRYSTAL_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
+        ScreenRegistry.<ChestScreenHandler, CottonInventoryScreen<ChestScreenHandler>>register(SMALL_BACKPACK, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
 
     }
 }

@@ -1599,7 +1599,6 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
 
 
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);
     }

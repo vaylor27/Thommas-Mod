@@ -123,11 +123,11 @@ public class UpgraderBlockEntity extends BlockEntity implements NamedScreenHandl
                 .getFirstMatch(UpgraderRecipe.Type.INSTANCE, inventory, world);
 
         if(match.isPresent()) {
+            entity.removeStack(0,1);
             entity.removeStack(1,1);
-            entity.removeStack(2,1);
 
-            entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
-                    entity.getStack(3).getCount() + match.get().getOutput().getCount()));
+            entity.setStack(2, new ItemStack(match.get().getOutput().getItem(),
+                    entity.getStack(2).getCount() + match.get().getOutput().getCount()));
 
             entity.resetProgress();
         }

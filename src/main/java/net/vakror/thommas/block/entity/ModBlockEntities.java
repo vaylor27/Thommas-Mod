@@ -19,6 +19,9 @@ public class ModBlockEntities {
     public static BlockEntityType<OrichalcumBlasterEntity> ORICHALCUM_BLASTER;
     public static BlockEntityType<VakrorFurnaceEntity> VAKROR_FURNACE;
     public static BlockEntityType<UpgraderBlockEntity> UPGRADER_BLOCK_ENTITY;
+
+
+
     public static final BlockEntityType<CopperChestEntity> COPPER_CHEST = FabricBlockEntityTypeBuilder.create(CopperChestEntity::new, ModBlocks.COPPER_CHEST).build(null);
     public static final BlockEntityType<IronChestEntity> IRON_CHEST = FabricBlockEntityTypeBuilder.create(IronChestEntity::new, ModBlocks.IRON_CHEST).build(null);
     public static final BlockEntityType<GoldChestEntity> GOLD_CHEST = FabricBlockEntityTypeBuilder.create(GoldChestEntity::new, ModBlocks.GOLD_CHEST).build(null);
@@ -64,6 +67,8 @@ public class ModBlockEntities {
                     new Identifier(Thommas.MOD_ID, "upgrader"),
                     FabricBlockEntityTypeBuilder.create(UpgraderBlockEntity::new,
                             ModBlocks.UPGRADER).build(null));
+
+
 
 
         Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "copper_chest"), COPPER_CHEST);

@@ -28,7 +28,10 @@ public enum ChestTypes {
     WOOD(27, 9, new Identifier("entity/chest/normal")),
     BIG_CRYSTAL(118, 24, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
     MASSIVE_CRYSTAL(129, 36, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
-    HUMONGOUS_CRYSTAL(144, 36, new Identifier(Thommas.MOD_ID, "model/crystal_chest"));
+    HUMONGOUS_CRYSTAL(144, 36, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
+
+
+    SMALL_BACKPACK(36, 8, new Identifier(Thommas.MOD_ID, "model/crystal_chest"));
 
     public final int size;
     public final int rowLength;

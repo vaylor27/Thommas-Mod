@@ -7,6 +7,7 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldView;
+import net.vakror.thommas.util.BlockPlaceUtils;
 
 public class ModFlowerBlock extends FlowerBlock {
     public ModFlowerBlock(StatusEffect suspiciousStewEffect, int effectDuration, Settings settings) {
@@ -20,7 +21,6 @@ public class ModFlowerBlock extends FlowerBlock {
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        BlockPos pos1 = new BlockPos(pos.getX(), pos.getY() - 1, pos.getZ());
-        return world.getBlockState(pos).isAir() && world.getBlockState(pos1).isOf(Blocks.END_STONE);
+        return BlockPlaceUtils.isBlockBelowOf(pos, world, Blocks.END_STONE, Blocks.GRASS_BLOCK);
     }
 }

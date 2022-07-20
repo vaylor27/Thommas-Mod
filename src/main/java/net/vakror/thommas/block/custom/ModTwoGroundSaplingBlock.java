@@ -10,16 +10,18 @@ import net.minecraft.world.BlockView;
 import java.util.function.Supplier;
 
 @SuppressWarnings("all")
-public class ModSaplingBlock extends SaplingBlock {
+public class ModTwoGroundSaplingBlock extends SaplingBlock {
     private final Supplier<Block> ground;
+    private final Supplier<Block> otherGround;
 
-    public ModSaplingBlock(SaplingGenerator generator, Settings settings, Supplier<Block> ground) {
+    public ModTwoGroundSaplingBlock(SaplingGenerator generator, Settings settings, Supplier<Block> ground, Supplier<Block> otherGround) {
         super(generator, settings);
         this.ground = ground;
+        this.otherGround = otherGround;
     }
 
     @Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isOf(ground.get());
+        return floor.isOf(ground.get()) || floor.isOf(otherGround.get());
     }
 }

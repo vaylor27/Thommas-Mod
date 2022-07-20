@@ -98,7 +98,7 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     public int getDurability() {
-        return this.itemDurability;
+        return Integer.parseInt(String.valueOf(Math.round(this.itemDurability * 0.2)));
     }
 
     public float getMiningSpeedMultiplier() {
@@ -106,7 +106,7 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     public float getAttackDamage() {
-        return this.attackDamage * 1.5F;
+        return this.attackDamage * .5F;
     }
 
     public int getMiningLevel() {

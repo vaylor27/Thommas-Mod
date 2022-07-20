@@ -3,6 +3,7 @@ package net.vakror.thommas;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidStorage;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.util.Identifier;
 import net.vakror.thommas.block.FurnaceBlocks;
@@ -48,6 +49,7 @@ public class Thommas implements ModInitializer {
 	
 
 	@Override
+	@SuppressWarnings("all")
 	public void onInitialize() {
 		AutoConfig.register(ThommasConfig.class, GsonConfigSerializer::new);
 		CONFIG = AutoConfig.getConfigHolder(ThommasConfig.class).getConfig();

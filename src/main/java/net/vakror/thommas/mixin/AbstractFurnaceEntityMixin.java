@@ -68,7 +68,7 @@ public abstract class AbstractFurnaceEntityMixin extends BlockEntity {
         Integer original = cir.getReturnValue();
 
         if(ff_entityContext instanceof VakrorFurnaceEntity) {
-            cir.setReturnValue((int) (original / ((VakrorFurnaceEntity) ff_entityContext).getSpeedModifier()));
+            cir.setReturnValue((int) (original/ ((VakrorFurnaceEntity) ff_entityContext).getSpeedModifier()));
         }
     }
 }

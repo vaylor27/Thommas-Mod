@@ -68,7 +68,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }
 
     public int getProtectionAmount(EquipmentSlot slot) {
-        return this.protectionAmounts[slot.getEntitySlotId()];
+        return Integer.parseInt(String.valueOf(Math.round(this.protectionAmounts[slot.getEntitySlotId()] * 0.3)));
     }
 
     public int getEnchantability() {
@@ -88,10 +88,10 @@ public enum ModArmorMaterials implements ArmorMaterial {
     }
 
     public float getToughness() {
-        return this.toughness;
+        return this.toughness * 5;
     }
 
     public float getKnockbackResistance() {
-        return this.knockbackResistance;
+        return this.knockbackResistance * 0.5f;
     }
 }

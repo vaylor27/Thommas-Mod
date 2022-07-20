@@ -10,6 +10,7 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
+import net.minecraft.entity.mob.PathAwareEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.TameableEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -45,6 +46,10 @@ public class RaccoonEntity extends TameableEntity implements IAnimatable {
         this.ignoreCameraFrustum = true;
     }
 
+    public boolean canBreakDoors() {
+        return false;
+    }
+
     public static DefaultAttributeContainer.Builder setAttributes() {
         return TameableEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 20.0D)
@@ -56,10 +61,16 @@ public class RaccoonEntity extends TameableEntity implements IAnimatable {
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
         this.goalSelector.add(1, new SitGoal(this)); // Important that the Sit Goal is higher than WanderGoal!
-        this.goalSelector.add(2, new WanderAroundPointOfInterestGoal(this, 0.75f, false));
-        this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.75f, 1));
-        this.goalSelector.add(4, new LookAroundGoal(this));
-        this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
+        this.goalSelector.add(2, new EscapeDangerGoal(this, 075f));
+        this.goalSelector.add(3, new AvoidSunlightGoal(this));
+        this.goalSelector.add(4, new MoveThroughVillageGoal(this, 0.45, true, 20, this::canBreakDoors));
+        this.goalSelector.add(5, new AnimalMateGoal(this, 1));
+        this.goalSelector.add(6, new FollowOwnerGoal(this, 075f, 10, 500, false));
+        this.goalSelector.add(7, new FollowParentGoal(this, 075f));
+        this.goalSelector.add(8, new WanderAroundPointOfInterestGoal(this, 0.75f, false));
+        this.goalSelector.add(9, new WanderAroundFarGoal(this, 0.75f, 1));
+        this.goalSelector.add(10, new LookAroundGoal(this));
+        this.goalSelector.add(11, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
     }
 
     @Override

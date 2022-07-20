@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I#I",
+    "#X#",
+    "I#I"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:bloodstone"
+    },
+    "#": {
+      "item": "thommas:malign_ember"
+    },
+    "X": {
+      "item": "thommas:ammonite"
+    }
+  },
+  "result": {
+    "item": "thommas:emperyan_jewel",
+    "count": 1
+  }
+}

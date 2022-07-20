@@ -11,11 +11,12 @@ import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.ScreenHandlerType;
 import net.vakror.thommas.block.ChestTypes;
 
-public class HumongousCrystalChestScreenHandler extends SyncedGuiDescription {
+public class BackpackScreenHandler extends SyncedGuiDescription {
     Inventory inventory;
 
-    public HumongousCrystalChestScreenHandler(ScreenHandlerType<?> type, ChestTypes chestType, int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
-        super(type, syncId, playerInventory, getBlockInventory(context, chestType.size), null);
+    public BackpackScreenHandler(ScreenHandlerType<?> type, ChestTypes chestType, int syncId, PlayerInventory playerInventory, Inventory inventory1, ScreenHandlerContext context) {
+        super(type, syncId, playerInventory, inventory1, null);
+        blockInventory = inventory1;
         inventory = blockInventory;
         int rows = chestType.getRowCount();
         int length = chestType.rowLength;
@@ -26,13 +27,13 @@ public class HumongousCrystalChestScreenHandler extends SyncedGuiDescription {
         WItemSlot itemSlot;
         int counter = 0;
         if (chestType.rowLength == 1) {
-            itemSlot = WItemSlot.of(blockInventory, 0);
+            itemSlot = WItemSlot.of(inventory1, 0);
             itemSlot.setFilter(stack -> stack.getItem() == Items.DIRT);
             root.add(itemSlot, (18 * 4), 12);
         } else {
             for (int j = 0; j < rows; j++) {
                 for (int i = 0; i < length; i++) {
-                    itemSlot = WItemSlot.of(blockInventory, counter);
+                    itemSlot = WItemSlot.of(inventory1, counter);
                     root.add(itemSlot, (18 * i), 12 + (18 * j));
                     counter++;
                 }

@@ -29,7 +29,7 @@ public class Tree {
                 TREE_SPAWN, VegetationPlacedFeatures.modifiers(
                         PlacedFeatures.createCountExtraModifier(countPerChunk, extraChance, extraCount)));
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.BARRENS_FOREST, ModBiomes.HIGHLANDS_FOREST, ModBiomes.MIDLANDS_FOREST),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.BARRENS_FOREST, ModBiomes.HIGHLANDS_FOREST, ModBiomes.MIDLANDS_FOREST, ModBiomes.TREE_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, TREE_PLACED.getKey().get());
     }
 }

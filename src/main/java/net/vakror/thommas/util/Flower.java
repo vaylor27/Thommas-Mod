@@ -35,7 +35,7 @@ public class Flower {
     }
 
     private static void generateFlower() {
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.HIGHLANDS_FOREST, ModBiomes.BARRENS_FOREST, ModBiomes.MIDLANDS_FOREST),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.HIGHLANDS_FOREST, ModBiomes.BARRENS_FOREST, ModBiomes.MIDLANDS_FOREST, ModBiomes.TREE_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, FLOWER_PLACED.getKey().get());
     }
 }

@@ -157,8 +157,8 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
                 .getFirstMatch(MythrilBlasterRecipe.Type.INSTANCE, inventory, world);
 
         if(match.isPresent()) {
-            entity.removeStack(1, 32);
-            entity.removeStack(2,32);
+            entity.removeStack(1, 1);
+            entity.removeStack(2,1);
 
             entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
                     entity.getStack(3).getCount() + match.get().getOutput().getCount()));

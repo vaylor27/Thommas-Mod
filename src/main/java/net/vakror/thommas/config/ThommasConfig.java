@@ -11,4 +11,5 @@ public class ThommasConfig implements ConfigData {
     public boolean isPlayerOnly = false;
     public boolean displayParticles = true;
     public boolean renderToughnessBar = true;
+
 }

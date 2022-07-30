@@ -5,6 +5,7 @@ import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidStorage;
 import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.impl.util.Arguments;
 import net.minecraft.util.Identifier;
 import net.vakror.thommas.block.FurnaceBlocks;
 import net.vakror.thommas.block.ModBlocks;
@@ -32,6 +33,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib3.GeckoLib;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 
 public class Thommas implements ModInitializer {
 	public static final String MOD_ID = "thommas";
@@ -44,7 +48,6 @@ public class Thommas implements ModInitializer {
 	boolean isDevelopmentEnvironment = FabricLoader.getInstance().isDevelopmentEnvironment();
 
 	public static boolean autofish = false;
-	public static boolean flyhack = false;
 	
 	
 

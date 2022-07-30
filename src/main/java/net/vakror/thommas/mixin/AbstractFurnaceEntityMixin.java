@@ -65,10 +65,12 @@ public abstract class AbstractFurnaceEntityMixin extends BlockEntity {
             method = "getCookTime",
             at = @At("RETURN"), cancellable = true)
     private static void modifyCookTime(World world, AbstractFurnaceBlockEntity furnace, CallbackInfoReturnable<Integer> cir) {
-        Integer original = cir.getReturnValue();
 
+        if (!(ff_entityContext instanceof VakrorFurnaceEntity)) {
+            cir.setReturnValue(200);
+        }
         if(ff_entityContext instanceof VakrorFurnaceEntity) {
-            cir.setReturnValue((int) (original/ ((VakrorFurnaceEntity) ff_entityContext).getSpeedModifier()));
+            cir.setReturnValue((int) (200/ ((VakrorFurnaceEntity) ff_entityContext).getSpeedModifier()));
         }
     }
 }

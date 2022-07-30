@@ -12,7 +12,8 @@ public class RegisterFurnaces {
             FurnaceData.of("emerald", 4f, 3f, 7),
             FurnaceData.of("diamond", 4f, 3f, 9),
             FurnaceData.of("obsidian", 5f, 4f, 16),
-            FurnaceData.of("steel_oven", 46f, 2f, 100)
+            FurnaceData.of("steel_oven", 46f, 2f, 100),
+            FurnaceData.of("industrial_smelter", 100f, 0.1f, 100)
     );
 
     public static void register() {

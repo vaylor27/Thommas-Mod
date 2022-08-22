@@ -1,12 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "II",
-    "II"
+    "III",
+    "IXI",
+    "III"
   ],
   "key": {
     "I": {
       "item": "thommas:aluminum_ingot"
+    },
+    "X": {
+      "item": "thommas:soul_plasm"
     }
   },
   "result": {

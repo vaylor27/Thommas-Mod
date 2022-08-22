@@ -1,0 +1,16 @@
+{
+
+  "name": "thommas:dungeon/ore_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "thommas:dungeon_ore",
+        "processors": "thommas:dungeon_chest",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

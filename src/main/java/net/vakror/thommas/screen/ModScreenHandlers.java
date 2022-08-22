@@ -16,6 +16,7 @@ public class ModScreenHandlers {
     public static ScreenHandlerType<CombinerScreenHandler> COMBINER_SCREEN_HANDLER;
     public static ScreenHandlerType<OrichalcumBlasterScreenHandler> ORICHALCUM_BLASTER_SCREEN_HANDLER;
     public static ScreenHandlerType<UpgraderScreenHandler> UPGRADER_SCREEN_HANDLER;
+    public static ScreenHandlerType<HoneySuckerScreenHandler> HONEY_SUCKER_SCREEN_HANDLER;
     public static ScreenHandlerType<ChestScreenHandler> COPPER_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> IRON_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> GOLD_CHEST;
@@ -23,7 +24,7 @@ public class ModScreenHandlers {
     public static ScreenHandlerType<ChestScreenHandler> EMERALD_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> CRYSTAL_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> OBSIDIAN_CHEST;
-    public static ScreenHandlerType<ChestScreenHandler> NETHERITE_CHEST;
+    public static ScreenHandlerType<ChestScreenHandler> TREASURE_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> BIG_CRYSTAL_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> MASSIVE_CRYSTAL_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> HUMONGOUS_CRYSTAL_CHEST;
@@ -49,6 +50,10 @@ public class ModScreenHandlers {
          UPGRADER_SCREEN_HANDLER =
                  ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "upgrader"),
                          UpgraderScreenHandler::new);
+
+         HONEY_SUCKER_SCREEN_HANDLER  =
+                 ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "honey_sucker"),
+                         HoneySuckerScreenHandler::new);
 
         COPPER_CHEST = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "copper_chest"),
                          (syncId, inventory) -> new ChestScreenHandler(COPPER_CHEST, ChestTypes.COPPER, syncId, inventory, ScreenHandlerContext.EMPTY));
@@ -83,6 +88,9 @@ public class ModScreenHandlers {
         SMALL_BACKPACK = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "small_backpack"),
                          (syncId, inventory) -> new ChestScreenHandler(SMALL_BACKPACK, ChestTypes.SMALL_BACKPACK, syncId, inventory, ScreenHandlerContext.EMPTY));
 
+        TREASURE_CHEST = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "treasure_chest"),
+                (syncId, inventory) -> new ChestScreenHandler(TREASURE_CHEST, ChestTypes.TREASURE, syncId, inventory, ScreenHandlerContext.EMPTY));
+
     }
     
     public static void registerChestScreenHandlers() {
@@ -97,6 +105,7 @@ public class ModScreenHandlers {
         ScreenRegistry.<ChestScreenHandler, CottonInventoryScreen<ChestScreenHandler>>register(MASSIVE_CRYSTAL_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
         ScreenRegistry.<ChestScreenHandler, CottonInventoryScreen<ChestScreenHandler>>register(HUMONGOUS_CRYSTAL_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
         ScreenRegistry.<ChestScreenHandler, CottonInventoryScreen<ChestScreenHandler>>register(SMALL_BACKPACK, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
+        ScreenRegistry.<ChestScreenHandler, CottonInventoryScreen<ChestScreenHandler>>register(TREASURE_CHEST, (desc, inventory, title) -> new CottonInventoryScreen<>(desc, inventory.player, title));
 
     }
 }

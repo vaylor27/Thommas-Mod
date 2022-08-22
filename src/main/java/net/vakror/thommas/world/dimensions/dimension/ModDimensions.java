@@ -2,6 +2,7 @@ package net.vakror.thommas.world.dimensions.dimension;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.fluid.Fluids;
+import net.minecraft.item.Items;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.fluid.ModFluids;
@@ -15,9 +16,10 @@ public class ModDimensions {
         new Dimension("safe_nether", ModItems.SWITCH,Blocks.BASALT, 71, 23, 99);
         new Dimension("building_haven", ModItems.AMETHYST, true, ModBlocks.MYTHRIL_BLOCK, 255, 21, 0);
         new Dimension("flat", ModItems.DARK_CRYSTAL, true, ModBlocks.AMETHYST_BLOCK, 196, 41, 204);
-        new Dimension("toemas_fred_jefferson", Fluids.WATER, Blocks.GLOWSTONE, 41, 196, 204);
+        new Dimension("toemas_fred_jefferson", Fluids.LAVA, Blocks.GLOWSTONE, 41, 196, 204);
         new Dimension("gorgified_bob_washington", ModItems.STEEL_HAMMER,true,Blocks.WAXED_CUT_COPPER, 189, 15, 79);
         new Dimension("joe_h_kennedy", ModItems.ADAMANTIUM_DUST,true,Blocks.WAXED_CUT_COPPER, 157, 86, 13);
+        new Dimension("hell", Items.LAVA_BUCKET, true, ModBlocks.BITUMEN_BLOCK, 176, 76, 14);
     }
 
     public static void register() {

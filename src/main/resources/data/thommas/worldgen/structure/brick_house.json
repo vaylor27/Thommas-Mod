@@ -1,0 +1,50 @@
+{
+
+  "type": "thommas:brick_house",
+
+
+  "start_pool": "thommas:brick_house/start_pool",
+
+
+  "size": 1,
+
+
+  "max_distance_from_center": 128,
+
+  "biomes": "#thommas:has_structure/brick_house_biomes",
+
+
+  "step": "underground_structures",
+
+  "start_height": {
+    "absolute": -1
+  },
+
+   "project_start_to_heightmap": "WORLD_SURFACE_WG",
+
+   "spawn_overrides": {
+    "monster": {
+      "bounding_box": "piece",
+      "spawns": [
+        {
+          "type": "minecraft:evoker",
+          "weight": 5,
+          "minCount": 1,
+          "maxCount": 2
+        },
+        {
+          "type": "minecraft:phantom",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "type": "minecraft:illusioner",
+          "weight": 6,
+          "minCount": 4,
+          "maxCount": 7
+        }
+      ]
+    }
+  }
+}

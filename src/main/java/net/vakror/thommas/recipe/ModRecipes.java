@@ -25,5 +25,10 @@ public class ModRecipes {
                 UpgraderRecipe.Serializer.INSTANCE);
         Registry.register(Registry.RECIPE_TYPE, new Identifier(Thommas.MOD_ID, UpgraderRecipe.Type.ID),
                 UpgraderRecipe.Type.INSTANCE);
+
+        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(Thommas.MOD_ID, HoneySuckerRecipe.Serializer.ID),
+                HoneySuckerRecipe.Serializer.INSTANCE);
+        Registry.register(Registry.RECIPE_TYPE, new Identifier(Thommas.MOD_ID, HoneySuckerRecipe.Type.ID),
+                HoneySuckerRecipe.Type.INSTANCE);
     }
 }

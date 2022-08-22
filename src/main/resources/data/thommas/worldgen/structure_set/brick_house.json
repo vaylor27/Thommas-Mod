@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "thommas:brick_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 2457830,
+    "spacing": 30,
+    "separation": 29,
+
+    "type": "minecraft:random_spread"
+  }
+}

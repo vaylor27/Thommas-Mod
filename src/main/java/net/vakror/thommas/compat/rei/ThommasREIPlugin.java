@@ -15,10 +15,7 @@ import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.vakror.thommas.block.ModBlocks;
-import net.vakror.thommas.recipe.CombinerRecipe;
-import net.vakror.thommas.recipe.LightningChannelerRecipe;
-import net.vakror.thommas.recipe.MythrilBlasterRecipe;
-import net.vakror.thommas.recipe.UpgraderRecipe;
+import net.vakror.thommas.recipe.*;
 
 import java.util.List;
 
@@ -33,12 +30,14 @@ public class ThommasREIPlugin implements REIClientPlugin {
 				new MythrilBlasterREICategory(),
 				new CombinerREICategory(),
 				new UpgraderREICategory(),
-				new LightningChannelerREICategory()
+				new LightningChannelerREICategory(),
+				new HoneySuckerREICategory()
 		));
 		helper.addWorkstations(ThommasREICategoryIdentifiers.MYTHRIL_BLASTER, EntryStacks.of(ModBlocks.MYTHRIL_BLASTER));
 		helper.addWorkstations(ThommasREICategoryIdentifiers.COMBINER, EntryStacks.of(ModBlocks.COMBINER));
 		helper.addWorkstations(ThommasREICategoryIdentifiers.UPGRADER, EntryStacks.of(ModBlocks.UPGRADER));
 		helper.addWorkstations(ThommasREICategoryIdentifiers.LIGHTNING_CHANNELER, EntryStacks.of(ModBlocks.LIGHTNING_CHANNELER_BLOCK));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.HONEY_SUCKER, EntryStacks.of(ModBlocks.HONEY_SUCKER));
 	}
 
 	@Override
@@ -47,5 +46,6 @@ public class ThommasREIPlugin implements REIClientPlugin {
 		helper.registerFiller(UpgraderRecipe.class, UpgraderREIDisplay::new);
 		helper.registerFiller(CombinerRecipe.class, CombinerREIDisplay::new);
 		helper.registerFiller(LightningChannelerRecipe.class, LightningChannelerREIDisplay::new);
+		helper.registerFiller(HoneySuckerRecipe.class, HoneySuckerREIDisplay::new);
 	}
 }

@@ -31,13 +31,15 @@ public class ModEffects{
 
     private static StatusEffect registerIronSkinEffect() {
         return Registry.register(Registry.STATUS_EFFECT, new Identifier(Thommas.MOD_ID, "iron_skin"),
-                new IronSkinEffect(StatusEffectCategory.BENEFICIAL, 448584)
-                        .addAttributeModifier(EntityAttributes.GENERIC_ARMOR, "03C3C89D-7037-4B41-869F-B146B3864D2E", 6, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                new IronSkinEffect(StatusEffectCategory.BENEFICIAL, 16716544)
+                        .addAttributeModifier(EntityAttributes.GENERIC_ARMOR, "03C3C89D-7037-4B41-869F-B146B3864D2E", 4, EntityAttributeModifier.Operation.MULTIPLY_BASE)
                         .addAttributeModifier(EntityAttributes.GENERIC_ARMOR_TOUGHNESS, "04C3C89D-7037-4B42-869F-B146B3864D2E", 6, EntityAttributeModifier.Operation.MULTIPLY_BASE)
                         .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_DAMAGE, "03C3C80D-7037-4B42-869F-B146B3864D2E", 1, EntityAttributeModifier.Operation.ADDITION)
-                        .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_SPEED, "03C3C79D-7037-4B42-869F-B146B3864D2E", -0.15000000596046448D, EntityAttributeModifier.Operation.ADDITION)
+                        .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_SPEED, "03C3C79D-7037-4B42-869F-B146B3864D2E", -1, EntityAttributeModifier.Operation.ADDITION)
                         .addAttributeModifier(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, "03C3C89D-7037-4C42-869F-B146B3864D2E", 1, EntityAttributeModifier.Operation.ADDITION)
-                        .addAttributeModifier(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, "03C3C89D-7037-4C42-953F-B146B3864D2E", 2, EntityAttributeModifier.Operation.ADDITION));
+                        .addAttributeModifier(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, "03C3C89D-7037-4C42-953F-B146B3864D2E", 2, EntityAttributeModifier.Operation.ADDITION)
+                        .addAttributeModifier(EntityAttributes.GENERIC_FLYING_SPEED, "03C3C89D-7082-4C42-953F-B146B3864D2E", -5, EntityAttributeModifier.Operation.ADDITION)
+                        .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED, "03C3C89D-7037-4C42-953F-B146B3864D2E", -5, EntityAttributeModifier.Operation.ADDITION));
     }
 
     public static void registerEffects() {

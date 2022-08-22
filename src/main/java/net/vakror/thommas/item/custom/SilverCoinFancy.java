@@ -37,10 +37,6 @@ public class SilverCoinFancy extends Item {
                 user.setStackInHand(hand, new ItemStack(ModItems.SILVER_COIN_FANCY, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.MAGIC_CHARGE, 2), true);
             }
-            else if (random <= 19) {
-                user.setStackInHand(hand, new ItemStack(ModItems.SILVER_COIN_FANCY, (count - 1)));
-                user.dropItem(new ItemStack(ModItems.MAGIC_AXE, 2), true);
-            }
             else if (random == 20) {
                 user.setStackInHand(hand, new ItemStack(ModItems.SILVER_COIN_FANCY, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.GOLD_COIN_FANCY, 2), true);

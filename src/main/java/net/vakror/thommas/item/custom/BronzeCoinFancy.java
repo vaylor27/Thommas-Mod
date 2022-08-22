@@ -33,7 +33,7 @@ public class BronzeCoinFancy extends Item {
                     user.dropItem(new ItemStack(ModItems.COAL_COKE, 3), true);
                 } else if (random == 17) {
                     user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN_FANCY, (count - 1)));
-                    user.dropItem(new ItemStack(ModItems.RUBY_CHESTPLATE, 3), true);
+                    user.dropItem(new ItemStack(ModItems.RUBY_CHESTPLATE, 1), true);
                 } else if (random <= 19) {
                     user.setStackInHand(hand, new ItemStack(ModItems.BRONZE_COIN_FANCY, (count - 1)));
                     user.dropItem(new ItemStack(ModItems.COPPER_COIN, 2), true);
@@ -42,7 +42,7 @@ public class BronzeCoinFancy extends Item {
                     user.dropItem(new ItemStack(ModItems.AMETHYST_CHESTPLATE, 1), true);
                 }
                 else {
-                    user.setStackInHand(hand, new ItemStack(ModItems.ALUMINUM_COIN, (count - 1)));
+                    user.getStackInHand(hand).decrement(1);
                 }
             }
         return super.use(world, user, hand);

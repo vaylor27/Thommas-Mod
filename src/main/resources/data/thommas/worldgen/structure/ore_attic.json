@@ -14,7 +14,7 @@
   "biomes": "#thommas:has_structure/code_structure_sky_fan_biomes",
 
 
-  "step": "surface_structures",
+  "step": "underground_structures",
 
   "start_height": {
     "absolute": -34

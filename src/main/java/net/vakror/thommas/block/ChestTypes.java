@@ -17,7 +17,8 @@ import net.vakror.thommas.screen.ChestScreenHandler;
 import net.vakror.thommas.screen.ModScreenHandlers;
 
 public enum ChestTypes {
-    NETHERITE(118, 12, new Identifier(Thommas.MOD_ID, "model/obsidian_chest")),
+    NETHERITE(110, 12, new Identifier(Thommas.MOD_ID, "model/obsidian_chest")),
+    TREASURE(60, 15, new Identifier(Thommas.MOD_ID, "model/treasure_chest")),
     OBSIDIAN(89, 12, new Identifier(Thommas.MOD_ID, "model/obsidian_chest")),
     CRYSTAL(108, 12, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
     DIAMOND(76, 12, new Identifier(Thommas.MOD_ID, "model/diamond_chest")),
@@ -26,9 +27,9 @@ public enum ChestTypes {
     IRON(44, 9, new Identifier(Thommas.MOD_ID, "model/iron_chest")),
     COPPER(35, 9, new Identifier(Thommas.MOD_ID, "model/copper_chest")),
     WOOD(27, 9, new Identifier("entity/chest/normal")),
-    BIG_CRYSTAL(118, 24, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
-    MASSIVE_CRYSTAL(129, 36, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
-    HUMONGOUS_CRYSTAL(144, 36, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
+    BIG_CRYSTAL(115, 15, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
+    MASSIVE_CRYSTAL(120, 15, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
+    HUMONGOUS_CRYSTAL(144, 16, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
 
 
     SMALL_BACKPACK(36, 8, new Identifier(Thommas.MOD_ID, "model/crystal_chest"));
@@ -59,6 +60,7 @@ public enum ChestTypes {
             case BIG_CRYSTAL -> ModBlocks.BIG_CRYSTAL_CHEST;
             case MASSIVE_CRYSTAL -> ModBlocks.MASSIVE_CRYSTAL_CHEST;
             case HUMONGOUS_CRYSTAL -> ModBlocks.HUMONGOUS_CRYSTAL_CHEST;
+            case TREASURE -> ModBlocks.TREASURE_CHEST;
             default -> Blocks.CHEST;
         };
     }
@@ -76,6 +78,7 @@ public enum ChestTypes {
             case BIG_CRYSTAL -> ModBlockEntities.BIG_CRYSTAL_CHEST.instantiate(pos, state);
             case MASSIVE_CRYSTAL -> ModBlockEntities.MASSIVE_CRYSTAL_CHEST.instantiate(pos, state);
             case HUMONGOUS_CRYSTAL -> ModBlockEntities.HUMONGOUS_CRYSTAL_CHEST.instantiate(pos, state);
+            case TREASURE -> ModBlockEntities.TREASURE_CHEST.instantiate(pos, state);
             default -> new ChestBlockEntity(pos, state);
         };
     }
@@ -92,6 +95,7 @@ public enum ChestTypes {
             case BIG_CRYSTAL -> ModScreenHandlers.BIG_CRYSTAL_CHEST;
             case MASSIVE_CRYSTAL -> ModScreenHandlers.MASSIVE_CRYSTAL_CHEST;
             case HUMONGOUS_CRYSTAL -> ModScreenHandlers.HUMONGOUS_CRYSTAL_CHEST;
+            case TREASURE -> ModScreenHandlers.TREASURE_CHEST;
             default -> ModScreenHandlers.IRON_CHEST;
         };
     }
@@ -108,6 +112,7 @@ public enum ChestTypes {
             case BIG_CRYSTAL -> ModBlockEntities.BIG_CRYSTAL_CHEST;
             case MASSIVE_CRYSTAL -> ModBlockEntities.MASSIVE_CRYSTAL_CHEST;
             case HUMONGOUS_CRYSTAL -> ModBlockEntities.HUMONGOUS_CRYSTAL_CHEST;
+            case TREASURE -> ModBlockEntities.TREASURE_CHEST;
             default -> BlockEntityType.CHEST;
         };
     }
@@ -136,6 +141,11 @@ public enum ChestTypes {
             case OBSIDIAN -> FabricBlockSettings.of(Material.STONE)
                     .hardness(50.0F)
                     .resistance(1200.0F)
+                    .sounds(BlockSoundGroup.STONE)
+                    .requiresTool();
+            case TREASURE -> FabricBlockSettings.of(Material.STONE)
+                    .hardness(20.0F)
+                    .resistance(20.0F)
                     .sounds(BlockSoundGroup.STONE)
                     .requiresTool();
             default -> FabricBlockSettings.of(Material.WOOD);

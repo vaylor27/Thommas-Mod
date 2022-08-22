@@ -33,9 +33,6 @@ public class GoldCoin extends Item {
             } else if (random <= 16) {
                 user.setStackInHand(hand, new ItemStack(ModItems.GOLD_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.GOLD_COIN_FANCY, 3), true);
-            } else if (random == 17) {
-                user.setStackInHand(hand, new ItemStack(ModItems.GOLD_COIN, (count - 1)));
-                user.dropItem(new ItemStack(ModBlocks.MYTHRIL_BLASTER, 2), true);
             } else if (random <= 19) {
                 user.setStackInHand(hand, new ItemStack(ModItems.GOLD_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.ZINC_PLATE, 2), true);

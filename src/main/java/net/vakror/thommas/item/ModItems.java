@@ -13,6 +13,7 @@ import net.vakror.thommas.entity.ModEntities;
 import net.vakror.thommas.fluid.ModFluids;
 import net.vakror.thommas.item.custom.*;
 import net.vakror.thommas.sound.ModSounds;
+import net.vakror.thommas.util.ModTags;
 
 public class ModItems {
     public static final Item MYTHRIL_INGOT = registerItem("mythril_ingot",
@@ -359,7 +360,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
-            new ModMusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
+            new ModMusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1), 20));
 
     public static final Item MAGIC_INGOT = registerItem("magic_ingot",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -943,7 +944,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item ELECTRIC_MAGNET = registerItem("electric_magnet",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new ElectricMagnetItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof(), (short) 1, (short) 12));
 
     public static Item ELECTRUM_GEAR = registerItem("electrum_gear",
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
@@ -991,7 +992,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item MAGNET = registerItem("magnet",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new ElectricMagnetItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).maxDamage(2000), (short) 5, (short) 16));
 
     public static Item MODERN_BATTERY_0 = registerItem("modern_battery_0",
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
@@ -1207,34 +1208,34 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.NATURE).fireproof().food(ModFoodComponents.PLUMP_HELMET)));
 
     public static Item ADAMANTIUM_HAMMER = registerItem("adamantium_hammer",
-            new ModPaxel(10, 1, ModToolMaterials.ADAMANTIUM, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new VeinMiner(10, 1, ModToolMaterials.ADAMANTIUM, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(), 5));
 
     public static Item BRONZE_HAMMER = registerItem("bronze_hammer",
-            new ModPaxel(10, 1, ModToolMaterials.BRONZE, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new VeinMiner(10, 1, ModToolMaterials.BRONZE, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(),6));
 
     public static Item DIAMOND_HAMMER = registerItem("diamond_hammer",
-            new ModPaxel(10, 1, ToolMaterials.DIAMOND, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new VeinMiner(10, 1, ToolMaterials.DIAMOND, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(),5));
 
     public static Item GOLD_HAMMER = registerItem("gold_hammer",
-            new ModPaxel(10, 1, ToolMaterials.GOLD, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new VeinMiner(10, 1, ToolMaterials.GOLD, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(), 7));
 
     public static Item IRON_HAMMER = registerItem("iron_hammer",
-            new ModPaxel(10, 1, ToolMaterials.IRON, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new VeinMiner(10, 1, ToolMaterials.IRON, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(), 2));
 
     public static Item STEEL_HAMMER = registerItem("steel_hammer",
-            new ModPaxel(10, 1, ModToolMaterials.STEEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new VeinMiner(10, 1, ModToolMaterials.STEEL, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(), 3));
 
     public static Item STONE_HAMMER = registerItem("stone_hammer",
-            new ModPaxel(10, 1, ToolMaterials.STONE, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new VeinMiner(10, 1, ToolMaterials.STONE, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(), 1));
 
     public static Item SUPERALLOY_HAMMER = registerItem("superalloy_hammer",
-            new ModPaxel(10, 1, ModToolMaterials.GEM_STEEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new VeinMiner(10, 1, ModToolMaterials.GEM_STEEL, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(),5));
 
     public static Item TIN_HAMMER = registerItem("tin_hammer",
-            new ModPaxel(10, 1, ModToolMaterials.TIN, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof()));
+            new VeinMiner(10, 1, ModToolMaterials.TIN, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(), 4));
 
     public static final Item NOISE_FROM_CLASS = registerItem("noise_from_class",
-            new ModMusicDiscItem(7, ModSounds.NOISE, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1)));
+            new ModMusicDiscItem(7, ModSounds.NOISE, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).maxCount(1), 20));
 
     public static final Item TIN_SHEARS = registerItem("tin_shears",
             new ShearsItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(16542)));
@@ -1596,7 +1597,18 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
 
     public static final Item PERFECT_POG = registerItem("perfect_pog",
-            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+            new VeinMiner(1, 2, ModToolMaterials.RUBY, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof(), 1));
+
+    public static final Item EGGPLANT_SEEDS = registerItem("eggplant_seeds",
+            new AliasedBlockItem(ModBlocks.EGGPLANT_CROP,
+                    new FabricItemSettings().group(ModItemGroup.NATURE)));
+
+    public static final Item EGGPLANT = registerItem("eggplant",
+            new Item(new FabricItemSettings().group(ModItemGroup.NATURE)
+                    .food(ModFoodComponents.EGGPLANT)));
+
+    public static final Item BETTER_BONEMEAL = registerItem("better_bonemeal",
+            new BetterBoneMealItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
 
 
     private static Item registerItem(String name, Item item) {

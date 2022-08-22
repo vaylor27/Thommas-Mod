@@ -1,0 +1,80 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "thommas:mythril_ore",
+            "probability": 0.7
+          },
+          "output_state": {
+            "Name": "thommas:iron_chest"
+          },
+          "output_nbt": {
+            "LootTable": "thommas:chests/dungeon_chest"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "thommas:mythril_ore",
+            "probability": 0.6
+          },
+          "output_state": {
+            "Name": "thommas:treasure_chest"
+          },
+          "output_nbt": {
+            "LootTable": "thommas:chests/dungeon_treasure_chest"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "thommas:mythril_ore",
+            "probability": 1
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:bricks",
+            "probability": 0.1
+          },
+          "output_state": {
+            "Name": "thommas:brick_mixed"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:bricks",
+            "probability": 1
+          },
+          "output_state": {
+            "Name": "thommas:brick_aged"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -6,15 +6,15 @@
     "III"
   ],
   "key": {
-    "X": {
+    "I": {
       "item": "minecraft:copper_ingot"
     },
-    "I": {
-      "item": "thommas:zinc_ingot"
+    "X": {
+      "item": "thommas:soul_plasm"
     }
   },
   "result": {
-    "item": "thommas:brass_ingot",
-    "count": 4
+    "item": "thommas:copper_coin",
+    "count": 1
   }
 }

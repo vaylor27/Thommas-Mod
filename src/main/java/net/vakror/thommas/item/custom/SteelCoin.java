@@ -29,10 +29,6 @@ public class SteelCoin extends Item {
                 user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.COPPER_COIN, 2), true);
             }
-            else if (random <= 16) {
-                user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
-                user.dropItem(new ItemStack(ModItems.AMETHYST, 6), true);
-            }
             else if (random == 17) {
                 user.setStackInHand(hand, new ItemStack(ModItems.STEEL_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.ZINC_CHUNKS, 23), true);

@@ -102,6 +102,11 @@ public class ThommasClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.EMERALD_FURNACE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.DIAMOND_FURNACE, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.OBSIDIAN_FURNACE, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GEM_WASHING_STATION, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GEM_WASHING_STATION, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EGGPLANT_CROP, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HONEY_SUCKER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HONEY_SUCKER, RenderLayer.getTranslucent());
 
 
         ModModelPredicateProvider.registerModModels();
@@ -120,6 +125,7 @@ public class ThommasClientMod implements ClientModInitializer {
         ScreenRegistry.register(ModScreenHandlers.COMBINER_SCREEN_HANDLER, CombinerScreen::new);
         ScreenRegistry.register(ModScreenHandlers.ORICHALCUM_BLASTER_SCREEN_HANDLER, OrichalcumBlasterScreen::new);
         ScreenRegistry.register(ModScreenHandlers.UPGRADER_SCREEN_HANDLER, UpgraderScreen::new);
+        ScreenRegistry.register(ModScreenHandlers.HONEY_SUCKER_SCREEN_HANDLER, HoneySuckerScreen::new);
 
         EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
         EntityRendererRegistry.register(ModEntities.RAT, RatRenderer::new);

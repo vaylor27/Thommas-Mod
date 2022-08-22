@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:steel_ingot"
+    },
+    "X": {
+      "item": "thommas:magic_gem"
+    }
+  },
+  "result": {
+    "item": "thommas:steel_coin",
+    "count": 1
+  }
+}

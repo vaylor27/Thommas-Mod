@@ -18,6 +18,7 @@ public class ModTextures {
             registry.register(ChestTypes.BIG_CRYSTAL.texture);
             registry.register(ChestTypes.MASSIVE_CRYSTAL.texture);
             registry.register(ChestTypes.HUMONGOUS_CRYSTAL.texture);
+            registry.register(ChestTypes.TREASURE.texture);
         });
     }
 }

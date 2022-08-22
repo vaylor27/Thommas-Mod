@@ -21,4 +21,5 @@ public class ModFoodComponents {
     public static final FoodComponent SALTED_PORK_SLAB = new FoodComponent.Builder().hunger(5).alwaysEdible().snack().saturationModifier(0.2f).build();
     public static final FoodComponent COOKED_PORK_SLAB = new FoodComponent.Builder().hunger(19).alwaysEdible().snack().saturationModifier(100).build();
     public static final FoodComponent PLUMP_HELMET = new FoodComponent.Builder().hunger(15).alwaysEdible().snack().saturationModifier(100).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 2000), 1).build();
+    public static final FoodComponent EGGPLANT = new FoodComponent.Builder().hunger(4).saturationModifier(4f).build();
 }

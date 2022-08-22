@@ -6,6 +6,7 @@ import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import net.vakror.thommas.effect.ModEffects;
+import net.vakror.thommas.item.ModItems;
 
 import java.util.Random;
 
@@ -21,5 +22,13 @@ public class ModBleedAxe extends AxeItem {
             target.addStatusEffect(new StatusEffectInstance(ModEffects.BLEED, 200, 2), attacker);
         }
         return super.postHit(stack, target, attacker);
+    }
+
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        if (stack.getItem().equals(ModItems.AMETHYST_AXE)){
+            return true;
+        }
+        return super.hasGlint(stack);
     }
 }

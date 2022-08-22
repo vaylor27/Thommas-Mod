@@ -13,6 +13,8 @@ public class ModStructures {
     public static StructureType<?> ORE_ATTIC;
     public static StructureType<?> ABANDONED_ORE_ATTIC;
     public static StructureType<?> ORE_PLATFORM;
+    public static StructureType<?> DUNGEON;
+    public static StructureType<?> BRICK_HOUSE;
 
     public static void registerStructureFeatures() {
         SKY_STRUCTURES = register(new Identifier(Thommas.MOD_ID, "sky_structures"), SkyStructures.CODEC);
@@ -20,6 +22,8 @@ public class ModStructures {
         ORE_ATTIC = register(new Identifier(Thommas.MOD_ID, "ore_attic"), OreAttic.CODEC);
         ABANDONED_ORE_ATTIC = register(new Identifier(Thommas.MOD_ID, "abandoned_ore_attic"), AbandonedOreAttic.CODEC);
         ORE_PLATFORM = register(new Identifier(Thommas.MOD_ID, "ore"), OrePlatform.CODEC);
+        DUNGEON = register(new Identifier(Thommas.MOD_ID, "dungeon"), Dungeon.CODEC);
+        BRICK_HOUSE = register(new Identifier(Thommas.MOD_ID, "brick_house"), BrickHouseStructure.CODEC);
     }
 
     // Helper method to register since compiler will complain about typing if we did () -> SkyStructures.CODEC directly.

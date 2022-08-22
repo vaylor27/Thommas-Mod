@@ -1,0 +1,34 @@
+{
+  "parent": "thommas:vakror/picklifiying",
+  "display": {
+    "icon": {
+      "item": "thommas:pickling_substance"
+    },
+    "title": {
+      "translate": "advancements.vakror.enchanted.title"
+    },
+    "description": {
+      "translate": "advancements.vakror.enchanted.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "rewards": {
+      "experience": 60
+    }
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "thommas:smooth_amethyst_block"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

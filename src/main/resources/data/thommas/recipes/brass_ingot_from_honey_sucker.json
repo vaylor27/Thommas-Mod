@@ -1,0 +1,14 @@
+{
+  "type": "thommas:combiner",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "thommas:zinc_ingot"
+    }
+  ],
+  "output": {
+    "item": "thommas:brass_ingot"
+  }
+}

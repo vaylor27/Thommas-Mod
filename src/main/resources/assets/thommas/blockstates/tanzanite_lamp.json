@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "thommas:block/tanzanite_lamp_on" },
+    "lit=false": { "model": "thommas:block/tanzanite_lamp_off" }
+  }
+}

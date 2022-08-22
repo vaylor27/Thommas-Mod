@@ -74,7 +74,7 @@ public enum ModToolMaterials implements ToolMaterial {
     }),
 
     BENIOTITE(MiningLevels.NETHERITE, 625265, 46, 67.0f, 20, () -> {
-        return Ingredient.ofItems(ModItems.PERFECT_POG);
+        return Ingredient.ofItems(ModItems.BENITOITE_SHARD);
     }),
 
     MAGIC(MiningLevels.DIAMOND, 26934, 44.0F, 73.0F, 30, () -> {

@@ -17,7 +17,7 @@ public class AmuletItem extends Item {
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (entity.isPlayer() && !world.isClient) {
             PlayerEntity player = (PlayerEntity) entity;
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200));
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }

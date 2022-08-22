@@ -224,6 +224,9 @@
     "thommas:cobalt_pressure_plate",
     "thommas:cobalt_fence",
     "thommas:cobalt_fence_gate",
-    "thommas:cobalt_wall"
+    "thommas:cobalt_wall",
+    "thommas:treasure_chest",
+    "thommas:tanzanite_lamp",
+    "thommas:jumpy_block"
   ]
 }

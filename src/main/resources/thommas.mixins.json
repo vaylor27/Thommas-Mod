@@ -18,7 +18,7 @@
     "ModEntityDataSaverTwo",
     "SheepMixin",
     "SignTypeAccessor",
-    "SlimeEntityMixin"
+    "SlimeEntityMixin",
   ],
   "client": [
     "AutoFishMixin",

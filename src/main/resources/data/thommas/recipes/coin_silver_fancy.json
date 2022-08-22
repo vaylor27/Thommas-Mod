@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:silver_coin"
+    },
+    "X": {
+      "item": "thommas:soul_plasm"
+    }
+  },
+  "result": {
+    "item": "thommas:silver_coin_fancy",
+    "count": 1
+  }
+}

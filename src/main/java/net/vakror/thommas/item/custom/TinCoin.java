@@ -37,10 +37,6 @@ public class TinCoin extends Item {
                 user.setStackInHand(hand, new ItemStack(ModItems.TIN_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.DUST, 2), true);
             }
-            else if (random <= 19) {
-                user.setStackInHand(hand, new ItemStack(ModItems.TIN_COIN, (count - 1)));
-                user.dropItem(new ItemStack(ModItems.MAGIC_SWORD, 2), true);
-            }
             else if (random == 20) {
                 user.setStackInHand(hand, new ItemStack(ModItems.TIN_COIN, (count - 1)));
                 user.dropItem(new ItemStack(ModItems.GOLD_COIN, 2), true);

@@ -94,4 +94,9 @@ public class ModAmethystArmor extends ArmorItem {
             return false;
         }
     }
+
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        return true;
+    }
 }

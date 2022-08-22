@@ -19,6 +19,7 @@ public class ModBlockEntities {
     public static BlockEntityType<OrichalcumBlasterEntity> ORICHALCUM_BLASTER;
     public static BlockEntityType<VakrorFurnaceEntity> VAKROR_FURNACE;
     public static BlockEntityType<UpgraderBlockEntity> UPGRADER_BLOCK_ENTITY;
+    public static BlockEntityType<HoneySuckerBlockEntity> HONEY_SUCKER_BLOCK_ENTITY;
 
 
 
@@ -32,7 +33,7 @@ public class ModBlockEntities {
     public static final BlockEntityType<BigCrystalChestEntity> BIG_CRYSTAL_CHEST = FabricBlockEntityTypeBuilder.create(BigCrystalChestEntity::new, ModBlocks.BIG_CRYSTAL_CHEST).build(null);
     public static final BlockEntityType<MassiveCrystalChestEntity> MASSIVE_CRYSTAL_CHEST = FabricBlockEntityTypeBuilder.create(MassiveCrystalChestEntity::new, ModBlocks.MASSIVE_CRYSTAL_CHEST).build(null);
     public static final BlockEntityType<HumongousCrystalChestEntity> HUMONGOUS_CRYSTAL_CHEST = FabricBlockEntityTypeBuilder.create(HumongousCrystalChestEntity::new, ModBlocks.HUMONGOUS_CRYSTAL_CHEST).build(null);
-
+    public static final BlockEntityType<TreasureChestEntity> TREASURE_CHEST = FabricBlockEntityTypeBuilder.create(TreasureChestEntity::new, ModBlocks.TREASURE_CHEST).build(null);
 
     public static void registerAllBlockEntities() {
         VAKROR_FURNACE = register(
@@ -68,6 +69,12 @@ public class ModBlockEntities {
                     FabricBlockEntityTypeBuilder.create(UpgraderBlockEntity::new,
                             ModBlocks.UPGRADER).build(null));
 
+        HONEY_SUCKER_BLOCK_ENTITY =
+                Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                    new Identifier(Thommas.MOD_ID, "honey_sucker"),
+                    FabricBlockEntityTypeBuilder.create(HoneySuckerBlockEntity::new,
+                            ModBlocks.HONEY_SUCKER).build(null));
+
 
 
 
@@ -81,6 +88,7 @@ public class ModBlockEntities {
         Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "big_crystal_chest"), BIG_CRYSTAL_CHEST);
         Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "massive_crystal_chest"), MASSIVE_CRYSTAL_CHEST);
         Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "humongous_crystal_chest"), HUMONGOUS_CRYSTAL_CHEST);
+        Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "treasure_chest"), TREASURE_CHEST);
     }
 
     private static <T extends BlockEntity> BlockEntityType<T> register(String name, BlockEntityType<T> type) {

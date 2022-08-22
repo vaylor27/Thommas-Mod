@@ -975,8 +975,28 @@ public class ModBlocks {
             new OreBlock(FabricBlockSettings.of(Material.STONE)
                     .strength(6f).requiresTool(),
                     UniformIntProvider.create(34, 43)), ModItemGroup.ORES);
-    
-        private static Block registerBlockWithoutBlockItem(String name, Block block) {
+
+    public static final Block GEM_WASHING_STATION = registerBlock("gem_washing_station",
+            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block TREASURE_CHEST = registerBlockWithoutBlockItem("treasure_chest",
+            new GenericChestBlock(ChestTypes.TREASURE.setting(), ChestTypes.TREASURE));
+
+    public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
+            new JumpyBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block TANZANITE_LAMP = registerBlock("tanzanite_lamp",
+            new LampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
+                    .luminance(state -> state.get(LampBlock.CLICKED) ? 15 : 0)), ModItemGroup.LAMPS);
+
+    public static final Block EGGPLANT_CROP = registerBlockWithoutBlockItem("eggplant_crop",
+            new EggplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+
+    public static final Block HONEY_SUCKER = registerBlock("honey_sucker",
+            new HoneySuckerBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
     }
 

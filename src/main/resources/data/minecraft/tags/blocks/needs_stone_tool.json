@@ -208,6 +208,9 @@
     "thommas:zircon_block",
     "thommas:deepslate_zircon_ore",
     "thommas:endstone_zircon_ore",
-    "thommas:netherrack_zircon_ore"
+    "thommas:netherrack_zircon_ore",
+    "thommas:treasure_chest",
+    "thommas:tanzanite_lamp",
+    "thommas:jumpy_block"
   ]
 }

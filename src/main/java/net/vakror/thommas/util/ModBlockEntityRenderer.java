@@ -16,5 +16,6 @@ public class ModBlockEntityRenderer {
         BlockEntityRendererRegistry.register(ModBlockEntities.BIG_CRYSTAL_CHEST, ChestEntityRenderer::new);
         BlockEntityRendererRegistry.register(ModBlockEntities.MASSIVE_CRYSTAL_CHEST, ChestEntityRenderer::new);
         BlockEntityRendererRegistry.register(ModBlockEntities.HUMONGOUS_CRYSTAL_CHEST, ChestEntityRenderer::new);
+        BlockEntityRendererRegistry.register(ModBlockEntities.TREASURE_CHEST, ChestEntityRenderer::new);
     }
 }

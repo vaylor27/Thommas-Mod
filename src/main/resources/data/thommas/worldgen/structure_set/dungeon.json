@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "thommas:dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 456379,
+    "spacing": 20,
+    "separation": 19,
+
+    "type": "minecraft:random_spread"
+  }
+}

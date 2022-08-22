@@ -1,0 +1,98 @@
+{
+  "type": "minecraft:the_nether",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": {
+      "sea_level": 250,
+      "disable_mob_generation": false,
+      "aquifers_enabled": false,
+      "ore_veins_enabled": true,
+      "legacy_random_source": false,
+      "default_block": {
+        "Name": "thommas:slade_normal"
+      },
+      "default_fluid": {
+        "Name": "minecraft:lava",
+        "Properties": {
+          "level": "14"
+        }
+      },
+      "noise": {
+        "min_y": -64,
+        "height": 400,
+        "size_horizontal": 2,
+        "size_vertical": 2
+      },
+      "noise_router": {
+        "barrier": 0,
+        "fluid_level_floodedness": 3,
+        "fluid_level_spread": 5,
+        "lava": 9,
+        "temperature": 4,
+        "vegetation": 1,
+        "continents": 2,
+        "erosion": 3,
+        "depth": 2,
+        "ridges": 2,
+        "initial_density_without_jaggedness": 1,
+        "final_density": {
+          "type": "minecraft:interpolated",
+          "argument": "minecraft:overworld/base_3d_noise"
+        },
+        "vein_toggle": 1,
+        "vein_ridged": 2,
+        "vein_gap": 1
+      },
+      "spawn_target": [
+        {
+          "temperature": 1,
+          "humidity": 2,
+          "continentalness": 1,
+          "erosion": 1,
+          "weirdness": 1,
+          "depth": 1,
+          "offset": 0
+        }
+      ],
+      "surface_rule": {
+        "type": "minecraft:sequence",
+        "sequence": [
+          {
+            "type": "minecraft:sequence",
+            "sequence": [
+              {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:obsidian"
+                }
+              },
+              {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "thommas:slade_normal"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "thommas:tree_forest",
+          "parameters": {
+            "temperature": 1,
+            "humidity": 2,
+            "continentalness": 1,
+            "erosion": 2,
+            "weirdness": 1,
+            "depth": 1,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

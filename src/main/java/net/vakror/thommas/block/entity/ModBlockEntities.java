@@ -20,6 +20,7 @@ public class ModBlockEntities {
     public static BlockEntityType<VakrorFurnaceEntity> VAKROR_FURNACE;
     public static BlockEntityType<UpgraderBlockEntity> UPGRADER_BLOCK_ENTITY;
     public static BlockEntityType<HoneySuckerBlockEntity> HONEY_SUCKER_BLOCK_ENTITY;
+    public static BlockEntityType<ShapingAnvilBlockEntity> SHAPING_ANVIL_BLOCK_ENTITY;
 
 
 

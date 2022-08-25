@@ -17,7 +17,7 @@ import net.vakror.thommas.util.ModTags;
 
 public class ModItems {
     public static final Item MYTHRIL_INGOT = registerItem("mythril_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS), 10, ModItems.ADAMANTIUM_INGOT, ModItems.MYTHRIL_AXE));
 
     public static final Item MYTHRIL_NUGGET = registerItem("mythril_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));

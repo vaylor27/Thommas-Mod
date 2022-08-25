@@ -1,26 +1,36 @@
 package net.vakror.thommas.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
+import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.render.GameRenderer;
+import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.screen.EnchantmentScreenHandler;
+import net.minecraft.screen.StonecutterScreenHandler;
+import net.minecraft.screen.slot.Slot;
+import net.minecraft.screen.slot.SlotActionType;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.vakror.thommas.Thommas;
 
-public class CombinerScreen extends HandledScreen<CombinerScreenHandler> {
-    private static final Identifier TEXTURE =
-            new Identifier(Thommas.MOD_ID, "textures/gui/combiner_gui.png");
+import java.util.Objects;
 
-    public CombinerScreen(CombinerScreenHandler handler, PlayerInventory inventory, Text title) {
+public class ShapingAnvilScreen extends HandledScreen<ShapingAnvilScreenHandler> {
+    private static final Identifier TEXTURE =
+            new Identifier(Thommas.MOD_ID, "textures/gui/shaping_anvil_gui.png");
+
+    public ShapingAnvilScreen(ShapingAnvilScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
+
     }
 
     @Override
     protected void init() {
         super.init();
-        // Center the title
         titleX = (backgroundWidth - textRenderer.getWidth(title)) / 2;
     }
 
@@ -39,5 +49,16 @@ public class CombinerScreen extends HandledScreen<CombinerScreenHandler> {
         renderBackground(matrices);
         super.render(matrices, mouseX, mouseY, delta);
         drawMouseoverTooltip(matrices, mouseX, mouseY);
+    }
+
+    @Override
+    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+            this.client.interactionManager.clickButton(this.handler.syncId, button);
+        return super.mouseClicked(mouseX, mouseY, button);
+    }
+
+    @Override
+    public ShapingAnvilScreenHandler getScreenHandler() {
+        return super.getScreenHandler();
     }
 }

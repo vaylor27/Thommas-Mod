@@ -29,6 +29,7 @@ public class ModScreenHandlers {
     public static ScreenHandlerType<ChestScreenHandler> MASSIVE_CRYSTAL_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> HUMONGOUS_CRYSTAL_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> SMALL_BACKPACK;
+    public static ScreenHandlerType<ShapingAnvilScreenHandler> SHAPING_ANVIL_SCREEN_HANDLER;
 
     public static void registerAllScreenHandlers() {
         MYTHRIL_BLASTER_SCREEN_HANDLER =
@@ -54,6 +55,10 @@ public class ModScreenHandlers {
          HONEY_SUCKER_SCREEN_HANDLER  =
                  ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "honey_sucker"),
                          HoneySuckerScreenHandler::new);
+
+         SHAPING_ANVIL_SCREEN_HANDLER  =
+                 ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "shaping_anvil"),
+                         ShapingAnvilScreenHandler::new);
 
         COPPER_CHEST = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "copper_chest"),
                          (syncId, inventory) -> new ChestScreenHandler(COPPER_CHEST, ChestTypes.COPPER, syncId, inventory, ScreenHandlerContext.EMPTY));

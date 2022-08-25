@@ -995,6 +995,9 @@ public class ModBlocks {
     public static final Block HONEY_SUCKER = registerBlock("honey_sucker",
             new HoneySuckerBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
+    public static final Block TITANIUM_BARS = registerBlock("titanium_bars",
+            new PaneBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(30).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

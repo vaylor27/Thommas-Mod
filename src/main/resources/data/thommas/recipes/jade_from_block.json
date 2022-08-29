@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P"
+  ],
+  "key": {
+    "P": {
+      "item": "thommas:jade_block"
+    }
+  },
+  "result": {
+    "item": "thommas:jade_gem",
+    "count": 9
+  }
+}

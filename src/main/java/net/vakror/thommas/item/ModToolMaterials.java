@@ -2,6 +2,7 @@
 package net.vakror.thommas.item;
 
 import net.fabricmc.yarn.constants.MiningLevels;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -13,14 +14,27 @@ public enum ModToolMaterials implements ToolMaterial {
     MYTHRIL(MiningLevels.DIAMOND, 1365, 34.0F, 25.0F, 28, () -> {
         return Ingredient.ofItems(ModItems.MYTHRIL_INGOT);
     }),
-    RUBY(MiningLevels.NETHERITE, 41366, 48.0F, 38.0F, 34, () -> {
+    RUBY(MiningLevels.NETHERITE, 4166, 48.0F, 38.0F, 34, () -> {
         return Ingredient.ofItems(ModItems.RUBY);
     }),
     ORICHALCUM(MiningLevels.DIAMOND, 46733, 57.5F, 43.5F, 25, () ->
             Ingredient.ofItems(ModItems.ORICHALCUM_INGOT)),
 
-    ADAMANTIUM(MiningLevels.NETHERITE, 436575, 53.0F, 56.0F, 36, () -> {
+    ADAMANTIUM(MiningLevels.NETHERITE, 43675, 53.0F, 16.0F, 36, () -> {
         return Ingredient.ofItems(ModItems.ADAMANTIUM_INGOT);
+    }),
+    LARIMAR(MiningLevels.DIAMOND, 1790, 24.0F, 17.0F, 28, () -> {
+        return Ingredient.ofItems(ItemStack.EMPTY.getItem());
+    }),
+    CHAROITE(MiningLevels.NETHERITE, 2290, 38.0F, 18.0F, 34, () -> {
+        return Ingredient.ofItems(ItemStack.EMPTY.getItem());
+    }),
+    JADE(MiningLevels.NETHERITE, 5724, 47.5F, 23.5F, 25, () -> {
+        return Ingredient.ofItems(ItemStack.EMPTY.getItem());
+    }),
+
+    GARNET(MiningLevels.NETHERITE, 6582, 53.0F, 36.0F, 36, () -> {
+        return Ingredient.ofItems(ItemStack.EMPTY.getItem());
     }),
 
     PURE_DIAMOND(MiningLevels.NETHERITE, 43652, 30.0F, 36.0F, 0, () -> {

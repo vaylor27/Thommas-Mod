@@ -6,11 +6,12 @@
 package net.vakror.thommas.item;
 
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Lazy;
+import net.vakror.thommas.util.Material;
 
 import java.util.function.Supplier;
 
@@ -38,6 +39,18 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F, 0.0F,
             () -> Ingredient.ofItems(ModItems.ORICHALCUM_INGOT)),
 
+    LARIMAR("larimar", 1456, new int[]{6, 4, 9, 6}, 13, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2, 2, () -> {
+        return Ingredient.ofItems(ItemStack.EMPTY.getItem());
+    }),
+    GARNET("garnet", 3642, new int[]{10, 7, 13, 10}, 16, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 6, 6, () -> {
+        return Ingredient.ofItems(ItemStack.EMPTY.getItem());
+    }),
+    CHAROITE("charoite", 1675, new int[]{7, 5, 10, 7}, 14, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3, 3, () -> {
+        return Ingredient.ofItems(ItemStack.EMPTY.getItem());
+    }),
+    JADE("jade", 2467, new int[]{8, 6, 11, 8}, 15, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4, 4, () -> {
+        return Ingredient.ofItems(ItemStack.EMPTY.getItem());
+    }),
     RUBY("ruby", 1500, new int[]{23, 26, 8, 3}, 38, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F, 7.0F, () -> {
         return Ingredient.ofItems(ModItems.RUBY);
     });

@@ -3,6 +3,8 @@ package net.vakror.thommas.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -13,6 +15,7 @@ import net.vakror.thommas.entity.ModEntities;
 import net.vakror.thommas.fluid.ModFluids;
 import net.vakror.thommas.item.custom.*;
 import net.vakror.thommas.sound.ModSounds;
+import net.vakror.thommas.util.Material;
 import net.vakror.thommas.util.ModTags;
 
 public class ModItems {
@@ -1611,10 +1614,17 @@ public class ModItems {
             new BetterBoneMealItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
 
 
-    private static Item registerItem(String name, Item item) {
+    public static final Material LARIMAR = new Material("larimar", 1456, 7, 13, 2, 2, StatusEffects.DOLPHINS_GRACE, 6, 6, 30, 10, 3);
+    public static final Material CHAROITE = new Material("charoite", 1675, 8, 14, 3, 3, StatusEffects.CONDUIT_POWER, 4, 6, 35, 13, 5);
+    public static final Material JADE = new Material("jade", 2467, 9, 15, 4, 4, StatusEffects.INVISIBILITY, 3, 6, 45, 16, 7);
+    public static final Material GARNET = new Material("garnet", 3642, 10, 16, 5, 5, StatusEffects.FIRE_RESISTANCE, 2, 6, 50, 18, 8);
+
+
+    public static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(Thommas.MOD_ID, name), item);
     }
 
+    @SuppressWarnings("all")
     public static void registerModItems() {
         Thommas.LOGGER.info("Registering Mod Items for " + Thommas.MOD_ID + "!");
     }

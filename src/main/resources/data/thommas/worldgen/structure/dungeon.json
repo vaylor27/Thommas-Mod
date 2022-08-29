@@ -33,6 +33,18 @@
           "maxCount": 2
         },
         {
+          "type": "minecraft:illusioner",
+          "weight": 5,
+          "minCount": 10,
+          "maxCount": 20
+        },
+        {
+          "type": "minecraft:ravager",
+          "weight": 5,
+          "minCount": 10,
+          "maxCount": 20
+        },
+        {
           "type": "minecraft:phantom",
           "weight": 1,
           "minCount": 1,

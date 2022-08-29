@@ -998,6 +998,9 @@ public class ModBlocks {
     public static final Block TITANIUM_BARS = registerBlock("titanium_bars",
             new PaneBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(30).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
+    public static final Block MEGA_LAMP = registerBlock("mega_lamp",
+            new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).luminance(45)), ModItemGroup.SPECIAL_BLOCKS);
+
 
     private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);

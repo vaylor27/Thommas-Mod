@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "thommas:garnet_gem"
+    }
+  },
+  "result": {
+    "item": "thommas:garnet_block"
+  }
+}

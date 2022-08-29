@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "thommas:charoite_gem"
+    }
+  },
+  "result": {
+    "item": "thommas:charoite_block"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "tag": "c:sticks"
+    },
+    "P": {
+      "item": "thommas:jade_gem"
+    }
+  },
+  "result": {
+    "item": "thommas:jade_pickaxe"
+  }
+}

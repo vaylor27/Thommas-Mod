@@ -1,5 +1,14 @@
 {
   "replace": false,
   "values": [
+    "thommas:larimar_block",
+    "thommas:larimar_ore",
+    "thommas:deepslate_larimar_ore",
+    "thommas:charoite_block",
+    "thommas:charoite_ore",
+    "thommas:deepslate_charoite_ore",
+    "thommas:jade_block",
+    "thommas:jade_ore",
+    "thommas:deepslate_jade_ore"
   ]
 }

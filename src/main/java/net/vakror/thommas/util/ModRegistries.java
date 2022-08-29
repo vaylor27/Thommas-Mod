@@ -3,18 +3,14 @@ package net.vakror.thommas.util;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.village.TradeOffer;
-import net.minecraft.village.VillagerProfession;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ModBlocks;
+import net.vakror.thommas.command.OpCommand;
 import net.vakror.thommas.command.home.ReturnHome;
 import net.vakror.thommas.command.home.SetHome;
 import net.vakror.thommas.command.secondaryhome.ReturnSecondaryHome;
@@ -25,7 +21,6 @@ import net.vakror.thommas.entity.custom.RatEntity;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFrom;
 import net.vakror.thommas.event.ModPlayerPlayerEventCopyFromTwo;
 import net.vakror.thommas.item.ModItems;
-import net.vakror.thommas.villager.ModVillagers;
 
 public class ModRegistries {
     
@@ -55,6 +50,7 @@ public class ModRegistries {
         CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {ReturnHome.register(dispatcher);}));
         CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {SetSecondaryHome.register(dispatcher);}));
         CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {ReturnSecondaryHome.register(dispatcher);}));
+        CommandRegistrationCallback.EVENT.register(((dispatcher, registryAccess, environment) -> {OpCommand.register(dispatcher);}));
     }
     
     public static void registerAttributes() {

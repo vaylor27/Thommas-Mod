@@ -17,10 +17,9 @@ public class HeartBreakEffect extends StatusEffect {
     @Override
     public void applyUpdateEffect(LivingEntity entity, int pAmplifier) {
         if (entity.isPlayer()) {
-            LivingEntity player = (LivingEntity) entity;
             if (!entity.getWorld().isClient) {
-                float newMaxHealth = (player.getMaxHealth() - pAmplifier);
-                player.setHealth(newMaxHealth);
+                float newMaxHealth = (((LivingEntity) entity).getMaxHealth() - pAmplifier);
+                ((LivingEntity) entity).setHealth(newMaxHealth);
             }
         }
     }

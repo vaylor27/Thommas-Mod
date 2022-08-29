@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " P ",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "tag": "c:sticks"
+    },
+    "P": {
+      "item": "thommas:garnet_gem"
+    }
+  },
+  "result": {
+    "item": "thommas:garnet_shovel"
+  }
+}

@@ -1,0 +1,14 @@
+{
+   "type": "thommas:mythril_blaster",
+   "ingredients": [
+      {
+         "item": "thommas:charoite_ore"
+      },
+      {
+         "item": "thommas:magic_charge"
+      }
+   ],
+   "output": {
+      "item": "thommas:charoite_gem"
+   }
+}

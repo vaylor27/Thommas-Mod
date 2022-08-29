@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "P",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "tag": "c:sticks"
+    },
+    "P": {
+      "item": "thommas:larimar_gem"
+    }
+  },
+  "result": {
+    "item": "thommas:larimar_sword"
+  }
+}

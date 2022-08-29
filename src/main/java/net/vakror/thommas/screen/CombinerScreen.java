@@ -32,6 +32,11 @@ public class CombinerScreen extends HandledScreen<CombinerScreenHandler> {
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundHeight) / 2;
         drawTexture(matrices, x, y, 0, 0, backgroundWidth, backgroundHeight);
+
+        if(handler.isCrafting()) {
+            int progress = handler.getScaledProgress();
+            this.drawTexture(matrices, x + 98, y + 37, 176, 37, progress, 24);
+        }
     }
 
     @Override

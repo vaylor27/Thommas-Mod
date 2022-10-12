@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:zinc_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:zinc_ingot",
+      "count": 3
+   }
+}

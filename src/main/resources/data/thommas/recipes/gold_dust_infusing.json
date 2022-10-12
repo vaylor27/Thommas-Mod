@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:gold_dust"
+      }
+   ],
+   "output": {
+      "item": "minecraft:gold_ingot",
+      "count": 3
+   }
+}

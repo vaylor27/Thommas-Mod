@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:raw_garnet"
+      }
+   ],
+   "output": {
+      "item": "thommas:garnet_dust",
+      "count": 2
+   }
+}

@@ -22,11 +22,15 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.vakror.thommas.block.ChestTypes;
+import net.vakror.thommas.item.inventory.ImplementedInventory;
+import net.vakror.thommas.item.inventory.MassiveImplementedInventory;
 import net.vakror.thommas.screen.ChestScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
-
-public class GenericChestEntity extends ChestBlockEntity {
+/**
+ * Modified by vakror to allow bigger stack sizes
+ */
+public class GenericChestEntity extends ChestBlockEntity implements MassiveImplementedInventory {
     ChestTypes type;
     int viewerCount = 0;
 
@@ -44,6 +48,16 @@ public class GenericChestEntity extends ChestBlockEntity {
     @Override
     protected Text getContainerName() {
         return Text.translatable(getCachedState().getBlock().getTranslationKey());
+    }
+
+    @Override
+    public DefaultedList<ItemStack> getItems() {
+        return null;
+    }
+
+    @Override
+    public int getMaxCountPerStack() {
+        return 1024;
     }
 
     @Override
@@ -138,4 +152,6 @@ public class GenericChestEntity extends ChestBlockEntity {
         double f = (double) this.pos.getZ() + 0.5D;
         this.world.playSound(d, e, f, soundEvent, SoundCategory.BLOCKS, 0.5F, this.world.random.nextFloat() * 0.1F + 0.9F, false);
     }
+
+
 }

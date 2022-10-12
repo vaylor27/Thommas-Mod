@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:stone_lead_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:lead_dust",
+      "count": 2
+   }
+}

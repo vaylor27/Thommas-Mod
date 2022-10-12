@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:benitoite_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:benitoite_dust",
+      "count": 2
+   }
+}

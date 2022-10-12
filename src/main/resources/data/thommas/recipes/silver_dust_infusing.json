@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:silver_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:silver_ingot",
+      "count": 3
+   }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "INL",
+    "NXN",
+    "LNI"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:epic_to_omega_gem_infusing_upgrade"
+    },
+    "N": {
+      "item": "thommas:quadrice_compressed_diamond_block"
+    },
+    "I": {
+      "item": "thommas:lithium_battery"
+    },
+    "L": {
+      "item": "thommas:datacard_9"
+    }
+  },
+  "result": {
+    "item": "thommas:omega_to_ultimate_gem_infusing_upgrade",
+    "count": 1
+  }
+}

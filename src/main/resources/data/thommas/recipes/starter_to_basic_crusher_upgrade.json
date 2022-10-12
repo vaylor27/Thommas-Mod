@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IXI",
+    "PIP"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:quadrice_compressed_stone"
+    },
+    "P": {
+      "item": "thommas:medium_soulstone"
+    },
+    "I": {
+      "item": "thommas:amethyst_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:starter_to_basic_crusher_upgrade",
+    "count": 1
+  }
+}

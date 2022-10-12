@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:jade_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:jade_dust",
+      "count": 2
+   }
+}

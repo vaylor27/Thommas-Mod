@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:larimar_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:larimar_gem",
+      "count": 3
+   }
+}

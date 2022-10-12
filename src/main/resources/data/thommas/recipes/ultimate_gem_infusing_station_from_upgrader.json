@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:epic_gem_infusing_station"
+    },
+    {
+      "item": "thommas:omega_to_ultimate_gem_infusing_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:ultimate_gem_infusing_station"
+  }
+}

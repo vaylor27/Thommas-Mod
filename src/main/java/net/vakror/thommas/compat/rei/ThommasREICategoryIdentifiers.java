@@ -17,6 +17,8 @@ public class ThommasREICategoryIdentifiers {
 	public static final CategoryIdentifier<UpgraderREIDisplay> UPGRADER = CategoryIdentifier.of(UpgraderRecipe.Type.ID);
 	public static final CategoryIdentifier<LightningChannelerREIDisplay> LIGHTNING_CHANNELER = CategoryIdentifier.of(LightningChannelerRecipe.Type.ID);
 	public static final CategoryIdentifier<HoneySuckerREIDisplay> HONEY_SUCKER = CategoryIdentifier.of(HoneySuckerRecipe.Type.ID);
+	public static final CategoryIdentifier<GemInfusingREIDisplay> GEM_INFUSING = CategoryIdentifier.of(GemInfusingRecipe.Type.ID);
+	public static final CategoryIdentifier<CrushingREIDisplay> CRUSHER = CategoryIdentifier.of(CrushingRecipe.Type.ID);
 
 	private ThommasREICategoryIdentifiers() {
 

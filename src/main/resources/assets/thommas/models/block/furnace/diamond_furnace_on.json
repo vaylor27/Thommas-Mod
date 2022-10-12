@@ -1,0 +1,6 @@
+{
+  "parent": "thommas:block/furnace/furnace_on",
+  "textures": {
+    "block": "minecraft:block/diamond_block"
+  }
+}

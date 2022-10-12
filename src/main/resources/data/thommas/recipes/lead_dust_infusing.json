@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:lead_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:lead_ingot",
+      "count": 3
+   }
+}

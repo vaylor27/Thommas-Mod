@@ -20,7 +20,7 @@ import net.vakror.thommas.util.ModTags;
 
 public class ModItems {
     public static final Item MYTHRIL_INGOT = registerItem("mythril_ingot",
-            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS), 10, ModItems.ADAMANTIUM_INGOT, ModItems.MYTHRIL_AXE));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item MYTHRIL_NUGGET = registerItem("mythril_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -97,7 +97,7 @@ public class ModItems {
             new ModOrichalcumBow(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(5000)));
 
     public static final Item RUBY = registerItem("ruby",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item PEPPER = registerItem("pepper", new Item(new FabricItemSettings()
             .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.2f).build())
@@ -156,7 +156,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item ADAMANTIUM_INGOT = registerItem("adamantium_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item ADAMANTIUM_NUGGET = registerItem("adamantium_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -177,7 +177,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item AMETHYST = registerItem("amethyst",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item AMETHYST_DUST = registerItem("amethyst_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -189,7 +189,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item BRONZE_INGOT = registerItem("bronze_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item BRONZE_NUGGET = registerItem("bronze_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -246,7 +246,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item LEAD_INGOT = registerItem("lead_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item LEAD_NUGGET = registerItem("lead_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -276,7 +276,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item ORICHALCUM_INGOT = registerItem("orichalcum_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item ORICHALCUM_NUGGET = registerItem("orichalcum_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -321,7 +321,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item STEEL_INGOT = registerItem("steel_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item STEEL_NUGGET = registerItem("steel_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -333,7 +333,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item TIN_INGOT = registerItem("tin_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item TIN_NUGGET = registerItem("tin_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -342,7 +342,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item TITANIUM_INGOT = registerItem("titanium_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item TITANIUM_NUGGET = registerItem("titanium_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -515,7 +515,7 @@ public class ModItems {
             new ModCitrineArmor(ModArmorMaterials.CITRINE, EquipmentSlot.FEET, new FabricItemSettings().group(ModItemGroup.TOOLS).rarity(Rarity.EPIC)));
 
     public static Item CITRINE = registerItem("citrine",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static Item RAW_CITRINE = registerItem("raw_citrine",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -627,8 +627,8 @@ public class ModItems {
     public static Item FLUTE = registerItem("flute",
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
 
-    public static Item FRIGID_RUNESTONE = registerItem("frigid_runestone",
-            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
+//    public static Item FRIGID_RUNESTONE = registerItem("frigid_runestone",
+//            new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
 
     public static Item HEART_MECHANISM = registerItem("heart_mechanism",
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
@@ -956,7 +956,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item GALVANIC_BATTERY = registerItem("galvanic_battery",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new BatteryItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item GALVANIZED_PLATE = registerItem("galvanized_plate",
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
@@ -998,19 +998,19 @@ public class ModItems {
             new ElectricMagnetItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).maxDamage(2000), (short) 5, (short) 16));
 
     public static Item MODERN_BATTERY_0 = registerItem("modern_battery_0",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new BatteryItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item MODERN_BATTERY_1 = registerItem("modern_battery_1",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new BatteryItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item MODERN_BATTERY_2 = registerItem("modern_battery_2",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new BatteryItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item MODERN_BATTERY_3 = registerItem("modern_battery_3",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new BatteryItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item MODERN_BATTERY_4 = registerItem("modern_battery_4",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new BatteryItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item MOTOR_0 = registerItem("motor_0",
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
@@ -1055,7 +1055,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item RUSTY_OLD_BATTERY = registerItem("rusty_old_battery",
-            new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
+            new BatteryItem(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
 
     public static Item SILVER_PLATE = registerItem("silver_plate",
             new Item(new FabricItemSettings().group(ModItemGroup.ELECTRONICS).fireproof()));
@@ -1202,7 +1202,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
 
     public static Item LITHIUM_BATTERY = registerItem("lithium_battery",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
+            new BatteryItem(new FabricItemSettings().group(ModItemGroup.ITEMS).fireproof()));
 
     public static Item PLUMP_HELMET_SEEDS = registerItem("plump_helmet_seeds",
             new AliasedBlockItem(ModBlocks.PLUMP_HELMET, new FabricItemSettings().group(ModItemGroup.NATURE)));
@@ -1232,7 +1232,7 @@ public class ModItems {
             new VeinMiner(10, 1, ToolMaterials.STONE, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(), 1));
 
     public static Item SUPERALLOY_HAMMER = registerItem("superalloy_hammer",
-            new VeinMiner(10, 1, ModToolMaterials.GEM_STEEL, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(),5));
+            new VeinMiner(10, 1, ModToolMaterials.GEM_STEEL, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(),9));
 
     public static Item TIN_HAMMER = registerItem("tin_hammer",
             new VeinMiner(10, 1, ModToolMaterials.TIN, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.TOOLS).fireproof(), 4));
@@ -1493,7 +1493,7 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
 
     public static final Item COBALT_INGOT = registerItem("cobalt_ingot",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item COBALT_NUGGET = registerItem("cobalt_nugget",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
@@ -1503,53 +1503,53 @@ public class ModItems {
 
     public static final Item COBALT_SWORD = registerItem("cobalt_sword",
             new ModBleedSword(ModToolMaterials.COBALT, 2, 3f,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
     
     public static final Item COBALT_PICKAXE = registerItem("cobalt_pickaxe",
             new ModPickaxeItem(ModToolMaterials.COBALT, 2, 3f,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
     
     public static final Item COBALT_SHOVEL = registerItem("cobalt_shovel",
             new ShovelItem(ModToolMaterials.COBALT, 2, 3f,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
     
     public static final Item COBALT_AXE = registerItem("cobalt_axe",
             new ModBleedAxe(ModToolMaterials.COBALT, 4, 0f,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
     
     public static final Item COBALT_HOE = registerItem("cobalt_hoe",
             new ModHoe(ModToolMaterials.COBALT, 0, 0f,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item COBALT_PAXEL = registerItem("cobalt_paxel",
             new ModPaxel(8, 0, ModToolMaterials.COBALT,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item COBALT_HELMET = registerItem("cobalt_helmet",
             new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.HEAD,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
     
     public static final Item COBALT_CHESTPLATE = registerItem("cobalt_chestplate",
             new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.CHEST,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
     
     public static final Item COBALT_LEGGINGS = registerItem("cobalt_leggings",
             new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.LEGS,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
     
     public static final Item COBALT_BOOTS = registerItem("cobalt_boots",
             new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.FEET,
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item COBALT_HORSE_ARMOR = registerItem("cobalt_horse_armor",
             new HorseArmorItem(12, "cobalt",
-                    new FabricItemSettings().group(ModItemGroup.ITEMS)));
+                    new FabricItemSettings().group(ModItemGroup.TOOLS)));
 
     public static final Item COBALT_STAFF = registerItem("cobalt_staff",
-            new ModCobaltStaffItem(new FabricItemSettings().group(ModItemGroup.ITEMS).maxCount(1)));
+            new ModCobaltStaffItem(new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1)));
 
     public static final Item COBALT_BOW = registerItem("cobalt_bow",
-            new ModCobaltBow(new FabricItemSettings().group(ModItemGroup.ITEMS).maxDamage(8635)));
+            new ModCobaltBow(new FabricItemSettings().group(ModItemGroup.TOOLS).maxDamage(8635)));
     
     public static final Item MAGIC_COBALT_DUST = registerItem("magic_cobalt_dust",
             new Item(new FabricItemSettings().group(ModItemGroup.ARTIFACTS)));
@@ -1569,14 +1569,32 @@ public class ModItems {
     public static final Item RAW_ZIRCON = registerItem("raw_zircon",
             new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
-    public static final Item NORMAL_FURNACE_UPGRADE = registerItem("normal_furnace_upgrade",
-            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+    public static final Item FURNACE_UPGRADE = registerItem("furnace_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item IRON_FURNACE_UPGRADE = registerItem("iron_furnace_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item GOLD_FURNACE_UPGRADE = registerItem("gold_furnace_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item EMERALD_FURNACE_UPGRADE = registerItem("emerald_furnace_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item DIAMOND_FURNACE_UPGRADE = registerItem("diamond_furnace_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item OBSIDIAN_FURNACE_UPGRADE = registerItem("obsidian_furnace_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item NETHERITE_FURNACE_UPGRADE = registerItem("netherite_furnace_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
 
     public static final Item CHEST_UPGRADE = registerItem("chest_upgrade",
-            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
 
     public static final Item CRYSTAL_UPGRADE = registerItem("crystal_upgrade",
-            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
 
     public static final Item BENITOITE_SWORD = registerItem("benitoite_sword",
             new ModBleedSword(ModToolMaterials.BENIOTITE, 7, 3,new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1)));
@@ -1594,13 +1612,13 @@ public class ModItems {
             new ModPickaxeItem(ModToolMaterials.BENIOTITE, 5, 3, new FabricItemSettings().group(ModItemGroup.TOOLS).maxCount(1)));
 
     public static final Item BENITOITE_SHARD = registerItem("benitoite_shard",
-            new Item(new FabricItemSettings().group(ModItemGroup.ITEMS)));
+            new RedHotMetal(new FabricItemSettings().group(ModItemGroup.ITEMS)));
 
     public static final Item RAW_BENITOITE = registerItem("raw_benitoite",
             new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
 
     public static final Item PERFECT_POG = registerItem("perfect_pog",
-            new VeinMiner(1, 2, ModToolMaterials.RUBY, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof(), 1));
+            new VeinMiner(1, 2, ModToolMaterials.LEAD, ModTags.Blocks.PAXEL, new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof(), 1));
 
     public static final Item EGGPLANT_SEEDS = registerItem("eggplant_seeds",
             new AliasedBlockItem(ModBlocks.EGGPLANT_CROP,
@@ -1613,11 +1631,83 @@ public class ModItems {
     public static final Item BETTER_BONEMEAL = registerItem("better_bonemeal",
             new BetterBoneMealItem(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS)));
 
+    public static final Item STARTER_TO_BASIC_GEM_INFUSING_UPGRADE = registerItem("starter_to_basic_gem_infusing_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
 
-    public static final Material LARIMAR = new Material("larimar", 1456, 7, 13, 2, 2, StatusEffects.DOLPHINS_GRACE, 6, 6, 30, 10, 3);
-    public static final Material CHAROITE = new Material("charoite", 1675, 8, 14, 3, 3, StatusEffects.CONDUIT_POWER, 4, 6, 35, 13, 5);
-    public static final Material JADE = new Material("jade", 2467, 9, 15, 4, 4, StatusEffects.INVISIBILITY, 3, 6, 45, 16, 7);
-    public static final Material GARNET = new Material("garnet", 3642, 10, 16, 5, 5, StatusEffects.FIRE_RESISTANCE, 2, 6, 50, 18, 8);
+    public static final Item BASIC_TO_ADVANCED_GEM_INFUSING_UPGRADE = registerItem("basic_to_advanced_gem_infusing_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item ADVANCED_TO_EPIC_GEM_INFUSING_UPGRADE = registerItem("advanced_to_epic_gem_infusing_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item EPIC_TO_OMEGA_GEM_INFUSING_UPGRADE = registerItem("epic_to_omega_gem_infusing_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item OMEGA_TO_ULTIMATE_GEM_INFUSING_UPGRADE = registerItem("omega_to_ultimate_gem_infusing_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item CRUSHING_HEAD = registerItem("crushing_head",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item CHAROITE_DUST = registerItem("charoite_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item CITRINE_DUST = registerItem("citrine_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item GARNET_DUST = registerItem("garnet_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item GOLD_DUST = registerItem("gold_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item JADE_DUST = registerItem("jade_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item LARIMAR_DUST = registerItem("larimar_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item MYTHRIL_DUST = registerItem("mythril_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item RUBY_DUST = registerItem("ruby_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item SOUL_DUST = registerItem("soul_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item ZINC_DUST = registerItem("zinc_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item BENITOITE_DUST = registerItem("benitoite_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item COBALT_DUST = registerItem("cobalt_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item IRON_DUST = registerItem("iron_dust",
+            new Item(new FabricItemSettings().group(ModItemGroup.SPECIAL_ITEMS).fireproof()));
+
+    public static final Item STARTER_TO_BASIC_CRUSHER_UPGRADE = registerItem("starter_to_basic_crusher_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item BASIC_TO_ADVANCED_CRUSHER_UPGRADE = registerItem("basic_to_advanced_crusher_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item ADVANCED_TO_EPIC_CRUSHER_UPGRADE = registerItem("advanced_to_epic_crusher_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item EPIC_TO_OMEGA_CRUSHER_UPGRADE = registerItem("epic_to_omega_crusher_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+    public static final Item OMEGA_TO_ULTIMATE_CRUSHER_UPGRADE = registerItem("omega_to_ultimate_crusher_upgrade",
+            new Item(new FabricItemSettings().group(ModItemGroup.UPGRADES).fireproof()));
+
+
+    public static final Material LARIMAR = new Material("larimar", StatusEffects.DOLPHINS_GRACE, 6, 6, ModToolMaterials.LARIMAR, ModArmorMaterials.LARIMAR);
+    public static final Material CHAROITE = new Material("charoite", StatusEffects.CONDUIT_POWER, 4, 6, ModToolMaterials.CHAROITE, ModArmorMaterials.CHAROITE);
+    public static final Material JADE = new Material("jade", StatusEffects.INVISIBILITY, 3, 6,  ModToolMaterials.JADE, ModArmorMaterials.JADE);
+    public static final Material GARNET = new Material("garnet", StatusEffects.FIRE_RESISTANCE, 2, 6, ModToolMaterials.GARNET, ModArmorMaterials.GARNET);
 
 
     public static Item registerItem(String name, Item item) {

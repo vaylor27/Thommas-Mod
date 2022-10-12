@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:netherrack_adamantium_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:adamantium_dust",
+      "count": 2
+   }
+}

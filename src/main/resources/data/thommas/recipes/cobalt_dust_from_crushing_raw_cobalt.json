@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:raw_cobalt"
+      }
+   ],
+   "output": {
+      "item": "thommas:cobalt_dust",
+      "count": 2
+   }
+}

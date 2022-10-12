@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:mythril_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:mythril_ingot",
+      "count": 3
+   }
+}

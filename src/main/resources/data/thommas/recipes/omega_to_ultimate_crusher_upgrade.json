@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IXI",
+    "PIP"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:epic_to_omega_crusher_upgrade"
+    },
+    "P": {
+      "item": "thommas:quadrice_compressed_gold_block"
+    },
+    "I": {
+      "item": "thommas:philosopher_stone"
+    }
+  },
+  "result": {
+    "item": "thommas:omega_to_ultimate_crusher_upgrade",
+    "count": 1
+  }
+}

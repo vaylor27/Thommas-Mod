@@ -1,6 +1,7 @@
 package net.vakror.thommas.util;
 
 import net.minecraft.block.Block;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
@@ -21,6 +22,9 @@ public class ModTags {
         public static final TagKey<Block> PAXEL =
                 createTag("paxel");
 
+        public static final TagKey<Block> BEE_CONTAINERS =
+                createCommonTag("bee_containers");
+
         public static final TagKey<Block> DOWSING_ROD_DETECTABLE_BLOCKS =
                 createTag("dowsing_rod_detectable_blocks");
 
@@ -39,6 +43,22 @@ public class ModTags {
 
         private static TagKey<Block> createCommonTag(String name) {
             return TagKey.of(Registry.BLOCK_KEY, new Identifier("c", name));
+        }
+    }
+
+    public static class Fluids {
+        public static final TagKey<Fluid> COOLANTS =
+                createCommonTag("coolants");
+
+        public static final TagKey<Fluid> FOSSIL_FUELS =
+                createCommonTag("fossil_fuels");
+
+        private static TagKey<Fluid> createTag(String name) {
+            return TagKey.of(Registry.FLUID_KEY, new Identifier(Thommas.MOD_ID, name));
+        }
+
+        private static TagKey<Fluid> createCommonTag(String name) {
+            return TagKey.of(Registry.FLUID_KEY, new Identifier("c", name));
         }
     }
 
@@ -77,6 +97,9 @@ public class ModTags {
 
         public static final TagKey<Item> STICKS =
                 createCommonTag("sticks");
+
+        public static final TagKey<Item> HAMMERS =
+                createCommonTag("hammers");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier(Thommas.MOD_ID, name));

@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:ruby_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:ruby",
+      "count": 3
+   }
+}

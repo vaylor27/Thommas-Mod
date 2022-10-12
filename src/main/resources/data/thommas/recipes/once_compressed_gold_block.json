@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "item": "thommas:once_compressed_gold_block",
+    "count": 1
+  }
+}

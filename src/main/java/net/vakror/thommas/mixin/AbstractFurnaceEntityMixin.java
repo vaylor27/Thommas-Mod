@@ -44,7 +44,8 @@ public abstract class AbstractFurnaceEntityMixin extends BlockEntity {
         if(ff_entityContext instanceof VakrorFurnaceEntity) {
             boolean doubled = ff_random.nextInt(100) < ((VakrorFurnaceEntity) ff_entityContext).getDuplicationChance();
             if(doubled) {
-                slots.get(2).increment(1);
+                int dupeAmount = ((VakrorFurnaceEntity) ff_entityContext).getDuplicationAmount();
+                slots.get(2).increment(dupeAmount);
             }
         }
     }
@@ -56,7 +57,8 @@ public abstract class AbstractFurnaceEntityMixin extends BlockEntity {
         if(ff_entityContext instanceof VakrorFurnaceEntity) {
             boolean doubled = ff_random.nextInt(100) < ((VakrorFurnaceEntity) ff_entityContext).getDuplicationChance();
             if(doubled) {
-                slots.get(2).increment(1);
+                int dupeAmount = ((VakrorFurnaceEntity) ff_entityContext).getDuplicationAmount();
+                slots.get(2).increment(dupeAmount);
             }
         }
     }

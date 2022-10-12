@@ -2,10 +2,12 @@ package net.vakror.thommas.screen;
 
 import io.github.cottonmc.cotton.gui.client.CottonInventoryScreen;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
+import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
 import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
 import net.vakror.thommas.block.ChestTypes;
 
@@ -17,6 +19,7 @@ public class ModScreenHandlers {
     public static ScreenHandlerType<OrichalcumBlasterScreenHandler> ORICHALCUM_BLASTER_SCREEN_HANDLER;
     public static ScreenHandlerType<UpgraderScreenHandler> UPGRADER_SCREEN_HANDLER;
     public static ScreenHandlerType<HoneySuckerScreenHandler> HONEY_SUCKER_SCREEN_HANDLER;
+    public static ScreenHandlerType<MassiveChestScreenHandler> MASSIVE_CHEST_SCREEN_HANDLER;
     public static ScreenHandlerType<ChestScreenHandler> COPPER_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> IRON_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> GOLD_CHEST;
@@ -29,7 +32,12 @@ public class ModScreenHandlers {
     public static ScreenHandlerType<ChestScreenHandler> MASSIVE_CRYSTAL_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> HUMONGOUS_CRYSTAL_CHEST;
     public static ScreenHandlerType<ChestScreenHandler> SMALL_BACKPACK;
-    public static ScreenHandlerType<ShapingAnvilScreenHandler> SHAPING_ANVIL_SCREEN_HANDLER;
+    public static ScreenHandlerType<ShapingAnvilScreenHandler> SHAPING_ANVIL_SCREEN_HANDLER =
+            new ExtendedScreenHandlerType<>(ShapingAnvilScreenHandler::new);
+    public static ScreenHandlerType<GemInfusingScreenHandler> GEM_INFUSING_SCREEN_HANDLER =
+            new ExtendedScreenHandlerType<>(GemInfusingScreenHandler::new);
+    public static ScreenHandlerType<CrushingScreenHandler> CRUSHING_SCREEN_HANDLER =
+            new ExtendedScreenHandlerType<>(CrushingScreenHandler::new);
 
     public static void registerAllScreenHandlers() {
         MYTHRIL_BLASTER_SCREEN_HANDLER =
@@ -56,9 +64,11 @@ public class ModScreenHandlers {
                  ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "honey_sucker"),
                          HoneySuckerScreenHandler::new);
 
-         SHAPING_ANVIL_SCREEN_HANDLER  =
-                 ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "shaping_anvil"),
-                         ShapingAnvilScreenHandler::new);
+
+         MASSIVE_CHEST_SCREEN_HANDLER  =
+                 ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "massive_chest"),
+                         MassiveChestScreenHandler::new);
+
 
         COPPER_CHEST = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "copper_chest"),
                          (syncId, inventory) -> new ChestScreenHandler(COPPER_CHEST, ChestTypes.COPPER, syncId, inventory, ScreenHandlerContext.EMPTY));
@@ -96,6 +106,12 @@ public class ModScreenHandlers {
         TREASURE_CHEST = ScreenHandlerRegistry.registerSimple(new Identifier(Thommas.MOD_ID, "treasure_chest"),
                 (syncId, inventory) -> new ChestScreenHandler(TREASURE_CHEST, ChestTypes.TREASURE, syncId, inventory, ScreenHandlerContext.EMPTY));
 
+        Registry.register(Registry.SCREEN_HANDLER, new Identifier(Thommas.MOD_ID, "gem_infusing"),
+                GEM_INFUSING_SCREEN_HANDLER);
+        Registry.register(Registry.SCREEN_HANDLER, new Identifier(Thommas.MOD_ID, "crushing"),
+                CRUSHING_SCREEN_HANDLER);
+        Registry.register(Registry.SCREEN_HANDLER, new Identifier(Thommas.MOD_ID, "shaping_anvil"),
+                SHAPING_ANVIL_SCREEN_HANDLER);
     }
     
     public static void registerChestScreenHandlers() {

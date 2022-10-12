@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IXI",
+    "PIP"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:basic_to_advanced_crusher_upgrade"
+    },
+    "P": {
+      "item": "thommas:quadrice_compressed_gold_block"
+    },
+    "I": {
+      "item": "thommas:thrice_compressed_diamond_block"
+    }
+  },
+  "result": {
+    "item": "thommas:advanced_to_epic_crusher_upgrade",
+    "count": 1
+  }
+}

@@ -17,6 +17,7 @@ import net.vakror.thommas.block.entity.ModSignTypes;
 import net.vakror.thommas.fluid.ModFluids;
 import net.vakror.thommas.item.ModItemGroup;
 import net.vakror.thommas.sound.ModSounds;
+import net.vakror.thommas.util.CompressedBlock;
 import net.vakror.thommas.world.gen.tree.sapling.*;
 
 public class ModBlocks {
@@ -509,11 +510,11 @@ public class ModBlocks {
 
     public static final Block JACARANDA_SAPLING = registerBlock("jacaranda_sapling",
             new ModTwoGroundSaplingBlock(new JacarandaSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS_BLOCK), ModItemGroup.NATURE);
 
     public static final Block REDWOOD_SAPLING = registerBlock("redwood_sapling",
             new ModTwoGroundSaplingBlock(new RedwoodSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS_BLOCK), ModItemGroup.NATURE);
 
     public static final Block MYTHRIL_BLASTER = registerBlock("mythril_blaster",
             new MythrilBlasterBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.0f).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
@@ -632,6 +633,9 @@ public class ModBlocks {
     public static final Block DEEPSLATE_CITRINE_ORE = registerBlock("deepslate_citrine_ore",
             new OreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(6.0f), UniformIntProvider.create(23,28)), ModItemGroup.ORES);
 
+    public static final Block AMETHYST_ORE = registerBlock("amethyst_ore",
+            new OreBlock(FabricBlockSettings.of(Material.STONE).requiresTool().strength(6.0f), UniformIntProvider.create(23,28)), ModItemGroup.ORES);
+
     public static final Block EBONY_TRAPDOOR = registerBlock("ebony_trapdoor",
             new ModTrapdoorBlock(FabricBlockSettings.copy(Blocks.IRON_TRAPDOOR)), ModItemGroup.SPECIAL_BLOCKS);
 
@@ -672,7 +676,7 @@ public class ModBlocks {
             new OreBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3.0f), UniformIntProvider.create(17, 26)), ModItemGroup.ORES);
 
     public static final Block EBONY_SAPLING = registerBlock("ebony_sapling",
-            new ModTwoGroundSaplingBlock(new EbonySaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new EbonySaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS_BLOCK), ModItemGroup.NATURE);
 
     public static final Block BLIGHTSPORE = registerBlockWithoutBlockItem("blightspore",
             new BlightSpore(FabricBlockSettings.copy(Blocks.WHEAT).nonOpaque()));
@@ -705,7 +709,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block BONETREE_SAPLING = registerBlock("bonetree_sapling",
-            new ModTwoGroundSaplingBlock(new BoneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new BoneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS_BLOCK), ModItemGroup.NATURE);
 
     public static final Block GOLDENWOOD_LOG = registerBlock("goldenwood_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
@@ -714,7 +718,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block GOLDENWOOD_SAPLING = registerBlock("goldenwood_sapling",
-            new ModTwoGroundSaplingBlock(new GoldenWoodSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new GoldenWoodSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS_BLOCK), ModItemGroup.NATURE);
 
     public static final Block CRONETREE_LOG = registerBlock("cronetree_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
@@ -723,7 +727,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block CRONETREE_SAPLING = registerBlock("cronetree_sapling",
-            new ModTwoGroundSaplingBlock(new CroneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new CroneTreeSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS_BLOCK), ModItemGroup.NATURE);
 
     public static final Block GLOAMBLOSSOM_LOG = registerBlock("gloamblossom_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroup.NATURE);
@@ -732,7 +736,7 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES).nonOpaque()), ModItemGroup.NATURE);
 
     public static final Block GLOAMBLOSSOM_SAPLING = registerBlock("gloamblossom_sapling",
-            new ModTwoGroundSaplingBlock(new GloamBlossomSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
+            new ModTwoGroundSaplingBlock(new GloamBlossomSaplingGenerator(), FabricBlockSettings.copy(Blocks.OAK_SAPLING).nonOpaque(), () -> Blocks.END_STONE, () -> Blocks.GRASS_BLOCK), ModItemGroup.NATURE);
 
     public static final Block BLUEBELLS = registerBlock("bluebells",
             new ModFlowerBlock(StatusEffects.ABSORPTION, 2000, FabricBlockSettings.copy(Blocks.DANDELION).nonOpaque()), ModItemGroup.NATURE);
@@ -837,7 +841,7 @@ public class ModBlocks {
 
     public static final Block CHERRY_BLOSSOM_SAPLING = registerBlock("cherry_blossom_sapling",
             new ModTwoGroundSaplingBlock(new CherryBlossomSaplingGenerator(),
-                    FabricBlockSettings.copy(Blocks.OAK_SAPLING), () -> Blocks.END_STONE, () -> Blocks.GRASS), ModItemGroup.NATURE);
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING), () -> Blocks.END_STONE, () -> Blocks.GRASS_BLOCK), ModItemGroup.NATURE);
 
     public static final Block COBALT_BLOCK = registerBlock("cobalt_block",
             new Block(FabricBlockSettings.copy(Blocks.STONE)), ModItemGroup.BLOCKS);
@@ -976,14 +980,8 @@ public class ModBlocks {
                     .strength(6f).requiresTool(),
                     UniformIntProvider.create(34, 43)), ModItemGroup.ORES);
 
-    public static final Block GEM_WASHING_STATION = registerBlock("gem_washing_station",
-            new Block(FabricBlockSettings.of(Material.METAL).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
-
     public static final Block TREASURE_CHEST = registerBlockWithoutBlockItem("treasure_chest",
             new GenericChestBlock(ChestTypes.TREASURE.setting(), ChestTypes.TREASURE));
-
-    public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
-            new JumpyBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.SPECIAL_BLOCKS);
 
     public static final Block TANZANITE_LAMP = registerBlock("tanzanite_lamp",
             new LampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
@@ -1001,8 +999,153 @@ public class ModBlocks {
     public static final Block MEGA_LAMP = registerBlock("mega_lamp",
             new Block(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).luminance(45)), ModItemGroup.SPECIAL_BLOCKS);
 
+    public static final Block PEDESTAL = registerBlock("pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
 
-    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+    public static final Block GEM_INFUSING_STATION = registerBlock("gem_infusing_station",
+            new GemInfusingStationBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block ANDESITE_PEDESTAL = registerBlock("andesite_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block CALCITE_PEDESTAL = registerBlock("calcite_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block COBBLED_DEEPSLATE_PEDESTAL = registerBlock("cobbled_deepslate_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block COBBLESTONE_PEDESTAL = registerBlock("cobblestone_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block DEEPSLATE_PEDESTAL = registerBlock("deepslate_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block DIORITE_PEDESTAL = registerBlock("diorite_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block GRANITE_PEDESTAL = registerBlock("granite_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block POLISHED_ANDESITE_PEDESTAL = registerBlock("polished_andesite_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block POLISHED_DEEPSLATE_PEDESTAL = registerBlock("polished_deepslate_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block POLISHED_DIORITE_PEDESTAL = registerBlock("polished_diorite_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block POLISHED_GRANITE_PEDESTAL = registerBlock("polished_granite_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block STONE_PEDESTAL = registerBlock("stone_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block TUFF_PEDESTAL = registerBlock("tuff_pedestal",
+            new PedestalBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block BASIC_GEM_INFUSING_STATION = registerBlock("basic_gem_infusing_station",
+            new GemInfusingStationBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block ADVANCED_GEM_INFUSING_STATION = registerBlock("advanced_gem_infusing_station",
+            new GemInfusingStationBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block EPIC_GEM_INFUSING_STATION = registerBlock("epic_gem_infusing_station",
+            new GemInfusingStationBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block OMEGA_GEM_INFUSING_STATION = registerBlock("omega_gem_infusing_station",
+            new GemInfusingStationBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block ULTIMATE_GEM_INFUSING_STATION = registerBlock("ultimate_gem_infusing_station",
+            new GemInfusingStationBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block STARTER_CRUSHER = registerBlock("starter_crusher",
+            new CrusherBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block BASIC_CRUSHER = registerBlock("basic_crusher",
+            new CrusherBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block ADVANCED_CRUSHER = registerBlock("advanced_crusher",
+            new CrusherBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block EPIC_CRUSHER = registerBlock("epic_crusher",
+            new CrusherBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block OMEGA_CRUSHER = registerBlock("omega_crusher",
+            new CrusherBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block ULTIMATE_CRUSHER = registerBlock("ultimate_crusher",
+            new CrusherBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+    public static final Block SHAPING_ANVIL = registerBlock("shaping_anvil",
+            new ShapingAnvilBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(3).nonOpaque()), ModItemGroup.SPECIAL_BLOCKS);
+
+
+    public static final Block ONCE_COMPRESSED_ANDESITE = CompressedBlock.registerOnceCompressedBlock("andesite", Blocks.ANDESITE);
+    public static final Block ONCE_COMPRESSED_COBBLED_DEEPSLATE = CompressedBlock.registerOnceCompressedBlock("cobbled_deepslate", Blocks.COBBLED_DEEPSLATE);
+    public static final Block ONCE_COMPRESSED_COBBLESTONE = CompressedBlock.registerOnceCompressedBlock("cobblestone", Blocks.COBBLESTONE);
+    public static final Block ONCE_COMPRESSED_COPPER = CompressedBlock.registerOnceCompressedBlock("copper_block", Blocks.COPPER_BLOCK);
+    public static final Block ONCE_COMPRESSED_DIAMOND_BLOCK = CompressedBlock.registerOnceCompressedBlock("diamond_block", Blocks.DIAMOND_BLOCK);
+    public static final Block ONCE_COMPRESSED_DEEPSLATE = CompressedBlock.registerOnceCompressedBlock("deepslate", Blocks.DEEPSLATE);
+    public static final Block ONCE_COMPRESSED_DIORITE = CompressedBlock.registerOnceCompressedBlock("diorite", Blocks.DIORITE);
+    public static final Block ONCE_COMPRESSED_DIRT = CompressedBlock.registerOnceCompressedBlock("dirt", Blocks.DIRT);
+    public static final Block ONCE_COMPRESSED_GOLD_BLOCK = CompressedBlock.registerOnceCompressedBlock("gold_block", Blocks.GOLD_BLOCK);
+    public static final Block ONCE_COMPRESSED_GRANITE = CompressedBlock.registerOnceCompressedBlock("granite", Blocks.GRANITE);
+    public static final Block ONCE_COMPRESSED_GRAVEL = CompressedBlock.registerOnceCompressedBlock("gravel", Blocks.GRAVEL);
+    public static final Block ONCE_COMPRESSED_IRON_BLOCK = CompressedBlock.registerOnceCompressedBlock("iron_block", Blocks.IRON_BLOCK);
+    public static final Block ONCE_COMPRESSED_MOSSY_COBBLESTONE = CompressedBlock.registerOnceCompressedBlock("mossy_cobblestone", Blocks.MOSSY_COBBLESTONE);
+    public static final Block ONCE_COMPRESSED_SAND = CompressedBlock.registerOnceCompressedBlock("sand", Blocks.SAND);
+    public static final Block ONCE_COMPRESSED_STONE = CompressedBlock.registerOnceCompressedBlock("stone", Blocks.STONE);
+
+    public static final Block TWICE_COMPRESSED_ANDESITE = CompressedBlock.registerTwiceCompressedBlock("andesite", Blocks.ANDESITE);
+    public static final Block TWICE_COMPRESSED_COBBLED_DEEPSLATE = CompressedBlock.registerTwiceCompressedBlock("cobbled_deepslate", Blocks.COBBLED_DEEPSLATE);
+    public static final Block TWICE_COMPRESSED_COBBLESTONE = CompressedBlock.registerTwiceCompressedBlock("cobblestone", Blocks.COBBLESTONE);
+    public static final Block TWICE_COMPRESSED_COPPER = CompressedBlock.registerTwiceCompressedBlock("copper_block", Blocks.COPPER_BLOCK);
+    public static final Block TWICE_COMPRESSED_DIAMOND_BLOCK = CompressedBlock.registerTwiceCompressedBlock("diamond_block", Blocks.DIAMOND_BLOCK);
+    public static final Block TWICE_COMPRESSED_DEEPSLATE = CompressedBlock.registerTwiceCompressedBlock("deepslate", Blocks.DEEPSLATE);
+    public static final Block TWICE_COMPRESSED_DIORITE = CompressedBlock.registerTwiceCompressedBlock("diorite", Blocks.DIORITE);
+    public static final Block TWICE_COMPRESSED_DIRT = CompressedBlock.registerTwiceCompressedBlock("dirt", Blocks.DIRT);
+    public static final Block TWICE_COMPRESSED_GOLD_BLOCK = CompressedBlock.registerTwiceCompressedBlock("gold_block", Blocks.GOLD_BLOCK);
+    public static final Block TWICE_COMPRESSED_GRANITE = CompressedBlock.registerTwiceCompressedBlock("granite", Blocks.GRANITE);
+    public static final Block TWICE_COMPRESSED_GRAVEL = CompressedBlock.registerTwiceCompressedBlock("gravel", Blocks.GRAVEL);
+    public static final Block TWICE_COMPRESSED_IRON_BLOCK = CompressedBlock.registerTwiceCompressedBlock("iron_block", Blocks.IRON_BLOCK);
+    public static final Block TWICE_COMPRESSED_MOSSY_COBBLESTONE = CompressedBlock.registerTwiceCompressedBlock("mossy_cobblestone", Blocks.MOSSY_COBBLESTONE);
+    public static final Block TWICE_COMPRESSED_SAND = CompressedBlock.registerTwiceCompressedBlock("sand", Blocks.SAND);
+    public static final Block TWICE_COMPRESSED_STONE = CompressedBlock.registerTwiceCompressedBlock("stone", Blocks.STONE);
+
+    public static final Block THRICE_COMPRESSED_ANDESITE = CompressedBlock.registerThriceCompressedBlock("andesite", Blocks.ANDESITE);
+    public static final Block THRICE_COMPRESSED_COBBLED_DEEPSLATE = CompressedBlock.registerThriceCompressedBlock("cobbled_deepslate", Blocks.COBBLED_DEEPSLATE);
+    public static final Block THRICE_COMPRESSED_COBBLESTONE = CompressedBlock.registerThriceCompressedBlock("cobblestone", Blocks.COBBLESTONE);
+    public static final Block THRICE_COMPRESSED_COPPER = CompressedBlock.registerThriceCompressedBlock("copper_block", Blocks.COPPER_BLOCK);
+    public static final Block THRICE_COMPRESSED_DIAMOND_BLOCK = CompressedBlock.registerThriceCompressedBlock("diamond_block", Blocks.DIAMOND_BLOCK);
+    public static final Block THRICE_COMPRESSED_DEEPSLATE = CompressedBlock.registerThriceCompressedBlock("deepslate", Blocks.DEEPSLATE);
+    public static final Block THRICE_COMPRESSED_DIORITE = CompressedBlock.registerThriceCompressedBlock("diorite", Blocks.DIORITE);
+    public static final Block THRICE_COMPRESSED_DIRT = CompressedBlock.registerThriceCompressedBlock("dirt", Blocks.DIRT);
+    public static final Block THRICE_COMPRESSED_GOLD_BLOCK = CompressedBlock.registerThriceCompressedBlock("gold_block", Blocks.GOLD_BLOCK);
+    public static final Block THRICE_COMPRESSED_GRANITE = CompressedBlock.registerThriceCompressedBlock("granite", Blocks.GRANITE);
+    public static final Block THRICE_COMPRESSED_GRAVEL = CompressedBlock.registerThriceCompressedBlock("gravel", Blocks.GRAVEL);
+    public static final Block THRICE_COMPRESSED_IRON_BLOCK = CompressedBlock.registerThriceCompressedBlock("iron_block", Blocks.IRON_BLOCK);
+    public static final Block THRICE_COMPRESSED_MOSSY_COBBLESTONE = CompressedBlock.registerThriceCompressedBlock("mossy_cobblestone", Blocks.MOSSY_COBBLESTONE);
+    public static final Block THRICE_COMPRESSED_SAND = CompressedBlock.registerThriceCompressedBlock("sand", Blocks.SAND);
+    public static final Block THRICE_COMPRESSED_STONE = CompressedBlock.registerThriceCompressedBlock("stone", Blocks.STONE);
+
+    public static final Block QUADRICE_COMPRESSED_ANDESITE = CompressedBlock.registerQuadriceCompressedBlock("andesite", Blocks.ANDESITE);
+    public static final Block QUADRICE_COMPRESSED_COBBLED_DEEPSLATE = CompressedBlock.registerQuadriceCompressedBlock("cobbled_deepslate", Blocks.COBBLED_DEEPSLATE);
+    public static final Block QUADRICE_COMPRESSED_COBBLESTONE = CompressedBlock.registerQuadriceCompressedBlock("cobblestone", Blocks.COBBLESTONE);
+    public static final Block QUADRICE_COMPRESSED_COPPER = CompressedBlock.registerQuadriceCompressedBlock("copper_block", Blocks.COPPER_BLOCK);
+    public static final Block QUADRICE_COMPRESSED_DIAMOND_BLOCK = CompressedBlock.registerQuadriceCompressedBlock("diamond_block", Blocks.DIAMOND_BLOCK);
+    public static final Block QUADRICE_COMPRESSED_DEEPSLATE = CompressedBlock.registerQuadriceCompressedBlock("deepslate", Blocks.DEEPSLATE);
+    public static final Block QUADRICE_COMPRESSED_DIORITE = CompressedBlock.registerQuadriceCompressedBlock("diorite", Blocks.DIORITE);
+    public static final Block QUADRICE_COMPRESSED_DIRT = CompressedBlock.registerQuadriceCompressedBlock("dirt", Blocks.DIRT);
+    public static final Block QUADRICE_COMPRESSED_GOLD_BLOCK = CompressedBlock.registerQuadriceCompressedBlock("gold_block", Blocks.GOLD_BLOCK);
+    public static final Block QUADRICE_COMPRESSED_GRANITE = CompressedBlock.registerQuadriceCompressedBlock("granite", Blocks.GRANITE);
+    public static final Block QUADRICE_COMPRESSED_GRAVEL = CompressedBlock.registerQuadriceCompressedBlock("gravel", Blocks.GRAVEL);
+    public static final Block QUADRICE_COMPRESSED_IRON_BLOCK = CompressedBlock.registerQuadriceCompressedBlock("iron_block", Blocks.IRON_BLOCK);
+    public static final Block QUADRICE_COMPRESSED_MOSSY_COBBLESTONE = CompressedBlock.registerQuadriceCompressedBlock("mossy_cobblestone", Blocks.MOSSY_COBBLESTONE);
+    public static final Block QUADRICE_COMPRESSED_SAND = CompressedBlock.registerQuadriceCompressedBlock("sand", Blocks.SAND);
+    public static final Block QUADRICE_COMPRESSED_STONE = CompressedBlock.registerQuadriceCompressedBlock("stone", Blocks.STONE);
+
+    public static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registry.BLOCK, new Identifier(Thommas.MOD_ID, name), block);
     }
 

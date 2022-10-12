@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:smooth_stone"
+    }
+  },
+  "result": {
+    "item": "thommas:pedestal",
+    "count": 1
+  }
+}

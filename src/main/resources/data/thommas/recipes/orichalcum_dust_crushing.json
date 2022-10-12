@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:orichalcum_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:orichalcum_dust",
+      "count": 2
+   }
+}

@@ -9,6 +9,11 @@
     "thommas:deepslate_charoite_ore",
     "thommas:jade_block",
     "thommas:jade_ore",
-    "thommas:deepslate_jade_ore"
+    "thommas:deepslate_jade_ore",
+    "thommas:garnet_block",
+    "thommas:garnet_ore",
+    "thommas:deepslate_garnet_ore",
+    "thommas:netherite_furnace",
+    "thommas:obsidian_furnace"
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:diorite"
+    }
+  },
+  "result": {
+    "item": "thommas:diorite_pedestal",
+    "count": 1
+  }
+}

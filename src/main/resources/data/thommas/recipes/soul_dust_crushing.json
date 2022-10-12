@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:stone_soul_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:soul_dust",
+      "count": 2
+   }
+}

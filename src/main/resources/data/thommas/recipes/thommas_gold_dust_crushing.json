@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:terracotta_gold_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:gold_dust",
+      "count": 2
+   }
+}

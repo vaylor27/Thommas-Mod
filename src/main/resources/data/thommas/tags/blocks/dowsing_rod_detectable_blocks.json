@@ -20,7 +20,6 @@
     "minecraft:deepslate_diamond_ore",
     "minecraft:deepslate_emerald_ore",
     "minecraft:deepslate_copper_ore",
-    "thommas:endstone_rare_earths_ore",
     "thommas:gravel_lignite_ore",
     "thommas:gravel_oil_ore",
     "thommas:netherrack_adamantium_ore",
@@ -54,7 +53,6 @@
     "thommas:topaz_ore",
     "thommas:sapphire_ore",
     "thommas:ruby_ore",
-    "thommas:pure_emerald_ore",
     "thommas:bitumen_ore",
     "thommas:sulphur_ore",
     "thommas:titanium_ore",
@@ -63,7 +61,6 @@
     "thommas:silver_ore",
     "thommas:lead_ore",
     "thommas:copper_ore",
-    "thommas:aluminum_ore",
-    "thommas:pure_diamond_ore"
+    "thommas:aluminum_ore"
   ]
 }

@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:adamantium_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:adamantium_ingot",
+      "count": 3
+   }
+}

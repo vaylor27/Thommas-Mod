@@ -56,4 +56,12 @@ public class VakrorFurnaceEntity extends AbstractFurnaceBlockEntity {
 
         return 0;
     }
+
+    public int getDuplicationAmount() {
+        if(getCachedState().getBlock() instanceof VakrorFurnaceBlock) {
+            return ((VakrorFurnaceBlock) getCachedState().getBlock()).getDuplicationAmount();
+        }
+
+        return 0;
+    }
 }

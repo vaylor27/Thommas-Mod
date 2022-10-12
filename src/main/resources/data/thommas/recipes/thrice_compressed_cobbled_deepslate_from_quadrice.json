@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item":
+       "thommas:quadrice_compressed_cobbled_deepslate"
+    }
+  },
+  "result": {
+    "item": "thommas:thrice_compressed_cobbled_deepslate",
+    "count": 9
+  }
+}

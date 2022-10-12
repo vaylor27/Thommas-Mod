@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:deepslate_cobalt_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:cobalt_dust",
+      "count": 2
+   }
+}

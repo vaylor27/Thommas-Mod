@@ -1,0 +1,13 @@
+{
+  "type": "patchouli:shaped_book_recipe",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "book": "thommas:guide"
+}

@@ -16,19 +16,22 @@ import net.vakror.thommas.block.entity.ModBlockEntities;
 import net.vakror.thommas.screen.ChestScreenHandler;
 import net.vakror.thommas.screen.ModScreenHandlers;
 
+/**
+ * Modified by Vakror for additional chest types
+ */
 public enum ChestTypes {
     NETHERITE(110, 12, new Identifier(Thommas.MOD_ID, "model/obsidian_chest")),
     TREASURE(60, 15, new Identifier(Thommas.MOD_ID, "model/treasure_chest")),
-    OBSIDIAN(89, 12, new Identifier(Thommas.MOD_ID, "model/obsidian_chest")),
+    OBSIDIAN(96, 12, new Identifier(Thommas.MOD_ID, "model/obsidian_chest")),
     CRYSTAL(108, 12, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
-    DIAMOND(76, 12, new Identifier(Thommas.MOD_ID, "model/diamond_chest")),
-    EMERALD(69, 12, new Identifier(Thommas.MOD_ID, "model/emerald_chest")),
-    GOLD(58, 9, new Identifier(Thommas.MOD_ID, "model/gold_chest")),
-    IRON(44, 9, new Identifier(Thommas.MOD_ID, "model/iron_chest")),
+    DIAMOND(72, 12, new Identifier(Thommas.MOD_ID, "model/diamond_chest")),
+    EMERALD(84, 12, new Identifier(Thommas.MOD_ID, "model/emerald_chest")),
+    GOLD(54, 9, new Identifier(Thommas.MOD_ID, "model/gold_chest")),
+    IRON(45, 9, new Identifier(Thommas.MOD_ID, "model/iron_chest")),
     COPPER(35, 9, new Identifier(Thommas.MOD_ID, "model/copper_chest")),
     WOOD(27, 9, new Identifier("entity/chest/normal")),
-    BIG_CRYSTAL(115, 15, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
-    MASSIVE_CRYSTAL(120, 15, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
+    BIG_CRYSTAL(120, 15, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
+    MASSIVE_CRYSTAL(135, 15, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
     HUMONGOUS_CRYSTAL(144, 16, new Identifier(Thommas.MOD_ID, "model/crystal_chest")),
 
 

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "XPX",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:blackstone"
+    },
+    "P": {
+      "item": "thommas:titanium_block"
+    },
+    "X": {
+      "item": "thommas:medium_soulstone"
+    }
+  },
+  "result": {
+    "item": "thommas:starter_crusher",
+    "count": 1
+  }
+}

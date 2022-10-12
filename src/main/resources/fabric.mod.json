@@ -22,7 +22,7 @@
     }
   },
 
-  "license": "MIT",
+  "license": "GPL-3.0",
   "icon": "assets/thommas/Icon.png",
 
   "accessWidener": "thommas.accesswidener",

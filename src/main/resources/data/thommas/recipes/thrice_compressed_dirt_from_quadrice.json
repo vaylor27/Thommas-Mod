@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item":
+       "thommas:quadrice_compressed_dirt"
+    }
+  },
+  "result": {
+    "item": "thommas:thrice_compressed_dirt",
+    "count": 9
+  }
+}

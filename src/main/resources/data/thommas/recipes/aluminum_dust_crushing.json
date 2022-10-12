@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:aluminum_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:aluminum_dust",
+      "count": 2
+   }
+}

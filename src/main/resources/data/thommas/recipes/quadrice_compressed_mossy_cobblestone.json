@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:thrice_compressed_mossy_cobblestone"
+    }
+  },
+  "result": {
+    "item": "thommas:quadrice_compressed_mossy_cobblestone",
+    "count": 1
+  }
+}

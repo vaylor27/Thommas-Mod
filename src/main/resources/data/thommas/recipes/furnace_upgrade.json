@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPI",
+    "TXT",
+    "IPI"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:cylindrite_rock"
+    },
+    "X": {
+      "item": "minecraft:diamond_block"
+    },
+    "P": {
+      "item": "thommas:magic_dust"
+    },
+    "T": {
+      "item": "thommas:realgar_rock"
+    }
+  },
+  "result": {
+    "item": "thommas:furnace_upgrade",
+    "count": 1
+  }
+}

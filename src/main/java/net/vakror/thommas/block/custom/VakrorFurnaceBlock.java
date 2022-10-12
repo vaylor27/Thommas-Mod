@@ -45,13 +45,15 @@ public class VakrorFurnaceBlock extends BlockWithEntity {
     protected double speed;
     protected double fuel;
     protected int dupe;
+    protected int dupeA;
 
-    public VakrorFurnaceBlock(Settings settings, double speedMultiplier, double fuelMultiplier, int dupeChance100) {
+    public VakrorFurnaceBlock(Settings settings, double speedMultiplier, double fuelMultiplier, int dupeChance100, int dupeAmount63) {
         super(settings);
 
         this.speed = speedMultiplier;
         this.fuel = fuelMultiplier;
         this.dupe = dupeChance100;
+        this.dupeA = dupeAmount63;
 
         this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH).with(LIT, false));
     }
@@ -185,5 +187,9 @@ public class VakrorFurnaceBlock extends BlockWithEntity {
 
     public int getDuplicationChance() {
         return dupe;
+    }
+
+    public int getDuplicationAmount() {
+        return dupeA;
     }
 }

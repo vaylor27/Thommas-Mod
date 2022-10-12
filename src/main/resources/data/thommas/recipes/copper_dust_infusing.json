@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:copper_dust"
+      }
+   ],
+   "output": {
+      "item": "minecraft:copper_ingot",
+      "count": 3
+   }
+}

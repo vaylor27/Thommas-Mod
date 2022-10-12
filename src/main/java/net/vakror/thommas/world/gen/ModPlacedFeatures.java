@@ -9,5 +9,6 @@ import net.minecraft.world.gen.placementmodifier.SquarePlacementModifier;
 
 public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> HONEY_OASIS = PlacedFeatures.register("honey_oasis", ModConfiguredFeatures.HONEY_OASIS, RarityFilterPlacementModifier.of(20), SquarePlacementModifier.of(), PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of());
+    public static final RegistryEntry<PlacedFeature> OIL = PlacedFeatures.register("oil", ModConfiguredFeatures.OIL, RarityFilterPlacementModifier.of(15), SquarePlacementModifier.of(), PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of());
 
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:emerald_block"
+    },
+    "X": {
+      "item": "thommas:gold_furnace_upgrade"
+    }
+  },
+  "result": {
+    "item": "thommas:emerald_furnace_upgrade",
+    "count": 1
+  }
+}

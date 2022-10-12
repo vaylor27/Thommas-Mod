@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "result": {
+    "item": "thommas:deepslate_pedestal",
+    "count": 1
+  }
+}

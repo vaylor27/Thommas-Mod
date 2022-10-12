@@ -56,12 +56,6 @@
     "thommas:copper_block",
     "thommas:copper_brick",
     "thommas:copper_ore",
-    "thommas:pure_diamond_block",
-    "thommas:pure_diamond_brick",
-    "thommas:pure_diamond_ore",
-    "thommas:pure_emerald_block",
-    "thommas:pure_emerald_brick",
-    "thommas:pure_emerald_ore",
     "thommas:energized_redstone_block",
     "thommas:gem_steel_block",
     "thommas:hellstone_block",
@@ -170,7 +164,6 @@
     "thommas:endstone_citrine_ore",
     "thommas:raw_citrine_block",
     "thommas:citrine_ore",
-    "thommas:endstone_rare_earths_ore",
     "thommas:netherrack_adamantium_ore",
     "thommas:netherrack_perfidum_ore",
     "thommas:slade_bones_0_ore",
@@ -211,6 +204,10 @@
     "thommas:netherrack_zircon_ore",
     "thommas:treasure_chest",
     "thommas:tanzanite_lamp",
-    "thommas:jumpy_block"
+    "thommas:once_compressed_iron_block",
+    "thommas:twice_compressed_iron_block",
+    "thommas:thrice_compressed_iron_block",
+    "thommas:quadrice_compressed_iron_block",
+    "thommas:iron_furnace"
   ]
 }

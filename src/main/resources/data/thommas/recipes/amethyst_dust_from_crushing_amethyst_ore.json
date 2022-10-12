@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:amethyst_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:amethyst_dust",
+      "count": 2
+   }
+}

@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRe
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.minecraft.block.BeaconBlock;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.Item;
 import net.vakror.thommas.Thommas;
@@ -35,6 +36,9 @@ public class ModRegistries {
     }
 
 
+    public static void registerBeaconItems() {
+
+    }
 
     public static void registerFuels() {
         Thommas.LOGGER.info("Registering Fuels for " + Thommas.MOD_ID);

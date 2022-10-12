@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:starter_crusher"
+    },
+    {
+      "item": "thommas:starter_to_basic_crusher_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:basic_crusher"
+  }
+}

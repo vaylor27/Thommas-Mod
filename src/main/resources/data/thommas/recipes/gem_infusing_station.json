@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OLO",
+    "IPI",
+    "XXX"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:blackstone"
+    },
+    "X": {
+      "item": "minecraft:calcite"
+    },
+    "P": {
+      "item": "thommas:twice_compressed_diamond_block"
+    },
+    "L": {
+      "item": "thommas:twice_compressed_copper_block"
+    },
+    "O": {
+      "item": "thommas:twice_compressed_diorite"
+    }
+  },
+  "result": {
+    "item": "thommas:gem_infusing_station",
+    "count": 1
+  }
+}

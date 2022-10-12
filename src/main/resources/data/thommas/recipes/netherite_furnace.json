@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:obsidian_furnace"
+    },
+    {
+      "item": "thommas:netherite_furnace_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:netherite_furnace"
+  }
+}

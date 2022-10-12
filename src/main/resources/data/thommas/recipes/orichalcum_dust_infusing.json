@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:orichalcum_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:orichalcum_ingot",
+      "count": 3
+   }
+}

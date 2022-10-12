@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
+import net.minecraft.world.WanderingTraderManager;
 import net.vakror.thommas.item.ModItems;
 import net.vakror.thommas.villager.ModVillagers;
 
@@ -166,6 +167,15 @@ public class ModTrades {public static void registerTrades() {
                         new ItemStack(Items.EMERALD, 6),
                         new ItemStack(ModItems.RUBY, 7),
                         12, 7, 0.08f));
+            });
+
+
+    TradeOfferHelper.registerVillagerOffers(VillagerProfession.FLETCHER, 4,
+            factories -> {
+                factories.add((entity, random) -> new TradeOffer(
+                        new ItemStack(ModItems.PHILOSOPHERS_STONE, 6),
+                        new ItemStack(ModItems.LEAD_SWORD, 1),
+                        1, 100, 10));
             });
 }
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item":
+       "thommas:twice_compressed_andesite"
+    }
+  },
+  "result": {
+    "item": "thommas:thrice_compressed_andesite",
+    "count": 1
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IXI",
+    "PIP"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:starter_to_basic_crusher_upgrade"
+    },
+    "P": {
+      "item": "thommas:thrice_compressed_gold_block"
+    },
+    "I": {
+      "item": "thommas:thrice_compressed_iron_block"
+    }
+  },
+  "result": {
+    "item": "thommas:basic_to_advanced_crusher_upgrade",
+    "count": 1
+  }
+}

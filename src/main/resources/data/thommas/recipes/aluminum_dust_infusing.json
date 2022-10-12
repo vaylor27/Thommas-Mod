@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:aluminum_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:aluminum_ingot",
+      "count": 3
+   }
+}

@@ -15,6 +15,7 @@ import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 import net.vakror.thommas.item.inventory.ImplementedInventory;
 import net.vakror.thommas.recipe.MythrilBlasterRecipe;
@@ -59,6 +60,16 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
                 return 4;
             }
         };
+    }
+
+    @Override
+    public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
+        return side == Direction.UP && slot == 2;
+    }
+
+    @Override
+    public boolean canExtract(int slot, ItemStack stack, Direction side) {
+        return side == Direction.DOWN && slot == 3;
     }
 
     @Override
@@ -161,7 +172,7 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
             entity.removeStack(2,1);
 
             entity.setStack(3, new ItemStack(match.get().getOutput().getItem(),
-                    entity.getStack(3).getCount() + match.get().getOutput().getCount()));
+                    entity.getStack(3).getCount() + 1));
 
             entity.resetProgress();
         }
@@ -176,6 +187,6 @@ public class MythrilBlasterBlockEntity extends BlockEntity implements NamedScree
     }
 
     private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory, int count) {
-        return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount() + count;
+        return inventory.getStack(3).getMaxCount() > inventory.getStack(3).getCount() + 1;
     }
 }

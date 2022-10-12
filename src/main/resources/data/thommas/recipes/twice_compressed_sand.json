@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:once_compressed_sand"
+    }
+  },
+  "result": {
+    "item": "thommas:twice_compressed_sand",
+    "count": 1
+  }
+}

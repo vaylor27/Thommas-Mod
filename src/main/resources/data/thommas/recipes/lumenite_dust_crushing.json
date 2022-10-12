@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:lumenite_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:lumenite_dust",
+      "count": 2
+   }
+}

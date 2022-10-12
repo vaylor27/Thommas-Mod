@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "thommas:block/quadrice_compressed_diamond_block"
+  }
+}

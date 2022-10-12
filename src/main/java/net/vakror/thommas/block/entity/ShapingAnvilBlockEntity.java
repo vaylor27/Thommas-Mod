@@ -1,16 +1,22 @@
 package net.vakror.thommas.block.entity;
 
+import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
+import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
@@ -20,16 +26,45 @@ import net.minecraft.world.World;
 import net.vakror.thommas.item.custom.RedHotMetal;
 import net.vakror.thommas.item.inventory.ImplementedInventory;
 import net.vakror.thommas.screen.ShapingAnvilScreenHandler;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class ShapingAnvilBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
+public class ShapingAnvilBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
     private final DefaultedList<ItemStack> inventory =
-            DefaultedList.ofSize(3, ItemStack.EMPTY);
+            DefaultedList.ofSize(2, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
     static int tickNum;
+
+    public static boolean shouldCraftAxeHead = false;
+    public static boolean shouldCraftPickaxeAxeHead = false;
+    public static boolean shouldCraftSwordBlade = false;
+    public static boolean shouldCraftShovelHead = false;
+    public static boolean shouldCraftHoeHead = false;
+
+    public boolean shouldCraftSomething() {
+        return !shouldCraftHoeHead && !shouldCraftShovelHead && !shouldCraftSwordBlade && !shouldCraftPickaxeAxeHead && !shouldCraftAxeHead;
+    }
+
+    public boolean getAxeHeadCraft() {
+        return shouldCraftAxeHead;
+    }
+
+    public boolean getPickAxeHeadCraft() {
+        return shouldCraftPickaxeAxeHead;
+    }
+
+    public boolean getSwordBladeCraft() {
+        return shouldCraftSwordBlade;
+    }
+
+    public boolean getShovelHeadCraft() {
+        return shouldCraftShovelHead;
+    }
+
+    public boolean getHoeHeadCraft() {
+        return shouldCraftHoeHead;
+    }
 
     public ShapingAnvilBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.SHAPING_ANVIL_BLOCK_ENTITY, pos, state);
@@ -63,6 +98,11 @@ public class ShapingAnvilBlockEntity extends BlockEntity implements NamedScreenH
     }
 
     @Override
+    public void writeScreenOpeningData(ServerPlayerEntity player, PacketByteBuf buf) {
+        buf.writeBlockPos(this.pos);
+    }
+
+    @Override
     public DefaultedList<ItemStack> getItems() {
         return inventory;
     }
@@ -79,11 +119,67 @@ public class ShapingAnvilBlockEntity extends BlockEntity implements NamedScreenH
         super.writeNbt(nbt);
     }
 
-    public static void tick(World world, BlockPos pos, BlockState state, ShapingAnvilBlockEntity entity) {
-        if (entity.inventory.get(1).getItem() instanceof RedHotMetal) {
-            if (tickNum == 200) {
-                world.playSound(Double.parseDouble(String.valueOf(pos.getX())), Double.parseDouble(String.valueOf(pos.getY())), Double.parseDouble(String.valueOf(pos.getZ())), SoundEvents.BLOCK_LAVA_POP, SoundCategory.BLOCKS, 10F, 1F, true);
+    public void craftAxeHead() {
+        if (inventory.get(0).getCount() >= 3 && inventory.get(1).isEmpty()) {
+            if ((inventory.get(0).getItem()) instanceof RedHotMetal) {
+                shouldCraftAxeHead = true;
+                shouldCraftPickaxeAxeHead = false;
+                shouldCraftSwordBlade = false;
+                shouldCraftShovelHead = false;
+                shouldCraftHoeHead = false;
             }
         }
+    }
+
+    public void craftPickAxeHead() {
+        if (inventory.get(0).getCount() >= 3 && inventory.get(1).isEmpty()) {
+            if ((inventory.get(0).getItem()) instanceof RedHotMetal) {
+                shouldCraftAxeHead = false;
+                shouldCraftPickaxeAxeHead = true;
+                shouldCraftSwordBlade = false;
+                shouldCraftShovelHead = false;
+                shouldCraftHoeHead = false;
+            }
+        }
+    }
+
+    public void craftHoeHead() {
+        if (inventory.get(0).getCount() >= 3 && inventory.get(1).isEmpty()) {
+            if ((inventory.get(0).getItem()) instanceof RedHotMetal) {
+                shouldCraftAxeHead = false;
+                shouldCraftPickaxeAxeHead = false;
+                shouldCraftSwordBlade = false;
+                shouldCraftShovelHead = false;
+                shouldCraftHoeHead = true;
+            }
+        }
+    }
+
+    public void craftSwordBlade() {
+        if (inventory.get(0).getCount() >= 3 && inventory.get(1).isEmpty()) {
+            if ((inventory.get(0).getItem()) instanceof RedHotMetal) {
+                shouldCraftAxeHead = false;
+                shouldCraftPickaxeAxeHead = false;
+                shouldCraftSwordBlade = true;
+                shouldCraftShovelHead = false;
+                shouldCraftHoeHead = false;
+            }
+        }
+    }
+
+    public void craftShovelHead() {
+        if (inventory.get(0).getCount() >= 3 && inventory.get(1).isEmpty()) {
+            if ((inventory.get(0).getItem()) instanceof RedHotMetal) {
+                shouldCraftAxeHead = false;
+                shouldCraftPickaxeAxeHead = false;
+                shouldCraftSwordBlade = false;
+                shouldCraftShovelHead = true;
+                shouldCraftHoeHead = false;
+            }
+        }
+    }
+
+    public static void tick(World world, BlockPos pos, BlockState state, ShapingAnvilBlockEntity entity) {
+
     }
 }

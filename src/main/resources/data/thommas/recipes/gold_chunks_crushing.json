@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:gold_chunks"
+      }
+   ],
+   "output": {
+      "item": "thommas:gold_dust",
+      "count": 2
+   }
+}

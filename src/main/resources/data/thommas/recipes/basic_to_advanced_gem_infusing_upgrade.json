@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPL",
+    "PXP",
+    "BPI"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:starter_to_basic_gem_infusing_upgrade"
+    },
+    "P": {
+      "item": "thommas:quadrice_compressed_stone"
+    },
+    "I": {
+      "item": "thommas:lithium_battery"
+    },
+    "L": {
+      "item": "thommas:chip_1"
+    },
+    "B": {
+      "item": "thommas:switch"
+    }
+  },
+  "result": {
+    "item": "thommas:basic_to_advanced_gem_infusing_upgrade",
+    "count": 1
+  }
+}

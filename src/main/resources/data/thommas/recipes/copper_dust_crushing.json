@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "minecraft:copper_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:copper_dust",
+      "count": 2
+   }
+}

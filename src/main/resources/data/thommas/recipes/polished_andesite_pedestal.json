@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:polished_andesite"
+    }
+  },
+  "result": {
+    "item": "thommas:polished_andesite_pedestal",
+    "count": 1
+  }
+}

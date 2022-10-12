@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:twice_compressed_gravel"
+    }
+  },
+  "result": {
+    "item": "thommas:once_compressed_gravel",
+    "count": 9
+  }
+}

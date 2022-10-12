@@ -10,6 +10,7 @@ import net.minecraft.util.math.Direction;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Objects;
 
 /**
  * A simple {@code SidedInventory} implementation with only default methods + an item list getter.
@@ -69,7 +70,6 @@ public interface ImplementedInventory extends SidedInventory {
         for (int i = 0; i < result.length; i++) {
             result[i] = i;
         }
-
         return result;
     }
 

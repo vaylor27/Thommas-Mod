@@ -6,10 +6,12 @@ import net.minecraft.item.ItemStack;
 
 public class InventoryUtil {
     public static boolean hasPlayerStackInInventory(PlayerEntity player, Item item) {
-        for(int i = 0; i < player.getInventory().size(); i++) {
-            ItemStack currentStack = player.getInventory().getStack(i);
-            if (!currentStack.isEmpty() && currentStack.isItemEqual(new ItemStack(item))) {
-                return true;
+        if (player != null) {
+            for (int i = 0; i < player.getInventory().size(); i++) {
+                ItemStack currentStack = player.getInventory().getStack(i);
+                if (!currentStack.isEmpty() && currentStack.isItemEqual(new ItemStack(item))) {
+                    return true;
+                }
             }
         }
 

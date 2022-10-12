@@ -1,0 +1,6 @@
+{
+   "parent": "item/generated",
+   "textures": {
+      "layer0": "thommas:item/omega_to_ultimate_gem_infusing_upgrade"
+   }
+}

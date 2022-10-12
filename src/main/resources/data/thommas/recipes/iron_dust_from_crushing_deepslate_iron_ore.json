@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "minecraft:deepslate_iron_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:iron_dust",
+      "count": 2
+   }
+}

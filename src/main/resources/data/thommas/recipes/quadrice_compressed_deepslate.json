@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "thommas:thrice_compressed_deepslate"
+    }
+  },
+  "result": {
+    "item": "thommas:quadrice_compressed_deepslate",
+    "count": 1
+  }
+}

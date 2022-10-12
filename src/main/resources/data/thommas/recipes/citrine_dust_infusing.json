@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:citrine_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:citrine",
+      "count": 3
+   }
+}

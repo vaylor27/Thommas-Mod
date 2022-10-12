@@ -1,0 +1,6 @@
+{
+    "parent": "thommas:block/cable/template_thick_cable_side",
+    "textures": {
+        "cable": "thommas:block/cables/starter_cable"
+    }
+}

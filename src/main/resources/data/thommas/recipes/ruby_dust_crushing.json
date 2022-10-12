@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:ruby_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:ruby_dust",
+      "count": 2
+   }
+}

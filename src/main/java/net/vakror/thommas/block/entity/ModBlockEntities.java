@@ -1,16 +1,22 @@
 package net.vakror.thommas.block.entity;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
+import net.fabricmc.fabric.api.transfer.v1.fluid.FluidStorage;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.vakror.thommas.Thommas;
-import net.vakror.thommas.block.FurnaceBlocks;
+import net.vakror.thommas.block.FurnaceRegistry;
 import net.vakror.thommas.block.ModBlocks;
 import net.vakror.thommas.block.entity.chest.*;
 import net.vakror.thommas.block.entity.furnace.VakrorFurnaceEntity;
+import net.vakror.thommas.block.entity.machine.CrusherBlockEntity;
+import net.vakror.thommas.block.entity.machine.GemInfusingBlockEntity;
+import team.reborn.energy.api.EnergyStorage;
+
+import static net.vakror.thommas.block.ModBlocks.*;
 
 public class ModBlockEntities {
     public static BlockEntityType<MythrilBlasterBlockEntity> MYTHRIL_BLASTER;
@@ -21,6 +27,10 @@ public class ModBlockEntities {
     public static BlockEntityType<UpgraderBlockEntity> UPGRADER_BLOCK_ENTITY;
     public static BlockEntityType<HoneySuckerBlockEntity> HONEY_SUCKER_BLOCK_ENTITY;
     public static BlockEntityType<ShapingAnvilBlockEntity> SHAPING_ANVIL_BLOCK_ENTITY;
+    public static BlockEntityType<PedestalBlockEntity> PEDESTAL;
+    public static BlockEntityType<GemInfusingBlockEntity> GEM_INFUSING_STATION;
+    public static BlockEntityType<MassiveChestBlockEntity> MASSIVE_CHEST_BLOCK_ENTITY;
+    public static BlockEntityType<CrusherBlockEntity> CRUSHER;
 
 
 
@@ -40,7 +50,7 @@ public class ModBlockEntities {
         VAKROR_FURNACE = register(
                 "vakror_furnace",
                 FabricBlockEntityTypeBuilder.create(VakrorFurnaceEntity::new,
-                        FurnaceBlocks.getFurnaces().toArray(new Block[0])
+                        FurnaceRegistry.getAllFurnaces().toArray(new Block[0])
                 ).build(null));
 
         MYTHRIL_BLASTER = Registry.register(Registry.BLOCK_ENTITY_TYPE,
@@ -60,23 +70,44 @@ public class ModBlockEntities {
 
         ORICHALCUM_BLASTER =
                 Registry.register(Registry.BLOCK_ENTITY_TYPE,
-                    new Identifier(Thommas.MOD_ID, "orichalcum_blaster"),
-                    FabricBlockEntityTypeBuilder.create(OrichalcumBlasterEntity::new,
-                            ModBlocks.ORICHALCUM_BLASTER).build(null));
+                        new Identifier(Thommas.MOD_ID, "orichalcum_blaster"),
+                        FabricBlockEntityTypeBuilder.create(OrichalcumBlasterEntity::new,
+                                ModBlocks.ORICHALCUM_BLASTER).build(null));
 
         UPGRADER_BLOCK_ENTITY =
                 Registry.register(Registry.BLOCK_ENTITY_TYPE,
-                    new Identifier(Thommas.MOD_ID, "upgrader"),
-                    FabricBlockEntityTypeBuilder.create(UpgraderBlockEntity::new,
-                            ModBlocks.UPGRADER).build(null));
+                        new Identifier(Thommas.MOD_ID, "upgrader"),
+                        FabricBlockEntityTypeBuilder.create(UpgraderBlockEntity::new,
+                                ModBlocks.UPGRADER).build(null));
 
         HONEY_SUCKER_BLOCK_ENTITY =
                 Registry.register(Registry.BLOCK_ENTITY_TYPE,
-                    new Identifier(Thommas.MOD_ID, "honey_sucker"),
-                    FabricBlockEntityTypeBuilder.create(HoneySuckerBlockEntity::new,
-                            ModBlocks.HONEY_SUCKER).build(null));
+                        new Identifier(Thommas.MOD_ID, "honey_sucker"),
+                        FabricBlockEntityTypeBuilder.create(HoneySuckerBlockEntity::new,
+                                ModBlocks.HONEY_SUCKER).build(null));
+
+        PEDESTAL = Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                new Identifier(Thommas.MOD_ID, "pedestal"),
+                FabricBlockEntityTypeBuilder.create(PedestalBlockEntity::new,
+                        ModBlocks.PEDESTAL, ANDESITE_PEDESTAL, CALCITE_PEDESTAL, COBBLED_DEEPSLATE_PEDESTAL, COBBLESTONE_PEDESTAL, DEEPSLATE_PEDESTAL, DIORITE_PEDESTAL, GRANITE_PEDESTAL, POLISHED_ANDESITE_PEDESTAL, POLISHED_DEEPSLATE_PEDESTAL,POLISHED_DIORITE_PEDESTAL, POLISHED_GRANITE_PEDESTAL, STONE_PEDESTAL, TUFF_PEDESTAL).build(null));
+
+        GEM_INFUSING_STATION = Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                new Identifier(Thommas.MOD_ID, "gem_infusing_station"),
+                FabricBlockEntityTypeBuilder.create(GemInfusingBlockEntity::new,
+                        ModBlocks.GEM_INFUSING_STATION, BASIC_GEM_INFUSING_STATION, ADVANCED_GEM_INFUSING_STATION, EPIC_GEM_INFUSING_STATION, OMEGA_GEM_INFUSING_STATION, ULTIMATE_GEM_INFUSING_STATION).build(null));
 
 
+        CRUSHER =
+                Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                        new Identifier(Thommas.MOD_ID, "crusher"),
+                        FabricBlockEntityTypeBuilder.create(CrusherBlockEntity::new,
+                                STARTER_CRUSHER, BASIC_CRUSHER, ADVANCED_CRUSHER, EPIC_CRUSHER, OMEGA_CRUSHER, ULTIMATE_CRUSHER).build(null));
+
+        SHAPING_ANVIL_BLOCK_ENTITY =
+                Registry.register(Registry.BLOCK_ENTITY_TYPE,
+                        new Identifier(Thommas.MOD_ID, "shaping_anvil"),
+                        FabricBlockEntityTypeBuilder.create(ShapingAnvilBlockEntity::new,
+                                SHAPING_ANVIL).build(null));
 
 
         Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "copper_chest"), COPPER_CHEST);
@@ -90,9 +121,15 @@ public class ModBlockEntities {
         Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "massive_crystal_chest"), MASSIVE_CRYSTAL_CHEST);
         Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "humongous_crystal_chest"), HUMONGOUS_CRYSTAL_CHEST);
         Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, "treasure_chest"), TREASURE_CHEST);
+
+
+        EnergyStorage.SIDED.registerForBlockEntity((blockEntity, direction) -> blockEntity.energyStorage, GEM_INFUSING_STATION);
+        FluidStorage.SIDED.registerForBlockEntity((blockEntity, direction) -> blockEntity.fluidStorage, GEM_INFUSING_STATION);
+        EnergyStorage.SIDED.registerForBlockEntity((blockEntity, direction) -> blockEntity.energyStorage, CRUSHER);
+        FluidStorage.SIDED.registerForBlockEntity((blockEntity, direction) -> blockEntity.fluidStorage, CRUSHER);
     }
 
     private static <T extends BlockEntity> BlockEntityType<T> register(String name, BlockEntityType<T> type) {
-        return Registry.register(Registry.BLOCK_ENTITY_TYPE, Thommas.id(name), type);
+        return Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Thommas.MOD_ID, name), type);
     }
 }

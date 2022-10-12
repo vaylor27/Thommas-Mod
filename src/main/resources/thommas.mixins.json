@@ -7,15 +7,20 @@
     "AbstractFurnaceEntityMixin",
     "BlockEntityTypeMixin",
     "BlockMixin",
+    "BottleMixin",
     "BrewingRecipeRegistryMixin",
+    "BucketItemAccessor",
     "ClampedEntityAttributeMixin",
     "DamageUtilMixin",
+    "EnergyAccessor",
     "EntityMixin",
     "FurnaceXPMixin",
+    "InsertAccessor",
     "LivingEntityMixin",
     "MagmaCubeEntityMixin",
     "ModEntityDataSaver",
     "ModEntityDataSaverTwo",
+    "RayCastAccessor",
     "SheepMixin",
     "SignTypeAccessor",
     "SlimeEntityMixin"
@@ -23,10 +28,9 @@
   "client": [
     "AutoFishMixin",
     "InGameHudMixin",
-    "ThommasMixin",
-    "InGameHudMixin",
-    "IntegratedServerLoaderMixin",
-    "PauseButtonMixin"
+    "MinecraftClientMixin",
+    "PauseButtonMixin",
+    "ThommasMixin"
   ],
   "injectors": {
     "defaultRequire": 1

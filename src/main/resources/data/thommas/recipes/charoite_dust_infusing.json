@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:charoite_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:charoite_gem",
+      "count": 3
+   }
+}

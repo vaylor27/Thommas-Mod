@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:mythril_lamp"
+    },
+    "I": {
+      "item": "thommas:tanzanite"
+    }
+  },
+  "result": {
+    "item": "thommas:tanzanite_lamp",
+    "count": 1
+  }
+}

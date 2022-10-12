@@ -1,0 +1,6 @@
+{
+  "parent": "thommas:block/furnace/furnace_off",
+  "textures": {
+    "block": "minecraft:block/obsidian"
+  }
+}

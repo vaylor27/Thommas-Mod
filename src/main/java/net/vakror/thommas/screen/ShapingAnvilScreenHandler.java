@@ -1,11 +1,13 @@
 package net.vakror.thommas.screen;
 
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -14,6 +16,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
+import net.vakror.thommas.block.entity.ShapingAnvilBlockEntity;
 import net.vakror.thommas.item.custom.RedHotMetal;
 import net.vakror.thommas.screen.slot.ModCorruptionSlot;
 import net.vakror.thommas.screen.slot.ModFuelSlot;
@@ -21,40 +24,25 @@ import net.vakror.thommas.screen.slot.ModRedHotSlot;
 import net.vakror.thommas.screen.slot.ModResultSlot;
 
 public class ShapingAnvilScreenHandler extends ScreenHandler {
-    private final Inventory inventory;
     private final PropertyDelegate propertyDelegate;
+    private final Inventory inventory;
+    public final ShapingAnvilBlockEntity entity;
 
-    public ShapingAnvilScreenHandler(int syncId, PlayerInventory playerInventory) {
-        this(syncId, playerInventory, new SimpleInventory(3), new ArrayPropertyDelegate(3));
+    public ShapingAnvilScreenHandler(int syncId, PlayerInventory playerInventory, PacketByteBuf buf) {
+        this(syncId, playerInventory, playerInventory.player.getWorld().getBlockEntity(buf.readBlockPos()),
+                new ArrayPropertyDelegate(3));
     }
 
-    @Override
-    public boolean onButtonClick(PlayerEntity player, int id) {
-        if (id == 0) {
-            if (!player.world.isClient && inventory.getStack(1) != null){
-                if (inventory.getStack(1).getCount() >= 3 && inventory.getStack(2).isEmpty()) {
-                    RedHotMetal metal = (RedHotMetal) inventory.getStack(1).getItem();
-                    inventory.setStack(2, new ItemStack(metal.getAxeHeadItem()));
-                    inventory.getStack(1).decrement(3);
-                    player.world.playSound(player, player.getBlockPos(), SoundEvents.BLOCK_ANVIL_USE, SoundCategory.BLOCKS, 10, 1);
-                }
-            }
-        }
-        return super.onButtonClick(player, id);
-    }
-
-    public ShapingAnvilScreenHandler(int syncId, PlayerInventory playerInventory,
-                                     Inventory inventory, PropertyDelegate delegate) {
+    public ShapingAnvilScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity entity, PropertyDelegate delegate) {
         super(ModScreenHandlers.SHAPING_ANVIL_SCREEN_HANDLER, syncId);
-        checkSize(inventory, 3);
-        this.inventory = inventory;
+        checkSize((Inventory) entity, 2);
+        this.inventory = (Inventory) entity;
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = delegate;
+        this.entity = (ShapingAnvilBlockEntity) entity;
 
-        //
-        this.addSlot(new ModCorruptionSlot(inventory, 0, 7, 17));
-        this.addSlot(new ModRedHotSlot(inventory, 1, 7, 45));
-        this.addSlot(new ModResultSlot(inventory, 2, 56, 46));
+        this.addSlot(new ModRedHotSlot(inventory, 0, 8, 7));
+        this.addSlot(new ModResultSlot(inventory, 1, 8, 53));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);

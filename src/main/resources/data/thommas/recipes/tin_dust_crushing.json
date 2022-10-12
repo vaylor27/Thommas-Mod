@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:stone_tin_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:tin_dust",
+      "count": 2
+   }
+}

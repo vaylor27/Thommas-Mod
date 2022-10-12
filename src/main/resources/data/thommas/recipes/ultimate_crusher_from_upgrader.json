@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:omega_crusher"
+    },
+    {
+      "item": "thommas:omega_to_ultimate_crusher_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:ultimate_crusher"
+  }
+}

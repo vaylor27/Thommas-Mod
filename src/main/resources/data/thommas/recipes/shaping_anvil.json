@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PXP",
+    "PIP",
+    "PPP"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft_anvil"
+    },
+    "X": {
+      "item": "minecraft:lava_bucket"
+    },
+    "P": {
+      "item": "thommas:steel_block"
+    }
+  },
+  "result": {
+    "item": "thommas:smooth_amethyst_block"
+  }
+}

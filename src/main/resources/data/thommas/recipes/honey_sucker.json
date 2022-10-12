@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " X ",
+    "III",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:smooth_basalt"
+    },
+    "X": {
+      "tag": "c:bee_containers"
+    }
+  },
+  "result": {
+    "item": "thommas:honey_sucker",
+    "count": 1
+  }
+}

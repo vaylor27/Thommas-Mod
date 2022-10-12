@@ -8,14 +8,17 @@ import net.minecraft.client.render.GameRenderer;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.item.ItemStack;
 import net.minecraft.screen.EnchantmentScreenHandler;
 import net.minecraft.screen.StonecutterScreenHandler;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.screen.slot.SlotActionType;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
+import net.minecraft.text.TextColor;
 import net.minecraft.util.Identifier;
 import net.vakror.thommas.Thommas;
+import net.vakror.thommas.item.custom.RedHotMetal;
 
 import java.util.Objects;
 
@@ -52,9 +55,42 @@ public class ShapingAnvilScreen extends HandledScreen<ShapingAnvilScreenHandler>
     }
 
     @Override
-    public boolean mouseClicked(double mouseX, double mouseY, int button) {
-            this.client.interactionManager.clickButton(this.handler.syncId, button);
-        return super.mouseClicked(mouseX, mouseY, button);
+    protected void drawForeground(MatrixStack matrices, int mouseX, int mouseY) {
+        this.addDrawableChild(new ButtonWidget(x + 30, y + 18, 50, 15, Text.literal("Axe"), (button) -> {
+            this.handler.entity.craftAxeHead();
+        }));
+        this.addDrawableChild(new ButtonWidget(x + 30, y + 38, 50, 15, Text.literal("Sword"), (button) -> {
+            this.handler.entity.craftSwordBlade();
+        }));
+        this.addDrawableChild(new ButtonWidget(x + 30, y + 58, 50, 15, Text.literal("Pickaxe"), (button) -> {
+            this.handler.entity.craftPickAxeHead();
+        }));
+        this.addDrawableChild(new ButtonWidget(x + 90, y + 18, 50, 15, Text.literal("Hoe"), (button) -> {
+            this.handler.entity.craftHoeHead();
+        }));
+        this.addDrawableChild(new ButtonWidget(x + 90, y + 38, 50, 15, Text.literal("Shovel"), (button) -> {
+            this.handler.entity.craftShovelHead();
+        }));
+        if (this.handler.entity.getStack(0).getCount() >= 3 && this.handler.entity.getStack(1).isEmpty()) {
+            if ((this.handler.entity.getStack(0).getItem()) instanceof RedHotMetal metal) {
+                if (this.handler.entity.getAxeHeadCraft()) {
+                    this.itemRenderer.renderGuiItemIcon(new ItemStack(metal.getAxeHeadItem()), x + 20, y + 10);
+                }
+                if (this.handler.entity.getPickAxeHeadCraft()) {
+                    this.itemRenderer.renderGuiItemIcon(new ItemStack(metal.getPickAxeHeadItem()), x + 20, y + 10);
+                }
+                if (this.handler.entity.getSwordBladeCraft()) {
+                    this.itemRenderer.renderGuiItemIcon(new ItemStack(metal.getSwordBladeItem()), x + 20, y + 10);
+                }
+                if (this.handler.entity.getHoeHeadCraft()) {
+                    this.itemRenderer.renderGuiItemIcon(new ItemStack(metal.getHoeHeadItem()), x + 20, y + 10);
+                }
+                if (this.handler.entity.getShovelHeadCraft()) {
+                    this.itemRenderer.renderGuiItemIcon(new ItemStack(metal.getShovelHeadItem()), x + 20, y + 10);
+                }
+            }
+        }
+        super.drawForeground(matrices, mouseX, mouseY);
     }
 
     @Override

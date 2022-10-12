@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:raw_charoite"
+      }
+   ],
+   "output": {
+      "item": "thommas:charoite_dust",
+      "count": 2
+   }
+}

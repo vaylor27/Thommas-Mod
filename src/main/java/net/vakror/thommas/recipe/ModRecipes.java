@@ -30,5 +30,15 @@ public class ModRecipes {
                 HoneySuckerRecipe.Serializer.INSTANCE);
         Registry.register(Registry.RECIPE_TYPE, new Identifier(Thommas.MOD_ID, HoneySuckerRecipe.Type.ID),
                 HoneySuckerRecipe.Type.INSTANCE);
+
+        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(Thommas.MOD_ID, GemInfusingRecipe.Serializer.ID),
+                GemInfusingRecipe.Serializer.INSTANCE);
+        Registry.register(Registry.RECIPE_TYPE, new Identifier(Thommas.MOD_ID, GemInfusingRecipe.Type.ID),
+                GemInfusingRecipe.Type.INSTANCE);
+
+        Registry.register(Registry.RECIPE_SERIALIZER, new Identifier(Thommas.MOD_ID, CrushingRecipe.Serializer.ID),
+                CrushingRecipe.Serializer.INSTANCE);
+        Registry.register(Registry.RECIPE_TYPE, new Identifier(Thommas.MOD_ID, CrushingRecipe.Type.ID),
+                CrushingRecipe.Type.INSTANCE);
     }
 }

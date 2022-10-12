@@ -70,6 +70,7 @@ public class TigerEntity extends TameableEntity implements Mount, IAnimatable {
         this.goalSelector.add(1, new SitGoal(this)); // Important that the Sit Goal is higher than WanderGoal!
         this.targetSelector.add(2, new TrackOwnerAttackerGoal(this));
         this.targetSelector.add(3, new AnimalMateGoal(this, 1d));
+        this.goalSelector.add(5, new AttackWithOwnerGoal(this));
         this.goalSelector.add(2, new WanderAroundPointOfInterestGoal(this, 0.75f, false));
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.75f, 1));
         this.goalSelector.add(4, new LookAroundGoal(this));

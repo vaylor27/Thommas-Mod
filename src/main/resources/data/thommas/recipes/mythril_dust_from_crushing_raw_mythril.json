@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:raw_mythril"
+      }
+   ],
+   "output": {
+      "item": "thommas:mythril_dust",
+      "count": 2
+   }
+}

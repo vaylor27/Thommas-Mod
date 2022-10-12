@@ -31,13 +31,28 @@ public class ThommasREIPlugin implements REIClientPlugin {
 				new CombinerREICategory(),
 				new UpgraderREICategory(),
 				new LightningChannelerREICategory(),
-				new HoneySuckerREICategory()
+				new HoneySuckerREICategory(),
+				new GemInfusingREICategory(),
+				new CrushingREICategory()
 		));
 		helper.addWorkstations(ThommasREICategoryIdentifiers.MYTHRIL_BLASTER, EntryStacks.of(ModBlocks.MYTHRIL_BLASTER));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.MYTHRIL_BLASTER, EntryStacks.of(ModBlocks.ORICHALCUM_BLASTER));
 		helper.addWorkstations(ThommasREICategoryIdentifiers.COMBINER, EntryStacks.of(ModBlocks.COMBINER));
 		helper.addWorkstations(ThommasREICategoryIdentifiers.UPGRADER, EntryStacks.of(ModBlocks.UPGRADER));
 		helper.addWorkstations(ThommasREICategoryIdentifiers.LIGHTNING_CHANNELER, EntryStacks.of(ModBlocks.LIGHTNING_CHANNELER_BLOCK));
 		helper.addWorkstations(ThommasREICategoryIdentifiers.HONEY_SUCKER, EntryStacks.of(ModBlocks.HONEY_SUCKER));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.GEM_INFUSING, EntryStacks.of(ModBlocks.GEM_INFUSING_STATION));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.GEM_INFUSING, EntryStacks.of(ModBlocks.BASIC_GEM_INFUSING_STATION));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.GEM_INFUSING, EntryStacks.of(ModBlocks.ADVANCED_GEM_INFUSING_STATION));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.GEM_INFUSING, EntryStacks.of(ModBlocks.EPIC_GEM_INFUSING_STATION));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.GEM_INFUSING, EntryStacks.of(ModBlocks.OMEGA_GEM_INFUSING_STATION));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.GEM_INFUSING, EntryStacks.of(ModBlocks.ULTIMATE_GEM_INFUSING_STATION));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.CRUSHER, EntryStacks.of(ModBlocks.STARTER_CRUSHER));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.CRUSHER, EntryStacks.of(ModBlocks.BASIC_CRUSHER));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.CRUSHER, EntryStacks.of(ModBlocks.ADVANCED_CRUSHER));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.CRUSHER, EntryStacks.of(ModBlocks.EPIC_CRUSHER));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.CRUSHER, EntryStacks.of(ModBlocks.OMEGA_CRUSHER));
+		helper.addWorkstations(ThommasREICategoryIdentifiers.CRUSHER, EntryStacks.of(ModBlocks.ULTIMATE_CRUSHER));
 	}
 
 	@Override
@@ -47,5 +62,7 @@ public class ThommasREIPlugin implements REIClientPlugin {
 		helper.registerFiller(CombinerRecipe.class, CombinerREIDisplay::new);
 		helper.registerFiller(LightningChannelerRecipe.class, LightningChannelerREIDisplay::new);
 		helper.registerFiller(HoneySuckerRecipe.class, HoneySuckerREIDisplay::new);
+		helper.registerFiller(GemInfusingRecipe.class, GemInfusingREIDisplay::new);
+		helper.registerFiller(CrushingRecipe.class, CrushingREIDisplay::new);
 	}
 }

@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:jade_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:jade_gem",
+      "count": 3
+   }
+}

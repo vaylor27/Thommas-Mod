@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "result": {
+    "item": "thommas:tuff_pedestal",
+    "count": 1
+  }
+}

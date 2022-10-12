@@ -17,6 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.vakror.thommas.item.inventory.ImplementedInventory;
 import net.vakror.thommas.recipe.CombinerRecipe;
+import net.vakror.thommas.screen.CombinerScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;

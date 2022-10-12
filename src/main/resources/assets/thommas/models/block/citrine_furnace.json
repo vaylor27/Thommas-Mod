@@ -1,8 +1,0 @@
-{
-    "parent": "block/orientable",
-    "textures": {
-        "top": "thommas:block/citrine_furnace_top",
-        "front": "thommas:block/citrine_furnace_front",
-        "side": "thommas:block/citrine_furnace_side"
-    }
-}

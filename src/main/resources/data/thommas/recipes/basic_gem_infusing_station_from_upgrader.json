@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:gem_infusing_station"
+    },
+    {
+      "item": "thommas:starter_to_basic_gem_infusing_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:basic_gem_infusing_station"
+  }
+}

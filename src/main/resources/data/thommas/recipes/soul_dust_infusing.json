@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:soul_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:soul_plasm",
+      "count": 3
+   }
+}

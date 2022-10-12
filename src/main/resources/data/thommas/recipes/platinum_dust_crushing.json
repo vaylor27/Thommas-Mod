@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:platinum_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:platinum_dust",
+      "count": 2
+   }
+}

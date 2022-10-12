@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:deepslate_garnet_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:garnet_dust",
+      "count": 2
+   }
+}

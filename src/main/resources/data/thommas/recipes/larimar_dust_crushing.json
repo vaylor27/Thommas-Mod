@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:larimar_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:larimar_dust",
+      "count": 2
+   }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "thommas:upgrader",
+  "ingredients": [
+    {
+      "item": "thommas:advanced_crusher"
+    },
+    {
+      "item": "thommas:advanced_to_epic_crusher_upgrade"
+    }
+  ],
+  "output": {
+    "item": "thommas:epic_crusher"
+  }
+}

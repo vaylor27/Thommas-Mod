@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:granite"
+    }
+  },
+  "result": {
+    "item": "thommas:granite_pedestal",
+    "count": 1
+  }
+}

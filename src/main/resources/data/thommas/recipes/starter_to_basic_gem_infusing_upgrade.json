@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PIP",
+    "IXI",
+    "PIP"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:thrice_compressed_diamond_block"
+    },
+    "P": {
+      "item": "thommas:dark_crystal"
+    },
+    "I": {
+      "item": "thommas:citrine_dust"
+    }
+  },
+  "result": {
+    "item": "thommas:starter_to_basic_gem_infusing_upgrade",
+    "count": 1
+  }
+}

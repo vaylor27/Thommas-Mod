@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I"
+  ],
+  "key": {
+    "I": {
+      "item":
+       "thommas:quadrice_compressed_copper_block"
+    }
+  },
+  "result": {
+    "item": "thommas:thrice_compressed_copper_block",
+    "count": 9
+  }
+}

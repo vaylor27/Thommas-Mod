@@ -1,0 +1,12 @@
+{
+   "type": "thommas:gem_infusing",
+   "ingredients": [
+      {
+         "item": "thommas:lumenite_dust"
+      }
+   ],
+   "output": {
+      "item": "thommas:lumenite_ingot",
+      "count": 3
+   }
+}

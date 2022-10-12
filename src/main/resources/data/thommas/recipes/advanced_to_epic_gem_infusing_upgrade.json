@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IPL",
+    "PXP",
+    "BPI"
+  ],
+  "key": {
+    "X": {
+      "item": "thommas:basic_to_advanced_gem_infusing_upgrade"
+    },
+    "P": {
+      "item": "thommas:quadrice_compressed_gold_block"
+    },
+    "I": {
+      "item": "thommas:lithium_battery"
+    },
+    "L": {
+      "item": "thommas:current_switcher"
+    },
+    "B": {
+      "item": "thommas:current_toggler"
+    }
+  },
+  "result": {
+    "item": "thommas:advanced_to_epic_gem_infusing_upgrade",
+    "count": 1
+  }
+}

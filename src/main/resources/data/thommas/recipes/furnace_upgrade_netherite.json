@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_block"
+  },
+  "base": {
+    "item": "thommas:obsidian_furnace_upgrade"
+  },
+  "result": {
+    "item": "thommas:netherite_furnace_upgrade"
+  }
+}

@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:stone_zinc_ore"
+      }
+   ],
+   "output": {
+      "item": "thommas:zinc_dust",
+      "count": 2
+   }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "IXI",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:gold_block"
+    },
+    "X": {
+      "item": "thommas:iron_furnace_upgrade"
+    }
+  },
+  "result": {
+    "item": "thommas:gold_furnace_upgrade",
+    "count": 1
+  }
+}

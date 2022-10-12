@@ -1,0 +1,12 @@
+{
+   "type": "thommas:crushing",
+   "ingredients": [
+      {
+         "item": "thommas:iron_chunks"
+      }
+   ],
+   "output": {
+      "item": "thommas:iron_dust",
+      "count": 2
+   }
+}

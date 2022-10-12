@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " I ",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:calcite"
+    }
+  },
+  "result": {
+    "item": "thommas:calcite_pedestal",
+    "count": 1
+  }
+}

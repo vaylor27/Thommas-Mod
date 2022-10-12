@@ -2,6 +2,8 @@ package net.vakror.thommas;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
@@ -10,17 +12,25 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.Overlay;
+import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.item.Item;
+import net.minecraft.client.util.InputUtil;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
-import net.vakror.thommas.block.FurnaceBlocks;
+import net.vakror.thommas.block.FurnaceRegistry;
 import net.vakror.thommas.block.ModBlocks;
+import net.vakror.thommas.block.entity.ModBlockEntities;
 import net.vakror.thommas.block.entity.chest.BigCrystalChestEntity;
 import net.vakror.thommas.block.entity.chest.CrystalChestEntity;
 import net.vakror.thommas.block.entity.chest.HumongousCrystalChestEntity;
 import net.vakror.thommas.block.entity.chest.MassiveCrystalChestEntity;
+import net.vakror.thommas.block.entity.client.CrusherBlockEntityRenderer;
+import net.vakror.thommas.block.entity.client.PedestalBlockEntityRenderer;
+import net.vakror.thommas.block.entity.furnace.FurnaceBlockEntity;
 import net.vakror.thommas.entity.ModEntities;
 import net.vakror.thommas.entity.client.RaccoonRenderer;
 import net.vakror.thommas.entity.client.RatRenderer;
@@ -35,6 +45,7 @@ import net.vakror.thommas.screen.*;
 import net.vakror.thommas.util.ModBlockEntityRenderer;
 import net.vakror.thommas.util.ModModelPredicateProvider;
 import net.vakror.thommas.util.ModTextures;
+import org.lwjgl.glfw.GLFW;
 import software.bernie.geckolib3.renderers.geo.GeoArmorRenderer;
 
 public class ThommasClientMod implements ClientModInitializer {
@@ -97,17 +108,38 @@ public class ThommasClientMod implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SAFE_KAUPEN_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TITANIUM_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.AMETHYST_DOOR, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.IRON_FURNACE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.GOLD_FURNACE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.EMERALD_FURNACE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.DIAMOND_FURNACE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(FurnaceBlocks.OBSIDIAN_FURNACE, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GEM_WASHING_STATION, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GEM_WASHING_STATION, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EGGPLANT_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HONEY_SUCKER, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HONEY_SUCKER, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.TITANIUM_BARS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PEDESTAL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GEM_INFUSING_STATION, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GEM_INFUSING_STATION, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BASIC_GEM_INFUSING_STATION, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BASIC_GEM_INFUSING_STATION, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ADVANCED_GEM_INFUSING_STATION, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ADVANCED_GEM_INFUSING_STATION, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EPIC_GEM_INFUSING_STATION, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EPIC_GEM_INFUSING_STATION, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OMEGA_GEM_INFUSING_STATION, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OMEGA_GEM_INFUSING_STATION, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ULTIMATE_GEM_INFUSING_STATION, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ULTIMATE_GEM_INFUSING_STATION, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STARTER_CRUSHER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.STARTER_CRUSHER, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BASIC_CRUSHER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BASIC_CRUSHER, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ADVANCED_CRUSHER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ADVANCED_CRUSHER, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EPIC_CRUSHER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.EPIC_CRUSHER, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OMEGA_CRUSHER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OMEGA_CRUSHER, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ULTIMATE_CRUSHER, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ULTIMATE_CRUSHER, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluids.OIL_FLOWING, ModFluids.OIL_STILL);
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(), FurnaceRegistry.allFurnaces.toArray(new Block[0]));
+
 
 
         ModModelPredicateProvider.registerModModels();
@@ -128,6 +160,9 @@ public class ThommasClientMod implements ClientModInitializer {
         ScreenRegistry.register(ModScreenHandlers.UPGRADER_SCREEN_HANDLER, UpgraderScreen::new);
         ScreenRegistry.register(ModScreenHandlers.HONEY_SUCKER_SCREEN_HANDLER, HoneySuckerScreen::new);
         ScreenRegistry.register(ModScreenHandlers.SHAPING_ANVIL_SCREEN_HANDLER, ShapingAnvilScreen::new);
+        ScreenRegistry.register(ModScreenHandlers.GEM_INFUSING_SCREEN_HANDLER, GemInfusingScreen::new);
+        ScreenRegistry.register(ModScreenHandlers.MASSIVE_CHEST_SCREEN_HANDLER, MassiveChestScreen::new);
+        ScreenRegistry.register(ModScreenHandlers.CRUSHING_SCREEN_HANDLER, CrushingScreen::new);
 
         EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
         EntityRendererRegistry.register(ModEntities.RAT, RatRenderer::new);
@@ -145,6 +180,17 @@ public class ThommasClientMod implements ClientModInitializer {
         GeoArmorRenderer.registerArmorRenderer(new LeadArmorRenderer(), ModItems.LEAD_BOOTS,
                 ModItems.LEAD_LEGGINGS, ModItems.LEAD_CHESTPLATE, ModItems.LEAD_HELMET);
 
+
+
+        BlockEntityRendererRegistry.register(ModBlockEntities.PEDESTAL, PedestalBlockEntityRenderer::new);
+        BlockEntityRendererRegistry.register(ModBlockEntities.CRUSHER, CrusherBlockEntityRenderer::new);
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.OIL_STILL, ModFluids.OIL_FLOWING,
+                new SimpleFluidRenderHandler(
+                        new Identifier("minecraft:block/water_still"),
+                        new Identifier("minecraft:block/water_flow"),
+                        0x100E0171
+                ));
 
         // Crystal Chest Rendering
         ClientPlayNetworking.registerGlobalReceiver(Thommas.UPDATE_INV_PACKET_ID_NORMAL, (client, handler, buf, responseSender) -> {
@@ -206,7 +252,26 @@ public class ThommasClientMod implements ClientModInitializer {
             });
         });
 
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            if (veinMiningKey.isPressed()) {
+                Thommas.veinMine = true;
+            }
+
+            else {
+                Thommas.veinMine = false;
+            }
+        });
 
         ModScreenHandlers.registerChestScreenHandlers();
     }
+
+
+    private static KeyBinding veinMiningKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+        "key.thommas.vein_mine", // The translation key of the keybinding's name
+        InputUtil.Type.KEYSYM, // The type of the keybinding, KEYSYM for keyboard, MOUSE for mouse.
+        GLFW.GLFW_KEY_V, // The keycode of the key
+        "category.thommas.thommas_key_category" // The translation key of the keybinding's category.
+    ));
+
+
 }

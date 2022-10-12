@@ -55,6 +55,9 @@ public class ModItemGroup {
     public static final ItemGroup DROPS = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "drops"),
             () -> new ItemStack(ModItems.LLAMA_HIDE));
 
+    public static final ItemGroup UPGRADES = FabricItemGroupBuilder.build(new Identifier(Thommas.MOD_ID, "upgrades"),
+            () -> new ItemStack(ModItems.BASIC_TO_ADVANCED_GEM_INFUSING_UPGRADE));
+
 
 	public static final ItemGroup EVERYTHING = FabricItemGroupBuilder.create(new Identifier(Thommas.MOD_ID, "all")).appendItems(itemStacks -> Registry.ITEM.forEach(item -> {
         if(Registry.ITEM.getId(item).getNamespace().equals(Thommas.MOD_ID)){

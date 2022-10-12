@@ -10,7 +10,8 @@ import net.vakror.thommas.world.gen.ModPlacedFeatures;
 
 public class GenerateOthers {
     public static void generateOthers() {
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_STRUCTURES, ModPlacedFeatures.HONEY_OASIS.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.LAKES, ModPlacedFeatures.HONEY_OASIS.getKey().get());
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.LAKES, ModPlacedFeatures.OIL.getKey().get());
 
     }
 }
